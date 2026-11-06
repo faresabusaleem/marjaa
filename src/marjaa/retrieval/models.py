@@ -75,18 +75,35 @@ class CrossEncoderReranker:
     "not found in the provided laws" decision.
     """
 
-    def __init__(self, model_name: str, device: str | None = None, max_length: int = 1024):
+    def __init__(
+        self,
+        model_name: str,
+        device: str | None = None,
+        max_length: int = 1024,
+        fp16: bool = False,
+    ):
         import torch
         from sentence_transformers import CrossEncoder
 
         self.device = pick_device(device)
+        # fp16 only helps on accelerators; on CPU it is slower or unsupported.
+        dtype = torch.float16 if fp16 and self.device != "cpu" else torch.float32
         self.model = CrossEncoder(
             model_name,
             device=self.device,
             max_length=max_length,
             activation_fn=torch.nn.Sigmoid(),
+            model_kwargs={"torch_dtype": dtype},
         )
-        log.info("reranker loaded", extra={"model": model_name, "device": self.device})
+        log.info(
+            "reranker loaded",
+            extra={
+                "model": model_name,
+                "device": self.device,
+                "dtype": str(dtype),
+                "max_length": max_length,
+            },
+        )
 
     def score(self, query: str, passages: list[str]) -> list[float]:
         if not passages:
@@ -134,7 +151,9 @@ def load_embedder(name: str, model_name: str, device: str | None) -> Embedder:
 
 
 @lru_cache(maxsize=4)
-def load_reranker(name: str, model_name: str, device: str | None) -> Reranker:
+def load_reranker(
+    name: str, model_name: str, device: str | None, max_length: int = 1024, fp16: bool = False
+) -> Reranker:
     if name == "hashing":  # test mode pairs the hashing embedder with the overlap reranker
         return OverlapReranker()
-    return CrossEncoderReranker(model_name, device)
+    return CrossEncoderReranker(model_name, device, max_length, fp16)

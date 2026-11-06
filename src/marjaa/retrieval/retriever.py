@@ -132,6 +132,12 @@ def build_retriever(settings: Settings, strategy: ChunkStrategy | None = None) -
         log.info("embedded chunks", extra={"n": len(chunks), "s": time.perf_counter() - t})
 
     def reranker_loader() -> Reranker:
-        return load_reranker(settings.embedder, settings.reranker_model, settings.device)
+        return load_reranker(
+            settings.embedder,
+            settings.reranker_model,
+            settings.device,
+            settings.rerank_max_length,
+            settings.rerank_fp16,
+        )
 
     return Retriever(chunks, settings, embedder, dense, reranker_loader)

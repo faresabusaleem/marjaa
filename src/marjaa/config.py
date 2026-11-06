@@ -50,6 +50,8 @@ class Settings(BaseSettings):
     retrieval_mode: RetrievalMode = "hybrid_rerank"
     candidates_per_retriever: int = 30  # depth of each list before fusion
     rerank_candidates: int = 20  # how many fused results the cross-encoder sees
+    rerank_max_length: int = 1024  # tokens per (question, article) pair
+    rerank_fp16: bool = False  # half precision on GPU/MPS: faster, tiny score drift
     rrf_k: int = 60  # standard RRF constant from Cormack et al. (2009)
     top_k: int = 5  # chunks passed to the LLM
 

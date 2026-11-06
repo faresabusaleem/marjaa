@@ -8,7 +8,7 @@ SMOKE_ENV = MARJAA_RAW_DIR=tests/fixtures/raw MARJAA_PROCESSED_DIR=.smoke/proces
 	MARJAA_FIXED_CHUNK_CHARS=300 MARJAA_FIXED_CHUNK_OVERLAP=60
 
 .PHONY: help install ingest testset eval eval-retrieval calibrate eval-answers serve ui \
-	test lint format eval-smoke docker-build docker-run space readme
+	test lint format eval-smoke docker-build docker-run space readme eval-rerank-fast
 
 help:  ## Show this help
 	@grep -E '^[a-z-]+:.*## ' $(MAKEFILE_LIST) | awk -F':.*## ' '{printf "  %-15s %s\n", $$1, $$2}'
@@ -25,13 +25,17 @@ testset:  ## Regenerate the auto-generated eval set with the local LLM (slow)
 eval-retrieval:  ## Retrieval grid: 4 retrievers x 2 chunkings
 	$(RUN) python -m evals.runners.run_retrieval
 
+eval-rerank-fast:  ## Latency/quality trade-off: rerank 10 candidates, 512 tokens, fp16
+	MARJAA_RERANK_CANDIDATES=10 MARJAA_RERANK_MAX_LENGTH=512 MARJAA_RERANK_FP16=true \
+		$(RUN) python -m evals.runners.run_retrieval --modes hybrid_rerank --out retrieval_fast_rerank
+
 calibrate:  ## Tune the "not found" threshold on the dev split
 	$(RUN) python -m evals.runners.calibrate
 
 eval-answers:  ## LLM-judged answer quality on the test split
 	$(RUN) python -m evals.runners.run_answers
 
-eval: ingest eval-retrieval calibrate eval-answers readme  ## Reproduce every number in the README
+eval: ingest eval-retrieval eval-rerank-fast calibrate eval-answers readme  ## Reproduce every number in the README
 
 readme:  ## Copy result tables from evals/results into README.md
 	$(UV) run python scripts/update_readme.py

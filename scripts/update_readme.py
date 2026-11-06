@@ -29,7 +29,7 @@ def block(name: str) -> str:
 def main() -> None:
     readme = ROOT / "README.md"
     text = readme.read_text(encoding="utf-8")
-    for name in ("retrieval", "answers", "threshold"):
+    for name in ("retrieval", "retrieval_fast_rerank", "answers", "threshold"):
         pattern = re.compile(
             rf"(<!-- results:{name}:start -->\n).*?(<!-- results:{name}:end -->)", re.S
         )

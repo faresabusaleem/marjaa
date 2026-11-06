@@ -1,0 +1,24 @@
+# Python / tooling
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+dist/
+
+# Secrets
+.env
+
+# Data: law files are downloaded by the user (see README); derived data is rebuilt.
+data/raw/*
+!data/raw/laws.toml
+!data/raw/.gitkeep
+data/processed/
+data/index/
+data/traces/
+
+# Deployment build output
+deploy/hf_space/build/
+
+.DS_Store

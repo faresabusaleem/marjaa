@@ -1,0 +1,8 @@
+# Synthetic mini-law used by unit tests and the CI smoke eval. Not real law.
+[[law]]
+id = "sample_law"
+name_en = "Sample Leave Law"
+name_ar = "قانون الإجازات النموذجي"
+number = 1
+year = 2024
+files = { en = "sample_law_en.html", ar = "sample_law_ar.html" }

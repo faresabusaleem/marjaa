@@ -1,0 +1,14 @@
+# Law manifest. To add a law: drop its files into data/raw/ and add a [[law]]
+# entry. Files without an entry are still ingested, with metadata guessed from
+# the file name pattern `<law_id>_<ar|en>.<pdf|html>`.
+
+[[law]]
+id = "labour_law_2021"
+name_en = "Federal Labour Law"
+name_ar = "قانون العمل الاتحادي"
+type_en = "Federal Decree-Law No. (33) of 2021 Regarding the Regulation of Labour Relations"
+type_ar = "مرسوم بقانون اتحادي رقم (33) لسنة 2021 بشأن تنظيم علاقات العمل"
+number = 33
+year = 2021
+source_url = "https://uaelegislation.gov.ae/en/legislations/1541"
+files = { en = "uae_labour_law_2021_en.pdf", ar = "uae_labour_law_2021_ar.pdf" }

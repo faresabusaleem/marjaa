@@ -73,5 +73,6 @@ ignore = ["RUF001", "RUF002", "RUF003", "SIM905"]  # Arabic text legitimately co
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+pythonpath = ["."]
 addopts = "-q"
 markers = ["slow: needs downloaded ML models (skipped in CI)"]

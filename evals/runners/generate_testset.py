@@ -64,11 +64,6 @@ UNANSWERABLE_TOPICS = [
     "the legal blood alcohol limit for drivers",
 ]
 LANG_NAME = {"ar": "Arabic", "en": "English"}
-SCHEMA = {
-    "type": "object",
-    "properties": {"question": {"type": "string"}, "answer": {"type": "string"}},
-    "required": ["question", "answer"],
-}
 
 SINGLE_PROMPT = """You write evaluation questions for a question-answering system about UAE law.
 
@@ -114,8 +109,18 @@ Return JSON: {{"question": "...", "answer": ""}}"""
 _ARTICLE_MENTION = re.compile(r"(article|المادة|مادة)\s*\(?\s*[0-9٠-٩]+", re.I)
 
 
+def parse_json_object(text: str) -> dict:
+    """Pull the first {...} object out of a model reply (tolerates code fences)."""
+    start, end = text.find("{"), text.rfind("}")
+    if start < 0 or end <= start:
+        raise json.JSONDecodeError("no JSON object", text, 0)
+    return json.loads(text[start : end + 1])
+
+
 def ask_json(settings: Settings, prompt: str, seed: int) -> dict:
-    """Ollama structured output: the JSON schema constrains decoding."""
+    # Ollama's grammar-constrained `format` is not available for qwen3.5 in
+    # Ollama 0.40 ("structured output is unavailable"), so we ask for JSON in
+    # the prompt and parse leniently; `is_good` rejects anything malformed.
     response = httpx.post(
         settings.ollama_url.rstrip("/") + "/api/chat",
         json={
@@ -123,13 +128,12 @@ def ask_json(settings: Settings, prompt: str, seed: int) -> dict:
             "messages": [{"role": "user", "content": prompt}],
             "stream": False,
             "think": False,
-            "format": SCHEMA,
             "options": {"temperature": 0.4, "seed": seed, "num_ctx": 8192},
         },
         timeout=settings.request_timeout_s,
     )
     response.raise_for_status()
-    return json.loads(response.json()["message"]["content"])
+    return parse_json_object(response.json()["message"]["content"])
 
 
 def is_good(item: dict, q_lang: str, answerable: bool) -> bool:
@@ -139,6 +143,17 @@ def is_good(item: dict, q_lang: str, answerable: bool) -> bool:
     if _ARTICLE_MENTION.search(q):
         return False  # would leak the gold label
     return not answerable or (5 <= len(a) <= 700 and detect_language(a) == q_lang)
+
+
+def leaks_gold_number(item: EvalItem) -> bool:
+    """Catch label leaks the prompt-time filter misses, e.g. 'المرسوم رقم (74)'."""
+    for g in item.gold:
+        n = g.article
+        if re.search(rf"[(\[]\s*{n}\s*[)\]]", item.question) or re.search(
+            rf"(رقم|No\.?|number)\s*\(?\s*{n}\b", item.question, re.I
+        ):
+            return True
+    return False
 
 
 def article_texts(settings: Settings) -> dict[tuple[str, int, str], dict]:
@@ -255,9 +270,12 @@ def main() -> None:
         if q := generate(prompt, lang, answerable=False):
             add("unanswerable", {"question": q["question"], "answer": ""}, lang, [], None, None)
 
-    # Deduplicate and assign a stratified dev/test split.
+    # Deduplicate, drop label leaks, and assign a stratified dev/test split.
     seen, unique = set(), []
     for item in items:
+        if leaks_gold_number(item):
+            log.info("dropped label leak", extra={"id": item.id, "q": item.question})
+            continue
         if item.question not in seen:
             seen.add(item.question)
             unique.append(item)

@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import atexit
 import hashlib
 import json
 from pathlib import Path
@@ -52,9 +53,11 @@ def _qdrant(path: Path | None):
     if key not in _QDRANT_CLIENTS:
         if path:
             path.mkdir(parents=True, exist_ok=True)
-            _QDRANT_CLIENTS[key] = QdrantClient(path=str(path))
+            client = QdrantClient(path=str(path))
         else:
-            _QDRANT_CLIENTS[key] = QdrantClient(":memory:")
+            client = QdrantClient(":memory:")
+        atexit.register(client.close)  # release the folder lock cleanly on exit
+        _QDRANT_CLIENTS[key] = client
     return _QDRANT_CLIENTS[key]
 
 

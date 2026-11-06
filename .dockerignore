@@ -1,0 +1,11 @@
+.venv
+.git
+.smoke
+.ruff_cache
+.pytest_cache
+**/__pycache__
+data/processed
+data/index
+data/traces
+deploy/hf_space/build
+.env

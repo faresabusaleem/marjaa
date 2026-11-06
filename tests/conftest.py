@@ -25,5 +25,8 @@ def settings(tmp_path: Path) -> Settings:
         retrieval_mode="hybrid",
         min_relevance=0.0,
         device="cpu",
+        # The toy law is ~700 chars; small windows give the fixed strategy >2 chunks.
+        fixed_chunk_chars=300,
+        fixed_chunk_overlap=60,
         _env_file=None,
     )

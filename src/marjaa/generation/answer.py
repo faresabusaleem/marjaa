@@ -127,7 +127,8 @@ class RagPipeline:
 
         top = result.top_relevance
         system = user = ""
-        if not context or (top is not None and top < s.min_relevance):
+        threshold = s.min_relevance or 0.0
+        if not context or (top is not None and top < threshold):
             # Low retrieval confidence: abstain without calling the LLM at all.
             answer, reason = NOT_FOUND[lang], "low_relevance"
             yield {"event": "token", "data": {"text": answer}}

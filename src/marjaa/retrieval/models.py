@@ -58,7 +58,7 @@ class SentenceTransformerEmbedder:
         self.model = SentenceTransformer(model_name, device=self.device)
         # Articles are short; capping length keeps memory and latency low.
         self.model.max_seq_length = max_seq_length
-        self.dim = int(self.model.get_sentence_embedding_dimension() or 1024)
+        self.dim = int(self.model.get_embedding_dimension() or 1024)
         log.info("embedder loaded", extra={"model": model_name, "device": self.device})
 
     def encode(self, texts: list[str]) -> np.ndarray:

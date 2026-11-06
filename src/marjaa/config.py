@@ -53,9 +53,10 @@ class Settings(BaseSettings):
     rrf_k: int = 60  # standard RRF constant from Cormack et al. (2009)
     top_k: int = 5  # chunks passed to the LLM
 
-    # Reranker sigmoid score below which we answer "not found". Calibrated on
-    # the dev split by `make calibrate`; see evals/results/threshold.json.
-    min_relevance: float = 0.2
+    # Reranker sigmoid score below which we answer "not found". None = use the
+    # value calibrated on the dev split by `make calibrate`
+    # (evals/results/threshold.json).
+    min_relevance: float | None = None
 
     # --- Generation ------------------------------------------------------------
     llm_provider: ProviderName = "ollama"

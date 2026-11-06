@@ -59,6 +59,8 @@ ignore = ["RUF001", "RUF002", "RUF003"]  # Arabic text legitimately contains "am
 [tool.ruff.lint.per-file-ignores]
 # Prompt templates read better as long natural-language lines.
 "src/marjaa/generation/prompts.py" = ["E501"]
+"src/marjaa/evaluation/experiments.py" = ["E501"]
+"evals/runners/generate_testset.py" = ["E501"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

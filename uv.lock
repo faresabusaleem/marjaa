@@ -950,7 +950,7 @@ dependencies = [
     { name = "numpy", version = "2.5.4", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.12'" },
     { name = "pydantic" },
     { name = "pydantic-settings" },
-    { name = "pymupdf" },
+    { name = "pypdf" },
     { name = "qdrant-client" },
     { name = "rank-bm25" },
     { name = "typer" },
@@ -970,7 +970,7 @@ ui = [
 [package.dev-dependencies]
 dev = [
     { name = "pdfplumber" },
-    { name = "pypdf" },
+    { name = "pymupdf" },
     { name = "pytest" },
     { name = "ruff" },
 ]
@@ -984,7 +984,7 @@ requires-dist = [
     { name = "numpy", specifier = ">=2.4.6" },
     { name = "pydantic", specifier = ">=2.14.3" },
     { name = "pydantic-settings", specifier = ">=2.16.2" },
-    { name = "pymupdf", specifier = ">=2.1" },
+    { name = "pypdf", specifier = ">=7.0.0" },
     { name = "qdrant-client", specifier = ">=1.20.0" },
     { name = "rank-bm25", specifier = ">=0.2.2" },
     { name = "sentence-transformers", marker = "extra == 'ml'", specifier = ">=6.2.0" },
@@ -998,7 +998,7 @@ provides-extras = ["ml", "ui"]
 [package.metadata.requires-dev]
 dev = [
     { name = "pdfplumber", specifier = ">=0.11.10" },
-    { name = "pypdf", specifier = ">=7.0.0" },
+    { name = "pymupdf", specifier = ">=2.1" },
     { name = "pytest", specifier = ">=9.2.0" },
     { name = "ruff", specifier = ">=0.17.4" },
 ]

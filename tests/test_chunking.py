@@ -72,3 +72,21 @@ def test_pipeline_on_fixture_law(settings: Settings) -> None:
     # Chapter headings must not leak into the previous article's text.
     ar2 = next(c for c in chunks if c.language == "ar" and c.article == 2)
     assert "الفصل الثاني" not in ar2.text
+
+
+def test_mirrored_brackets_and_titles() -> None:
+    doc = _doc(
+        "Article )1 (\nAnnual leave\n1. The Worker gets leave.\nArticle )2(\nSick leave\nText."
+    )
+    chunks = article_chunks(doc)
+    assert [c.text.split("\n")[0] for c in chunks] == ["Article (1)", "Article (2)"]
+    assert [c.title for c in chunks] == ["Annual leave", "Sick leave"]
+    assert chunks[0].header == "Test Law | Annual leave"
+
+
+def test_sub_split_parts_repeat_title() -> None:
+    body = "\n".join(f"{i}. " + "word " * 40 for i in range(10))
+    chunks = article_chunks(_doc(f"Article (1)\nProbation period\n{body}"), max_chars=500)
+    assert len(chunks) > 1
+    assert all(c.text.startswith("Article (1)\nProbation period\n") for c in chunks)
+    assert all(len(c.text) <= 500 for c in chunks)

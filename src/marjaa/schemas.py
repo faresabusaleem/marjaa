@@ -37,6 +37,7 @@ class ParsedDocument(BaseModel):
     source_file: str
     parser: str
     pages: list[Page]
+    report: dict = Field(default_factory=dict)  # parser scores, Arabic quality
 
 
 class Chunk(BaseModel):
@@ -53,11 +54,17 @@ class Chunk(BaseModel):
     articles: list[int] = Field(default_factory=list)  # every article the chunk touches
     part: int = 0  # sub-chunk index for long articles
     chapter: str = ""
+    title: str = ""  # article title, e.g. "Annual leave"
     text: str  # original text, for display and the LLM prompt
     search_text: str  # normalised text (+ context header) used for matching
     source_file: str
     page_start: int
     page_end: int
+
+    @property
+    def header(self) -> str:
+        """Context prepended to the text for embedding and reranking."""
+        return " | ".join(x for x in (self.law_name, self.chapter, self.title) if x)
 
     @property
     def citation(self) -> str:

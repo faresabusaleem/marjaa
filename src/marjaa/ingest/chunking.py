@@ -23,8 +23,9 @@ _ARTICLE_HEADING = {
     # A heading line starts with the word and a number, optionally in brackets,
     # and is short. Cross-references ("Article (30) of this Decree-Law ...")
     # are filtered out by the length check and the sequence check below.
-    "en": re.compile(r"^\s*Article\s*[\(\[]?\s*(\d{1,3})\s*[\)\]]?\s*(.{0,60})$", re.I),
-    "ar": re.compile(r"^\s*(?:ال)?ماد[ةه]\s*[\(\[]?\s*([0-9٠-٩]{1,3})\s*[\)\]]?\s*(.{0,60})$"),
+    # Brackets may come out mirrored from RTL-aware PDFs: "Article )2 (".
+    "en": re.compile(r"^\s*Article\s*[()\[\]]?\s*(\d{1,3})\s*[()\[\]]?\s*(.{0,60})$", re.I),
+    "ar": re.compile(r"^\s*(?:ال)?ماد[ةه]\s*[()\[\]]?\s*([0-9٠-٩]{1,3})\s*[()\[\]]?\s*(.{0,60})$"),
 }
 _CHAPTER_HEADING = {
     "en": re.compile(r"^\s*(Chapter|Part|Section|Title)\s+[\w\-()]+", re.I),
@@ -41,6 +42,30 @@ class ArticleSpan:
     chapter: str
 
 
+def canonical_heading(line: str, language: Language) -> str:
+    """'Article )8 (' -> 'Article (8)', 'المادة (٥)' -> 'المادة (5)'."""
+    match = _ARTICLE_HEADING[language].match(line)
+    if not match:
+        return line
+    word = "Article" if language == "en" else "المادة"
+    rest = match.group(2).strip()
+    return f"{word} ({int(to_ascii_digits(match.group(1)))})" + (f" {rest}" if rest else "")
+
+
+_LIST_ITEM = re.compile(r"^([0-9٠-٩]+|[a-zأ-ي])\s*[.)\-]")
+
+
+def article_title(body: str) -> str:
+    """The short line right after the heading, e.g. 'Annual leave'."""
+    lines = [x.strip() for x in body.split("\n")[1:3] if x.strip()]
+    if not lines:
+        return ""
+    title = lines[0]
+    if len(title) > 80 or title.endswith((".", ":", "،", ",")) or _LIST_ITEM.match(title):
+        return ""
+    return title
+
+
 class _Document:
     """Full text of a parsed document plus a char-offset -> page lookup."""
 
@@ -50,9 +75,12 @@ class _Document:
         parts: list[str] = []
         pos = 0
         for page in doc.pages:
+            text = "\n".join(
+                canonical_heading(line, doc.language) for line in page.text.split("\n")
+            )
             self.offsets.append(pos)
-            parts.append(page.text)
-            pos += len(page.text) + 1  # +1 for the joining newline
+            parts.append(text)
+            pos += len(text) + 1  # +1 for the joining newline
         self.text = "\n".join(parts)
 
     def page_at(self, offset: int) -> int:
@@ -137,7 +165,8 @@ def _make_chunk(
     doc: ParsedDocument, cid: str, strategy: str, text: str, chapter: str, **kw: object
 ) -> Chunk:
     law, lang = doc.law, doc.language
-    header = f"{law.name(lang)} | {chapter}" if chapter else law.name(lang)
+    title = str(kw.get("title", ""))
+    header = " | ".join(x for x in (law.name(lang), chapter, title) if x)
     return Chunk(
         id=cid,
         law_id=law.id,
@@ -150,8 +179,8 @@ def _make_chunk(
         strategy=strategy,  # type: ignore[arg-type]
         chapter=chapter,
         text=text,
-        # A short context header (law + chapter) helps both BM25 and dense
-        # retrieval when the article body never names its topic.
+        # A short context header (law, chapter, article title) helps both BM25
+        # and dense retrieval, especially for sub-split parts of long articles.
         search_text=normalize_for_search(f"{header}\n{text}"),
         source_file=doc.source_file,
         **kw,  # type: ignore[arg-type]
@@ -170,10 +199,14 @@ def article_chunks(doc: ParsedDocument, max_chars: int = 2500) -> list[Chunk]:
             cid = f"{doc.law.id}-{doc.language}-preamble"
             chunks.append(_make_chunk(doc, cid, "article", body, "", **pages))
             continue
-        heading, _, rest = body.partition("\n")
-        parts = [body] if len(body) <= max_chars else _pack_paragraphs(rest, max_chars)
+        title = article_title(body)
+        lines = body.split("\n")
+        head_lines = 2 if title else 1  # heading (+ title) is repeated on every part
+        head = "\n".join(lines[:head_lines])
+        rest = "\n".join(lines[head_lines:])
+        parts = [body] if len(body) <= max_chars else _pack_paragraphs(rest, max_chars - len(head))
         for i, part in enumerate(parts):
-            text = part if len(parts) == 1 else f"{heading}\n{part}"
+            text = part if len(parts) == 1 else f"{head}\n{part}"
             chunks.append(
                 _make_chunk(
                     doc,
@@ -184,6 +217,7 @@ def article_chunks(doc: ParsedDocument, max_chars: int = 2500) -> list[Chunk]:
                     article=span.number,
                     articles=[span.number],
                     part=i,
+                    title=title,
                     **pages,
                 )
             )
@@ -193,6 +227,7 @@ def article_chunks(doc: ParsedDocument, max_chars: int = 2500) -> list[Chunk]:
 def fixed_chunks(doc: ParsedDocument, size: int = 1200, overlap: int = 200) -> list[Chunk]:
     full = _Document(doc)
     spans = [s for s in find_articles(full.text, doc.language) if s.number is not None]
+    titles = {s.number: article_title(full.text[s.start : s.end]) for s in spans}
     text, chunks, start, i = full.text, [], 0, 0
     while start < len(text):
         end = min(len(text), start + size)
@@ -213,6 +248,7 @@ def fixed_chunks(doc: ParsedDocument, size: int = 1200, overlap: int = 200) -> l
                     main.chapter if main else "",
                     article=main.number if main else None,
                     articles=[s.number for _, s in touched if s.number is not None],
+                    title=titles.get(main.number, "") if main else "",
                     page_start=full.page_at(start),
                     page_end=full.page_at(max(start, end - 1)),
                 )

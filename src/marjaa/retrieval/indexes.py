@@ -70,8 +70,7 @@ def fingerprint(chunks: list[Chunk], model: str) -> str:
 
 
 def embedding_text(chunk: Chunk) -> str:
-    header = f"{chunk.law_name} | {chunk.chapter}" if chunk.chapter else chunk.law_name
-    return f"{header}\n{chunk.text}"
+    return f"{chunk.header}\n{chunk.text}"
 
 
 class DenseIndex:

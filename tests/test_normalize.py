@@ -52,3 +52,18 @@ def test_reversed_text_is_detected_and_fixed() -> None:
 
 def test_fix_reversed_line_keeps_numbers_readable() -> None:
     assert fix_reversed_line("30 ةداملا") == "المادة 30"
+
+
+def test_ligature_errors_lower_quality() -> None:
+    good = "تنظيم علاقات العمل في دولة الإمارات العربية المتحدة وفقا لأحكام القانون"
+    broken = "تنظيم عالقات العمل في دولة اإلمارات العربية املتحدة وفقا ألحكام القانون"
+    assert text_quality(broken).ligature_error_rate > 0
+    assert text_quality(good).ligature_error_rate == 0
+    assert text_quality(good).score > text_quality(broken).score
+
+
+def test_leading_arabic_punctuation_is_moved_to_the_end() -> None:
+    from marjaa.ingest.parsers import fix_arabic_punctuation
+
+    assert fix_arabic_punctuation("8. .تحمل تكاليف الرعاية") == "8. تحمل تكاليف الرعاية."
+    assert fix_arabic_punctuation("نص عادي.") == "نص عادي."

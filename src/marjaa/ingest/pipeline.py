@@ -9,7 +9,7 @@ from pathlib import Path
 from marjaa.config import ChunkStrategy, Settings
 from marjaa.ingest.chunking import article_chunks, fixed_chunks
 from marjaa.ingest.laws import discover_sources
-from marjaa.ingest.parsers import parse_file, text_quality
+from marjaa.ingest.parsers import parse_file
 from marjaa.logging_utils import get_logger
 from marjaa.schemas import Chunk, ParsedDocument
 
@@ -20,12 +20,19 @@ def chunks_path(settings: Settings, strategy: ChunkStrategy) -> Path:
     return settings.processed_dir / f"chunks_{strategy}.jsonl"
 
 
-def parse_all(settings: Settings, parser: str = "pymupdf") -> list[ParsedDocument]:
+def parse_all(settings: Settings, parser: str = "auto") -> list[ParsedDocument]:
     docs = []
     for law, lang, path in discover_sources(settings.raw_dir):
-        pages, used = parse_file(path, lang, parser)
+        pages, used, report = parse_file(path, lang, parser)
         docs.append(
-            ParsedDocument(law=law, language=lang, source_file=path.name, parser=used, pages=pages)
+            ParsedDocument(
+                law=law,
+                language=lang,
+                source_file=path.name,
+                parser=used,
+                pages=pages,
+                report=report,
+            )
         )
         log.info("parsed", extra={"file": path.name, "pages": len(pages), "parser": used})
     if not docs:
@@ -58,7 +65,7 @@ def load_chunks(settings: Settings, strategy: ChunkStrategy) -> list[Chunk]:
         return [Chunk.model_validate_json(line) for line in f if line.strip()]
 
 
-def run_ingest(settings: Settings, parser: str = "pymupdf") -> dict[str, int]:
+def run_ingest(settings: Settings, parser: str = "auto") -> dict[str, int]:
     docs = parse_all(settings, parser)
     chunks = build_chunks(settings, docs)
     for strategy, rows in chunks.items():
@@ -79,9 +86,7 @@ def run_ingest(settings: Settings, parser: str = "pymupdf") -> dict[str, int]:
                         if c.source_file == d.source_file and c.article is not None
                     }
                 ),
-                "quality": vars(text_quality("\n".join(p.text for p in d.pages)))
-                if d.language == "ar"
-                else None,
+                **d.report,
             }
             for d in docs
         ],

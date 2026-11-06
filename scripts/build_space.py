@@ -28,7 +28,7 @@ PACKAGES = [
     "pydantic-settings",
     "httpx",
     "numpy",
-    "pymupdf",
+    "pypdf",
     "beautifulsoup4",
 ]
 

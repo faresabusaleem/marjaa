@@ -14,7 +14,7 @@ app = typer.Typer(help="Marjaa (مرجع): cited answers over UAE law.", no_args
 
 @app.command()
 def ingest(
-    parser: str = typer.Option("pymupdf", help="PDF parser: pymupdf|pdfplumber|pypdf"),
+    parser: str = typer.Option("auto", help="auto (pick cleanest) | pypdf | pymupdf | pdfplumber"),
 ) -> None:
     """Parse data/raw/, chunk (article + fixed) and build the vector indexes."""
     from marjaa.ingest.pipeline import run_ingest

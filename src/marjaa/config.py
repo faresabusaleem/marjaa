@@ -23,7 +23,7 @@ EmbedderName = Literal["bge-m3", "hashing"]
 
 class Settings(BaseSettings):
     model_config = SettingsConfigDict(
-        env_prefix="MARJAA_", env_file=ROOT_DIR / ".env", extra="ignore"
+        env_prefix="MARJAA_", env_file=ROOT_DIR / ".env", extra="ignore", populate_by_name=True
     )
 
     # --- Paths -----------------------------------------------------------------
@@ -63,6 +63,9 @@ class Settings(BaseSettings):
     ollama_model: str = "qwen3.5:4b"
     gemini_model: str = "gemini-3.5-flash-lite"
     gemini_api_key: SecretStr | None = Field(default=None, alias="GEMINI_API_KEY")
+    # Lowest thinking level keeps latency and free-tier token use down.
+    # Valid levels differ per model (flash-lite: minimal|low|medium|high).
+    gemini_thinking_level: str | None = "minimal"
     temperature: float = 0.1
     max_output_tokens: int = 700
     request_timeout_s: float = 180.0

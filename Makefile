@@ -8,7 +8,7 @@ SMOKE_ENV = MARJAA_RAW_DIR=tests/fixtures/raw MARJAA_PROCESSED_DIR=.smoke/proces
 	MARJAA_FIXED_CHUNK_CHARS=300 MARJAA_FIXED_CHUNK_OVERLAP=60
 
 .PHONY: help install ingest testset eval eval-retrieval calibrate eval-answers serve ui \
-	test lint format eval-smoke docker-build docker-run space
+	test lint format eval-smoke docker-build docker-run space readme
 
 help:  ## Show this help
 	@grep -E '^[a-z-]+:.*## ' $(MAKEFILE_LIST) | awk -F':.*## ' '{printf "  %-15s %s\n", $$1, $$2}'
@@ -31,7 +31,10 @@ calibrate:  ## Tune the "not found" threshold on the dev split
 eval-answers:  ## LLM-judged answer quality on the test split
 	$(RUN) python -m evals.runners.run_answers
 
-eval: ingest eval-retrieval calibrate eval-answers  ## Reproduce every number in the README
+eval: ingest eval-retrieval calibrate eval-answers readme  ## Reproduce every number in the README
+
+readme:  ## Copy result tables from evals/results into README.md
+	$(UV) run python scripts/update_readme.py
 
 serve:  ## API on :8000 with the UI at /ui
 	$(RUN) marjaa serve

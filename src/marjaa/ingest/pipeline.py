@@ -93,9 +93,11 @@ def run_ingest(settings: Settings, parser: str = "auto") -> dict[str, int]:
         "chunks": {k: len(v) for k, v in chunks.items()},
         "chunks_by_language": {k: dict(Counter(c.language for c in v)) for k, v in chunks.items()},
     }
-    settings.processed_dir.mkdir(parents=True, exist_ok=True)
-    (settings.processed_dir / "ingest_report.json").write_text(
-        json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8"
-    )
+    # Saved next to the eval results too, so the parser comparison is versioned.
+    for folder in (settings.processed_dir, settings.results_dir):
+        folder.mkdir(parents=True, exist_ok=True)
+        (folder / "ingest_report.json").write_text(
+            json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8"
+        )
     log.info("ingest done", extra=report["chunks"])
     return report["chunks"]

@@ -171,3 +171,11 @@ def test_arabic_question_gets_arabic_citations(settings: Settings) -> None:
     result = pipeline.answer("ما مدة إجازة الوضع؟")
     assert result.language == "ar"
     assert result.sources[0].citation.startswith("[قانون الإجازات النموذجي، المادة")
+
+
+def test_example_leak_detector() -> None:
+    from marjaa.generation.prompts import FORMAT_EXAMPLE, example_leaked
+
+    assert example_leaked(FORMAT_EXAMPLE["en"]) and example_leaked(FORMAT_EXAMPLE["ar"])
+    assert not example_leaked("The probation period may not exceed six months [Law, Article 9].")
+    assert not example_leaked("لا تزيد فترة التجربة على ستة أشهر [القانون، المادة 9].")

@@ -13,19 +13,28 @@ NOT_FOUND: dict[Language, str] = {
 LANGUAGE_NAME: dict[Language, str] = {"en": "English", "ar": "Arabic (Modern Standard Arabic)"}
 
 # A one-shot example of the exact output shape. Small models copy a format from
-# an example far more reliably than from a rule (citations went from missing in
-# ~1 in 5 answers to rare; see evals/results/answers.md). The law is made up so
-# its content cannot leak into real answers.
+# an example far more reliably than from a rule (answers with a citation rose
+# from 79% to 97%; see evals/results/). The example is deliberately about
+# something no labour-law answer could contain (park opening hours): an earlier
+# example about "10 days of study leave" was copied verbatim into an answer to a
+# short question. `example_leaked()` checks every eval answer for this.
 FORMAT_EXAMPLE: dict[Language, str] = {
     "en": (
-        "A worker is entitled to 10 days of study leave per year [Example Law, Article 7]. "
-        "The leave is paid in full [Example Law, Article 7]."
+        "Public parks open at six in the morning [Parks Example Law, Article 3]. "
+        "Dogs must be kept on a lead [Parks Example Law, Article 4]."
     ),
     "ar": (
-        "يستحق العامل إجازة دراسية مدتها 10 أيام في السنة [القانون المثال، المادة 7]. "
-        "وتكون الإجازة بأجر كامل [القانون المثال، المادة 7]."
+        "تفتح الحدائق العامة أبوابها في السادسة صباحًا [قانون الحدائق المثال، المادة 3]. "
+        "ويجب إبقاء الكلاب مربوطة [قانون الحدائق المثال، المادة 4]."
     ),
 }
+_EXAMPLE_MARKERS = ("park", "dog", "الحدائق", "الحديقة", "الكلاب", "example law")
+
+
+def example_leaked(answer: str) -> bool:
+    """True if content from the format example ended up in a real answer."""
+    text = answer.lower()
+    return any(marker in text for marker in _EXAMPLE_MARKERS)
 
 
 def citation_for(chunk: Chunk, lang: Language) -> str:

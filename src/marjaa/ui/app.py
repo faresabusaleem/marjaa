@@ -31,6 +31,8 @@ UI_CSS = """
 .marjaa-answer [dir=rtl], .marjaa-sources [dir=rtl] {
   font-family: "Noto Naskh Arabic", "Geeza Pro", "Segoe UI", Tahoma, sans-serif; }
 .marjaa-answer p { margin: 0 0 .6em; unicode-bidi: plaintext; }
+/* The question box follows what is typed: Arabic right-to-left, English left-to-right. */
+.marjaa-question textarea { unicode-bidi: plaintext; text-align: start; }
 a.cite { text-decoration: none; padding: 0 .25em; border-radius: 4px;
   background: var(--color-accent-soft); color: var(--color-accent); cursor: pointer;
   white-space: nowrap; }

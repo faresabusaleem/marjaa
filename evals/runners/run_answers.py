@@ -38,6 +38,10 @@ def to_markdown(summary: dict, meta: dict) -> str:
         ("Answers with at least one citation", pct(s["answers_with_citation"])),
         ("Gold article cited", pct(s["gold_article_cited"])),
         ("Sentences carrying a citation", pct(s["citation_coverage"])),
+        (
+            "Answers containing text from the prompt's format example",
+            str(s["format_example_leaks"]),
+        ),
         ("Unanswerable → correctly said 'not found'", pct(s["unanswerable_abstention"])),
         ("Answerable → wrongly said 'not found'", pct(s["false_abstention"])),
         (

@@ -14,6 +14,7 @@ from marjaa.config import ChunkStrategy, RetrievalMode
 from marjaa.evaluation.dataset import EvalItem
 from marjaa.evaluation.metrics import ArticleKey, latency_summary, mean_dict, retrieval_metrics
 from marjaa.generation.answer import AnswerResult, RagPipeline
+from marjaa.generation.prompts import example_leaked
 from marjaa.generation.providers import LLMProvider, generate
 from marjaa.logging_utils import get_logger
 from marjaa.retrieval.retriever import Retriever
@@ -162,6 +163,7 @@ def evaluate_answers(
             "cited_gold": len(cited & item.gold_keys),
             "n_gold": len(item.gold_keys),
             "citation_coverage": result.citation_coverage,
+            "example_leaked": example_leaked(result.answer),
             "latency_ms": result.latency_ms,
             "wall_ms": (time.perf_counter() - t) * 1000,
         }
@@ -200,6 +202,8 @@ def summarise_answers(rows: list[dict[str, Any]]) -> dict[str, Any]:
         "answers_with_citation": _rate([float(r["n_citations"] > 0) for r in answered]),
         "gold_article_cited": _rate([r["cited_gold"] / r["n_gold"] for r in answered]),
         "citation_coverage": _rate([r["citation_coverage"] for r in answered]),
+        # Did text from the prompt's format example leak into an answer?
+        "format_example_leaks": sum(bool(r.get("example_leaked")) for r in rows),
         # "Not found" behaviour.
         "unanswerable_abstention": _rate([float(r["abstained"]) for r in una]),
         "false_abstention": _rate([float(r["abstained"]) for r in ans]),

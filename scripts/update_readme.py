@@ -14,7 +14,44 @@ ROOT = Path(__file__).resolve().parents[1]
 RESULTS = ROOT / "evals" / "results"
 
 
+COMPARE = [
+    ("correctness", "Correctness (judge)"),
+    ("faithfulness", "Faithfulness (judge)"),
+    ("citation_validity", "Citation validity"),
+    ("answers_with_citation", "Answers with at least one citation"),
+    ("gold_article_cited", "Gold article cited"),
+    ("citation_coverage", "Sentences carrying a citation"),
+]
+
+
+def pct(x: float | None) -> str:
+    return "n/a" if x is None else f"{100 * x:.1f}%"
+
+
+RUNS = [
+    ("answers_rules_only_prompt", "Rules only"),
+    ("answers_study_leave_example", "+ example (study leave)"),
+    ("answers", "+ example (parks, final)"),
+]
+
+
+def prompt_comparison() -> str:
+    runs = [
+        (label, json.loads((RESULTS / f"{name}.json").read_text())["summary"])
+        for name, label in RUNS
+        if (RESULTS / f"{name}.json").exists()
+    ]
+    rows = ["| Metric | " + " | ".join(label for label, _ in runs) + " |"]
+    rows.append("|---|" + "---|" * len(runs))
+    rows += [
+        f"| {label} | " + " | ".join(pct(s.get(k)) for _, s in runs) + " |" for k, label in COMPARE
+    ]
+    return "\n".join(rows) + "\n"
+
+
 def block(name: str) -> str:
+    if name == "prompt_comparison":
+        return prompt_comparison()
     if name == "threshold":
         data = json.loads((RESULTS / "threshold.json").read_text())
         return (
@@ -29,7 +66,7 @@ def block(name: str) -> str:
 def main() -> None:
     readme = ROOT / "README.md"
     text = readme.read_text(encoding="utf-8")
-    for name in ("retrieval", "retrieval_fast_rerank", "answers", "threshold"):
+    for name in ("retrieval", "retrieval_fast_rerank", "answers", "prompt_comparison", "threshold"):
         pattern = re.compile(
             rf"(<!-- results:{name}:start -->\n).*?(<!-- results:{name}:end -->)", re.S
         )

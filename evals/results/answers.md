@@ -4,14 +4,15 @@ Split `test`: 71 answerable + 16 unanswerable questions. Generator `ollama:qwen3
 | Metric | Value |
 |---|---|
 | Correctness (judge, answered questions) | 90.1% |
-| Faithfulness to sources (judge) | 88.7% |
+| Faithfulness to sources (judge) | 85.9% |
 | Correct over all answerable (abstain = wrong) | 90.1% |
 | Citation validity (cites a retrieved article, code-checked) | 100.0% |
 | Answers with at least one citation | 97.2% |
 | Gold article cited | 89.4% |
-| Sentences carrying a citation | 87.3% |
+| Sentences carrying a citation | 88.8% |
+| Answers containing text from the prompt's format example | 0 |
 | Unanswerable → correctly said 'not found' | 100.0% |
 | Answerable → wrongly said 'not found' | 0.0% |
-| Latency p50 / p95, retrieval | 4581 / 5752 ms |
-| Latency p50 / p95, first token | 14168 / 17167 ms |
-| Latency p50 / p95, full answer | 16002 / 22094 ms |
+| Latency p50 / p95, retrieval | 3942 / 5186 ms |
+| Latency p50 / p95, first token | 12258 / 15707 ms |
+| Latency p50 / p95, full answer | 15151 / 20679 ms |

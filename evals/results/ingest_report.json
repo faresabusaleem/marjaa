@@ -1,0 +1,46 @@
+{
+  "documents": [
+    {
+      "file": "uae_labour_law_2021_ar.pdf",
+      "language": "ar",
+      "parser": "pypdf",
+      "pages": 37,
+      "articles_found": 74,
+      "parser_scores": {
+        "pypdf": 0.2179,
+        "pymupdf": -0.2562,
+        "pdfplumber": -0.1927
+      },
+      "quality": {
+        "common_word_rate": 0.22284908321579688,
+        "reversed_word_rate": 0.004936530324400564,
+        "presentation_form_rate": 0.0,
+        "ligature_error_rate": 0.0,
+        "mean_word_len": 4.742192222446101,
+        "score": 0.2179
+      }
+    },
+    {
+      "file": "uae_labour_law_2021_en.pdf",
+      "language": "en",
+      "parser": "pypdf",
+      "pages": 46,
+      "articles_found": 74,
+      "parser_scores": {}
+    }
+  ],
+  "chunks": {
+    "article": 159,
+    "fixed": 142
+  },
+  "chunks_by_language": {
+    "article": {
+      "ar": 76,
+      "en": 83
+    },
+    "fixed": {
+      "ar": 59,
+      "en": 83
+    }
+  }
+}

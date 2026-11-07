@@ -9,6 +9,7 @@ Usage: uv run python -m evals.runners.run_retrieval [--modes ...] [--strategies 
 from __future__ import annotations
 
 import argparse
+import json
 import platform
 from datetime import UTC, datetime
 
@@ -66,6 +67,21 @@ def to_markdown(results: list[dict], meta: dict) -> str:
         "n per type: "
         + ", ".join(f"{TYPE_LABEL.get(t, t)} = {results[0]['by_type'][t]['n']}" for t in types)
     )
+    # Single- vs multi-article split: article chunks can put only one gold article
+    # at rank 1, while a fixed window can span both adjacent gold articles.
+    lines += [
+        "",
+        "Single-article vs multi-article questions:",
+        "",
+        "| Chunking | Retrieval | Single-article Recall@1 | Multi-article Recall@10 |",
+        "|---|---|---|---|",
+    ]
+    for r in results:
+        single = [x for x in r["rows"] if x["type"] != "multi"]
+        multi = [x for x in r["rows"] if x["type"] == "multi"]
+        s1 = sum(x["recall@1"] for x in single) / max(1, len(single))
+        m10 = sum(x["recall@10"] for x in multi) / max(1, len(multi))
+        lines.append(f"| {r['strategy']} | {LABEL[r['mode']]} | {s1:.3f} | {m10:.3f} |")
     return "\n".join(lines) + "\n"
 
 
@@ -74,9 +90,20 @@ def main() -> None:
     parser.add_argument("--modes", nargs="+", default=MODES)
     parser.add_argument("--strategies", nargs="+", default=STRATEGIES)
     parser.add_argument("--out", default="retrieval")
+    parser.add_argument(
+        "--render-only", action="store_true", help="Rebuild the .md from the saved .json"
+    )
     args = parser.parse_args()
     setup_logging()
     settings = get_settings()
+    out = settings.results_dir
+    if args.render_only:
+        saved = json.loads((out / f"{args.out}.json").read_text(encoding="utf-8"))
+        (out / f"{args.out}.md").write_text(
+            to_markdown(saved["results"], saved["meta"]), encoding="utf-8"
+        )
+        print((out / f"{args.out}.md").read_text(encoding="utf-8"))
+        return
     items = load_testset(settings.testset_path)
 
     results = []
@@ -98,7 +125,6 @@ def main() -> None:
         "machine": f"{platform.machine()} {platform.system()}",
         "testset": str(settings.testset_path.name),
     }
-    out = settings.results_dir
     write_json(out / f"{args.out}.json", {"meta": meta, "results": results})
     (out / f"{args.out}.md").write_text(to_markdown(results, meta), encoding="utf-8")
     print((out / f"{args.out}.md").read_text(encoding="utf-8"))

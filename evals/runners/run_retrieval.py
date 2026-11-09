@@ -119,6 +119,8 @@ def main() -> None:
     for strategy in args.strategies:
         retriever = build_retriever(settings, strategy)
         for mode in args.modes:
+            if hasattr(retriever.embedder, "clear_cache"):
+                retriever.embedder.clear_cache()  # each mode pays for its own API calls
             res = evaluate_retrieval(retriever, items, mode)
             res["strategy"] = strategy
             results.append(res)

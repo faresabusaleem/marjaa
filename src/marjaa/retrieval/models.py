@@ -238,6 +238,10 @@ class GeminiEmbedder:
             self._queries[text] = self._embed([query_prompt(text)])[0]
         return self._queries[text]
 
+    def clear_cache(self) -> None:
+        """Forget cached queries, so a latency measurement includes the API call."""
+        self._queries.clear()
+
 
 class OverlapReranker:
     """Share of query tokens found in the passage. Test stand-in for a cross-encoder."""

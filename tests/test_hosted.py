@@ -66,6 +66,9 @@ def test_gemini_embedder_request_format_batching_and_cache() -> None:
     assert calls[2]["requests"][0]["content"]["parts"][0]["text"] == (
         "task: search result | query: annual leave"
     )
+    embedder.clear_cache()  # latency runs clear it so every mode pays for its API call
+    embedder.encode_query("annual leave")
+    assert len(calls) == 4
 
 
 def _chunk(cid: str, lang: str) -> Chunk:

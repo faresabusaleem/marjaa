@@ -386,15 +386,22 @@ abstention* on answerable ones. Latency is recorded per stage.
 
 ## API
 
+Routes are served at `/` and under `/api` (the prefix the web app and the Vercel deployment use).
+
 | Method | Path | What it does |
 |---|---|---|
-| `POST` | `/ask` | Body `{"question": "..."}`. Server-Sent Events: one `sources` event (retrieved articles), many `token` events, one `done` event (answer, validated citations, latency, trace id). `?stream=false` returns one JSON object. |
-| `GET` | `/health` | Index size, chunking, retrieval mode, LLM, threshold. |
-| `GET` | `/sources/{id}` | Full text and metadata of one chunk, e.g. `labour_law_2021-ar-a029-p0`. |
+| `POST` | `/api/ask` | Body `{"question": "...", "history": [{"question": "...", "answer": "..."}]}` (`history` optional). Server-Sent Events: one `sources` event (retrieved articles, and the standalone `search_query` for a follow-up), many `token` events, one `done` event (answer, validated citations, latency, trace id). If the LLM fails mid-answer the stream ends with an `error` event (`code: "busy"` when the free API tier is rate-limited). `?stream=false` returns one JSON object. |
+| `GET` | `/api/health` | Profile, index size, chunking, retrieval mode, embedder, LLM, threshold. |
+| `GET` | `/api/sources/{id}` | Full text and metadata of one chunk, e.g. `labour_law_2021-ar-a029-p0`. |
 
 ```bash
-curl -N -X POST localhost:8000/ask -H 'content-type: application/json' -d '{"question": "كم مدة فترة التجربة؟"}'
+curl -N -X POST localhost:8000/api/ask -H 'content-type: application/json' -d '{"question": "كم مدة فترة التجربة؟"}'
 ```
+
+**Follow-up questions.** With `history`, the LLM first rewrites a follow-up such as "and for
+part-time workers?" into a standalone question ("How many days of annual leave do part-time
+workers get?"), which is then searched and answered as usual; the UI shows what was searched.
+The evaluation covers single questions only; follow-up rewriting is not measured.
 
 Every query also writes a trace to `data/traces/<date>/<trace_id>.json` with the retrieved
 candidates and their dense / BM25 / RRF / rerank scores, the exact prompt, the answer, the
@@ -452,7 +459,8 @@ free-tier prompts to improve its products.
   the eval. A hand-written set of short user-style questions would be the next thing to add.
 - **Abstention is retrieval-based.** "Not found" fires on low reranker confidence; a question
   that is close to a real article but not answered by it can still get an answer.
-- **No conversation memory.** Each question is answered on its own.
+- **Follow-ups are not evaluated.** A follow-up is rewritten into a standalone question by the
+  LLM; that step has no test set, and only the last three answered turns are used.
 
 
 ## Project layout
@@ -460,17 +468,21 @@ free-tier prompts to improve its products.
 ```
 src/marjaa/
   ingest/       parsers (quality check), Arabic normalisation, chunking, law manifest
-  retrieval/    BGE-M3 + Qdrant, BM25, RRF, cross-encoder reranker
-  generation/   Ollama / Gemini / fake providers, prompts, citation checks, RAG pipeline
+  retrieval/    BGE-M3 + Qdrant or Gemini + numpy, BM25, RRF, cross-encoder reranker
+  generation/   Ollama / Gemini / fake providers, prompts, citation checks, follow-ups
   evaluation/   metrics, test-set schema, experiment logic
-  api/          FastAPI app        ui/  Gradio app
-  config.py     all settings (env vars MARJAA_*)    tracing.py  per-query traces
+  api/          FastAPI app (app.py), hosted entry point (hosted.py)    ui/  Gradio app
+  hosted/       the hosted index: article chunks, Gemini vectors, its threshold
+  config.py     all settings (env vars MARJAA_*, MARJAA_PROFILE=hosted)
+web/            Next.js app: chat with citation chips, article panel, "How it works" page
+api/            Vercel Python service: installs marjaa without ML extras, serves /api
+vercel.json     one Vercel project, two services (web + api)
 evals/
   datasets/     testset.jsonl (auto-generated)
-  runners/      generate_testset, run_retrieval, calibrate, run_answers
+  runners/      generate_testset, run_retrieval, calibrate, run_answers, rejudge
   results/      JSON + Markdown output of every run
 deploy/hf_space/  Hugging Face Space entry point     scripts/  build_space, update_readme
-tests/          unit + API + UI tests, offline eval smoke test (toy law fixture)
+tests/          unit + API + UI + hosted-profile tests, offline eval smoke test (toy law)
 ```
 
 ## License

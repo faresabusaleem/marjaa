@@ -214,7 +214,9 @@ def main() -> None:
     for name in (
         "retrieval",
         "retrieval_fast_rerank",
+        "retrieval_hosted",
         "answers",
+        "answers_hosted",
         "prompt_comparison",
         "judge_agreement",
         "threshold",

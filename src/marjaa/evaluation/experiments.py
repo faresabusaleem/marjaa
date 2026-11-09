@@ -143,11 +143,40 @@ def judge_answer(
         return {"faithfulness": 0.0, "correctness": 0.0, "reason": "judge parse error"}
 
 
+def load_checkpoint(path: Path, meta: dict[str, Any]) -> dict[str, dict[str, Any]]:
+    """Rows already finished by an interrupted run with the same settings."""
+    if not path.exists():
+        return {}
+    lines = [json.loads(x) for x in path.read_text(encoding="utf-8").splitlines() if x.strip()]
+    if not lines or lines[0].get("_meta") != meta:
+        raise SystemExit(
+            f"{path.name} was written with different settings; rerun with --fresh to discard it."
+        )
+    return {row["id"]: row for row in lines[1:]}
+
+
 def evaluate_answers(
-    pipeline: RagPipeline, judge: LLMProvider, items: list[EvalItem]
+    pipeline: RagPipeline,
+    judge: LLMProvider,
+    items: list[EvalItem],
+    checkpoint: Path | None = None,
+    checkpoint_meta: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
+    """Answer and grade every item. With `checkpoint`, each finished row is
+    appended to a JSONL file as it completes, and a rerun skips finished rows,
+    so a crash or shutdown only loses the question in progress."""
+    meta = checkpoint_meta or {}
+    done = load_checkpoint(checkpoint, meta) if checkpoint else {}
+    if done:
+        log.info("resuming from checkpoint", extra={"done": len(done), "of": len(items)})
+    elif checkpoint:
+        checkpoint.parent.mkdir(parents=True, exist_ok=True)
+        checkpoint.write_text(json.dumps({"_meta": meta}) + "\n", encoding="utf-8")
     rows = []
     for i, item in enumerate(items, 1):
+        if item.id in done:
+            rows.append(done[item.id])
+            continue
         t = time.perf_counter()
         result = pipeline.answer(item.question)
         cited = {(c.law_id, c.article) for c in result.citations}
@@ -175,6 +204,9 @@ def evaluate_answers(
         if item.answerable and not result.abstained:
             row.update(judge_answer(judge, item, result.answer, result.sources))
         rows.append(row)
+        if checkpoint:
+            with checkpoint.open("a", encoding="utf-8") as f:
+                f.write(json.dumps(row, ensure_ascii=False) + "\n")
         log.info(
             "answered eval item",
             extra={"i": i, "of": len(items), "id": item.id, "abstained": result.abstained},

@@ -18,6 +18,10 @@ data/processed/
 data/index/
 data/traces/
 
+# Checkpoints of interrupted eval runs, and local server logs
+evals/results/*.partial.jsonl
+.ollama-serve.log
+
 # Deployment build output
 deploy/hf_space/build/
 

@@ -70,3 +70,34 @@ def test_rejudge_keeps_original_grades(settings: Settings) -> None:
     assert judged and all(r["previous_judge"]["judge"] == "old:judge" for r in judged)
     assert data["meta"]["judge"] == "fake:extractive"
     assert data["meta"]["original_judge"] == "old:judge"
+
+
+def test_answer_eval_resumes_from_checkpoint(settings: Settings, tmp_path) -> None:
+    import pytest
+
+    class Boom(FakeProvider):
+        def stream(self, system: str, prompt: str):
+            raise AssertionError("finished rows must not be recomputed")
+
+    run_ingest(settings)
+    items = load_testset(settings.testset_path)
+    retriever = build_retriever(settings)
+    ckpt, meta = tmp_path / "run.partial.jsonl", {"judge": "fake"}
+
+    first = evaluate_answers(
+        RagPipeline(retriever, FakeProvider(), settings), FakeProvider(), items[:4], ckpt, meta
+    )
+    # A "restart" over the same 4 items must reuse every saved row.
+    again = evaluate_answers(
+        RagPipeline(retriever, Boom(), settings), Boom(), items[:4], ckpt, meta
+    )
+    assert [r["id"] for r in again["rows"]] == [r["id"] for r in first["rows"]]
+    # Different settings must not silently mix with an old checkpoint.
+    with pytest.raises(SystemExit):
+        evaluate_answers(
+            RagPipeline(retriever, FakeProvider(), settings),
+            FakeProvider(),
+            items[:4],
+            ckpt,
+            {"judge": "other"},
+        )

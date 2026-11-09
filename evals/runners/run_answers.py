@@ -77,6 +77,9 @@ def main() -> None:
     parser.add_argument("--split", default="test", choices=["dev", "test", "all"])
     parser.add_argument("--limit", type=int, default=None)
     parser.add_argument("--out", default="answers")
+    parser.add_argument(
+        "--fresh", action="store_true", help="Ignore a checkpoint left by an interrupted run"
+    )
     args = parser.parse_args()
     setup_logging()
     settings = effective_settings(get_settings())
@@ -88,18 +91,25 @@ def main() -> None:
     provider = get_provider(settings)
     judge = get_provider(settings, settings.judge_provider, model=settings.judge_model)
     pipeline = RagPipeline(build_retriever(settings), provider, settings)
-    result = evaluate_answers(pipeline, judge, items)
-
-    meta = {
-        "date": datetime.now(UTC).strftime("%Y-%m-%d"),
+    config = {
         "split": args.split,
+        "limit": args.limit,
         "generator": f"{provider.name}:{provider.model}",
         "judge": f"{judge.name}:{judge.model}",
         "retrieval": f"{settings.chunk_strategy} chunks, {settings.retrieval_mode}",
         "min_relevance": settings.min_relevance,
     }
     out = settings.results_dir
+    # Finished questions are saved as they complete; rerunning resumes.
+    checkpoint = out / f"{args.out}.partial.jsonl"
+    if args.fresh:
+        checkpoint.unlink(missing_ok=True)
+    result = evaluate_answers(pipeline, judge, items, checkpoint, config)
+
+    meta = {"date": datetime.now(UTC).strftime("%Y-%m-%d"), **config}
+    meta.pop("limit")
     write_json(out / f"{args.out}.json", {"meta": meta, **result})
+    checkpoint.unlink(missing_ok=True)
     (out / f"{args.out}.md").write_text(to_markdown(result["summary"], meta), encoding="utf-8")
     print((out / f"{args.out}.md").read_text(encoding="utf-8"))
 

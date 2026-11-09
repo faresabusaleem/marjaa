@@ -4,6 +4,9 @@ Used for the prompt ablation: the earlier runs' answers came from older
 prompts, so they can't be regenerated with today's code, but they can be graded
 again by today's judge so every column of the comparison uses the same judge.
 
+Progress is saved after every answer, and already re-graded answers are
+skipped, so an interrupted run can simply be started again.
+
 The judge is shown exactly the articles the generator saw: taken from the
 row's `context_ids`, or else from the saved query trace (matched on question +
 answer). The previous grades are kept in each row under `previous_judge`, which
@@ -56,6 +59,8 @@ def rejudge_file(settings: Settings, name: str) -> dict:
     for row in data["rows"]:
         if not row["answerable"] or row["abstained"]:
             continue
+        if row.get("judged_by") == judge_label:
+            continue  # already re-graded by this judge (resuming an interrupted run)
         ids = row.get("context_ids") or traces.get((row["question"], row["answer"]))
         if not ids:
             raise SystemExit(f"{name}/{row['id']}: no stored context; cannot re-judge exactly")
@@ -75,6 +80,8 @@ def rejudge_file(settings: Settings, name: str) -> dict:
         )
         row["context_ids"] = ids
         row.update(judge_answer(judge, item, row["answer"], sources))
+        row["judged_by"] = judge_label
+        write_json(path, data)  # save after every answer so an interruption loses little
         log.info("rejudged", extra={"file": name, "id": row["id"]})
 
     data["summary"] = summarise_answers(data["rows"])

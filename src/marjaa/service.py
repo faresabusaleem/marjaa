@@ -34,6 +34,9 @@ def effective_settings(settings: Settings) -> Settings:
 def get_pipeline() -> RagPipeline:
     settings = effective_settings(get_settings())
     if not chunks_path(settings, settings.chunk_strategy).exists():
+        if settings.profile == "hosted":
+            # The hosted API only reads the committed index; it never ingests.
+            raise ValueError("hosted index missing: run `make hosted-index` and commit it")
         log.info("no chunks found, running ingestion first")
         run_ingest(settings)
     retriever = build_retriever(settings)

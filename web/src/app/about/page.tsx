@@ -12,7 +12,9 @@ export const metadata: Metadata = {
 // Every number on this page comes from web/src/data/results.json, which
 // scripts/update_readme.py writes from the eval runs in evals/results/.
 type Answers = NonNullable<(typeof results)["answers"]["local"]>;
-type Retrieval = NonNullable<(typeof results)["retrieval"]["local"]>;
+// Runs differ in which modes they measured (the hosted one has no reranker).
+type ModeStats = { "recall@1": number; "recall@5": number; mrr: number; "by_type_recall@5": Record<string, number> };
+type RetrievalRun = { meta: { n_questions: number }; modes: Record<string, ModeStats | undefined> };
 
 const pct = (v: number | null | undefined, digits = 1) => (v == null ? "—" : `${(v * 100).toFixed(digits)}%`);
 const secs = (ms: number | null | undefined) => (ms == null ? "—" : `${(ms / 1000).toFixed(1)} s`);
@@ -54,12 +56,12 @@ const STEPS = [
 ];
 
 export default function About() {
-  const local = results.retrieval.local as Retrieval;
-  const hosted = results.retrieval.hosted as Retrieval | null;
+  const local: RetrievalRun = results.retrieval.local;
+  const hosted: RetrievalRun | null = results.retrieval.hosted;
   const ansLocal = results.answers.local as Answers;
   const ansHosted = results.answers.hosted as Answers | null;
-  const lm = local.modes;
-  const hostedMode = hosted?.modes?.hybrid ?? null;
+  const lm = local.modes as Record<"dense" | "bm25" | "hybrid" | "hybrid_rerank", ModeStats>;
+  const hostedMode = hosted?.modes.hybrid ?? null;
 
   const comparison: { label: string; local: string; hosted: string }[] = [
     { label: "Embeddings", local: "BGE-M3 (local)", hosted: "Gemini embedding 2 (API)" },

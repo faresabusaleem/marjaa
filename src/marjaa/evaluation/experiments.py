@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import re
 import time
 from collections import defaultdict
 from pathlib import Path
@@ -129,7 +130,13 @@ def judge_answer(
         sources=context,
         answer=answer,
     )
-    raw = generate(judge, JUDGE_SYSTEM, prompt)
+    return parse_judge(generate(judge, JUDGE_SYSTEM, prompt))
+
+
+JUDGE_PARSE_ERROR = "judge parse error"
+
+
+def parse_judge(raw: str) -> dict[str, Any]:
     try:
         start, end = raw.index("{"), raw.rindex("}") + 1
         data = json.loads(raw[start:end])
@@ -139,8 +146,20 @@ def judge_answer(
             "reason": str(data.get("reason", ""))[:300],
         }
     except (ValueError, TypeError):
-        log.warning("judge returned invalid JSON", extra={"raw": raw[:200]})
-        return {"faithfulness": 0.0, "correctness": 0.0, "reason": "judge parse error"}
+        pass
+    # The judge sometimes breaks the JSON inside its free-text "reason" (e.g. an
+    # unescaped quote around Arabic text) while the two 0/1 labels are intact.
+    labels = {
+        k: re.search(rf'"{k}"\s*:\s*"?([01])\b', raw) for k in ("faithfulness", "correctness")
+    }
+    if all(labels.values()):
+        reason = re.search(r'"reason"\s*:\s*"(.*)', raw, re.S)
+        return {
+            **{k: float(m.group(1)) for k, m in labels.items() if m},
+            "reason": reason.group(1).rstrip('"}\n ')[:300] if reason else "",
+        }
+    log.warning("judge returned invalid JSON", extra={"raw": raw[:200]})
+    return {"faithfulness": 0.0, "correctness": 0.0, "reason": JUDGE_PARSE_ERROR}
 
 
 def load_checkpoint(path: Path, meta: dict[str, Any]) -> dict[str, dict[str, Any]]:

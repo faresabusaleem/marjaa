@@ -25,7 +25,12 @@ from pathlib import Path
 from evals.runners.run_answers import to_markdown
 from marjaa.config import Settings, get_settings
 from marjaa.evaluation.dataset import load_testset
-from marjaa.evaluation.experiments import judge_answer, summarise_answers, write_json
+from marjaa.evaluation.experiments import (
+    JUDGE_PARSE_ERROR,
+    judge_answer,
+    summarise_answers,
+    write_json,
+)
 from marjaa.generation.answer import to_source
 from marjaa.generation.providers import get_provider
 from marjaa.ingest.pipeline import load_chunks
@@ -59,7 +64,7 @@ def rejudge_file(settings: Settings, name: str) -> dict:
     for row in data["rows"]:
         if not row["answerable"] or row["abstained"]:
             continue
-        if row.get("judged_by") == judge_label:
+        if row.get("judged_by") == judge_label and row.get("reason") != JUDGE_PARSE_ERROR:
             continue  # already re-graded by this judge (resuming an interrupted run)
         ids = row.get("context_ids") or traces.get((row["question"], row["answer"]))
         if not ids:

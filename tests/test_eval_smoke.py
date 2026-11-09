@@ -101,3 +101,16 @@ def test_answer_eval_resumes_from_checkpoint(settings: Settings, tmp_path) -> No
             ckpt,
             {"judge": "other"},
         )
+
+
+def test_parse_judge_recovers_labels_from_broken_json() -> None:
+    from marjaa.evaluation.experiments import JUDGE_PARSE_ERROR, parse_judge
+
+    ok = parse_judge('{"faithfulness": 1, "correctness": 0, "reason": "fine"}')
+    assert ok == {"faithfulness": 1.0, "correctness": 0.0, "reason": "fine"}
+    # An unescaped quote inside the reason breaks json.loads; the labels are still read.
+    broken = parse_judge(
+        '{\n"faithfulness": 1,\n"correctness": 0,\n"reason": "says "7 days" wrongly"}'
+    )
+    assert (broken["faithfulness"], broken["correctness"]) == (1.0, 0.0)
+    assert parse_judge("no json here")["reason"] == JUDGE_PARSE_ERROR

@@ -1,0 +1,225 @@
+{
+  "testset": {
+    "n": 126,
+    "types": {
+      "ar": 33,
+      "en": 34,
+      "cross_ar_en": 12,
+      "cross_en_ar": 12,
+      "multi": 12,
+      "unanswerable": 23
+    }
+  },
+  "retrieval": {
+    "local": {
+      "meta": {
+        "date": "2026-11-07",
+        "n_questions": 103,
+        "embedder": "BAAI/bge-m3",
+        "reranker": "BAAI/bge-reranker-v2-m3",
+        "rerank": "20 candidates, 1024 tokens, fp32",
+        "machine": "arm64 Darwin",
+        "testset": "testset.jsonl"
+      },
+      "modes": {
+        "dense": {
+          "recall@1": 0.8349514563106796,
+          "recall@5": 0.9368932038834952,
+          "mrr": 0.9310949298813376,
+          "single_recall@1": 0.8791208791208791,
+          "by_type_recall@5": {
+            "ar": 1.0,
+            "cross_ar_en": 1.0,
+            "cross_en_ar": 0.9166666666666666,
+            "en": 0.9411764705882353,
+            "multi": 0.7083333333333334
+          },
+          "p50_ms": 34.0291247703135
+        },
+        "bm25": {
+          "recall@1": 0.6650485436893204,
+          "recall@5": 0.7378640776699029,
+          "mrr": 0.7402912621359223,
+          "single_recall@1": 0.6923076923076923,
+          "by_type_recall@5": {
+            "ar": 1.0,
+            "cross_ar_en": 0.08333333333333333,
+            "cross_en_ar": 0.0,
+            "en": 1.0,
+            "multi": 0.6666666666666666
+          },
+          "p50_ms": 0.25791674852371216
+        },
+        "hybrid": {
+          "recall@1": 0.8543689320388349,
+          "recall@5": 0.9563106796116505,
+          "mrr": 0.9429611650485437,
+          "single_recall@1": 0.9120879120879121,
+          "by_type_recall@5": {
+            "ar": 1.0,
+            "cross_ar_en": 1.0,
+            "cross_en_ar": 0.9166666666666666,
+            "en": 0.9705882352941176,
+            "multi": 0.7916666666666666
+          },
+          "p50_ms": 34.21333339065313
+        },
+        "hybrid_rerank": {
+          "recall@1": 0.941747572815534,
+          "recall@5": 0.9805825242718447,
+          "mrr": 1.0,
+          "single_recall@1": 1.0,
+          "by_type_recall@5": {
+            "ar": 1.0,
+            "cross_ar_en": 1.0,
+            "cross_en_ar": 1.0,
+            "en": 1.0,
+            "multi": 0.8333333333333334
+          },
+          "p50_ms": 2685.056457761675
+        }
+      }
+    },
+    "local_fixed": {
+      "meta": {
+        "date": "2026-11-07",
+        "n_questions": 103,
+        "embedder": "BAAI/bge-m3",
+        "reranker": "BAAI/bge-reranker-v2-m3",
+        "rerank": "20 candidates, 1024 tokens, fp32",
+        "machine": "arm64 Darwin",
+        "testset": "testset.jsonl"
+      },
+      "modes": {
+        "dense": {
+          "recall@1": 0.8252427184466019,
+          "recall@5": 0.9514563106796117,
+          "mrr": 0.89388965942364,
+          "single_recall@1": 0.8351648351648352,
+          "by_type_recall@5": {
+            "ar": 0.9696969696969697,
+            "cross_ar_en": 0.9166666666666666,
+            "cross_en_ar": 0.9166666666666666,
+            "en": 0.9411764705882353,
+            "multi": 1.0
+          },
+          "p50_ms": 25.156999938189983
+        },
+        "bm25": {
+          "recall@1": 0.6796116504854369,
+          "recall@5": 0.7621359223300971,
+          "mrr": 0.727346278317152,
+          "single_recall@1": 0.6813186813186813,
+          "by_type_recall@5": {
+            "ar": 1.0,
+            "cross_ar_en": 0.08333333333333333,
+            "cross_en_ar": 0.0,
+            "en": 1.0,
+            "multi": 0.875
+          },
+          "p50_ms": 0.23383274674415588
+        },
+        "hybrid": {
+          "recall@1": 0.8737864077669902,
+          "recall@5": 0.9660194174757282,
+          "mrr": 0.9250809061488673,
+          "single_recall@1": 0.8901098901098901,
+          "by_type_recall@5": {
+            "ar": 0.9696969696969697,
+            "cross_ar_en": 0.9166666666666666,
+            "cross_en_ar": 0.9166666666666666,
+            "en": 1.0,
+            "multi": 0.9583333333333334
+          },
+          "p50_ms": 25.468333158642054
+        },
+        "hybrid_rerank": {
+          "recall@1": 0.970873786407767,
+          "recall@5": 0.9902912621359223,
+          "mrr": 0.9854368932038835,
+          "single_recall@1": 0.978021978021978,
+          "by_type_recall@5": {
+            "ar": 1.0,
+            "cross_ar_en": 0.9166666666666666,
+            "cross_en_ar": 1.0,
+            "en": 1.0,
+            "multi": 1.0
+          },
+          "p50_ms": 2084.5523341558874
+        }
+      }
+    },
+    "hosted": null
+  },
+  "answers": {
+    "local": {
+      "meta": {
+        "date": "2026-11-09",
+        "split": "test",
+        "generator": "ollama:qwen3.5:4b",
+        "judge": "ollama:qwen3.5:9b",
+        "retrieval": "article chunks, hybrid_rerank",
+        "min_relevance": 0.0919
+      },
+      "n_answerable": 71,
+      "n_unanswerable": 16,
+      "correctness": 0.9155,
+      "faithfulness": 0.9014,
+      "correct_over_all_answerable": 0.9155,
+      "citation_validity": 1.0,
+      "answers_with_citation": 0.9577,
+      "gold_article_cited": 0.8944,
+      "citation_coverage": 0.8599,
+      "format_example_leaks": 0,
+      "unanswerable_abstention": 1.0,
+      "false_abstention": 0.0,
+      "p50_total_ms": 16713.194416999613,
+      "p50_first_token_ms": 13526.868874999764
+    },
+    "hosted": null
+  },
+  "prompt_ablation": [
+    {
+      "label": "Rules only",
+      "correctness": 0.9014,
+      "faithfulness": 0.9296,
+      "citation_validity": 1.0,
+      "answers_with_citation": 0.7887,
+      "gold_article_cited": 0.7535,
+      "citation_coverage": 0.5906
+    },
+    {
+      "label": "+ example (study leave)",
+      "correctness": 0.8592,
+      "faithfulness": 0.8732,
+      "citation_validity": 1.0,
+      "answers_with_citation": 0.9718,
+      "gold_article_cited": 0.8944,
+      "citation_coverage": 0.8732
+    },
+    {
+      "label": "+ example (parks, final)",
+      "correctness": 0.9155,
+      "faithfulness": 0.9014,
+      "citation_validity": 1.0,
+      "answers_with_citation": 0.9577,
+      "gold_article_cited": 0.8944,
+      "citation_coverage": 0.8599
+    }
+  ],
+  "judge_agreement": {
+    "n": 142,
+    "agreement": 0.8802816901408451,
+    "kappa": 0.34932614555256053
+  },
+  "threshold": {
+    "local": {
+      "threshold": 0.0919,
+      "balanced_accuracy": 1.0,
+      "n_answerable": 32,
+      "n_unanswerable": 7,
+      "split": "dev"
+    },
+    "hosted": null
+  }
+}

@@ -20,6 +20,8 @@
   --danger: #a8382a;
   --danger-soft: #f9e5e1;
   --shadow: 0 1px 2px rgb(23 26 31 / 0.04), 0 8px 24px -12px rgb(23 26 31 / 0.12);
+  /* Chart bars: checked with the dataviz palette validator against each surface. */
+  --chart: #00826b;
 }
 
 .dark {
@@ -39,6 +41,7 @@
   --danger: #ef8a78;
   --danger-soft: #331b17;
   --shadow: 0 1px 2px rgb(0 0 0 / 0.3), 0 8px 24px -12px rgb(0 0 0 / 0.5);
+  --chart: #36a98e;
 }
 
 @theme inline {
@@ -60,6 +63,7 @@
   --font-sans: var(--font-plex), var(--font-plex-arabic), ui-sans-serif, system-ui, sans-serif;
   --font-read: var(--font-newsreader), var(--font-naskh), ui-serif, Georgia, serif;
   --shadow-card: var(--shadow);
+  --color-chart: var(--chart);
 }
 
 /* Base styles sit in the base layer so Tailwind utilities can override them. */

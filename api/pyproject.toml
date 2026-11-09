@@ -1,0 +1,17 @@
+# The Python service of the Vercel deployment (see ../vercel.json). It installs
+# the marjaa package from the repository root without the ML extras, so the
+# bundle has no PyTorch, and serves the hosted profile under /api.
+[project]
+name = "marjaa-api"
+version = "0.2.0"
+requires-python = ">=3.12"
+dependencies = ["marjaa"]
+
+[tool.uv]
+package = false
+
+[tool.uv.sources]
+marjaa = { path = "..", editable = false }
+
+[tool.vercel]
+entrypoint = "main:app"

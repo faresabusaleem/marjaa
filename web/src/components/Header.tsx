@@ -22,7 +22,7 @@ export function Header() {
             <span className="font-read text-[1.35rem] font-semibold tracking-tight" lang="en">
               Marjaa
             </span>
-            <span className="font-read text-lg text-muted" lang="ar">
+            <span className="font-read hidden text-lg text-muted min-[400px]:inline" lang="ar">
               مرجع
             </span>
           </span>
@@ -45,7 +45,7 @@ export function Header() {
         <div className="ms-auto flex items-center gap-1">
           <Link
             href={path === "/about" ? "/" : "/about"}
-            className="rounded-md px-2.5 py-1.5 text-sm text-muted hover:text-ink sm:hidden"
+            className="whitespace-nowrap rounded-md px-2.5 py-1.5 text-sm text-muted hover:text-ink sm:hidden"
           >
             {path === "/about" ? t.ask : t.howItWorks}
           </Link>

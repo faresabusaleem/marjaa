@@ -85,7 +85,7 @@ def with_backoff(
             hint = exc.retry_after if isinstance(exc, RetryableError) else None
             delay = min(max_delay, hint or base_delay * 2**attempt) + random.uniform(0, 0.5)
             log.warning(
-                "llm call failed, retrying",
+                "API call failed, retrying",
                 extra={"error": str(exc), "attempt": attempt + 1, "delay_s": round(delay, 1)},
             )
             sleep(delay)

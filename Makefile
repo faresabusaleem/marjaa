@@ -7,7 +7,8 @@ SMOKE_ENV = MARJAA_RAW_DIR=tests/fixtures/raw MARJAA_PROCESSED_DIR=.smoke/proces
 	MARJAA_EMBEDDER=hashing MARJAA_LLM_PROVIDER=fake MARJAA_JUDGE_PROVIDER=fake \
 	MARJAA_FIXED_CHUNK_CHARS=300 MARJAA_FIXED_CHUNK_OVERLAP=60
 
-HOSTED = MARJAA_PROFILE=hosted $(UV) run
+# Explicit provider: a copied .env.example would otherwise pin Ollama over the profile.
+HOSTED = MARJAA_PROFILE=hosted MARJAA_LLM_PROVIDER=gemini $(UV) run
 
 .PHONY: help install ingest testset eval eval-retrieval calibrate eval-answers serve ui \
 	test lint format eval-smoke docker-build docker-run space readme eval-rerank-fast eval-rejudge \
@@ -56,7 +57,7 @@ eval-hosted:  ## Evaluate the hosted pipeline: retrieval, calibration, answers (
 	$(HOSTED) python -m evals.runners.run_answers --out answers_hosted
 
 serve-hosted:  ## The hosted API locally on :8000 (Gemini, routes under /api)
-	$(UV) run uvicorn marjaa.api.hosted:app --port 8000
+	$(HOSTED) uvicorn marjaa.api.hosted:app --port 8000
 
 web:  ## Next.js web app on :3000 (talks to the API on :8000)
 	cd web && npm run dev

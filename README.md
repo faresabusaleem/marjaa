@@ -12,8 +12,8 @@ articles, and when the law does not cover the question it says so instead of gue
 
 [![CI](https://github.com/faresabusaleem/marjaa/actions/workflows/ci.yml/badge.svg)](https://github.com/faresabusaleem/marjaa/actions/workflows/ci.yml)
 
-**Live demo: [marjaa-law.vercel.app](https://marjaa-law.vercel.app)** ·
-[How it works, with measured results](https://marjaa-law.vercel.app/about)
+**Live demo: [marjaa-uae.vercel.app](https://marjaa-uae.vercel.app)** ·
+[How it works, with measured results](https://marjaa-uae.vercel.app/about)
 
 ![Marjaa answering a question about annual leave, with verified citation chips and Article 29 open beside the answer](docs/images/answer-en.png)
 

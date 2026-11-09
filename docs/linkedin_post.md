@@ -6,7 +6,7 @@ I built Marjaa (مرجع), an open-source assistant that answers questions about
 
 Ask "كم مدة الإجازة السنوية؟" or "What is the maximum probation period?" and it answers in your language with citations like [Federal Labour Law, Article 29]; click a citation and the article opens beside the answer, in Arabic and English. If the law doesn't cover the question, it says so instead of guessing.
 
-Try it: https://marjaa-law.vercel.app
+Try it: https://marjaa-uae.vercel.app
 
 What I learned building it:
 

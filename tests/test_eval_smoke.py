@@ -40,3 +40,33 @@ def test_answer_eval_and_calibration_smoke(settings: Settings) -> None:
     assert summary["n_answerable"] == 7 and summary["n_unanswerable"] == 2
     assert summary["citation_validity"] == 1.0  # extractive fake always cites its source
     assert len(out["rows"]) == len(items)
+
+
+def test_rejudge_keeps_original_grades(settings: Settings) -> None:
+    import json
+
+    from evals.runners.rejudge import rejudge_file
+
+    from marjaa.evaluation.experiments import write_json
+
+    run_ingest(settings)
+    items = load_testset(settings.testset_path)
+    pipeline = RagPipeline(build_retriever(settings), FakeProvider(), settings)
+    out = evaluate_answers(pipeline, FakeProvider(), items)
+    meta = {
+        "date": "x",
+        "split": "all",
+        "generator": "fake",
+        "judge": "old:judge",
+        "retrieval": "x",
+        "min_relevance": 0.0,
+    }
+    write_json(settings.results_dir / "run.json", {"meta": meta, **out})
+
+    rejudge_file(settings, "run")
+    rejudge_file(settings, "run")  # running twice must not overwrite the original grades
+    data = json.loads((settings.results_dir / "run.json").read_text())
+    judged = [r for r in data["rows"] if "previous_judge" in r]
+    assert judged and all(r["previous_judge"]["judge"] == "old:judge" for r in judged)
+    assert data["meta"]["judge"] == "fake:extractive"
+    assert data["meta"]["original_judge"] == "old:judge"

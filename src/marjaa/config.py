@@ -81,6 +81,9 @@ class Settings(BaseSettings):
 
     # --- Evaluation ------------------------------------------------------------
     judge_provider: ProviderName = "ollama"
+    # A different, larger model than the generator, so the judge is not grading
+    # its own answers. For judge_provider=gemini set e.g. gemini-3.8-flash.
+    judge_model: str | None = "qwen3.5:9b"
 
     # --- Service ---------------------------------------------------------------
     log_level: str = "INFO"

@@ -40,7 +40,7 @@ def to_markdown(summary: dict, meta: dict) -> str:
         ("Sentences carrying a citation", pct(s["citation_coverage"])),
         (
             "Answers containing text from the prompt's format example",
-            str(s["format_example_leaks"]),
+            "n/a" if s.get("format_example_leaks") is None else str(s["format_example_leaks"]),
         ),
         ("Unanswerable → correctly said 'not found'", pct(s["unanswerable_abstention"])),
         ("Answerable → wrongly said 'not found'", pct(s["false_abstention"])),
@@ -86,7 +86,7 @@ def main() -> None:
     items = items[: args.limit] if args.limit else items
 
     provider = get_provider(settings)
-    judge = get_provider(settings, settings.judge_provider)
+    judge = get_provider(settings, settings.judge_provider, model=settings.judge_model)
     pipeline = RagPipeline(build_retriever(settings), provider, settings)
     result = evaluate_answers(pipeline, judge, items)
 

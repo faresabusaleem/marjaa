@@ -103,8 +103,10 @@ def _raise_for_status(response: httpx.Response) -> None:
 class OllamaProvider:
     name = "ollama"
 
-    def __init__(self, settings: Settings, client: httpx.Client | None = None):
-        self.model = settings.ollama_model
+    def __init__(
+        self, settings: Settings, client: httpx.Client | None = None, model: str | None = None
+    ):
+        self.model = model or settings.ollama_model
         self.url = settings.ollama_url.rstrip("/") + "/api/chat"
         self.settings = settings
         self.client = client or httpx.Client(timeout=settings.request_timeout_s)
@@ -148,10 +150,12 @@ class GeminiProvider:
     URL = "https://generativelanguage.googleapis.com/v1beta/interactions?alt=sse"
     API_REVISION = "2026-05-20"
 
-    def __init__(self, settings: Settings, client: httpx.Client | None = None):
+    def __init__(
+        self, settings: Settings, client: httpx.Client | None = None, model: str | None = None
+    ):
         if settings.gemini_api_key is None:
             raise ValueError("GEMINI_API_KEY is not set (put it in .env)")
-        self.model = settings.gemini_model
+        self.model = model or settings.gemini_model
         self.settings = settings
         self.client = client or httpx.Client(timeout=settings.request_timeout_s)
 
@@ -230,12 +234,15 @@ class FakeProvider:
             yield word + " "
 
 
-def get_provider(settings: Settings, name: str | None = None) -> LLMProvider:
+def get_provider(
+    settings: Settings, name: str | None = None, model: str | None = None
+) -> LLMProvider:
+    """`model` overrides the provider's default model (used for the judge)."""
     name = name or settings.llm_provider
     if name == "ollama":
-        return OllamaProvider(settings)
+        return OllamaProvider(settings, model=model)
     if name == "gemini":
-        return GeminiProvider(settings)
+        return GeminiProvider(settings, model=model)
     if name == "fake":
         return FakeProvider()
     raise ValueError(f"unknown provider {name!r}")

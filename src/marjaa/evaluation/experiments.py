@@ -13,7 +13,7 @@ import numpy as np
 from marjaa.config import ChunkStrategy, RetrievalMode
 from marjaa.evaluation.dataset import EvalItem
 from marjaa.evaluation.metrics import ArticleKey, latency_summary, mean_dict, retrieval_metrics
-from marjaa.generation.answer import AnswerResult, RagPipeline
+from marjaa.generation.answer import RagPipeline, Source
 from marjaa.generation.prompts import example_leaked
 from marjaa.generation.providers import LLMProvider, generate
 from marjaa.logging_utils import get_logger
@@ -119,13 +119,15 @@ The answers may be in Arabic or English; judge the meaning, not the language.
 Return JSON: {{"faithfulness": 0 or 1, "correctness": 0 or 1, "reason": "one short sentence"}}"""
 
 
-def judge_answer(judge: LLMProvider, item: EvalItem, result: AnswerResult) -> dict[str, Any]:
-    sources = "\n\n".join(f"{s.citation}\n{s.text[:1500]}" for s in result.sources)
+def judge_answer(
+    judge: LLMProvider, item: EvalItem, answer: str, sources: list[Source]
+) -> dict[str, Any]:
+    context = "\n\n".join(f"{s.citation}\n{s.text[:1500]}" for s in sources)
     prompt = JUDGE_PROMPT.format(
         question=item.question,
         reference=item.reference_answer,
-        sources=sources,
-        answer=result.answer,
+        sources=context,
+        answer=answer,
     )
     raw = generate(judge, JUDGE_SYSTEM, prompt)
     try:
@@ -164,11 +166,14 @@ def evaluate_answers(
             "n_gold": len(item.gold_keys),
             "citation_coverage": result.citation_coverage,
             "example_leaked": example_leaked(result.answer),
+            # Exactly what the model saw, so answers can be re-judged later.
+            "trace_id": result.trace_id,
+            "context_ids": [s.id for s in result.sources],
             "latency_ms": result.latency_ms,
             "wall_ms": (time.perf_counter() - t) * 1000,
         }
         if item.answerable and not result.abstained:
-            row.update(judge_answer(judge, item, result))
+            row.update(judge_answer(judge, item, result.answer, result.sources))
         rows.append(row)
         log.info(
             "answered eval item",
@@ -203,7 +208,9 @@ def summarise_answers(rows: list[dict[str, Any]]) -> dict[str, Any]:
         "gold_article_cited": _rate([r["cited_gold"] / r["n_gold"] for r in answered]),
         "citation_coverage": _rate([r["citation_coverage"] for r in answered]),
         # Did text from the prompt's format example leak into an answer?
-        "format_example_leaks": sum(bool(r.get("example_leaked")) for r in rows),
+        "format_example_leaks": sum(bool(r.get("example_leaked")) for r in rows)
+        if any("example_leaked" in r for r in rows)
+        else None,  # not measured in runs made before the leak check existed
         # "Not found" behaviour.
         "unanswerable_abstention": _rate([float(r["abstained"]) for r in una]),
         "false_abstention": _rate([float(r["abstained"]) for r in ans]),

@@ -49,9 +49,56 @@ def prompt_comparison() -> str:
     return "\n".join(rows) + "\n"
 
 
+def kappa(a: list[float], b: list[float]) -> float:
+    """Cohen's kappa for two binary raters: agreement corrected for chance."""
+    n = len(a)
+    observed = sum(x == y for x, y in zip(a, b, strict=True)) / n
+    pa, pb = sum(a) / n, sum(b) / n
+    expected = pa * pb + (1 - pa) * (1 - pb)
+    return (observed - expected) / (1 - expected) if expected < 1 else 1.0
+
+
+def judge_agreement() -> str:
+    """Old vs new judge on the same stored answers (from evals/runners/rejudge.py)."""
+    pairs: dict[str, tuple[list[float], list[float]]] = {
+        "correctness": ([], []),
+        "faithfulness": ([], []),
+    }
+    judges: set[tuple[str, str]] = set()
+    for name, _ in RUNS[:-1]:
+        data = json.loads((RESULTS / f"{name}.json").read_text())
+        for row in data["rows"]:
+            prev = row.get("previous_judge")
+            if not prev:
+                continue
+            judges.add((prev["judge"], data["meta"]["judge"]))
+            for key, (old, new) in pairs.items():
+                if prev.get(key) is not None and row.get(key) is not None:
+                    old.append(prev[key])
+                    new.append(row[key])
+    if not pairs["correctness"][0]:
+        return "Not measured.\n"
+    old_j, new_j = sorted(judges)[0]
+    rows = [
+        f"The same {len(pairs['correctness'][0])} answers graded by `{old_j}` and `{new_j}`:",
+        "",
+        "| Label | Agreement | Cohen's kappa | Rate, old judge | Rate, new judge |",
+        "|---|---|---|---|---|",
+    ]
+    for key, (old, new) in pairs.items():
+        agree = sum(x == y for x, y in zip(old, new, strict=True)) / len(old)
+        rows.append(
+            f"| {key} | {pct(agree)} | {kappa(old, new):.2f} | {pct(sum(old) / len(old))} "
+            f"| {pct(sum(new) / len(new))} |"
+        )
+    return "\n".join(rows) + "\n"
+
+
 def block(name: str) -> str:
     if name == "prompt_comparison":
         return prompt_comparison()
+    if name == "judge_agreement":
+        return judge_agreement()
     if name == "threshold":
         data = json.loads((RESULTS / "threshold.json").read_text())
         return (
@@ -66,7 +113,14 @@ def block(name: str) -> str:
 def main() -> None:
     readme = ROOT / "README.md"
     text = readme.read_text(encoding="utf-8")
-    for name in ("retrieval", "retrieval_fast_rerank", "answers", "prompt_comparison", "threshold"):
+    for name in (
+        "retrieval",
+        "retrieval_fast_rerank",
+        "answers",
+        "prompt_comparison",
+        "judge_agreement",
+        "threshold",
+    ):
         pattern = re.compile(
             rf"(<!-- results:{name}:start -->\n).*?(<!-- results:{name}:end -->)", re.S
         )

@@ -21,7 +21,7 @@ def effective_settings(settings: Settings) -> Settings:
     """Fill in the "not found" threshold calibrated by `make calibrate`."""
     if settings.min_relevance is not None:
         return settings
-    path = settings.results_dir / "threshold.json"
+    path = settings.threshold_file
     value = DEFAULT_MIN_RELEVANCE
     if path.exists():
         value = float(json.loads(path.read_text())["threshold"])

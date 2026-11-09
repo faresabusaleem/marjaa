@@ -1,7 +1,8 @@
 """Choose the "not found" threshold on the DEV split only.
 
-The cut-off on the reranker's top score is tuned here and then frozen, so the
-answer evaluation on the TEST split is not tuned on its own data.
+The cut-off on the top retrieval score is tuned here and then frozen, so the
+answer evaluation on the TEST split is not tuned on its own data. With
+MARJAA_PROFILE=hosted it calibrates the hosted pipeline and writes its own file.
 
 Usage: uv run python -m evals.runners.calibrate
 """
@@ -23,7 +24,7 @@ def main() -> None:
     dev = [i for i in load_testset(settings.testset_path) if i.split == "dev"]
     result = calibrate_threshold(build_retriever(settings), dev)
     result["split"] = "dev"
-    write_json(settings.results_dir / "threshold.json", result)
+    write_json(settings.threshold_file, result)
     print(json.dumps({k: v for k, v in result.items() if not k.endswith("scores")}, indent=2))
 
 

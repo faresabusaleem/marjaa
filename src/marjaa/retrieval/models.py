@@ -1,6 +1,7 @@
 """Embedding and reranking models behind small interfaces.
 
-Real models (BGE-M3, BGE reranker v2-m3) are used locally and in the demo.
+Real models (BGE-M3, BGE reranker v2-m3) are used locally. The hosted demo
+embeds with the Gemini API instead (`GeminiEmbedder`), which needs no weights.
 Tiny deterministic stand-ins (`HashingEmbedder`, `OverlapReranker`) let unit
 tests and CI run in seconds without downloading ~4.5 GB of weights.
 """
@@ -9,12 +10,17 @@ from __future__ import annotations
 
 import hashlib
 from functools import lru_cache
-from typing import Protocol
+from typing import TYPE_CHECKING, Protocol
 
+import httpx
 import numpy as np
 
+from marjaa.generation.providers import raise_for_status, with_backoff
 from marjaa.ingest.normalize import normalize_for_search, tokenize
 from marjaa.logging_utils import get_logger
+
+if TYPE_CHECKING:
+    from marjaa.config import Settings
 
 log = get_logger(__name__)
 
@@ -23,7 +29,13 @@ class Embedder(Protocol):
     name: str
     dim: int
 
-    def encode(self, texts: list[str]) -> np.ndarray: ...
+    def encode(self, texts: list[str]) -> np.ndarray:
+        """Embed documents (chunks)."""
+        ...
+
+    def encode_query(self, text: str) -> np.ndarray:
+        """Embed one search query (some models embed queries differently)."""
+        ...
 
 
 class Reranker(Protocol):
@@ -72,6 +84,9 @@ class SentenceTransformerEmbedder:
             texts, batch_size=8, normalize_embeddings=True, convert_to_numpy=True
         )
         return np.asarray(vectors, dtype=np.float32)
+
+    def encode_query(self, text: str) -> np.ndarray:
+        return self.encode([text])[0]  # BGE-M3 needs no query instruction
 
 
 class CrossEncoderReranker:
@@ -140,6 +155,89 @@ class HashingEmbedder:
     def encode(self, texts: list[str]) -> np.ndarray:
         return np.stack([self._vector(t) for t in texts]) if texts else np.zeros((0, self.dim))
 
+    def encode_query(self, text: str) -> np.ndarray:
+        return self._vector(text)
+
+
+def query_prompt(text: str) -> str:
+    return f"task: search result | query: {text}"
+
+
+def document_prompt(text: str) -> str:
+    # Chunks are embedded as "header\ntext" (see indexes.embedding_text); the
+    # header (law + article title) becomes the document title.
+    title, _, body = text.partition("\n")
+    return f"title: {title or 'none'} | text: {body or title}"
+
+
+class GeminiEmbedder:
+    """Gemini embeddings through the free API, for the hosted demo.
+
+    gemini-embedding-2 has no `task_type` parameter; Google's docs instead mark
+    retrieval queries and documents with the prompt prefixes used below. It is
+    multilingual, so Arabic and English share one vector space, as with BGE-M3.
+    """
+
+    URL = "https://generativelanguage.googleapis.com/v1beta/models/{model}:batchEmbedContents"
+    BATCH = 50
+
+    def __init__(
+        self,
+        model: str,
+        dim: int,
+        api_key: str,
+        max_retries: int = 5,
+        timeout_s: float = 60.0,
+        client: httpx.Client | None = None,
+    ):
+        self.name = model
+        self.dim = dim
+        self.api_key = api_key
+        self.max_retries = max_retries
+        self.client = client or httpx.Client(timeout=timeout_s)
+        # Evals search the same question in several modes; embed it once.
+        self._queries: dict[str, np.ndarray] = {}
+
+    def _post(self, texts: list[str]) -> list[list[float]]:
+        body = {
+            "requests": [
+                {
+                    "model": f"models/{self.name}",
+                    "content": {"parts": [{"text": t}]},
+                    "output_dimensionality": self.dim,
+                }
+                for t in texts
+            ]
+        }
+        response = self.client.post(
+            self.URL.format(model=self.name), json=body, headers={"x-goog-api-key": self.api_key}
+        )
+        raise_for_status(response)
+        return [e["values"] for e in response.json()["embeddings"]]
+
+    def _embed(self, texts: list[str]) -> np.ndarray:
+        rows: list[list[float]] = []
+        for i in range(0, len(texts), self.BATCH):
+            batch = texts[i : i + self.BATCH]
+
+            def call(batch: list[str] = batch):
+                yield self._post(batch)
+
+            rows.extend(next(with_backoff(call, self.max_retries)))
+        vectors = np.asarray(rows, dtype=np.float32).reshape(len(rows), -1)
+        norms = np.linalg.norm(vectors, axis=1, keepdims=True)
+        return vectors / np.where(norms == 0, 1, norms)
+
+    def encode(self, texts: list[str]) -> np.ndarray:
+        if not texts:
+            return np.zeros((0, self.dim), dtype=np.float32)
+        return self._embed([document_prompt(t) for t in texts])
+
+    def encode_query(self, text: str) -> np.ndarray:
+        if text not in self._queries:
+            self._queries[text] = self._embed([query_prompt(text)])[0]
+        return self._queries[text]
+
 
 class OverlapReranker:
     """Share of query tokens found in the passage. Test stand-in for a cross-encoder."""
@@ -156,6 +254,26 @@ def load_embedder(
     if name == "hashing":
         return HashingEmbedder()
     return SentenceTransformerEmbedder(model_name, device, revision=revision)
+
+
+@lru_cache(maxsize=4)
+def _gemini_embedder(model: str, dim: int, api_key: str, max_retries: int) -> GeminiEmbedder:
+    return GeminiEmbedder(model, dim, api_key, max_retries)
+
+
+def embedder_for(settings: Settings) -> Embedder:
+    if settings.embedder == "gemini":
+        if settings.gemini_api_key is None:
+            raise ValueError("GEMINI_API_KEY is not set (put it in .env)")
+        return _gemini_embedder(
+            settings.gemini_embedding_model,
+            settings.gemini_embedding_dim,
+            settings.gemini_api_key.get_secret_value(),
+            settings.max_retries,
+        )
+    return load_embedder(
+        settings.embedder, settings.embedding_model, settings.device, settings.embedding_revision
+    )
 
 
 @lru_cache(maxsize=4)

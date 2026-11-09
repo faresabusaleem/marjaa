@@ -11,11 +11,13 @@ from marjaa.logging_utils import get_logger
 from marjaa.retrieval.indexes import (
     BM25Index,
     DenseIndex,
+    NumpyDenseIndex,
+    VectorIndex,
     embedding_text,
     fingerprint,
     reciprocal_rank_fusion,
 )
-from marjaa.retrieval.models import Embedder, Reranker, load_embedder, load_reranker
+from marjaa.retrieval.models import Embedder, Reranker, embedder_for, load_reranker
 from marjaa.schemas import Chunk, RetrievedChunk
 
 log = get_logger(__name__)
@@ -26,12 +28,10 @@ class RetrievalResult:
     chunks: list[RetrievedChunk]
     mode: str
     latency_ms: dict[str, float] = field(default_factory=dict)
-
-    @property
-    def top_relevance(self) -> float | None:
-        """Best reranker probability, used as the answer/abstain signal."""
-        rerank = [r.scores["rerank"] for r in self.chunks if "rerank" in r.scores]
-        return max(rerank) if rerank else None
+    # The answer/abstain signal: the best reranker probability, or without a
+    # reranker the best dense cosine similarity. BM25 scores are unbounded and
+    # not comparable across questions, so BM25 alone gives no signal (None).
+    top_relevance: float | None = None
 
 
 class Retriever:
@@ -40,7 +40,7 @@ class Retriever:
         chunks: list[Chunk],
         settings: Settings,
         embedder: Embedder,
-        dense: DenseIndex,
+        dense: VectorIndex,
         reranker_loader=None,
     ):
         self.settings = settings
@@ -80,7 +80,7 @@ class Retriever:
         lists = []
         if mode in ("dense", "hybrid", "hybrid_rerank"):
             t = time.perf_counter()
-            vector = self.embedder.encode([query])[0]
+            vector = self.embedder.encode_query(query)
             hits = self.dense.search(vector, depth, language)
             timings["dense"] = (time.perf_counter() - t) * 1000
             per_stage["dense"] = dict(hits)
@@ -114,18 +114,26 @@ class Retriever:
             for cid, score in ranked[:top_k]
         ]
         timings["total"] = sum(timings.values())
-        return RetrievalResult(results, mode, timings)
+        signal = per_stage.get("rerank") or per_stage.get("dense")
+        relevance = max(signal.values()) if signal else None
+        return RetrievalResult(results, mode, timings, relevance)
+
+
+def collection_name(strategy: str, embedder_name: str) -> str:
+    return f"{strategy}_{embedder_name.split('/')[-1]}".replace(".", "_")
 
 
 def build_retriever(settings: Settings, strategy: ChunkStrategy | None = None) -> Retriever:
     """Load chunks, then load the dense index or (re)build it if chunks changed."""
     strategy = strategy or settings.chunk_strategy
     chunks = load_chunks(settings, strategy)
-    embedder = load_embedder(
-        settings.embedder, settings.embedding_model, settings.device, settings.embedding_revision
-    )
-    collection = f"{strategy}_{embedder.name.split('/')[-1]}".replace(".", "_")
-    dense = DenseIndex(settings.index_dir / "qdrant", collection)
+    embedder = embedder_for(settings)
+    collection = collection_name(strategy, embedder.name)
+    dense: VectorIndex
+    if settings.dense_backend == "numpy":
+        dense = NumpyDenseIndex(settings.index_dir, collection)
+    else:
+        dense = DenseIndex(settings.index_dir / "qdrant", collection)
     fp = fingerprint(chunks, embedder.name)
     if not dense.is_current(fp):
         t = time.perf_counter()

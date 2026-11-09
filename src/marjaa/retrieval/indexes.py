@@ -1,4 +1,4 @@
-"""Sparse (BM25) and dense (Qdrant local mode) indexes, plus RRF fusion."""
+"""Sparse (BM25) and dense (Qdrant local mode, or in-memory numpy) indexes, plus RRF fusion."""
 
 from __future__ import annotations
 
@@ -6,6 +6,7 @@ import atexit
 import hashlib
 import json
 from pathlib import Path
+from typing import Protocol
 
 import numpy as np
 from rank_bm25 import BM25Okapi
@@ -17,6 +18,12 @@ from marjaa.schemas import Chunk
 log = get_logger(__name__)
 
 Hits = list[tuple[str, float]]  # (chunk_id, score), best first
+
+
+class VectorIndex(Protocol):
+    def is_current(self, fp: str) -> bool: ...
+    def build(self, chunks: list[Chunk], vectors: np.ndarray, fp: str) -> None: ...
+    def search(self, vector: np.ndarray, limit: int, language: str | None = None) -> Hits: ...
 
 
 class BM25Index:
@@ -130,6 +137,51 @@ class DenseIndex:
             self.collection, query=vector.tolist(), limit=limit, query_filter=flt
         )
         return [(p.payload["chunk_id"], float(p.score)) for p in result.points]
+
+
+class NumpyDenseIndex:
+    """Exact cosine search over a matrix held in memory.
+
+    Used by the hosted demo: with a few hundred chunks a brute-force dot product
+    takes microseconds, needs no database, and the vectors ship with the code as
+    one small .npy file next to a JSON file with ids and the chunk fingerprint.
+    """
+
+    def __init__(self, path: Path, collection: str):
+        self.vectors_file = path / f"{collection}.npy"
+        self.meta_file = path / f"{collection}.json"
+        self.fp: str | None = None
+        self.ids: list[str] = []
+        self.languages = np.array([], dtype=str)
+        self.vectors = np.zeros((0, 0), dtype=np.float32)
+        if self.vectors_file.exists() and self.meta_file.exists():
+            meta = json.loads(self.meta_file.read_text())
+            self.fp, self.ids = meta["fingerprint"], meta["ids"]
+            self.languages = np.array(meta["languages"])
+            self.vectors = np.load(self.vectors_file)
+
+    def is_current(self, fp: str) -> bool:
+        return self.fp == fp and len(self.ids) == len(self.vectors)
+
+    def build(self, chunks: list[Chunk], vectors: np.ndarray, fp: str) -> None:
+        self.vectors_file.parent.mkdir(parents=True, exist_ok=True)
+        self.vectors = np.asarray(vectors, dtype=np.float32)
+        self.ids = [c.id for c in chunks]
+        self.languages = np.array([c.language for c in chunks])
+        self.fp = fp
+        np.save(self.vectors_file, self.vectors)
+        meta = {"fingerprint": fp, "ids": self.ids, "languages": self.languages.tolist()}
+        self.meta_file.write_text(json.dumps(meta, ensure_ascii=False))
+        log.info("dense index built", extra={"file": self.vectors_file.name, "n": len(chunks)})
+
+    def search(self, vector: np.ndarray, limit: int, language: str | None = None) -> Hits:
+        if not self.ids:
+            return []
+        scores = self.vectors @ np.asarray(vector, dtype=np.float32)
+        if language:
+            scores = np.where(self.languages == language, scores, -np.inf)
+        order = np.argsort(-scores)[:limit]
+        return [(self.ids[i], float(scores[i])) for i in order if np.isfinite(scores[i])]
 
 
 def reciprocal_rank_fusion(rankings: list[Hits], k: int = 60) -> Hits:

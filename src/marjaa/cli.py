@@ -28,6 +28,29 @@ def ingest(
     typer.echo(json.dumps(counts))
 
 
+@app.command("build-hosted")
+def build_hosted() -> None:
+    """Copy the article chunks into marjaa/hosted/ and embed them with Gemini.
+
+    Run after `ingest`. The output is committed: the hosted API only reads it.
+    """
+    import shutil
+
+    from marjaa.config import Settings
+    from marjaa.ingest.pipeline import chunks_path
+    from marjaa.retrieval.retriever import build_retriever
+
+    setup_logging()
+    local, hosted = Settings(profile="local"), Settings(profile="hosted")
+    target = chunks_path(hosted, "article")
+    target.parent.mkdir(parents=True, exist_ok=True)
+    shutil.copyfile(chunks_path(local, "article"), target)
+    retriever = build_retriever(hosted, "article")
+    typer.echo(
+        f"{len(retriever.chunks)} chunks embedded with {hosted.embedder_label} -> {target.parent}"
+    )
+
+
 @app.command()
 def ask(question: str, show_sources: bool = False) -> None:
     """Ask one question and stream the answer to the terminal."""

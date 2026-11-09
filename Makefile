@@ -7,8 +7,11 @@ SMOKE_ENV = MARJAA_RAW_DIR=tests/fixtures/raw MARJAA_PROCESSED_DIR=.smoke/proces
 	MARJAA_EMBEDDER=hashing MARJAA_LLM_PROVIDER=fake MARJAA_JUDGE_PROVIDER=fake \
 	MARJAA_FIXED_CHUNK_CHARS=300 MARJAA_FIXED_CHUNK_OVERLAP=60
 
+HOSTED = MARJAA_PROFILE=hosted $(UV) run
+
 .PHONY: help install ingest testset eval eval-retrieval calibrate eval-answers serve ui \
-	test lint format eval-smoke docker-build docker-run space readme eval-rerank-fast eval-rejudge
+	test lint format eval-smoke docker-build docker-run space readme eval-rerank-fast eval-rejudge \
+	hosted-index eval-hosted serve-hosted web web-build
 
 help:  ## Show this help
 	@grep -E '^[a-z-]+:.*## ' $(MAKEFILE_LIST) | awk -F':.*## ' '{printf "  %-15s %s\n", $$1, $$2}'
@@ -42,6 +45,24 @@ eval: ingest eval-retrieval eval-rerank-fast calibrate eval-answers eval-rejudge
 
 readme:  ## Copy result tables from evals/results into README.md
 	$(UV) run python scripts/update_readme.py
+
+hosted-index:  ## Embed the article chunks with Gemini for the hosted demo (needs GEMINI_API_KEY)
+	$(UV) run marjaa build-hosted
+
+eval-hosted:  ## Evaluate the hosted pipeline: retrieval, calibration, answers (Gemini + local judge)
+	$(HOSTED) python -m evals.runners.run_retrieval --strategies article \
+		--modes dense bm25 hybrid --out retrieval_hosted
+	$(HOSTED) python -m evals.runners.calibrate
+	$(HOSTED) python -m evals.runners.run_answers --out answers_hosted
+
+serve-hosted:  ## The hosted API locally on :8000 (Gemini, routes under /api)
+	$(UV) run uvicorn marjaa.api.hosted:app --port 8000
+
+web:  ## Next.js web app on :3000 (talks to the API on :8000)
+	cd web && npm run dev
+
+web-build:  ## Type-check and build the web app
+	cd web && npm ci && npm run typecheck && npm run build
 
 serve:  ## API on :8000 with the UI at /ui
 	$(RUN) marjaa serve

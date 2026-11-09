@@ -14,7 +14,7 @@ LANGUAGE_NAME: dict[Language, str] = {"en": "English", "ar": "Arabic (Modern Sta
 
 # A one-shot example of the exact output shape. Small models copy a format from
 # an example far more reliably than from a rule (answers with a citation rose
-# from 79% to 97%; see evals/results/). The example is deliberately about
+# from 79% to 96-97%; see evals/results/). The example is deliberately about
 # something no labour-law answer could contain (park opening hours): an earlier
 # example about "10 days of study leave" was copied verbatim into an answer to a
 # short question. `example_leaked()` checks every eval answer for this.
@@ -75,4 +75,22 @@ def user_prompt(question: str, chunks: list[Chunk], lang: Language) -> str:
         f"Sources:\n{sources}\n\nQuestion: {question}\n\n"
         f"Answer in {LANGUAGE_NAME[lang]}. End EVERY sentence with its citation, "
         f"for example {first}."
+    )
+
+
+CONDENSE_SYSTEM = (
+    "You rewrite follow-up questions from a conversation about UAE law into "
+    "standalone questions. Reply with the rewritten question only."
+)
+
+
+def condense_prompt(question: str, history: list[tuple[str, str]]) -> str:
+    """Turn "and for part-time workers?" into a question retrieval can search for."""
+    turns = "\n\n".join(f"User: {q}\nAssistant: {a[:600]}" for q, a in history)
+    return (
+        f"Conversation so far:\n{turns}\n\n"
+        f"Follow-up question: {question}\n\n"
+        "Rewrite the follow-up question as one standalone question that can be understood "
+        "without the conversation. Keep the language of the follow-up question. "
+        "If it is already standalone, return it unchanged."
     )

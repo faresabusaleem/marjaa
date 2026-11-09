@@ -15,8 +15,15 @@ from marjaa.generation.citations import (
     extract_citations,
     is_not_found,
 )
-from marjaa.generation.prompts import NOT_FOUND, citation_for, system_prompt, user_prompt
-from marjaa.generation.providers import LLMProvider
+from marjaa.generation.prompts import (
+    CONDENSE_SYSTEM,
+    NOT_FOUND,
+    citation_for,
+    condense_prompt,
+    system_prompt,
+    user_prompt,
+)
+from marjaa.generation.providers import LLMProvider, generate
 from marjaa.ingest.normalize import detect_language
 from marjaa.logging_utils import get_logger
 from marjaa.retrieval.retriever import Retriever
@@ -40,9 +47,19 @@ class Source(BaseModel):
     text: str
 
 
+class Turn(BaseModel):
+    """One earlier question and answer, sent back by the UI for follow-ups."""
+
+    question: str = Field(max_length=1000)
+    answer: str = Field(max_length=4000)
+
+
 class AnswerResult(BaseModel):
     trace_id: str
     question: str
+    # The standalone question actually searched and answered (differs from
+    # `question` only for follow-ups).
+    search_query: str | None = None
     language: Language
     answer: str
     abstained: bool
@@ -105,22 +122,39 @@ class RagPipeline:
         self.provider = provider
         self.settings = settings
 
-    def stream(self, question: str) -> Iterator[dict[str, Any]]:
+    def condense(self, question: str, history: list[Turn]) -> str:
+        """Rewrite a follow-up into a standalone question (one short LLM call)."""
+        pairs = [(t.question, t.answer) for t in history[-3:]]
+        raw = generate(self.provider, CONDENSE_SYSTEM, condense_prompt(question, pairs))
+        lines = [x.strip().strip('"«»') for x in raw.strip().splitlines() if x.strip()]
+        rewritten = lines[0] if lines else ""
+        # Guard against a rambling reply: fall back to the user's own words.
+        return rewritten if 0 < len(rewritten) <= 3 * len(question) + 300 else question
+
+    def stream(self, question: str, history: list[Turn] | None = None) -> Iterator[dict[str, Any]]:
         """Yields {"event": "sources"|"token"|"done", "data": ...} dicts."""
         s = self.settings
         t_start = time.perf_counter()
         trace_id = new_trace_id()
         lang: Language = detect_language(question)  # type: ignore[assignment]
+        latency: dict[str, float] = {}
 
-        result = self.retriever.retrieve(question, top_k=s.top_k * 2)
+        query = question
+        if history:
+            query = self.condense(question, history)
+            latency["rewrite"] = (time.perf_counter() - t_start) * 1000
+
+        t_retrieval = time.perf_counter()
+        result = self.retriever.retrieve(query, top_k=s.top_k * 2)
         context = select_context(result.chunks, lang, s.top_k)
         sources = [to_source(r, lang) for r in context]
-        latency = {"retrieval": (time.perf_counter() - t_start) * 1000}
+        latency["retrieval"] = (time.perf_counter() - t_retrieval) * 1000
         yield {
             "event": "sources",
             "data": {
                 "trace_id": trace_id,
                 "language": lang,
+                "search_query": query if query != question else None,
                 "sources": [x.model_dump() for x in sources],
             },
         }
@@ -135,7 +169,7 @@ class RagPipeline:
         else:
             chunks = [r.chunk for r in context]
             system = system_prompt(lang, citation_for(chunks[0], lang))
-            user = user_prompt(question, chunks, lang)
+            user = user_prompt(query, chunks, lang)
             parts: list[str] = []
             t_gen = time.perf_counter()
             for token in self.provider.stream(system, user):
@@ -152,6 +186,7 @@ class RagPipeline:
         final = AnswerResult(
             trace_id=trace_id,
             question=question,
+            search_query=query if query != question else None,
             language=lang,
             answer=answer,
             abstained=reason is not None,
@@ -195,10 +230,10 @@ class RagPipeline:
         )
         yield {"event": "done", "data": final.model_dump(exclude={"sources"})}
 
-    def answer(self, question: str) -> AnswerResult:
+    def answer(self, question: str, history: list[Turn] | None = None) -> AnswerResult:
         sources: list[dict[str, Any]] = []
         done: dict[str, Any] = {}
-        for event in self.stream(question):
+        for event in self.stream(question, history):
             if event["event"] == "sources":
                 sources = event["data"]["sources"]
             elif event["event"] == "done":

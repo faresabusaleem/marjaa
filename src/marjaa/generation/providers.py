@@ -92,7 +92,7 @@ def with_backoff(
             attempt += 1
 
 
-def _raise_for_status(response: httpx.Response) -> None:
+def raise_for_status(response: httpx.Response) -> None:
     if response.status_code in RETRYABLE_STATUS:
         raise RetryableError(response.status_code, _retry_after_seconds(response))
     if response.status_code >= 400:
@@ -129,7 +129,7 @@ class OllamaProvider:
             },
         }
         with self.client.stream("POST", self.url, json=payload) as response:
-            _raise_for_status(response)
+            raise_for_status(response)
             for line in response.iter_lines():
                 if not line:
                     continue
@@ -176,7 +176,7 @@ class GeminiProvider:
             "generation_config": config,
         }
         with self.client.stream("POST", self.URL, json=payload, headers=headers) as response:
-            _raise_for_status(response)
+            raise_for_status(response)
             for line in response.iter_lines():
                 if not line.startswith("data:"):
                     continue
@@ -222,6 +222,10 @@ class FakeProvider:
     def stream(self, system: str, prompt: str) -> Iterator[str]:
         if "JUDGE" in system:
             yield json.dumps({"faithfulness": 1, "correctness": 1, "reason": "fake judge"})
+            return
+        if "standalone" in system:  # follow-up rewriting: return the question unchanged
+            match = re.search(r"Follow-up question: (.+)", prompt)
+            yield match.group(1).strip() if match else prompt
             return
         match = re.search(r'<source[^>]*citation="([^"]+)"[^>]*>\s*(.+?)</source>', prompt, re.S)
         if not match:

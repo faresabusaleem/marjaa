@@ -10,21 +10,45 @@ from functools import lru_cache
 from pathlib import Path
 from typing import Literal
 
-from pydantic import Field, SecretStr
+from pydantic import Field, SecretStr, model_validator
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 ROOT_DIR = Path(__file__).resolve().parents[2]
+# Ships inside the package so the hosted API finds it wherever it is installed.
+HOSTED_DIR = Path(__file__).resolve().parent / "hosted"
 
 ChunkStrategy = Literal["article", "fixed"]
 RetrievalMode = Literal["dense", "bm25", "hybrid", "hybrid_rerank"]
 ProviderName = Literal["ollama", "gemini", "fake"]
-EmbedderName = Literal["bge-m3", "hashing"]
+EmbedderName = Literal["bge-m3", "hashing", "gemini"]
+DenseBackend = Literal["qdrant", "numpy"]
+Profile = Literal["local", "hosted"]
+
+# The hosted demo runs on Vercel functions: no GPU and a 500 MB bundle cap, so
+# BGE-M3 and the cross-encoder (4.5 GB with PyTorch) cannot come along. It uses
+# Gemini embeddings with vectors precomputed into HOSTED_DIR, an in-memory
+# index, BM25 + RRF without a reranker, and Gemini for answers. Explicitly set
+# variables still win over these defaults.
+HOSTED_DEFAULTS: dict[str, object] = {
+    "embedder": "gemini",
+    "dense_backend": "numpy",
+    "retrieval_mode": "hybrid",
+    "llm_provider": "gemini",
+    "chunk_strategy": "article",
+    "processed_dir": HOSTED_DIR,
+    "index_dir": HOSTED_DIR,
+    "threshold_path": HOSTED_DIR / "threshold.json",
+    "save_traces": False,  # the function's filesystem is read-only
+}
 
 
 class Settings(BaseSettings):
     model_config = SettingsConfigDict(
         env_prefix="MARJAA_", env_file=ROOT_DIR / ".env", extra="ignore", populate_by_name=True
     )
+
+    # local: BGE-M3 + reranker + Ollama. hosted: see HOSTED_DEFAULTS.
+    profile: Profile = "local"
 
     # --- Paths -----------------------------------------------------------------
     raw_dir: Path = ROOT_DIR / "data" / "raw"
@@ -44,7 +68,11 @@ class Settings(BaseSettings):
 
     # --- Retrieval -------------------------------------------------------------
     embedder: EmbedderName = "bge-m3"
+    dense_backend: DenseBackend = "qdrant"
     embedding_model: str = "BAAI/bge-m3"
+    gemini_embedding_model: str = "gemini-embedding-2"
+    # 768 of the 3072 dimensions: Google's recommended smaller size, 4x less to ship.
+    gemini_embedding_dim: int = 768
     # Pinned to the commit that adds model.safetensors (Hub PR #130). BGE-M3's
     # main branch only ships pytorch_model.bin, so an unpinned load downloads
     # BOTH formats (2 x 2.3 GB); pinning keeps one safetensors copy and makes
@@ -60,10 +88,11 @@ class Settings(BaseSettings):
     rrf_k: int = 60  # standard RRF constant from Cormack et al. (2009)
     top_k: int = 5  # chunks passed to the LLM
 
-    # Reranker sigmoid score below which we answer "not found". None = use the
-    # value calibrated on the dev split by `make calibrate`
-    # (evals/results/threshold.json).
+    # Top retrieval score (reranker probability, or dense cosine without a
+    # reranker) below which we answer "not found". None = use the value
+    # calibrated on the dev split by `make calibrate`, read from threshold_file.
     min_relevance: float | None = None
+    threshold_path: Path | None = None  # None = results_dir / threshold.json
 
     # --- Generation ------------------------------------------------------------
     llm_provider: ProviderName = "ollama"
@@ -88,6 +117,24 @@ class Settings(BaseSettings):
     # --- Service ---------------------------------------------------------------
     log_level: str = "INFO"
     save_traces: bool = True
+
+    @model_validator(mode="after")
+    def _apply_profile(self) -> Settings:
+        if self.profile == "hosted":
+            for key, value in HOSTED_DEFAULTS.items():
+                if key not in self.model_fields_set:
+                    setattr(self, key, value)
+        return self
+
+    @property
+    def threshold_file(self) -> Path:
+        return self.threshold_path or self.results_dir / "threshold.json"
+
+    @property
+    def embedder_label(self) -> str:
+        if self.embedder == "gemini":
+            return self.gemini_embedding_model
+        return self.embedding_model if self.embedder == "bge-m3" else self.embedder
 
 
 @lru_cache

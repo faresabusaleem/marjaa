@@ -70,11 +70,13 @@ def evaluate_retrieval(
 
 
 def calibrate_threshold(retriever: Retriever, items: list[EvalItem]) -> dict[str, Any]:
-    """Pick the reranker-score cut-off that best separates answerable from
-    unanswerable questions (max balanced accuracy) on the given items."""
+    """Pick the top-relevance cut-off (reranker probability, or dense cosine
+    without a reranker) that best separates answerable from unanswerable
+    questions (max balanced accuracy) on the given items."""
     answerable, unanswerable = [], []
+    mode = retriever.settings.retrieval_mode
     for item in items:
-        result = retriever.retrieve(item.question, mode="hybrid_rerank", top_k=1)
+        result = retriever.retrieve(item.question, mode=mode, top_k=1)
         score = result.top_relevance or 0.0
         (answerable if item.answerable else unanswerable).append(score)
     candidates = sorted(set(answerable + unanswerable)) or [0.0]
@@ -90,6 +92,7 @@ def calibrate_threshold(retriever: Retriever, items: list[EvalItem]) -> dict[str
     threshold = (best[1] + max(lower)) / 2 if lower else best[1]
     return {
         "threshold": round(threshold, 4),
+        "signal": "reranker probability" if mode == "hybrid_rerank" else "dense cosine similarity",
         "balanced_accuracy": round(best[0], 4),
         "n_answerable": len(answerable),
         "n_unanswerable": len(unanswerable),

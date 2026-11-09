@@ -1,40 +1,40 @@
 {
   "meta": {
-    "date": "2026-11-07",
+    "date": "2026-11-09",
     "split": "test",
     "generator": "ollama:qwen3.5:4b",
-    "judge": "ollama:qwen3.5:4b",
+    "judge": "ollama:qwen3.5:9b",
     "retrieval": "article chunks, hybrid_rerank",
     "min_relevance": 0.0919
   },
   "summary": {
     "n_answerable": 71,
     "n_unanswerable": 16,
-    "correctness": 0.9014,
-    "faithfulness": 0.8592,
-    "correct_over_all_answerable": 0.9014,
+    "correctness": 0.9155,
+    "faithfulness": 0.9014,
+    "correct_over_all_answerable": 0.9155,
     "citation_validity": 1.0,
-    "answers_with_citation": 0.9718,
+    "answers_with_citation": 0.9577,
     "gold_article_cited": 0.8944,
-    "citation_coverage": 0.8885,
+    "citation_coverage": 0.8599,
     "format_example_leaks": 0,
     "unanswerable_abstention": 1.0,
     "false_abstention": 0.0,
     "latency": {
       "retrieval": {
-        "mean_ms": 3907.118800283549,
-        "p50_ms": 3941.827666014433,
-        "p95_ms": 5186.346991872415
+        "mean_ms": 4600.344426816075,
+        "p50_ms": 4773.675416999595,
+        "p95_ms": 5634.036424899932
       },
       "first_token": {
-        "mean_ms": 12272.668238289813,
-        "p50_ms": 12258.00354219973,
-        "p95_ms": 15707.084000110626
+        "mean_ms": 13812.801738380278,
+        "p50_ms": 13526.868874999764,
+        "p95_ms": 17634.959083499896
       },
       "total": {
-        "mean_ms": 13653.132571399898,
-        "p50_ms": 15150.64754197374,
-        "p95_ms": 20679.103891644627
+        "mean_ms": 15067.95002544827,
+        "p50_ms": 16713.194416999613,
+        "p95_ms": 22536.44571709988
       }
     }
   },
@@ -44,7 +44,7 @@
       "type": "ar",
       "answerable": true,
       "question": "ما الحالات التي يُسمح فيها للعامل بترك العمل دون إنذار مع الاحتفاظ بحقوقه عند انتهاء الخدمة؟",
-      "answer": "يُسمح للعامل بترك العمل دون إنذار في حالة إخلال صاحب العمل بالتزاماته تجاه العامل الواردة في العقد أو المرسوم بقانون أو القرارات الصادرة تنفيذه، بشرط أن أبلغ العامل الوزارة قبل (14) أربعة عشر يوم عمل من تاريخ ترك العمل ودون قيام صاحب العمل بإزالة الآثار الناجمة عن هذا الإخلال رغم إخطاره من قبل الوزارة بذلك [قانون العمل الاتحادي، المادة 45].\nيُسمح للعامل بترك العمل دون إنذار في حالة ثبوت اعتداء صاحب العمل أو من ينوب عنه قانونًا على العامل أو تعرضه لعنف أو تحرش خلال العمل، بشرط أن يبلغ السلطات المعنية والوزارة خلال (5) خمسة أيام عمل من تاريخ تمكنه من الإبلاغ [قانون العمل الاتحادي، المادة 45].\nيُسمح للعامل بترك العمل دون إنذار في حالة وجود خطر جسيم يهدد سلامة العامل أو صحته في مقر العمل، بشرط أن يكون صاحب العمل قد علم بوجوده ولم يتخذ من الإجراءات ما يدل على إزالته [قانون العمل الاتحادي، المادة 45].\nيُسمح للعامل بترك العمل دون إنذار في حالة تكليف صاحب العمل العامل بالقيام بعمل يختلف اختلافًا جوهريًّا عن العمل المتفق عليه بموجب عقد العمل دون موافقة العامل خطيًّا على ذلك، باستثناء حالات الضرورة وفق أحكام المادة (12) من هذا المرسوم بقانون [قانون العمل الاتحادي، المادة 45].",
+      "answer": "يُسمح للعامل بترك العمل دون إنذار في حالة إخلال صاحب العمل بالتزاماته تجاه العامل الواردة في العقد أو المرسوم بقانون أو القرارات الصادرة تنفيذه، بشرط أن أبلغ العامل الوزارة قبل (14) أربعة عشر يوم عمل من تاريخ ترك العمل ودون قيام صاحب العمل بإزالة الآثار الناجمة عن هذا الإخلال رغم إخطاره من قبل الوزارة بذلك [قانون العمل الاتحادي، المادة 45].\nيُسمح للعامل بترك العمل دون إنذار في حالة ثبوت اعتداء صاحب العمل أو من ينوب عنه قانونًا على العامل أو تعرضه لعنف أو تحرش خلال العمل، بشرط أن يبلغ السلطات المعنية والوزارة خلال (5) خمسة أيام عمل من تاريخ تمكنه من الإبلاغ [قانون العمل الاتحادي، المادة 45].\nيُسمح للعامل بترك العمل دون إنذار في حالة وجود خطر جسيم يهدد سلامة العامل أو صحته في مقر العمل، بشرط أن يكون صاحب العمل قد علم بوجوده ولم يتخذ الإجراءات ما يدل على إزالته [قانون العمل الاتحادي، المادة 45].\nيُسمح للعامل بترك العمل دون إنذار في حالة تكليف صاحب العمل العامل بالقيام بعمل يختلف اختلافًا جوهريًّا عن العمل المتفق عليه بموجب عقد العمل دون موافقة العامل خطيًّا على ذلك، باستثناء حالات الضرورة وفق أحكام المادة (12) من هذا المرسوم بقانون [قانون العمل الاتحادي، المادة 45].",
       "abstained": false,
       "abstain_reason": null,
       "top_relevance": 0.9997915625572205,
@@ -54,23 +54,31 @@
       "n_gold": 1,
       "citation_coverage": 1.0,
       "example_leaked": false,
+      "trace_id": "20261109T155014-49ce3ccc",
+      "context_ids": [
+        "labour_law_2021-ar-a045-p0",
+        "labour_law_2021-ar-a044-p0",
+        "labour_law_2021-ar-a043-p0",
+        "labour_law_2021-ar-a042-p0",
+        "labour_law_2021-ar-a013-p0"
+      ],
       "latency_ms": {
-        "retrieval": 9652.839332818985,
-        "first_token": 19900.88575007394,
-        "generation": 20541.508709080517,
-        "total": 30195.217332802713
+        "retrieval": 9590.954792000048,
+        "first_token": 23654.964500000006,
+        "generation": 25365.361166999945,
+        "total": 34958.941583000065
       },
-      "wall_ms": 30196.4888330549,
+      "wall_ms": 34962.59708299999,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects all four conditions and specific timeframes listed in the reference answer based on Article 45."
+      "reason": "The system answer accurately reflects all conditions and legal references from the source material regarding termination without notice while retaining rights."
     },
     {
       "id": "ar-002",
       "type": "ar",
       "answerable": true,
       "question": "ما هو التعويض الذي يجب على صاحب العمل دفعه للعامل إذا اضطر للعمل خلال عطلة رسمية؟",
-      "answer": "يستحق العامل تعويضًا بيوم آخر للراحة مقابل كل يوم يعمل أثناء العطلة الرسمية. وفي حال عدم قبول هذا التعويض، يجب على صاحب العمل دفع أجر اليوم المقرر للأعمال العادية مضافًا إليه زيادة لا تقل عن خمسين بالمائة من الأجر الأساسي لذلك اليوم. [قانون العمل الاتحادي، المادة 28]",
+      "answer": "يستحق العامل تعويضًا بيوم آخر للراحة مقابل كل يوم يعمل أثناء العطلة الرسمية. وفي حال استمر العمل، يجب على صاحب العمل دفع زيادة لا تقل عن (50) خمسين بالمائة من الأجر الأساسي لذلك اليوم. [قانون العمل الاتحادي، المادة 28]",
       "abstained": false,
       "abstain_reason": null,
       "top_relevance": 0.9868553280830383,
@@ -80,75 +88,99 @@
       "n_gold": 1,
       "citation_coverage": 0.3333333333333333,
       "example_leaked": false,
+      "trace_id": "20261109T155119-a89a727d",
+      "context_ids": [
+        "labour_law_2021-ar-a028-p0",
+        "labour_law_2021-ar-a029-p0",
+        "labour_law_2021-ar-a037-p0",
+        "labour_law_2021-ar-a031-p0",
+        "labour_law_2021-ar-a013-p0"
+      ],
       "latency_ms": {
-        "retrieval": 3697.899166960269,
-        "first_token": 13856.579334009439,
-        "generation": 12475.5225838162,
-        "total": 16173.670375254005
+        "retrieval": 5422.942333000037,
+        "first_token": 20386.54358300005,
+        "generation": 17221.31537500013,
+        "total": 22647.978791000016
       },
-      "wall_ms": 16175.401458982378,
+      "wall_ms": 22657.512417000136,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the compensation rules for working during official holidays as stated in Article 28 of the UAE Labor Law."
+      "reason": "The system answer accurately reflects the compensation rules for working on official holidays as stated in Article 28 of the provided sources."
     },
     {
       "id": "ar-004",
       "type": "ar",
       "answerable": true,
       "question": "إذا تطلب من العامل القيام بعمل غير المتفق عليه في عقد العمل بسبب ضرورة فنية أو لإصلاح ما نشأ عنه، هل يجوز تكليفه بذلك؟",
-      "answer": "لا يجوز تكليف العامل بعمل يختلف اختلافًا جوهريًّا عن العمل المتفق عليه في عقد العمل إلا إذا استادت الضرورة ذلك أو بهدف منع وقوع حادث أو لإصلاح ما نشأ عنه [قانون العمل الاتحادي، المادة 12]. ويجب أن يكون هذا التكليف مؤقتًا وفقًا لما تحدده اللائحة التنفيذية لهذا المرسوم بقانون [قانون العمل الاتحادي، المادة 12].",
+      "answer": "لا يجوز تكليف العامل بعمل يختلف اختلافًا جوهريًّا عن العمل المتفق عليه في عقد العمل إلا إذا استدعت الضرورة ذلك أو بهدف منع وقوع حادث أو لإصلاح ما نشأ عنه [قانون العمل الاتحادي، المادة 12]. ويجب أن يكون هذا التكليف مؤقتًا وفقًا لما تحدده اللائحة التنفيذية لهذا المرسوم بقانون [قانون العمل الاتحادي، المادة 12]. وفي حال ترك العامل العمل دون إنذار بسبب إخلال صاحب العمل بالتزاماته أو اعتداء عليه أو وجود خطر جسيم يهدد سلامته، يحق له التماس التكليف بعدم الاستمرار في العمل [قانون العمل الاتحادي، المادة 45].",
       "abstained": false,
       "abstain_reason": null,
       "top_relevance": 0.9995040893554688,
-      "n_citations": 2,
-      "n_valid_citations": 2,
-      "cited_gold": 1,
-      "n_gold": 1,
-      "citation_coverage": 1.0,
-      "example_leaked": false,
-      "latency_ms": {
-        "retrieval": 2868.6459590680897,
-        "first_token": 10595.28287500143,
-        "generation": 10532.781540881842,
-        "total": 13401.680917013437
-      },
-      "wall_ms": 13403.358249925077,
-      "faithfulness": 1.0,
-      "correctness": 1.0,
-      "reason": "The system answer accurately reflects the key conditions and limitations regarding task assignment found in Article 12 of the UAE Labor Law."
-    },
-    {
-      "id": "ar-005",
-      "type": "ar",
-      "answerable": true,
-      "question": "ما هو الحد الأقصى لساعات العمل اليومية والأسبوعية للعاملين في النظام الدوام الكامل؟",
-      "answer": "يُحدّد القانون الحد الأقصى لساعات العمل العادية للعمال بـ (8) ثماني ساعات في اليوم الواحد أو (48) ثمانٍ وأربعين ساعة في الأسبوع [قانون العمل الاتحادي، المادة 17]. وتُحدد اللائحة التنفيذية لهذا المرسوم بقانون مواعيد العمل والراحة بالإضافة إلى الساعات المحرمة للعمل لفئات معينة من العمالة [قانون العمل الاتحادي، المادة 17]. كما يجوز لمجلس الوزراء زيادة ساعات العمل اليومية أو تخفيضها لبعض القطاعات الاقتصادية أو بعض الفئات من العمالة بناءً على اقتراح الوزير والتنسيق مع الجهات المعنية [قانون العمل الاتحادي، المادة 17].",
-      "abstained": false,
-      "abstain_reason": null,
-      "top_relevance": 0.9743421077728271,
       "n_citations": 3,
       "n_valid_citations": 3,
       "cited_gold": 1,
       "n_gold": 1,
       "citation_coverage": 1.0,
       "example_leaked": false,
+      "trace_id": "20261109T155203-c1abab39",
+      "context_ids": [
+        "labour_law_2021-ar-a012-p0",
+        "labour_law_2021-ar-a045-p0",
+        "labour_law_2021-ar-a026-p0",
+        "labour_law_2021-ar-a065-p0",
+        "labour_law_2021-ar-a016-p0"
+      ],
       "latency_ms": {
-        "retrieval": 3335.281291976571,
-        "first_token": 10769.677208270878,
-        "generation": 11968.512458261102,
-        "total": 15304.137875325978
+        "retrieval": 4844.833584000071,
+        "first_token": 13705.60337500001,
+        "generation": 13940.967166000064,
+        "total": 18786.620416999995
       },
-      "wall_ms": 15305.266375187784,
+      "wall_ms": 18788.459916999956,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the maximum working hours (8 hours/day and 48 hours/week) found in Article 17 of the source text without contradicting or omitting key facts."
+      "reason": "The system answer correctly cites Article 12 for the main rule and Article 45 regarding termination rights, matching the reference answer's key facts without contradiction."
+    },
+    {
+      "id": "ar-005",
+      "type": "ar",
+      "answerable": true,
+      "question": "ما هو الحد الأقصى لساعات العمل اليومية والأسبوعية للعاملين في النظام الدوام الكامل؟",
+      "answer": "يُحدّد القانون الحد الأقصى لساعات العمل العادية للعمال بـ (8) ثماني ساعات في اليوم الواحد أو (48) ثمانٍ وأربعين ساعة في الأسبوع. وتُحدد اللائحة التنفيذية لهذا المرسوم بقانون مواعيد العمل والراحة بالإضافة إلى الساعات المحرمة للعمل لفئات معينة من العمالة. كما يجوز لمجلس الوزراء زيادة أو تخفيض ساعات العمل اليومية لبعض القطاعات الاقتصادية وفق الضوابط المنصوص عليها في اللائحة التنفيذية. [قانون العمل الاتحادي، المادة 17]",
+      "abstained": false,
+      "abstain_reason": null,
+      "top_relevance": 0.9743421077728271,
+      "n_citations": 1,
+      "n_valid_citations": 1,
+      "cited_gold": 1,
+      "n_gold": 1,
+      "citation_coverage": 0.25,
+      "example_leaked": false,
+      "trace_id": "20261109T155241-a3c52f28",
+      "context_ids": [
+        "labour_law_2021-ar-a017-p0",
+        "labour_law_2021-ar-a051-p0",
+        "labour_law_2021-ar-a007-p0",
+        "labour_law_2021-ar-a018-p0",
+        "labour_law_2021-ar-a019-p0"
+      ],
+      "latency_ms": {
+        "retrieval": 5283.097208000072,
+        "first_token": 13276.882083000146,
+        "generation": 11921.83270800001,
+        "total": 17205.745417000115
+      },
+      "wall_ms": 17208.682457999887,
+      "faithfulness": 1.0,
+      "correctness": 1.0,
+      "reason": "The system answer accurately reflects the maximum daily and weekly working hours specified in Article 17 of the provided sources."
     },
     {
       "id": "ar-006",
       "type": "ar",
       "answerable": true,
       "question": "هل يجوز نقل عامل يحصل على الأجر الشهري إلى فئة عمال المياومة أو المعينين بالأجر الأسبوعي إذا وافق العامل كتابةً؟",
-      "answer": "يجوز نقل العامل ذي الأجر الشهري إلى فئة عمال المياومة أو العمال المعينين بالأجر الأسبوعي إذا وافق العامل على ذلك كتابةً [قانون العمل الاتحادي، المادة 24]. ولا يجوز هذا النقل دون الإخلال بالحقوق التي اكتسبها العامل في المدة التي قضاها بالأجر الشهري [قانون العمل الاتحادي، المادة 24].",
+      "answer": "يُجوز نقل العامل ذي الأجر الشهري إلى فئة عمال المياومة أو العمال المعينين بالأجر الأسبوعي أو بالقطعة أو بالساعة إذا وافق العامل على ذلك كتابةً [قانون العمل الاتحادي، المادة 24]. ولا يجوز هذا النقل دون الإخلال بالحقوق التي اكتسبها العامل في المدة التي قضاها بالأجر الشهري [قانون العمل الاتحادي، المادة 24].",
       "abstained": false,
       "abstain_reason": null,
       "top_relevance": 0.999925971031189,
@@ -158,16 +190,24 @@
       "n_gold": 1,
       "citation_coverage": 1.0,
       "example_leaked": false,
+      "trace_id": "20261109T155317-2dcd8aa8",
+      "context_ids": [
+        "labour_law_2021-ar-a024-p0",
+        "labour_law_2021-ar-a025-p0",
+        "labour_law_2021-ar-a012-p0",
+        "labour_law_2021-ar-a001-p1",
+        "labour_law_2021-ar-a017-p0"
+      ],
       "latency_ms": {
-        "retrieval": 3136.344292201102,
-        "first_token": 10389.046667143703,
-        "generation": 10086.518915835768,
-        "total": 13223.10229204595
+        "retrieval": 5050.380749999931,
+        "first_token": 12906.583917000034,
+        "generation": 11223.766332999958,
+        "total": 16274.988582999868
       },
-      "wall_ms": 13224.436874967068,
+      "wall_ms": 16277.991291999797,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the conditions and restrictions stated in Article 24 of the reference text."
+      "reason": "The system answer accurately reflects the conditions and limitations stated in Article 24 of the provided sources, matching the reference answer."
     },
     {
       "id": "ar-007",
@@ -184,16 +224,24 @@
       "n_gold": 1,
       "citation_coverage": 1.0,
       "example_leaked": false,
+      "trace_id": "20261109T155351-0a5d31e0",
+      "context_ids": [
+        "labour_law_2021-ar-a068-p0",
+        "labour_law_2021-ar-a065-p0",
+        "labour_law_2021-ar-a008-p0",
+        "labour_law_2021-ar-a001-p0",
+        "labour_law_2021-ar-a048-p0"
+      ],
       "latency_ms": {
-        "retrieval": 3477.520250249654,
-        "first_token": 12417.692208196968,
-        "generation": 11672.881833277643,
-        "total": 15150.64754197374
+        "retrieval": 5449.378792000061,
+        "first_token": 15183.607875000007,
+        "generation": 12686.127166999995,
+        "total": 18136.699874999977
       },
-      "wall_ms": 15152.310458943248,
+      "wall_ms": 18139.296290999937,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the source text regarding the one-year deadline and the minister's power to extend it."
+      "reason": "The system answer accurately reflects the reference answer and is fully supported by Article 68 of the provided sources."
     },
     {
       "id": "ar-009",
@@ -210,16 +258,24 @@
       "n_gold": 1,
       "citation_coverage": 1.0,
       "example_leaked": false,
+      "trace_id": "20261109T155427-381bc9fe",
+      "context_ids": [
+        "labour_law_2021-ar-a039-p0",
+        "labour_law_2021-ar-a060-p0",
+        "labour_law_2021-ar-a065-p0",
+        "labour_law_2021-ar-a064-p0",
+        "labour_law_2021-ar-a063-p0"
+      ],
       "latency_ms": {
-        "retrieval": 3541.3309168070555,
-        "first_token": 11275.47224983573,
-        "generation": 12422.184333205223,
-        "total": 15963.86633394286
+        "retrieval": 4947.82695899994,
+        "first_token": 13491.398417000028,
+        "generation": 13585.828124999807,
+        "total": 18534.379209000006
       },
-      "wall_ms": 15965.64658312127,
+      "wall_ms": 18536.079125000015,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately lists all disciplinary penalties and correctly identifies the maximum duration for work suspension as fourteen days based on Article 39."
+      "reason": "The system answer accurately lists all disciplinary penalties and correctly identifies the maximum suspension period of 14 days as stated in Article 39."
     },
     {
       "id": "ar-010",
@@ -236,23 +292,31 @@
       "n_gold": 1,
       "citation_coverage": 0.5,
       "example_leaked": false,
+      "trace_id": "20261109T155504-5e40d74d",
+      "context_ids": [
+        "labour_law_2021-ar-a022-p0",
+        "labour_law_2021-ar-a008-p0",
+        "labour_law_2021-ar-a001-p0",
+        "labour_law_2021-en-a001-p1",
+        "labour_law_2021-ar-a026-p0"
+      ],
       "latency_ms": {
-        "retrieval": 3477.955542039126,
-        "first_token": 12122.236375231296,
-        "generation": 10648.068375419825,
-        "total": 14126.273792237043
+        "retrieval": 5520.280708999962,
+        "first_token": 14806.72170899993,
+        "generation": 11468.65825000009,
+        "total": 16989.492292000024
       },
-      "wall_ms": 14127.481708303094,
+      "wall_ms": 16991.71616600006,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the reference answer by citing Article 22 and correctly identifying the court as the authority for determining wages when not specified in the contract."
+      "reason": "The system answer correctly identifies the competent court as the authority to determine the wage when not specified in the contract, aligning perfectly with the reference answer and Article 22."
     },
     {
       "id": "ar-011",
       "type": "ar",
       "answerable": true,
       "question": "ما هي مدة شرط عدم المنافسة في عقد العمل إذا كان يسمح بمعرفة عملاء أو أسرار العمل؟",
-      "answer": "يجوز لصاحب العمل أن يشترط على العامل عدم منافسته أو الاشتراك في أي مشروع منافس بعد انتهاء العقد. يجب أن يكون هذا الشرط محددًا من حيث الزمان والمكان ونوع العمل على قدر الضرورة لحماية مصالح العمل المشروعة. لا تزيد مدة شرط عدم المنافسة عن سنتين من تاريخ انتهاء العقد [قانون العمل الاتحادي، المادة 10].",
+      "answer": "يجوز لصاحب العمل أن يشترط على العامل عدم منافسته أو الاشتراك في أي مشروع منافس بعد انتهاء العقد إذا كان العمل يسمح بمعرفة عملاء أو أسرار العمل. ويجب أن يكون هذا الشرط محددًا من حيث الزمان والمكان ونوع العمل على قدر الضرورة لحماية مصالح العمل المشروعة. ولا تزيد مدة شرط عدم المنافسة عن سنتين من تاريخ انتهاء العقد [قانون العمل الاتحادي، المادة 10].",
       "abstained": false,
       "abstain_reason": null,
       "top_relevance": 0.999660849571228,
@@ -262,16 +326,24 @@
       "n_gold": 1,
       "citation_coverage": 0.3333333333333333,
       "example_leaked": false,
+      "trace_id": "20261109T155537-7786e669",
+      "context_ids": [
+        "labour_law_2021-ar-a010-p0",
+        "labour_law_2021-ar-a059-p0",
+        "labour_law_2021-ar-a001-p0",
+        "labour_law_2021-ar-a016-p0",
+        "labour_law_2021-ar-a065-p0"
+      ],
       "latency_ms": {
-        "retrieval": 3571.7325839214027,
-        "first_token": 13677.502749953419,
-        "generation": 12771.469790954143,
-        "total": 16343.543417286128
+        "retrieval": 5515.287916000034,
+        "first_token": 16489.613040999982,
+        "generation": 14272.483125000008,
+        "total": 19788.926458000104
       },
-      "wall_ms": 16345.62858287245,
+      "wall_ms": 19792.789041999866,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the two-year duration limit and conditions specified in Article 10 of the UAE Labour Law."
+      "reason": "The system answer accurately reflects the reference answer and is fully supported by Article 10 of the provided sources."
     },
     {
       "id": "ar-013",
@@ -288,23 +360,31 @@
       "n_gold": 1,
       "citation_coverage": 1.0,
       "example_leaked": false,
+      "trace_id": "20261109T155617-46a39dcc",
+      "context_ids": [
+        "labour_law_2021-ar-a037-p0",
+        "labour_law_2021-ar-a013-p0",
+        "labour_law_2021-ar-a016-p0",
+        "labour_law_2021-ar-a001-p1",
+        "labour_law_2021-ar-a031-p0"
+      ],
       "latency_ms": {
-        "retrieval": 5612.704624887556,
-        "first_token": 15701.017125044018,
-        "generation": 15068.17925022915,
-        "total": 20681.21441686526
+        "retrieval": 5952.123834000076,
+        "first_token": 17115.030959000025,
+        "generation": 16492.468292000012,
+        "total": 22446.003209000082
       },
-      "wall_ms": 20682.73708317429,
-      "faithfulness": 1.0,
+      "wall_ms": 22447.72233399999,
+      "faithfulness": 0.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the obligations outlined in Article 37 of the UAE Labour Law without contradicting or omitting key facts."
+      "reason": "The system answer is factually correct according to the provided source text (Article 37), but it incorrectly cites Article 13 as the source for these specific provisions regarding work-related injuries."
     },
     {
       "id": "ar-014",
       "type": "ar",
       "answerable": true,
       "question": "ما هي الإجراءات القانونية التي يتبعها الطرفان إذا تنازعوا حول حق من الحقوق المترتبة بمقتضى أحكام هذا المرسوم بقانون؟",
-      "answer": "إذا تنازع الطرفان حول حق من الحقوق، عليه أن يقدم طلباً إلى الوزارة لتسوية النزاع دوائياً [قانون العمل الاتحادي، المادة 54]. تتولى الوزارة الفصل في المنازعة إذا كانت قيمة المطالبة لا تجاوز خمسين ألف درهم أو إذا كانت بشأن عدم التزام أحد الطرفين بقرار التسوية الودية السابق [قانون العمل الاتحادي، المادة 54]. إذا تعذر التسوية الودية خلال المدة المحددة باللائحة التنفيذية، تُحال النزاع إلى المحكمة المختصة بمذكرة تتضمن ملخصاً للنزاع وتوصية الوزارة [قانون العمل الاتحادي، المادة 54]. يجوز للوزارة إلزام صاحب العمل بدفع أجر العامل لمدة شهرين بحد أقصى إذا تسبب النزاع بإيقاف صرف الأجر [قانون العمل الاتحادي، المادة 54].",
+      "answer": "إذا تنازع الطرفان حول حق من الحقوق، عليه أن يقدم طلباً إلى الوزارة لتسوية النزاع دوائياً [قانون العمل الاتحادي، المادة 54]. تتولى الوزارة الفصل في المنازعة إذا كانت قيمة المطالبة لا تجاوز خمسين ألف درهم أو إذا كانت المنازعة بشأن عدم التزام أحد الطرفين بقرار التسوية الودية السابق [قانون العمل الاتحادي، المادة 54]. إذا تعذر التسوية الودية خلال المدة المحددة باللائحة التنفيذية، فإن الوزارة تحيل النزاع إلى المحكمة المختصة بمذكرة تتضمن ملخصاً للنزاع وتوصية بها [قانون العمل الاتحادي، المادة 54]. يجوز للوزارة إلزام صاحب العمل بدفع أجر العامل لمدة شهرين بحد أقصى إذا تسبب النزاع بإيقاف صرف الأجر [قانون العمل الاتحادي، المادة 54].",
       "abstained": false,
       "abstain_reason": null,
       "top_relevance": 0.9961690306663513,
@@ -314,49 +394,65 @@
       "n_gold": 1,
       "citation_coverage": 1.0,
       "example_leaked": false,
+      "trace_id": "20261109T155703-b71fb691",
+      "context_ids": [
+        "labour_law_2021-ar-a054-p0",
+        "labour_law_2021-ar-a065-p0",
+        "labour_law_2021-ar-a056-p0",
+        "labour_law_2021-ar-a011-p0",
+        "labour_law_2021-ar-a008-p0"
+      ],
       "latency_ms": {
-        "retrieval": 3023.262791801244,
-        "first_token": 11838.217416778207,
-        "generation": 14510.02745795995,
-        "total": 17533.720083069056
+        "retrieval": 4939.855999999963,
+        "first_token": 14515.381875000003,
+        "generation": 16014.390249999906,
+        "total": 20955.394290999946
       },
-      "wall_ms": 17535.57587461546,
+      "wall_ms": 20961.67295800001,
       "faithfulness": 0.0,
       "correctness": 0.0,
-      "reason": "The system answer incorrectly cites Article 54 for the administrative penalty clause and omits the critical 15-day deadline to file a lawsuit mentioned in the reference."
+      "reason": "The system answer includes a fabricated fact about the Ministry ordering payment for two months which is not present in the provided sources or reference answer."
     },
     {
       "id": "ar-015",
       "type": "ar",
       "answerable": true,
       "question": "ما هي التزامات المنشآت فيما يتعلق برعاية السلامة المهنية للعمال؟",
-      "answer": "تلتزم المنشآت بالأحكام الواردة في القانون الاتحادي رقم (13) لسنة 2020 بشأن الصحة العامة وكافة القرارات الصادرة تنفيذًا له. وتحدد اللائحة التنفيذية لهذا المرسوم بقانون دور الوزارة والأحكام الخاصة بسلامة العمال ووقايتهم ورعايتهم الصحية [قانون العمل الاتحادي، المادة 36]. كما يجب على المنشأة توفير بيئة عمل آمنة ومناسبة للعمل [قانون العمل الاتحادي، المادة 13]. وعليها توفير وسائل الوقاية اللازمة لحماية العمال من أخطار الإصابات والأمراض المهنية التي قد تحدث أثناء العمل [قانون العمل الاتحادي، المادة 13]. ويجب ضمان توفير اللوائح الإرشادية والتوعوية، وتوفير التدريب المناسب للعمال لتجنب الوقوع في مثل هذه المخاطر [قانون العمل الاتحادي، المادة 13]. كما يجب إجراء التقييم الدوري للتأكد من التزام واستيفاء كافة أطراف العمل بمتطلبات الأمن والسلامة الصحية والمهنية [قانون العمل الاتحادي، المادة 13].",
+      "answer": "تلتزم المنشآت بالأحكام الواردة في القانون الاتحادي رقم (13) لسنة 2020 بشأن الصحة العامة وكافة القرارات الصادرة تنفيذًا له. وتحدد اللائحة التنفيذية لهذا المرسوم بقانون دور الوزارة والأحكام الخاصة بسلامة العمال ووقايتهم ورعايتهم الصحية [قانون العمل الاتحادي، المادة 36]. ويجب على المنشأة توفير بيئة عمل آمنة ومناسبة للعمل [قانون العمل الاتحادي، المادة 13]. كما يجب عليها توفير وسائل الوقاية اللازمة لحماية العمال من أخطار الإصابات والأمراض المهنية التي قد تحدث أثناء العمل [قانون العمل الاتحادي، المادة 13]. وتلتزم المنشأة بضمان توفير اللوائح الإرشادية والتوعوية، وتوفير التدريب المناسب للعمال لتجنب الوقوع في مثل هذه المخاطر [قانون العمل الاتحادي، المادة 13].",
       "abstained": false,
       "abstain_reason": null,
       "top_relevance": 0.9909552931785583,
-      "n_citations": 5,
-      "n_valid_citations": 5,
+      "n_citations": 4,
+      "n_valid_citations": 4,
       "cited_gold": 1,
       "n_gold": 1,
-      "citation_coverage": 0.8333333333333334,
+      "citation_coverage": 0.8,
       "example_leaked": false,
+      "trace_id": "20261109T155744-75f47cef",
+      "context_ids": [
+        "labour_law_2021-ar-a036-p0",
+        "labour_law_2021-ar-a016-p0",
+        "labour_law_2021-ar-a013-p0",
+        "labour_law_2021-ar-a070-p0",
+        "labour_law_2021-ar-a001-p0"
+      ],
       "latency_ms": {
-        "retrieval": 5202.337542083114,
-        "first_token": 15696.579542011023,
-        "generation": 17688.09033278376,
-        "total": 22890.938292257488
+        "retrieval": 5613.978290999967,
+        "first_token": 17130.804582999874,
+        "generation": 18058.2783750001,
+        "total": 23673.803790999955
       },
-      "wall_ms": 22898.432542104274,
+      "wall_ms": 23677.57620800012,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the reference by citing Article 36 and correctly summarizing the specific obligations regarding safety measures found in Article 13."
+      "reason": "The system answer accurately reflects the obligations of establishments regarding occupational safety as stated in Article 36 and Article 13 of the provided sources, aligning with the reference answer."
     },
     {
       "id": "ar-016",
       "type": "ar",
       "answerable": true,
       "question": "ما العقوبة القانونية على موظف عام يعرقل أو يمنع أحد الموظفين المكلفين بتنفيذ أحكام المرسوم بقانون ولائحته التنفيذية والقرارات الصادرة تنفيذه عن أداء وظيفتهم باستخدام القوة أو العنف أو التهديد؟",
-      "answer": "يعاقب الموظف العام بغرامة لا تقل عن عشرين ألف درهم ولا تزيد على مائة ألف درهم إذا قام بعرقلة أو منع موظف مكلف بتنفيذ أحكام المرسوم بقانون ولائحته التنفيذية والقرارات الصادرة تنفيذه عن أداء وظيفته باستخدام القوة أو العنف أو التهديد [قانون العمل الاتحادي، المادة 59].",
+      "answer": "يعاقب الموظف العام بغرامة لا تقل عن عشرين ألف درهم ولا تزيد على مائة ألف درهم إذا قام بعرقلة أو منع موظف مكلف بتنفيذ أحكام المرسوم بقانون ولائحته التنفيذية والقرارات الصادرة تنفيذه عن أداء وظيفته سواء باستعمال القوة أو العنف أو التهديد بها [قانون العمل الاتحادي، المادة 59].",
       "abstained": false,
       "abstain_reason": null,
       "top_relevance": 0.9992250204086304,
@@ -366,23 +462,31 @@
       "n_gold": 1,
       "citation_coverage": 1.0,
       "example_leaked": false,
+      "trace_id": "20261109T155830-99d45cf5",
+      "context_ids": [
+        "labour_law_2021-ar-a059-p0",
+        "labour_law_2021-ar-a039-p0",
+        "labour_law_2021-ar-a063-p0",
+        "labour_law_2021-ar-a064-p0",
+        "labour_law_2021-ar-a065-p0"
+      ],
       "latency_ms": {
-        "retrieval": 3301.251667086035,
-        "first_token": 9674.968666862696,
-        "generation": 8834.945832844824,
-        "total": 12136.473666876554
+        "retrieval": 4978.055708000056,
+        "first_token": 11883.218875000011,
+        "generation": 9700.182667000036,
+        "total": 14678.833333000057
       },
-      "wall_ms": 12138.178792316467,
+      "wall_ms": 14682.465459000014,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the fine amounts and conditions specified in Article 59 of the source text."
+      "reason": "The system answer accurately reflects the penalty and conditions specified in Article 59 of the provided sources, matching the reference answer."
     },
     {
       "id": "ar-017",
       "type": "ar",
       "answerable": true,
       "question": "هل تُعتبر القواعد التي تهدف إلى تعزيز مشاركة المواطنين في سوق العمل تمييزًا؟",
-      "answer": "لا تُعد القواعد والإجراءات التي تهدف إلى تعزيز مشاركة مواطني الدولة في سوق العمل تمييزًا [قانون العمل الاتحادي، المادة 70]. كما يحظر على صاحب العمل التمييز في الأعمال ذات المهام الوظيفية الواحدة بناءً على العرق أو اللون أو الجنس أو الدين أو الأصل الوطني أو الاجتماعي أو بسبب الإعاقة [قانون العمل الاتحادي، المادة 4]. يهدف هذا المرسوم بقانون إلى تعزيز كفاءة سوق العمل وتوطين الكفاءات المستقبلية [قانون العمل الاتحادي، المادة 2].",
+      "answer": "لا تُعد القواعد والإجراءات التي تهدف إلى تعزيز مشاركة مواطني الدولة في سوق العمل تمييزًا [قانون العمل الاتحادي، المادة 70]. ومع ذلك، يحظر التمييز على أساس العرق أو اللون أو الجنس أو الدين أو الأصل الوطني أو الأصل الاجتماعي أو بسبب الإعاقة بين الأشخاص [قانون العمل الاتحادي، المادة 4]. وتهدف هذه القواعد إلى تعزيز كفاءة سوق العمل في الدولة وتعزيز مشاركة مواطني الدولة فيه [قانون العمل الاتحادي، المادة 70].",
       "abstained": false,
       "abstain_reason": null,
       "top_relevance": 0.9964739680290222,
@@ -392,23 +496,31 @@
       "n_gold": 1,
       "citation_coverage": 1.0,
       "example_leaked": false,
+      "trace_id": "20261109T155900-14805f6d",
+      "context_ids": [
+        "labour_law_2021-ar-a004-p0",
+        "labour_law_2021-ar-a070-p0",
+        "labour_law_2021-ar-preamble",
+        "labour_law_2021-ar-a002-p0",
+        "labour_law_2021-ar-a001-p0"
+      ],
       "latency_ms": {
-        "retrieval": 4691.3043754175305,
-        "first_token": 13953.521999996156,
-        "generation": 13231.094249989837,
-        "total": 17922.749042045325
+        "retrieval": 4715.911083000037,
+        "first_token": 14816.909417000033,
+        "generation": 13975.165417000198,
+        "total": 18691.752749999978
       },
-      "wall_ms": 17924.605999607593,
+      "wall_ms": 18695.078833000025,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer correctly cites Article 70 and accurately reflects the reference answer's conclusion without contradicting any key facts."
+      "reason": "The system answer correctly cites the relevant articles and aligns with the reference answer's conclusion that such rules are not discrimination."
     },
     {
       "id": "ar-019",
       "type": "ar",
       "answerable": true,
       "question": "ما هي العقوبة المقررة لصاحب عمل قام بتشغيل حدث لديه مخالفاً لأحكام هذا المرسوم بقانون؟",
-      "answer": "لا يجوز تشغيل الحدث قبل تمام سن الخامسة عشرة من العمر [قانون العمل الاتحادي، المادة 5]. ويشترط لتشغيله الموافقة الخطية ممن له الولاية أو الوصاية عليه، وشهادة اللياقة الصحية، وعدم تجاوز ساعات العمل الفعلية ست ساعات يوميًّا مع فترة راحة لا تقل عن ساعة في المجموع [قانون العمل الاتحادي، المادة 5]. يُعاقب صاحب العمل بالغرامة التي لا تقل عن (5,000) خمسة آلاف درهم ولا تزيد على (1,000,000 ) مليون درهم لكل من يخالف أحكام هذا المرسوم بقانون ولائحته التنفيذية والقرارات الصادرة تنفيذًا له [قانون العمل الاتحادي، المادة 63].",
+      "answer": "لا يجوز تشغيل الحدث قبل تمام سن الخامسة عشرة من العمر [قانون العمل الاتحادي، المادة 5]. ويشترط لتشغيله الموافقة الخطية ممن له الولاية أو الوصاية عليه، وشهادة اللياقة الصحية، وعدم تجاوز ساعات العمل الفعلية ست ساعات يوميًّا مع فترة راحة لا تقل عن ساعة في المجموع [قانون العمل الاتحادي، المادة 5]. يُعاقب صاحب العمل بالغرامة التي لا تقل عن (5000) خمسة آلاف درهم ولا تزيد على (1,000,000 ) مليون درهم إذا قام بتشغيل حدث مخالفاً لأحكام هذا المرسوم بقانون ولائحته التنفيذية والقرارات الصادرة تنفيذًا له [قانون العمل الاتحادي، المادة 63].",
       "abstained": false,
       "abstain_reason": null,
       "top_relevance": 0.9984452128410339,
@@ -418,23 +530,31 @@
       "n_gold": 1,
       "citation_coverage": 1.0,
       "example_leaked": false,
+      "trace_id": "20261109T155939-2670acca",
+      "context_ids": [
+        "labour_law_2021-ar-a060-p0",
+        "labour_law_2021-ar-a005-p0",
+        "labour_law_2021-ar-a039-p0",
+        "labour_law_2021-ar-a065-p0",
+        "labour_law_2021-ar-a063-p0"
+      ],
       "latency_ms": {
-        "retrieval": 4460.673333145678,
-        "first_token": 13076.884291134775,
-        "generation": 13792.943083681166,
-        "total": 18254.008583258837
+        "retrieval": 5137.334708000026,
+        "first_token": 14664.979583000104,
+        "generation": 15121.699457999966,
+        "total": 20260.16654099999
       },
-      "wall_ms": 18256.549334153533,
+      "wall_ms": 20263.505124999938,
       "faithfulness": 0.0,
       "correctness": 0.0,
-      "reason": "The system answer cites Article 63 for the penalty instead of Article 60 as required by the reference, and fails to mention the specific fine amount of 100,000 to 1,000,000 dirhams."
+      "reason": "The system answer incorrectly cites Article 63 for the penalty regarding child labor, whereas the sources explicitly state in Article 60 that the fine is between 100,000 and 1,000,000 AED."
     },
     {
       "id": "ar-020",
       "type": "ar",
       "answerable": true,
       "question": "ما هي الشروط اللازمة لتشغيل حدث عمره 14 عاماً في وظيفة غير خطيرة؟",
-      "answer": "لا يجوز تشغيل أي شخص قبل تمام سن الخامسة عشرة من العمر، وبالتالي لا يمكن تشغيل حدث عمره 14 عاماً في أي وظيفة [قانون العمل الاتحادي، المادة 5]. ويشترط لتشغيل الحدث (وهو كل من أتم الخامسة عشرة ولم يجاوز الثامنة عشرة من عمره) الموافقة الخطية ممن له الولاية أو الوصاية عليه [قانون العمل الاتحادي، المادة 5]. كما يشترط شهادة تثبت اللياقة الصحية للعمل المطلوب صادرة عن الجهة الطبية [قانون العمل الاتحادي، المادة 5]. ولا يجوز تشغيل الحدث في الأعمال الخطرة أو الشاقة أو في أعمال تُلحق بحكم طبيعتها أضرارًا بصحته أو سلامته أو أخلاقه، حيث يصدر بتحديدها قرار من الوزير بالتنسيق مع الجهات المعنية [قانون العمل الاتحادي، المادة 5].",
+      "answer": "لا يجوز تشغيل أي شخص قبل تمام سن الخامسة عشرة من العمر، وبالتالي لا يمكن تشغيل حدث عمره 14 عاماً [قانون العمل الاتحادي، المادة 5]. ويشترط لتشغيل الحدث الموافقة الخطية ممن له الولاية أو الوصاية عليه، وشهادة تثبت اللياقة الصحية للعمل المطلوب [قانون العمل الاتحادي، المادة 5]. كما يجب ألا تزيد ساعات العمل الفعلية على ست ساعات يوميًّا، وتخللها فترة راحة لا تقل في مجموعها عن ساعة [قانون العمل الاتحادي، المادة 5]. ولا يجوز تشغيل الحدث خلال الفترة من الساعة السابعة مساءً حتى السابعة صباحًا، أو في الأعمال الخطرة أو الشاقة أو التي تُلحق أضرارًا بصحته أو سلامته أو أخلاقه [قانون العمل الاتحادي، المادة 5].",
       "abstained": false,
       "abstain_reason": null,
       "top_relevance": 0.8745784759521484,
@@ -444,42 +564,58 @@
       "n_gold": 1,
       "citation_coverage": 1.0,
       "example_leaked": false,
+      "trace_id": "20261109T160020-904b9208",
+      "context_ids": [
+        "labour_law_2021-ar-a005-p0",
+        "labour_law_2021-ar-a001-p0",
+        "labour_law_2021-ar-a060-p0",
+        "labour_law_2021-ar-a006-p0",
+        "labour_law_2021-ar-a070-p0"
+      ],
       "latency_ms": {
-        "retrieval": 4783.402666915208,
-        "first_token": 14873.315582983196,
-        "generation": 15890.328916255385,
-        "total": 20674.179332796484
+        "retrieval": 5365.4419589997815,
+        "first_token": 16482.45204199975,
+        "generation": 17208.607750000283,
+        "total": 22575.20679199979
       },
-      "wall_ms": 20675.73095811531,
-      "faithfulness": 0.0,
+      "wall_ms": 22577.947000000222,
+      "faithfulness": 1.0,
       "correctness": 0.0,
-      "reason": "The system answer incorrectly states that a 14-year-old cannot be employed at all because the definition of 'minor' starts at age 15, whereas the reference answer correctly identifies that minors are those aged 15-18 and lists specific conditions for their employment."
+      "reason": "The system answer incorrectly states that a 14-year-old cannot be employed at all, whereas the reference answer and Article 5 clarify that employment is prohibited only before age 15, meaning a 14-year-old is legally ineligible to work."
     },
     {
       "id": "ar-024",
       "type": "ar",
       "answerable": true,
       "question": "ماذا يلزم صاحب العمل به إذا لم يتمكن العامل من القيام بعمله المتفق عليه؟",
-      "answer": "يلزم صاحب العمل بتمكين العامل من القيام بعمله المتفق عليه في العقد [قانون العمل الاتحادي، المادة 26]. إذا لم يتمكن صاحب العمل من تمكين العامل من القيام بهذا العمل، فإنّه ملزم بسداد أجر العامل المتفق عليه [قانون العمل الاتحادي، المادة 26]. يُحدد اللائحة التنفيذية الإجراءات المتعلقة بترك العامل للعمل في حال عدم تمكينه من القيام بالعمل المتفق عليه في عقد العمل [قانون العمل الاتحادي، المادة 26].",
+      "answer": "يلزم صاحب العمل بتمكين العامل من القيام بعمله المتفق عليه في العقد [قانون العمل الاتحادي، المادة 26]. إذا لم يتمكن صاحب العمل من تمكين العامل من القيام بالعمل المتفق عليه، فإن صاحب العمل ملزم بسداد أجر العامل المتفق عليه [قانون العمل الاتحادي، المادة 26].",
       "abstained": false,
       "abstain_reason": null,
       "top_relevance": 0.9870562553405762,
-      "n_citations": 3,
-      "n_valid_citations": 3,
+      "n_citations": 2,
+      "n_valid_citations": 2,
       "cited_gold": 1,
       "n_gold": 1,
       "citation_coverage": 1.0,
       "example_leaked": false,
+      "trace_id": "20261109T160106-2ff00ea2",
+      "context_ids": [
+        "labour_law_2021-ar-a026-p0",
+        "labour_law_2021-ar-a012-p0",
+        "labour_law_2021-ar-a045-p0",
+        "labour_law_2021-ar-a013-p0",
+        "labour_law_2021-ar-a016-p0"
+      ],
       "latency_ms": {
-        "retrieval": 4448.0247078463435,
-        "first_token": 12420.469749718904,
-        "generation": 11551.234542392194,
-        "total": 15999.607249628752
+        "retrieval": 5178.407999999763,
+        "first_token": 13994.367249999868,
+        "generation": 11309.353957999974,
+        "total": 16488.44658300004
       },
-      "wall_ms": 16001.013124827296,
-      "faithfulness": 0.0,
-      "correctness": 0.0,
-      "reason": "The system answer incorrectly attributes the employer's obligation to pay wages when unable to enable work to Article 26, whereas the reference answer correctly cites Article 12."
+      "wall_ms": 16493.11816699992,
+      "faithfulness": 1.0,
+      "correctness": 1.0,
+      "reason": "The system answer accurately reflects the reference answer and is fully supported by Article 26 of the provided sources."
     },
     {
       "id": "ar-027",
@@ -496,23 +632,31 @@
       "n_gold": 1,
       "citation_coverage": 1.0,
       "example_leaked": false,
+      "trace_id": "20261109T160139-c28d506d",
+      "context_ids": [
+        "labour_law_2021-ar-a001-p0",
+        "labour_law_2021-ar-a001-p1",
+        "labour_law_2021-ar-a065-p0",
+        "labour_law_2021-ar-a008-p0",
+        "labour_law_2021-ar-a013-p0"
+      ],
       "latency_ms": {
-        "retrieval": 5134.516583289951,
-        "first_token": 16876.341291237622,
-        "generation": 14162.713374942541,
-        "total": 19297.527000308037
+        "retrieval": 5403.852749999714,
+        "first_token": 18139.113583999915,
+        "generation": 15294.36133299987,
+        "total": 20698.712749999686
       },
-      "wall_ms": 19298.91120828688,
+      "wall_ms": 20700.964749999912,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the definitions provided in Article 1 of the source text without adding or contradicting information."
+      "reason": "The system answer accurately reflects the definitions of 'employer' and 'employee' as stated in the reference answer and supported by Article 1 of the provided sources."
     },
     {
       "id": "ar-029",
       "type": "ar",
       "answerable": true,
       "question": "ما مقدار إجازة الوضع التي تستحقها العاملة وتفاصيل الأجر فيها؟",
-      "answer": "تستحق العاملة إجازة وضع مدتها ستين يومًا، حيث تُمنح أول خمسة وأربعين يومًا بأجر كامل وتُمنح الخمسة عشر اليوم التالية بنصف أجر. لا تنقطع العاملة عن العمل بدون أجر لمدة تزيد على خمسة وأربعين يومًا متصلة أو متقطعة إذا كان الانقطاع بسبب مرضها أو طفلها الناتج عن الحمل أو الوضع، ولا تدخل هذه المدة ضمن مدة الخدمة التي تستحق عنها مكافأة نهاية الخدمة أو مدة الاشتراك في نظام التقاعد. تُمنح العاملة إجازة وضع إضافية مدتها ثلاثين يومًا بأجر كامل بعد انتهاء مدة الإجازة الأصلية إذا كان طفلها مريضًا أو من ذوي الإعاقة ويتطلب مرافقًا مستمرًا، مع الحق في تمديد هذه الإجازة لمدة ثلاثين يومًا دون أجر. يجب على صاحب العمل منح العاملة إجازة وضع متى طلبتها في أي وقت اعتبارًا من اليوم الأخير للشهر السابق مباشرةً على الشهر المتوقع الوضع فيه، ويثبت ذلك بموجب شهادة طبية صادرة عن الجهة الطبية.",
+      "answer": "تستحق العاملة إجازة وضع مدتها ستين يومًا، حيث تكون الخمسة وأربعين يومًا الأولى بأجر كامل والخمسة عشر التي تليها بنصف أجر. وتبدأ هذه الإجازة متى طلبتها العاملة في أي وقت اعتبارًا من اليوم الأخير للشهر السابق مباشرةً على الشهر المتوقع الوضع فيه. كما تستحق إجازة وضع إضافية مدتها ثلاثون يومًا بأجر كامل بعد انتهاء مدة إجازة الوضع الأساسية، إذا كان الطفل مريضًا أو من ذوي الإعاقة ويتطلب مرافقًا مستمرًا له.",
       "abstained": false,
       "abstain_reason": null,
       "top_relevance": 0.9950672388076782,
@@ -522,23 +666,31 @@
       "n_gold": 1,
       "citation_coverage": 0.0,
       "example_leaked": false,
+      "trace_id": "20261109T160222-9a423d64",
+      "context_ids": [
+        "labour_law_2021-ar-a030-p0",
+        "labour_law_2021-ar-a029-p0",
+        "labour_law_2021-ar-a028-p0",
+        "labour_law_2021-ar-a032-p0",
+        "labour_law_2021-ar-a031-p0"
+      ],
       "latency_ms": {
-        "retrieval": 3622.6620418019593,
-        "first_token": 13349.486582912505,
-        "generation": 16633.157707750797,
-        "total": 20256.230750121176
+        "retrieval": 5622.207707999678,
+        "first_token": 15754.842457999985,
+        "generation": 14265.066499999648,
+        "total": 19887.871957999778
       },
-      "wall_ms": 20258.976582903415,
+      "wall_ms": 19891.757667000093,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects all key facts and numbers from the reference answer without contradicting the source text."
+      "reason": "The system answer accurately reflects the reference answer's key facts regarding the duration and pay structure of maternity leave while correctly adding relevant details from the source laws."
     },
     {
       "id": "ar-030",
       "type": "ar",
       "answerable": true,
       "question": "ما عقوبة ارتكاب مخالفة مماثلة قبل مرور سنة واحدة على حكم سابق؟",
-      "answer": "في حالة العودة إلى ارتكاب أي مخالفة مماثلة قبل مرور سنة على الحكم السابق عليها، يعاقب الفاعل بالحبس مع مضاعفة الغرامة المقررة في المرسوم بقانون أو إحدى هاتين العقوبتين [قانون العمل الاتحادي، المادة 64].",
+      "answer": "في حالة العودة إلى ارتكاب أي مخالفة مشابهة لحكم سابق صدر قبل مرور سنة واحدة، يعاقب الفاعل بالحبس مع مضاعفة الغرامة المقررة في المرسوم بقانون أو إحدى هاتين العقوبتين [قانون العمل الاتحادي، المادة 64].",
       "abstained": false,
       "abstain_reason": null,
       "top_relevance": 0.995377779006958,
@@ -548,16 +700,24 @@
       "n_gold": 1,
       "citation_coverage": 1.0,
       "example_leaked": false,
+      "trace_id": "20261109T160303-f92af8db",
+      "context_ids": [
+        "labour_law_2021-ar-a064-p0",
+        "labour_law_2021-ar-a063-p0",
+        "labour_law_2021-ar-a039-p0",
+        "labour_law_2021-ar-a061-p0",
+        "labour_law_2021-ar-a062-p0"
+      ],
       "latency_ms": {
-        "retrieval": 4268.43775017187,
-        "first_token": 8146.108583081514,
-        "generation": 5870.803707744926,
-        "total": 10139.44875029847
+        "retrieval": 4467.545667000195,
+        "first_token": 8684.231249999812,
+        "generation": 6410.547457999655,
+        "total": 10878.593375000037
       },
-      "wall_ms": 10142.99750002101,
+      "wall_ms": 10881.633957999838,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the legal provisions and key facts of the reference answer without contradiction."
+      "reason": "The system answer accurately reflects the penalty and conditions stated in the reference answer based on Article 64 of the provided sources."
     },
     {
       "id": "ar-031",
@@ -574,23 +734,31 @@
       "n_gold": 1,
       "citation_coverage": 1.0,
       "example_leaked": false,
+      "trace_id": "20261109T160324-697e9e79",
+      "context_ids": [
+        "labour_law_2021-ar-a019-p0",
+        "labour_law_2021-ar-a017-p0",
+        "labour_law_2021-ar-a018-p0",
+        "labour_law_2021-ar-a005-p0",
+        "labour_law_2021-ar-a028-p0"
+      ],
       "latency_ms": {
-        "retrieval": 3406.621207948774,
-        "first_token": 10041.253250092268,
-        "generation": 8773.947209119797,
-        "total": 12180.812625214458
+        "retrieval": 5423.660500000096,
+        "first_token": 12405.371750000086,
+        "generation": 9144.930124999973,
+        "total": 14570.599958999992
       },
-      "wall_ms": 12183.339915703982,
+      "wall_ms": 14574.313915999937,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the limits on overtime hours and weekly totals as specified in Article 19 of the source text."
+      "reason": "The system answer accurately reflects the maximum overtime hours per day and the total limit over three weeks as stated in Article 19 of the provided sources."
     },
     {
       "id": "ar-033",
       "type": "ar",
       "answerable": true,
       "question": "هل يجوز لصاحب العمل إنهاء خدمة العامل لعدم لياقته الصحية قبل استنفاده الإجازات المتبقية؟",
-      "answer": "لا يجوز لصاحب العمل إنهاء خدمة العامل لعدم لياقته الصحية قبل استنفاده الإجازات المتبقية له. [قانون العمل الاتحادي، المادة 46]\nوقد يقع باطلاً كل اتفاق على خلاف ذلك، ولو كان مبرمًا قبل العمل بأحكام هذا المرسوم بقانون. [قانون العمل الاتحادي، المادة 46]",
+      "answer": "لا يجوز لصاحب العمل إنهاء خدمة العامل لعدم لياقته الصحية قبل استنفاده الإجازات المتبقية له. [قانون العمل الاتحادي، المادة 46]\nويقع باطلاً كل اتفاق على خلاف ذلك، ولو كان مبرمًا قبل العمل بأحكام هذا المرسوم بقانون. [قانون العمل الاتحادي، المادة 46]",
       "abstained": false,
       "abstain_reason": null,
       "top_relevance": 0.9998571872711182,
@@ -600,75 +768,99 @@
       "n_gold": 1,
       "citation_coverage": 0.5,
       "example_leaked": false,
+      "trace_id": "20261109T160355-ec04c107",
+      "context_ids": [
+        "labour_law_2021-ar-a046-p0",
+        "labour_law_2021-ar-a031-p0",
+        "labour_law_2021-ar-a030-p0",
+        "labour_law_2021-ar-a029-p0",
+        "labour_law_2021-ar-a047-p0"
+      ],
       "latency_ms": {
-        "retrieval": 3229.8260000534356,
-        "first_token": 12273.351457901299,
-        "generation": 11633.02162475884,
-        "total": 14863.088250160217
+        "retrieval": 4992.2823749998315,
+        "first_token": 14624.855416999708,
+        "generation": 12440.175375000308,
+        "total": 17433.05237499999
       },
-      "wall_ms": 14864.490000065416,
+      "wall_ms": 17441.75437499962,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the key facts and legal provisions of Article 46 found in the source text."
+      "reason": "The system answer accurately reflects the reference answer and is fully supported by Article 46 of the provided sources."
     },
     {
       "id": "ar-034",
       "type": "ar",
       "answerable": true,
       "question": "كم عدد أيام الإجازة المرضية التي يستحقها العامل بعد انتهاء فترة التجربة، وما هي طريقة احتساب الأجر فيها؟",
-      "answer": "يستحق العامل بعد انتهاء فترة التجربة إجازة مرضية لا تزيد مدتها على تسعين يومًا متصلة أو متقطعة عن كل سنة [قانون العمل الاتحادي، المادة 31]. يتم احتساب هذه الإجازة كالتالي: خمسون عشر يومًا الأولى بأجر كامل وثلاثين يومًا التالية بنصف أجر [قانون العمل الاتحادي، المادة 31]. أما المدة التي تلي ذلك فلا يُستحق عنها أي أجر [قانون العمل الاتحادي، المادة 31].",
+      "answer": "يستحق العامل بعد انتهاء فترة التجربة إجازة مرضية لا تزيد مدتها على تسعين يومًا متصلة أو متقطعة عن كل سنة [قانون العمل الاتحادي، المادة 31]. يتم احتساب هذه الإجازة كالتالي: خمسون عشر يومًا الأولى بأجر كامل وثلاثين يومًا التالية بنصف أجر والمدة المتبقية بدون أجر [قانون العمل الاتحادي، المادة 31].",
       "abstained": false,
       "abstain_reason": null,
       "top_relevance": 0.9969478249549866,
-      "n_citations": 3,
-      "n_valid_citations": 3,
+      "n_citations": 2,
+      "n_valid_citations": 2,
       "cited_gold": 1,
       "n_gold": 1,
       "citation_coverage": 1.0,
       "example_leaked": false,
+      "trace_id": "20261109T160431-3cae675e",
+      "context_ids": [
+        "labour_law_2021-ar-a031-p0",
+        "labour_law_2021-ar-a029-p0",
+        "labour_law_2021-ar-a009-p0",
+        "labour_law_2021-ar-a001-p0",
+        "labour_law_2021-ar-a032-p0"
+      ],
       "latency_ms": {
-        "retrieval": 5491.96841660887,
-        "first_token": 16847.9306246154,
-        "generation": 15054.163791239262,
-        "total": 20546.48095788434
+        "retrieval": 5926.010125000175,
+        "first_token": 18405.63187500038,
+        "generation": 15739.4818329999,
+        "total": 21666.19558399998
       },
-      "wall_ms": 20547.72337526083,
+      "wall_ms": 21669.057707999855,
       "faithfulness": 1.0,
-      "correctness": 1.0,
-      "reason": "The system answer accurately reflects the duration and pay calculation rules for sick leave after probation as stated in Article 31."
+      "correctness": 0.0,
+      "reason": "The system answer incorrectly states '51 days' instead of the correct '15 days' for full pay, contradicting both the reference and source text."
     },
     {
       "id": "en-002",
       "type": "en",
       "answerable": true,
       "question": "If an employee suffers a work injury that prevents them from working for seven months, how much should their employer pay?",
-      "answer": "The employer must pay the worker the equivalent of his full wage for the duration of treatment up to six (6) months. If the treatment period exceeds six (6) months, the employer must pay half the wage for another six (6) months or until the worker is cured, proven to be disabled, or dies, whichever comes first. This payment applies provided the injury was not caused by deliberate self-injury, intoxication, intentional violation of safety instructions, wilful misconduct, or refusal to follow medical treatment [Federal Labour Law, Article 38]. The definition of a work injury includes any accident sustained while performing work or on the way to or from work without diversion [Federal Labour Law, Article 1].",
+      "answer": "Under the Federal Labour Law, if a work injury prevents a worker from performing duties, the Employer must pay the equivalent of the full wage for the duration of treatment or for a period of six (6) months, whichever is less. If the treatment period exceeds six (6) months, the Employer shall pay half the wage for another six (6) months, or until the Worker is cured, proven to be disabled, or dies, whichever comes first. This payment applies provided the injury was not caused by deliberate self-injury, intoxication, intentional violation of safety instructions, wilful misconduct, or refusal to follow medical treatment as per Article 38 [Federal Labour Law, Article 37].",
       "abstained": false,
       "abstain_reason": null,
       "top_relevance": 0.8869683742523193,
-      "n_citations": 2,
-      "n_valid_citations": 2,
-      "cited_gold": 0,
+      "n_citations": 1,
+      "n_valid_citations": 1,
+      "cited_gold": 1,
       "n_gold": 1,
-      "citation_coverage": 0.5,
+      "citation_coverage": 0.3333333333333333,
       "example_leaked": false,
+      "trace_id": "20261109T160516-dc4324dd",
+      "context_ids": [
+        "labour_law_2021-en-a037-p0",
+        "labour_law_2021-en-a001-p1",
+        "labour_law_2021-en-a031-p0",
+        "labour_law_2021-en-a038-p0",
+        "labour_law_2021-en-a047-p0"
+      ],
       "latency_ms": {
-        "retrieval": 3581.8205419927835,
-        "first_token": 12365.747584030032,
-        "generation": 13417.019541841,
-        "total": 16999.011625070125
+        "retrieval": 5558.95266699963,
+        "first_token": 14698.797207999633,
+        "generation": 14143.257582999922,
+        "total": 19702.653749999627
       },
-      "wall_ms": 17000.867124646902,
+      "wall_ms": 19709.033416999773,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the payment schedule and conditions outlined in Article 37 without contradicting any source material."
+      "reason": "The system answer accurately reflects the payment structure (full wage for 6 months, then half wage for another 6 months) and conditions specified in Article 37 of the Federal Labour Law."
     },
     {
       "id": "en-003",
       "type": "en",
       "answerable": true,
       "question": "What is the definition of 'Basic Wage' according to this Decree?",
-      "answer": "The Basic Wage is defined as the wage specified in the employment contract paid to the Worker in return for his work under that contract on a monthly, weekly, daily, hourly, or piece-meal basis. This definition explicitly excludes any other allowances or benefits in kind [Federal Labour Law, Article 1].",
+      "answer": "The Basic Wage is defined as the wage specified in the employment contract paid to the Worker in return for his work under that contract on a monthly, weekly, daily, hourly, or piece-meal basis. This definition explicitly excludes any other allowances or benefits in kind from being considered part of the Basic Wage [Federal Labour Law, Article 1].",
       "abstained": false,
       "abstain_reason": null,
       "top_relevance": 0.980897068977356,
@@ -678,23 +870,31 @@
       "n_gold": 1,
       "citation_coverage": 0.5,
       "example_leaked": false,
+      "trace_id": "20261109T160554-ea930ccc",
+      "context_ids": [
+        "labour_law_2021-en-a001-p1",
+        "labour_law_2021-en-a051-p0",
+        "labour_law_2021-en-a037-p0",
+        "labour_law_2021-en-a019-p0",
+        "labour_law_2021-en-a001-p0"
+      ],
       "latency_ms": {
-        "retrieval": 4719.438915606588,
-        "first_token": 15692.614707630128,
-        "generation": 12970.755333080888,
-        "total": 17690.36345789209
+        "retrieval": 4943.78133400005,
+        "first_token": 16597.083541999837,
+        "generation": 14096.581291999883,
+        "total": 19040.702624999994
       },
-      "wall_ms": 17692.724333144724,
+      "wall_ms": 19044.27987500003,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the definition of Basic Wage found in Article 1 without contradicting or omitting key facts."
+      "reason": "The system answer accurately reflects the definition of Basic Wage provided in Article 1 of the Federal Labour Law and matches the reference answer."
     },
     {
       "id": "en-004",
       "type": "en",
       "answerable": true,
       "question": "What are the penalties for providing incorrect information to recruit a foreigner or obstructing a worker assigned to implement the Decree?",
-      "answer": "A fine not less than (20,000) AED and not exceeding (100,000) AED shall be imposed on any person who provides incorrect information or documents with the intention of recruiting a foreigner to the State to work therein [Federal Labour Law, Article 59].\nA fine not less than (20,000) AED and not exceeding (100,000) AED shall be imposed on any person who obstructs or prevents a Worker assigned to implement the provisions of this Decree by law and its Executive Regulation from performing his job [Federal Labour Law, Article 59].\nIf the violation is repeated before one year as of the previous judgment for a similar violation, the perpetrator shall be punished by imprisonment and/or double the fine stipulated in this Decree by law [Federal Labour Law, Article 64].",
+      "answer": "A fine not less than (20,000) AED and not exceeding (100,000) AED shall be imposed on any person who provides incorrect information or documents with the intention of recruiting a foreigner to the State to work therein [Federal Labour Law, Article 59].\nA fine not less than (20,000) AED and not exceeding (100,000) AED shall be imposed on any person who obstructs or prevents a Worker assigned to implement the provisions of this Decree by law from performing his job [Federal Labour Law, Article 59].\nIf the violation is repeated within one year of a previous judgment for a similar offense, the perpetrator shall be punished by imprisonment and/or double the fine stipulated in the Decree [Federal Labour Law, Article 64].",
       "abstained": false,
       "abstain_reason": null,
       "top_relevance": 0.9988664388656616,
@@ -704,23 +904,31 @@
       "n_gold": 1,
       "citation_coverage": 1.0,
       "example_leaked": false,
+      "trace_id": "20261109T160633-94722f84",
+      "context_ids": [
+        "labour_law_2021-en-a059-p0",
+        "labour_law_2021-en-a060-p0",
+        "labour_law_2021-en-a065-p0",
+        "labour_law_2021-en-a064-p0",
+        "labour_law_2021-en-a016-p0"
+      ],
       "latency_ms": {
-        "retrieval": 2886.5523329004645,
-        "first_token": 11602.89195785299,
-        "generation": 14717.870666645467,
-        "total": 17604.628957808018
+        "retrieval": 4846.88104199995,
+        "first_token": 13862.490459000128,
+        "generation": 15276.096167000105,
+        "total": 20124.040292000245
       },
-      "wall_ms": 17606.64104204625,
+      "wall_ms": 20128.25895800006,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately cites the correct fines and penalties from Article 59 and correctly adds the repetition clause from Article 64."
+      "reason": "The system answer accurately reflects the penalties and conditions stated in the reference answer and is fully supported by the provided source articles."
     },
     {
       "id": "en-005",
       "type": "en",
       "answerable": true,
       "question": "What happens to Federal Law No. (8) of 1980 Regulating the Labor Relations and any previous resolutions that contradict this Decree?",
-      "answer": "Federal Law No. (8) of 1980 Regulating the Labor Relations shall be redeemed [Federal Labour Law, Article 73]. Any provision that violates or contradicts the provisions of this Decree by law is hereby repealed [Federal Labour Law, Article 73]. Resolutions, systems, and rules in force before the entry into force of this Decree by law remain in force only until their replacements are issued in accordance with its provisions [Federal Labour Law, Article 73].",
+      "answer": "Federal Law No. (8) of 1980 Regulating the Labor Relations shall be redeemed [Federal Labour Law, Article 73]. Any provision that violates or contradicts the provisions of this Decree by law is hereby repealed [Federal Labour Law, Article 73]. Resolutions, systems, and rules in force before the entry into force of this Decree by law remain in force only if they do not conflict with its provisions until their replacements are issued [Federal Labour Law, Article 73].",
       "abstained": false,
       "abstain_reason": null,
       "top_relevance": 0.998347282409668,
@@ -730,23 +938,31 @@
       "n_gold": 1,
       "citation_coverage": 1.0,
       "example_leaked": false,
+      "trace_id": "20261109T160710-f46e5c8e",
+      "context_ids": [
+        "labour_law_2021-en-a073-p0",
+        "labour_law_2021-en-a064-p0",
+        "labour_law_2021-en-preamble",
+        "labour_law_2021-en-a068-p0",
+        "labour_law_2021-en-a065-p0"
+      ],
       "latency_ms": {
-        "retrieval": 3326.0983331128955,
-        "first_token": 10292.761833406985,
-        "generation": 10322.283249814063,
-        "total": 13648.589916992933
+        "retrieval": 4574.129374999757,
+        "first_token": 11888.393707999967,
+        "generation": 11019.703458000095,
+        "total": 15594.248291999975
       },
-      "wall_ms": 13653.968624770641,
-      "faithfulness": 0.0,
-      "correctness": 0.0,
-      "reason": "The system answer incorrectly states that prior resolutions remain in force only until replacements are issued, whereas the source text explicitly allows them to remain in force unless they conflict with the new Decree."
+      "wall_ms": 15596.54025000009,
+      "faithfulness": 1.0,
+      "correctness": 1.0,
+      "reason": "The system answer accurately reflects the repeal of Federal Law No. (8) of 1980 and the status of conflicting previous resolutions as stated in Article 73."
     },
     {
       "id": "en-006",
       "type": "en",
       "answerable": true,
       "question": "What is the maximum normal working hour limit per day for a full-time worker?",
-      "answer": "The maximum normal working hours for workers shall be eight (8) hours per day [Federal Labour Law, Article 17]. The Cabinet may increase or decrease these daily working hours for specific economic sectors or categories of labor according to the Executive Regulation [Federal Labour Law, Article 17]. In the event that a worker works full-time, the employer may not require the worker to work more than the hours agreed upon in the employment contract without the worker's written consent [Federal Labour Law, Article 17].",
+      "answer": "The maximum normal working hours for workers shall be eight (8) hours per day [Federal Labour Law, Article 17]. The Cabinet may increase or decrease these daily working hours for specific economic sectors or labor categories according to the Executive Regulation of this Decree by law [Federal Labour Law, Article 17]. For full-time workers, employers may not require them to work more than the hours agreed upon in the employment contract without the worker's written consent [Federal Labour Law, Article 17].",
       "abstained": false,
       "abstain_reason": null,
       "top_relevance": 0.9832487106323242,
@@ -756,16 +972,24 @@
       "n_gold": 1,
       "citation_coverage": 1.0,
       "example_leaked": false,
+      "trace_id": "20261109T160742-1277ced7",
+      "context_ids": [
+        "labour_law_2021-en-a017-p0",
+        "labour_law_2021-en-a019-p0",
+        "labour_law_2021-en-a005-p0",
+        "labour_law_2021-en-a018-p0",
+        "labour_law_2021-en-a051-p0"
+      ],
       "latency_ms": {
-        "retrieval": 4530.304250307381,
-        "first_token": 12059.421957936138,
-        "generation": 11016.26891689375,
-        "total": 15546.800083015114
+        "retrieval": 5080.467499999941,
+        "first_token": 13126.953291999598,
+        "generation": 11632.29470799979,
+        "total": 16713.194416999613
       },
-      "wall_ms": 15549.862875137478,
+      "wall_ms": 16715.163500000017,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately cites Article 17 and correctly states the eight-hour limit without contradicting or omitting key facts."
+      "reason": "The system answer correctly states the maximum normal working hours as eight (8) hours per day based on Article 17 and accurately reflects the reference answer."
     },
     {
       "id": "en-008",
@@ -782,23 +1006,31 @@
       "n_gold": 1,
       "citation_coverage": 1.0,
       "example_leaked": false,
+      "trace_id": "20261109T160816-249292b5",
+      "context_ids": [
+        "labour_law_2021-en-a051-p0",
+        "labour_law_2021-en-a052-p0",
+        "labour_law_2021-en-a047-p0",
+        "labour_law_2021-en-a068-p0",
+        "labour_law_2021-en-a039-p0"
+      ],
       "latency_ms": {
-        "retrieval": 4180.594500154257,
-        "first_token": 10635.3355422616,
-        "generation": 10129.652417264879,
-        "total": 14310.452708043158
+        "retrieval": 4669.6577500001695,
+        "first_token": 11297.030084000198,
+        "generation": 10692.011499999808,
+        "total": 15362.054374999843
       },
-      "wall_ms": 14311.838708352298,
+      "wall_ms": 15364.179708000393,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the calculation rates and the two-year cap for foreign workers as specified in Article 51."
+      "reason": "The system answer accurately reflects the calculation rules and the two-year wage cap stated in the reference answer and Article 51."
     },
     {
       "id": "en-011",
       "type": "en",
       "answerable": true,
       "question": "What must establishments comply with regarding public health and workers' safety?",
-      "answer": "Establishments must abide by the provisions contained in Federal Law No. (13) of 2020 Concerning Public Health and all resolutions issued in implementation thereof [Federal Labour Law, Article 36]. They must also comply with any other legislation issued in this regard [Federal Labour Law, Article 36]. Furthermore, establishments are required to implement occupational safety and health instructions determined within the Establishment in accordance with the legislation in force or work systems and instructions [Federal Labour Law, Article 16].",
+      "answer": "Establishments must abide by the provisions contained in Federal Law No. (13) of 2020 Concerning Public Health and all resolutions issued in implementation thereof [Federal Labour Law, Article 36]. They must also comply with any other legislation issued in this regard [Federal Labour Law, Article 36]. Furthermore, establishments are required to implement occupational safety and health instructions determined in the Establishment in accordance with the legislation in force or work systems and instructions [Federal Labour Law, Article 16].",
       "abstained": false,
       "abstain_reason": null,
       "top_relevance": 0.9552927613258362,
@@ -808,16 +1040,24 @@
       "n_gold": 1,
       "citation_coverage": 0.75,
       "example_leaked": false,
+      "trace_id": "20261109T160847-de276e29",
+      "context_ids": [
+        "labour_law_2021-en-a036-p0",
+        "labour_law_2021-en-a044-p0",
+        "labour_law_2021-en-a016-p0",
+        "labour_law_2021-en-a001-p0",
+        "labour_law_2021-en-a013-p0"
+      ],
       "latency_ms": {
-        "retrieval": 5149.03570804745,
-        "first_token": 14843.553957995027,
-        "generation": 13044.415874872357,
-        "total": 18193.677292205393
+        "retrieval": 5568.322042000091,
+        "first_token": 15746.16904200002,
+        "generation": 13850.621042000057,
+        "total": 19419.399667000107
       },
-      "wall_ms": 18201.562458183616,
+      "wall_ms": 19425.897042000088,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the reference answer's key facts regarding Federal Law No. (13) of 2020 and correctly cites the relevant articles from the source text."
+      "reason": "The system answer accurately reflects the requirements stated in the reference answer and is fully supported by the provided source articles."
     },
     {
       "id": "en-013",
@@ -834,23 +1074,31 @@
       "n_gold": 1,
       "citation_coverage": 1.0,
       "example_leaked": false,
+      "trace_id": "20261109T160922-d0ec9aed",
+      "context_ids": [
+        "labour_law_2021-en-a010-p0",
+        "labour_law_2021-en-a013-p0",
+        "labour_law_2021-en-a017-p0",
+        "labour_law_2021-en-a040-p0",
+        "labour_law_2021-en-a043-p0"
+      ],
       "latency_ms": {
-        "retrieval": 4557.893709279597,
-        "first_token": 12705.602834001184,
-        "generation": 11189.589791931212,
-        "total": 15747.669834177941
+        "retrieval": 5302.308042000277,
+        "first_token": 14193.382417000066,
+        "generation": 12197.993250000309,
+        "total": 17500.6705830001
       },
-      "wall_ms": 15750.425749924034,
+      "wall_ms": 17504.48995800025,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the conditions and two-year duration specified in Article 10 of the Federal Labour Law."
+      "reason": "The system answer accurately reflects the conditions and maximum duration specified in Article 10 of the Federal Labour Law as presented in the reference."
     },
     {
       "id": "en-014",
       "type": "en",
       "answerable": true,
       "question": "What wage requirement applies if a woman performs the same work as a man?",
-      "answer": "A woman shall be paid a wage similar to a man's wage if she performs the same work or another work of equal value [Federal Labour Law, Article 4]. A Cabinet resolution shall be issued, upon a proposal by the Minister, to determine the procedures, controls, and criteria necessary for evaluating work of equal value [Federal Labour Law, Article 4]. The basic wage is defined as the wage specified in the employment contract paid to the Worker in return for his work under the employment contract on a monthly, weekly, daily, hourly, or piece-meal basis [Federal Labour Law, Article 1].",
+      "answer": "A woman shall be paid a wage similar to a man's wage if she performs the same work or another work of equal value [Federal Labour Law, Article 4]. A Cabinet resolution shall be issued, upon a proposal by the Minister, to determine the procedures, controls, and criteria necessary for evaluating work of equal value [Federal Labour Law, Article 4]. The basic wage is defined as the wage specified in the employment contract paid to the Worker in return for his work under the employment contract on a monthly, weekly, daily, hourly or piece-meal basis [Federal Labour Law, Article 1].",
       "abstained": false,
       "abstain_reason": null,
       "top_relevance": 0.9572668671607971,
@@ -860,16 +1108,24 @@
       "n_gold": 1,
       "citation_coverage": 1.0,
       "example_leaked": false,
+      "trace_id": "20261109T160958-75af8989",
+      "context_ids": [
+        "labour_law_2021-en-a004-p0",
+        "labour_law_2021-en-a001-p1",
+        "labour_law_2021-en-a013-p0",
+        "labour_law_2021-en-a026-p0",
+        "labour_law_2021-ar-a001-p0"
+      ],
       "latency_ms": {
-        "retrieval": 5230.690749827772,
-        "first_token": 15237.63179173693,
-        "generation": 14179.786749649793,
-        "total": 19410.64541693777
+        "retrieval": 5469.023374999779,
+        "first_token": 15909.079874999861,
+        "generation": 14738.20008299981,
+        "total": 20207.603958000163
       },
-      "wall_ms": 19412.778250407428,
+      "wall_ms": 20209.722542000236,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the reference answer's key facts and cites the correct source articles."
+      "reason": "The system answer accurately reflects the reference answer's key facts regarding equal pay for equal work and correctly cites the supporting articles."
     },
     {
       "id": "en-015",
@@ -886,23 +1142,31 @@
       "n_gold": 1,
       "citation_coverage": 1.0,
       "example_leaked": false,
+      "trace_id": "20261109T161035-2eccef76",
+      "context_ids": [
+        "labour_law_2021-en-a055-p0",
+        "labour_law_2021-en-a060-p0",
+        "labour_law_2021-en-a061-p0",
+        "labour_law_2021-en-a059-p0",
+        "labour_law_2021-en-a054-p0"
+      ],
       "latency_ms": {
-        "retrieval": 4762.961375061423,
-        "first_token": 11550.765291322023,
-        "generation": 9385.044500231743,
-        "total": 14148.265541065484
+        "retrieval": 5551.336167000045,
+        "first_token": 13415.021792000061,
+        "generation": 11171.301875000154,
+        "total": 16723.37829199978
       },
-      "wall_ms": 14151.86379197985,
+      "wall_ms": 16733.347332999983,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the exemption conditions and fee limits specified in Article 55 of the Federal Labour Law."
+      "reason": "The system answer accurately reflects the reference answer and is fully supported by the provided source text."
     },
     {
       "id": "en-016",
       "type": "en",
       "answerable": true,
       "question": "What are the paid leave entitlements for a worker whose spouse or parent dies, and what is the deadline for parental leave?",
-      "answer": "A worker is entitled to five (5) days of paid mourning leave if their spouse dies [Federal Labour Law, Article 32].\nIf the death involves the mother, father, son, brother, sister, grandson, grandfather, or grandmother, the worker receives three (3) days of paid mourning leave [Federal Labour Law, Article 32].\nFor parental leave to care for a child, the worker is entitled to five (5) working days with full pay [Federal Labour Law, Article 32].\nThis parental leave must be taken within a period of six (6) months as of the date of the child's birth [Federal Labour Law, Article 32].",
+      "answer": "A worker is entitled to five (5) days of paid mourning leave if their spouse dies [Federal Labour Law, Article 32]. A worker is also entitled to three (3) days of paid mourning leave if the death of their mother, father, son, brother, sister, grandson, grandfather, or grandmother occurs [Federal Labour Law, Article 32]. For parental leave, a worker may take five (5) working days with full pay to care for their child [Federal Labour Law, Article 32]. This parental leave must be taken within a period of six (6) months as of the date of the child's birth [Federal Labour Law, Article 32].",
       "abstained": false,
       "abstain_reason": null,
       "top_relevance": 0.9414037466049194,
@@ -912,16 +1176,24 @@
       "n_gold": 1,
       "citation_coverage": 1.0,
       "example_leaked": false,
+      "trace_id": "20261109T161106-40dd2c89",
+      "context_ids": [
+        "labour_law_2021-en-a032-p0",
+        "labour_law_2021-en-a015-p0",
+        "labour_law_2021-en-a029-p0",
+        "labour_law_2021-en-a030-p0",
+        "labour_law_2021-en-a037-p0"
+      ],
       "latency_ms": {
-        "retrieval": 3920.3897090628743,
-        "first_token": 13227.100749965757,
-        "generation": 13248.858999926597,
-        "total": 17169.464875012636
+        "retrieval": 5009.380500000134,
+        "first_token": 15608.241707999696,
+        "generation": 15569.770874999904,
+        "total": 20579.52162499987
       },
-      "wall_ms": 17172.189000062644,
+      "wall_ms": 20582.851500000288,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects all key facts and deadlines found in the reference answer without contradicting the source text."
+      "reason": "The system answer accurately reflects the reference answer and source text regarding mourning leave durations and parental leave conditions."
     },
     {
       "id": "en-019",
@@ -938,23 +1210,31 @@
       "n_gold": 1,
       "citation_coverage": 1.0,
       "example_leaked": false,
+      "trace_id": "20261109T161146-5f695708",
+      "context_ids": [
+        "labour_law_2021-en-a031-p0",
+        "labour_law_2021-en-a029-p0",
+        "labour_law_2021-en-a037-p0",
+        "labour_law_2021-en-a009-p0",
+        "labour_law_2021-en-a034-p0"
+      ],
       "latency_ms": {
-        "retrieval": 4285.120124928653,
-        "first_token": 12156.404874753207,
-        "generation": 11419.771708082408,
-        "total": 15705.088082700968
+        "retrieval": 4981.3213749998795,
+        "first_token": 14461.18554199984,
+        "generation": 13982.953958000053,
+        "total": 18964.607041999898
       },
-      "wall_ms": 15707.163915969431,
+      "wall_ms": 18967.14958299981,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects all key facts and conditions regarding sick leave entitlements after the probation period as stated in Article 31."
+      "reason": "The system answer accurately reflects the sick leave entitlements (90 days total: 15 full pay, 30 half pay, remainder unpaid) and conditions specified in Article 31 of the Federal Labour Law."
     },
     {
       "id": "en-020",
       "type": "en",
       "answerable": true,
       "question": "Can an employer dismiss a worker without warning if the worker is absent without legitimate reason for more than twenty non-consecutive days?",
-      "answer": "Yes, an employer may dismiss a worker without warning if the worker is absent from work without a legitimate reason for more than twenty (20) non-consecutive days [Federal Labour Law, Article 44]. This dismissal must be conducted after a written investigation with the worker and the decision to dismiss shall be in writing and reasoned [Federal Labour Law, Article 44]. The employer or his representative must hand this written decision to the worker [Federal Labour Law, Article 44].",
+      "answer": "Yes, an employer may dismiss a worker without warning if the worker is absent from work without a legitimate reason or excuse acceptable to the Employer for more than twenty (20) non-consecutive days [Federal Labour Law, Article 44]. This right applies even if the absence exceeds seven (7) consecutive days [Federal Labour Law, Article 44]. The decision to dismiss must be in writing and reasoned after conducting a written investigation with the Worker [Federal Labour Law, Article 44].",
       "abstained": false,
       "abstain_reason": null,
       "top_relevance": 0.9997164607048035,
@@ -964,23 +1244,31 @@
       "n_gold": 1,
       "citation_coverage": 1.0,
       "example_leaked": false,
+      "trace_id": "20261109T161224-cf1520d0",
+      "context_ids": [
+        "labour_law_2021-en-a044-p0",
+        "labour_law_2021-en-a043-p0",
+        "labour_law_2021-en-a045-p0",
+        "labour_law_2021-en-a050-p0",
+        "labour_law_2021-en-a040-p0"
+      ],
       "latency_ms": {
-        "retrieval": 4684.815458953381,
-        "first_token": 12284.669917076826,
-        "generation": 10332.46308285743,
-        "total": 15017.53104198724
+        "retrieval": 5695.842832999915,
+        "first_token": 14255.7686250002,
+        "generation": 12125.441292000232,
+        "total": 17824.704375000238
       },
-      "wall_ms": 15020.343374926597,
+      "wall_ms": 17850.938000000042,
       "faithfulness": 0.0,
-      "correctness": 0.0,
-      "reason": "The system answer incorrectly cites Article 44 for the dismissal rule and fails to identify the specific twenty-day absence provision which is actually located in Article 50."
+      "correctness": 1.0,
+      "reason": "The system answer is factually correct regarding the dismissal rule but cites Article 44 as the source for the 20-day absence threshold, whereas the provided text of Article 44 does not contain this provision (it lists other grounds like fraud or safety violations), making the citation unfaithful to"
     },
     {
       "id": "en-022",
       "type": "en",
       "answerable": true,
       "question": "Can a worker receive compensation for an injury if it is proven that they deliberately injured themselves?",
-      "answer": "A worker shall not be entitled to compensation for a work injury if it is proven that the Worker deliberately injured himself for any reason [Federal Labour Law, Article 38]. This exclusion applies regardless of the specific circumstances surrounding the deliberate act. The competent authorities must conduct investigations to prove such cases before denying compensation.",
+      "answer": "A worker shall not be entitled to compensation for a work injury if it is proven that the Worker deliberately injured himself for any reason [Federal Labour Law, Article 38]. This exclusion applies regardless of the specific circumstances leading to the deliberate act. The competent authorities must conduct investigations to prove such cases before denying compensation.",
       "abstained": false,
       "abstain_reason": null,
       "top_relevance": 0.9993663430213928,
@@ -990,75 +1278,99 @@
       "n_gold": 1,
       "citation_coverage": 0.3333333333333333,
       "example_leaked": false,
+      "trace_id": "20261109T161301-fa04cdfd",
+      "context_ids": [
+        "labour_law_2021-en-a038-p0",
+        "labour_law_2021-en-a037-p0",
+        "labour_law_2021-en-a044-p0",
+        "labour_law_2021-en-a001-p1",
+        "labour_law_2021-en-a047-p0"
+      ],
       "latency_ms": {
-        "retrieval": 4426.6777080483735,
-        "first_token": 12143.129792064428,
-        "generation": 9435.744875110686,
-        "total": 13862.620832864195
+        "retrieval": 4993.179042000065,
+        "first_token": 14742.919332999918,
+        "generation": 11958.08658299984,
+        "total": 16952.265333000014
       },
-      "wall_ms": 13863.728707656264,
+      "wall_ms": 16956.17091699978,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the source text regarding Article 38 and aligns with the reference answer's conclusion without contradicting any key facts."
+      "reason": "The system answer accurately reflects the reference answer and is fully supported by Article 38 of the provided sources."
     },
     {
       "id": "en-023",
       "type": "en",
       "answerable": true,
       "question": "What is the maximum monthly percentage allowed for deducting damages caused by a worker's fault or violation of employer instructions?",
-      "answer": "No amount of money shall be deducted from the Worker's wage except for amounts necessary to repair damages caused by the Worker due to his fault or violation of instructions, provided that the deduction shall not exceed five (5) days' wage per month [Federal Labour Law, Article 25].",
+      "answer": "The Federal Labour Law allows deductions for damages caused by a worker's fault without specifying a fixed monthly percentage, but it caps the deduction at five (5) days' wage per month [Federal Labour Law, Article 25]. This cap applies specifically to amounts necessary to repair damages resulting from the worker's fault or violation of employer instructions [Federal Labour Law, Article 25]. Additionally, general disciplinary sanctions for violations cannot exceed a deduction of five (5) days' wage per month [Federal Labour Law, Article 39].",
       "abstained": false,
       "abstain_reason": null,
       "top_relevance": 0.9868993759155273,
-      "n_citations": 1,
-      "n_valid_citations": 1,
-      "cited_gold": 1,
-      "n_gold": 1,
-      "citation_coverage": 1.0,
-      "example_leaked": false,
-      "latency_ms": {
-        "retrieval": 3629.693583585322,
-        "first_token": 12316.419958602637,
-        "generation": 10298.598167020828,
-        "total": 13928.456374909729
-      },
-      "wall_ms": 13934.33729186654,
-      "faithfulness": 1.0,
-      "correctness": 1.0,
-      "reason": "The system answer accurately reflects the five percent (5%) monthly deduction limit found in Article 25(f) of the source text."
-    },
-    {
-      "id": "en-025",
-      "type": "en",
-      "answerable": true,
-      "question": "What happens to an employee's wages if they are suspended for a disciplinary investigation that results in no violation or a warning?",
-      "answer": "The employer may suspend the worker temporarily from work for a period not exceeding thirty (30) days to conduct a disciplinary investigation [Federal Labour Law, Article 40]. During this suspension period, half of the wage is withheld [Federal Labour Law, Article 40]. If the investigation ends with no violation found or if the worker receives a warning sanction, the wages suspended during the suspension period must be paid to the worker [Federal Labour Law, Article 40].",
-      "abstained": false,
-      "abstain_reason": null,
-      "top_relevance": 0.9846956133842468,
       "n_citations": 3,
       "n_valid_citations": 3,
       "cited_gold": 1,
       "n_gold": 1,
       "citation_coverage": 1.0,
       "example_leaked": false,
+      "trace_id": "20261109T161335-4770a246",
+      "context_ids": [
+        "labour_law_2021-en-a025-p0",
+        "labour_law_2021-en-a044-p0",
+        "labour_law_2021-en-a016-p0",
+        "labour_law_2021-en-a001-p1",
+        "labour_law_2021-en-a039-p0"
+      ],
       "latency_ms": {
-        "retrieval": 3702.1088749170303,
-        "first_token": 10774.747458752245,
-        "generation": 9742.427458055317,
-        "total": 13444.806624669582
+        "retrieval": 5476.254041000175,
+        "first_token": 16422.602541000288,
+        "generation": 14754.056665999997,
+        "total": 20230.85412499995
       },
-      "wall_ms": 13450.022832956165,
+      "wall_ms": 20233.964832999845,
+      "faithfulness": 0.0,
+      "correctness": 0.0,
+      "reason": "The system answer incorrectly cites Article 25 for the 5-day wage cap (which is actually in Article 39) and fails to provide the correct percentage limit of 5% found in Article 25."
+    },
+    {
+      "id": "en-025",
+      "type": "en",
+      "answerable": true,
+      "question": "What happens to an employee's wages if they are suspended for a disciplinary investigation that results in no violation or a warning?",
+      "answer": "The employer may suspend the worker temporarily from work for a period not exceeding thirty (30) days to conduct a disciplinary investigation [Federal Labour Law, Article 40]. If the investigation ends with being reserved, finding no violation, or giving the worker a warning sanction, the wage suspended during the suspension period shall be paid to him [Federal Labour Law, Article 40].",
+      "abstained": false,
+      "abstain_reason": null,
+      "top_relevance": 0.9846956133842468,
+      "n_citations": 2,
+      "n_valid_citations": 2,
+      "cited_gold": 1,
+      "n_gold": 1,
+      "citation_coverage": 1.0,
+      "example_leaked": false,
+      "trace_id": "20261109T161415-96ece71a",
+      "context_ids": [
+        "labour_law_2021-en-a040-p0",
+        "labour_law_2021-en-a044-p0",
+        "labour_law_2021-en-a039-p0",
+        "labour_law_2021-en-a045-p0",
+        "labour_law_2021-en-a043-p0"
+      ],
+      "latency_ms": {
+        "retrieval": 5125.649000000067,
+        "first_token": 13915.379292000125,
+        "generation": 11493.636874999993,
+        "total": 16619.849541999884
+      },
+      "wall_ms": 16624.865082999804,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the source text regarding the suspension duration, wage deduction rate, and repayment conditions."
+      "reason": "The system answer accurately reflects the reference answer by correctly citing Article 40 and stating that wages must be paid if the investigation results in no violation or a warning."
     },
     {
       "id": "en-026",
       "type": "en",
       "answerable": true,
       "question": "When does the UAE Decree on Labor Law come into force?",
-      "answer": "The UAE Federal Decree by Law No. (33) of 2021 Regulating Labor Relations was promulgated by President Khalifa bin Zayed Al Nahyan [Federal Labour Law, Article 74]. This Decree by law shall be published in the Official Gazette [Federal Labour Law, Article 74]. It comes into force as of 02 February 2022 [Federal Labour Law, Article 74].",
+      "answer": "The UAE Federal Decree by Law No. (33) of 2021 regulating labor relations was promulgated by President Khalifa bin Zayed Al Nahyan [Federal Labour Law, Article 74]. This Decree by law shall be published in the Official Gazette [Federal Labour Law, Article 74]. It comes into force as of 02 February 2022 [Federal Labour Law, Article 74].",
       "abstained": false,
       "abstain_reason": null,
       "top_relevance": 0.9894631505012512,
@@ -1068,16 +1380,24 @@
       "n_gold": 1,
       "citation_coverage": 0.75,
       "example_leaked": false,
+      "trace_id": "20261109T161449-6fc14a23",
+      "context_ids": [
+        "labour_law_2021-en-a074-p0",
+        "labour_law_2021-en-preamble",
+        "labour_law_2021-en-a001-p0",
+        "labour_law_2021-en-a073-p0",
+        "labour_law_2021-en-a068-p0"
+      ],
       "latency_ms": {
-        "retrieval": 3594.4664999842644,
-        "first_token": 9476.053417194635,
-        "generation": 8474.463416263461,
-        "total": 12069.15095821023
+        "retrieval": 4457.796332999806,
+        "first_token": 12098.416499999985,
+        "generation": 10924.072124999839,
+        "total": 15382.25595799986
       },
-      "wall_ms": 12070.846125017852,
+      "wall_ms": 15385.663416999705,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the source text regarding the entry into force date and correctly cites Article 74."
+      "reason": "The system answer accurately cites the relevant article and provides the exact effective date matching the reference answer."
     },
     {
       "id": "en-027",
@@ -1094,23 +1414,31 @@
       "n_gold": 1,
       "citation_coverage": 1.0,
       "example_leaked": false,
+      "trace_id": "20261109T161520-dab1fce2",
+      "context_ids": [
+        "labour_law_2021-en-a024-p0",
+        "labour_law_2021-en-a001-p1",
+        "labour_law_2021-en-a012-p0",
+        "labour_law_2021-en-a043-p0",
+        "labour_law_2021-en-a025-p0"
+      ],
       "latency_ms": {
-        "retrieval": 2718.741999939084,
-        "first_token": 9946.94474991411,
-        "generation": 9416.62025032565,
-        "total": 12135.572375264019
+        "retrieval": 4633.1333329999325,
+        "first_token": 13526.868874999764,
+        "generation": 11673.747875000117,
+        "total": 16307.692374999988
       },
-      "wall_ms": 12137.124999891967,
+      "wall_ms": 16314.9519159997,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the conditions and protections specified in Article 24 of the Federal Labour Law."
+      "reason": "The system answer accurately reflects the conditions and legal basis provided in the reference answer and source Article 24."
     },
     {
       "id": "en-028",
       "type": "en",
       "answerable": true,
       "question": "What are the maximum duration and written notice requirements for an employer to terminate a worker's service during the probation period?",
-      "answer": "The Employer may appoint the Worker under the Probation Period for a period not exceeding six (6) months [Federal Labour Law, Article 9]. The Employer may terminate the Worker's service during this period after notifying the Worker in writing at least fourteen (14) days prior to the date specified for termination of service [Federal Labour Law, Article 9].",
+      "answer": "The Employer may terminate the Worker's service during the Probation Period after notifying the Worker in writing at least fourteen (14) days prior to the date specified for termination of service [Federal Labour Law, Article 9]. The maximum duration of the Probation Period is six (6) months as of the date of commencing work [Federal Labour Law, Article 9].",
       "abstained": false,
       "abstain_reason": null,
       "top_relevance": 0.9913761019706726,
@@ -1120,23 +1448,31 @@
       "n_gold": 1,
       "citation_coverage": 1.0,
       "example_leaked": false,
+      "trace_id": "20261109T161552-8c68f962",
+      "context_ids": [
+        "labour_law_2021-en-a009-p0",
+        "labour_law_2021-en-a031-p0",
+        "labour_law_2021-en-a029-p0",
+        "labour_law_2021-en-a001-p0",
+        "labour_law_2021-en-a047-p0"
+      ],
       "latency_ms": {
-        "retrieval": 4295.283374842256,
-        "first_token": 12907.755666878074,
-        "generation": 10726.759125012904,
-        "total": 15022.221041843295
+        "retrieval": 5128.225333000046,
+        "first_token": 15562.612917000024,
+        "generation": 13113.681499999984,
+        "total": 18242.256792000262
       },
-      "wall_ms": 15024.336041882634,
+      "wall_ms": 18246.87887500022,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the maximum duration and notice requirements stated in the reference answer based on Article 9."
+      "reason": "The system answer accurately reflects the maximum probation duration of six months and the fourteen-day written notice requirement as stated in Article 9."
     },
     {
       "id": "en-029",
       "type": "en",
       "answerable": true,
       "question": "What punishment applies to a perpetrator who repeats a violation within one year of a previous judgment for a similar offense?",
-      "answer": "If a perpetrator repeats a violation within one year of a previous judgment for a similar offense, they shall be punished by imprisonment and/or double the fine stipulated in this Decree by law [Federal Labour Law, Article 64]. The fine imposed on employers is repeatedly applied according to the number of workers against whom the violation was committed, not exceeding ten million (10,000,000) AED [Federal Labour Law, Article 62]. For specific violations such as employing a worker without a permit, the fine ranges from one hundred thousand AED (100,000) to two million AED (1,000,000) [Federal Labour Law, Article 60].",
+      "answer": "If a perpetrator repeats a violation within one year of a previous judgment for a similar offense, they shall be punished by imprisonment and/or double the fine stipulated in this Decree by law [Federal Labour Law, Article 64]. The base fine for such violations ranges from five thousand AED to ten million AED depending on the specific circumstances [Federal Labour Law, Article 63; Federal Labour Law, Article 62].",
       "abstained": false,
       "abstain_reason": null,
       "top_relevance": 0.9981499910354614,
@@ -1146,42 +1482,58 @@
       "n_gold": 1,
       "citation_coverage": 1.0,
       "example_leaked": false,
+      "trace_id": "20261109T161629-16f1e638",
+      "context_ids": [
+        "labour_law_2021-en-a064-p0",
+        "labour_law_2021-ar-a063-p0",
+        "labour_law_2021-en-a062-p0",
+        "labour_law_2021-en-a039-p0",
+        "labour_law_2021-en-a060-p0"
+      ],
       "latency_ms": {
-        "retrieval": 4196.811416652054,
-        "first_token": 8893.137999810278,
-        "generation": 8872.213958296925,
-        "total": 13069.217499811202
+        "retrieval": 4828.779957999814,
+        "first_token": 10781.992291999813,
+        "generation": 9022.380959000202,
+        "total": 13851.516791999984
       },
-      "wall_ms": 13071.00879214704,
+      "wall_ms": 13854.039416999967,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer correctly cites Article 64 for the repetition penalty and accurately references Articles 62 and 60 for fine details without contradicting the reference."
+      "reason": "The system answer correctly identifies the punishment (imprisonment and/or double fine) as stated in Article 64 and accurately references the relevant source articles for the base fine range."
     },
     {
       "id": "en-030",
       "type": "en",
       "answerable": true,
       "question": "What mechanism regulates end-of-service gratuity for foreign workers in non-full-time roles?",
-      "answer": "The Executive Regulation of the Federal Labour Law shall define the mechanism for regulating end-of-service gratuity for foreign workers in work types other than full-time [Federal Labour Law, Article 52]. This regulation must operate in a manner that enhances the efficiency and attractiveness of the labor market [Federal Labour Law, Article 52]. The mechanism must also align with what the interests of both parties to the employment contract require [Federal Labour Law, Article 52].",
+      "answer": "The Executive Regulation of the Federal Labour Law shall define the mechanism for regulating end-of-service gratuity for foreign workers in work types other than full-time. This regulation must enhance the efficiency and attractiveness of the labor market while addressing the interests of both parties to the employment contract [Federal Labour Law, Article 52]. The current law does not specify a fixed calculation formula for these roles, unlike the specific rules provided for full-time foreign workers in Article 51 [Federal Labour Law, Article 51].",
       "abstained": false,
       "abstain_reason": null,
       "top_relevance": 0.9980238676071167,
-      "n_citations": 3,
-      "n_valid_citations": 3,
+      "n_citations": 2,
+      "n_valid_citations": 2,
       "cited_gold": 1,
       "n_gold": 1,
-      "citation_coverage": 1.0,
+      "citation_coverage": 0.6666666666666666,
       "example_leaked": false,
+      "trace_id": "20261109T161656-91b76e71",
+      "context_ids": [
+        "labour_law_2021-en-a052-p0",
+        "labour_law_2021-en-a051-p0",
+        "labour_law_2021-en-a039-p0",
+        "labour_law_2021-en-a015-p0",
+        "labour_law_2021-en-a068-p0"
+      ],
       "latency_ms": {
-        "retrieval": 2602.7891668491066,
-        "first_token": 8267.190916929394,
-        "generation": 8225.447707809508,
-        "total": 10828.482874669135
+        "retrieval": 4775.180792000356,
+        "first_token": 11383.602542000062,
+        "generation": 10229.955416999928,
+        "total": 15005.872417000319
       },
-      "wall_ms": 10833.760207984596,
+      "wall_ms": 15010.806541999955,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the key facts of Article 52 without contradicting or omitting main details."
+      "reason": "The system answer accurately reflects the reference answer by correctly identifying that Article 52 mandates the Executive Regulation to define the mechanism for non-full-time foreign workers."
     },
     {
       "id": "en-032",
@@ -1198,23 +1550,31 @@
       "n_gold": 1,
       "citation_coverage": 1.0,
       "example_leaked": false,
+      "trace_id": "20261109T161726-d84e36b9",
+      "context_ids": [
+        "labour_law_2021-en-a016-p0",
+        "labour_law_2021-en-a029-p0",
+        "labour_law_2021-en-a065-p1",
+        "labour_law_2021-en-a013-p0",
+        "labour_law_2021-en-a051-p0"
+      ],
       "latency_ms": {
-        "retrieval": 3941.827666014433,
-        "first_token": 12525.906540919095,
-        "generation": 11293.451916892081,
-        "total": 15235.473707783967
+        "retrieval": 5639.105875000041,
+        "first_token": 15802.737333000096,
+        "generation": 13153.82420800006,
+        "total": 18793.188915999963
       },
-      "wall_ms": 15238.76895941794,
+      "wall_ms": 18795.473250000214,
       "faithfulness": 0.0,
       "correctness": 1.0,
-      "reason": "The system answer correctly identifies the 30-day limit but falsely cites Article 16 as the source for this provision."
+      "reason": "The system answer correctly identifies the 30-day limit from Article 29 (implied context) but incorrectly cites it as Article 16 and adds unsupported details about extending the stay with employer approval."
     },
     {
       "id": "en-033",
       "type": "en",
       "answerable": true,
       "question": "Can an employee resign without warning if their employer breached contract obligations, and what are the required notification timelines?",
-      "answer": "An employee may leave work without warning if the Employer breaches his obligations towards the Worker stipulated in the contract [Federal Labour Law, Article 45]. The Worker must notify the Ministry fourteen (14) business days prior to the date of leaving work [Federal Labour Law, Article 45]. This right applies only if the Employer has not removed the effects resulting from such breach although he had been notified by the Ministry [Federal Labour Law, Article 45].",
+      "answer": "An employee may leave work without warning if the Employer breaches his obligations towards the Worker stipulated in the contract [Federal Labour Law, Article 45]. The Worker must notify the Ministry fourteen (14) business days prior to the date of leaving work in such cases [Federal Labour Law, Article 45]. This notification requirement applies provided that the Employer has not removed the effects resulting from such breach although he had been notified by the Ministry [Federal Labour Law, Article 45].",
       "abstained": false,
       "abstain_reason": null,
       "top_relevance": 0.9408062100410461,
@@ -1224,16 +1584,24 @@
       "n_gold": 1,
       "citation_coverage": 1.0,
       "example_leaked": false,
+      "trace_id": "20261109T161800-81d84fc1",
+      "context_ids": [
+        "labour_law_2021-en-a045-p0",
+        "labour_law_2021-en-a044-p0",
+        "labour_law_2021-en-a043-p0",
+        "labour_law_2021-en-a009-p0",
+        "labour_law_2021-en-a016-p0"
+      ],
       "latency_ms": {
-        "retrieval": 4374.995000194758,
-        "first_token": 12843.923083972186,
-        "generation": 11106.125082820654,
-        "total": 15481.321374885738
+        "retrieval": 4508.286917000078,
+        "first_token": 13631.461709000178,
+        "generation": 11874.54870900001,
+        "total": 16383.94712499985
       },
-      "wall_ms": 15484.404374845326,
+      "wall_ms": 16392.678665999938,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the conditions and timelines specified in Article 45 of the Federal Labour Law."
+      "reason": "The system answer accurately reflects the conditions and timelines specified in Article 45 of the Federal Labour Law as presented in the reference answer."
     },
     {
       "id": "en-034",
@@ -1250,49 +1618,65 @@
       "n_gold": 1,
       "citation_coverage": 1.0,
       "example_leaked": false,
+      "trace_id": "20261109T161831-582a2294",
+      "context_ids": [
+        "labour_law_2021-en-a060-p0",
+        "labour_law_2021-en-a059-p0",
+        "labour_law_2021-en-a006-p0",
+        "labour_law_2021-en-a009-p0",
+        "labour_law_2021-en-a062-p0"
+      ],
       "latency_ms": {
-        "retrieval": 3925.7183340378106,
-        "first_token": 10746.325667016208,
-        "generation": 10324.620875064284,
-        "total": 14250.503791961819
+        "retrieval": 4265.242874999785,
+        "first_token": 11193.02024999979,
+        "generation": 10508.723041999929,
+        "total": 14774.384666999595
       },
-      "wall_ms": 14256.170667242259,
+      "wall_ms": 14780.246667000029,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the fine range and conditions found in Article 60 while correctly citing the repeatability rule from Article 62."
+      "reason": "The system answer accurately reflects the fine range from Article 60 and correctly incorporates the cumulative penalty rule from Article 62 as stated in the reference."
     },
     {
       "id": "cross_ar_en-001",
       "type": "cross_ar_en",
       "answerable": true,
       "question": "ما هو مقدار الراتب السنوي للتعويض عند نهاية الخدمة لموظف أجنبي يعمل بدوام كامل إذا كانت فترة خدمته تتجاوز خمس سنوات؟",
-      "answer": "يُحسب مكافأة نهاية الخدمة للعامل الأجنبي الذي يعمل بدوام كامل على النحو التالي: أجر (21.) واحد وعشرين يومًا عن كل سنة من سنوات الخدمة الخمس الأولى.\nويكون المكافأة عن كل سنة مما زاد على ذلك (30.) ثلاثين يومًا تحسب وفق آخر أجر أساسي كان يستحقه العامل.\nلا تزيد مكافأة نهاية الخدمة للعامل الأجنبي في مجموعها عن أجر سنتين.\n[قانون العمل الاتحادي، المادة 51]",
+      "answer": "يُحسب مكافأة نهاية الخدمة للعامل الأجنبي الذي يعمل بدوام كامل على النحو التالي: أجر (21.) واحد وعشرين يومًا عن كل سنة من سنوات الخدمة الخمس الأولى.\nويكون المكافأة عن كل سنة مما زاد على ذلك (30.) ثلاثين يومًا تحسب وفق آخر أجر أساسي كان يستحقه العامل.\nلا تزيد مكافأة نهاية الخدمة للعامل الأجنبي في مجموعها عن أجر سنتين.",
       "abstained": false,
       "abstain_reason": null,
       "top_relevance": 0.9600865244865417,
-      "n_citations": 1,
-      "n_valid_citations": 1,
-      "cited_gold": 1,
+      "n_citations": 0,
+      "n_valid_citations": 0,
+      "cited_gold": 0,
       "n_gold": 1,
-      "citation_coverage": 0.25,
+      "citation_coverage": 0.0,
       "example_leaked": false,
+      "trace_id": "20261109T161859-8c6cb6fc",
+      "context_ids": [
+        "labour_law_2021-ar-a051-p0",
+        "labour_law_2021-ar-a052-p0",
+        "labour_law_2021-ar-a065-p0",
+        "labour_law_2021-ar-a047-p0",
+        "labour_law_2021-ar-a037-p0"
+      ],
       "latency_ms": {
-        "retrieval": 3658.2459579221904,
-        "first_token": 11860.763374716043,
-        "generation": 11285.015458706766,
-        "total": 14943.683749996126
+        "retrieval": 5192.063666999729,
+        "first_token": 12878.714166999998,
+        "generation": 10379.608749999989,
+        "total": 15572.143916999721
       },
-      "wall_ms": 14946.315083187073,
+      "wall_ms": 15574.74000000002,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the calculation rules and caps for foreign employees' severance pay as stated in Article 51 of the UAE Labor Law."
+      "reason": "The system answer accurately reflects the calculation rules and the two-year cap for foreign employees with full-time service exceeding five years as stated in Article 51."
     },
     {
       "id": "cross_ar_en-002",
       "type": "cross_ar_en",
       "answerable": true,
       "question": "ما هي مناصب وزارة العمل فيما يتعلق بتشجيع المنشآت على الاستثمار في تدريب وتأهيل العمال ورفع مستواهم المهني؟",
-      "answer": "تختص وزارة الموارد البشرية والتوطين بما يلي: اقتراح السياسات والاستراتيجيات والتشريعات بشأن تشجيع وتحفيز المنشآت للاستثمار في تدريب وتمكين العمال ورفع المستوى المهاري والكفاءة والإنتاجية لهم [قانون العمل الاتحادي، المادة 71]. كما تختص الوزارة بوضع نماذج موحدة للوائح التنظيمية لعلاقات العمل في المنشآت وإصدار ضوابط وآليات اعتمادها لتحقيق مصلحة العامل وصاحب العمل [قانون العمل الاتحادي، المادة 71].",
+      "answer": "تختص وزارة الموارد البشرية والتوطين بما يلي: اقتراح السياسات والاستراتيجيات والتشريعات بشأن تشجيع وتحفيز المنشآت للاستثمار في تدريب وتمكين العمال ورفع المستوى المهاري والكفاءة والإنتاجية لهم [قانون العمل الاتحادي، المادة 71]. كما تختص الوزارة بوضع نماذج موحدة للوائح التنظيمية لعلاقات العمل في المنشآت وإصدار ضوابط وآليات اعتمادها [قانون العمل الاتحادي، المادة 71].",
       "abstained": false,
       "abstain_reason": null,
       "top_relevance": 0.984765887260437,
@@ -1302,68 +1686,92 @@
       "n_gold": 1,
       "citation_coverage": 1.0,
       "example_leaked": false,
+      "trace_id": "20261109T161931-dacf10b3",
+      "context_ids": [
+        "labour_law_2021-ar-a071-p0",
+        "labour_law_2021-ar-a013-p0",
+        "labour_law_2021-ar-a001-p0",
+        "labour_law_2021-ar-a070-p0",
+        "labour_law_2021-ar-a036-p0"
+      ],
       "latency_ms": {
-        "retrieval": 4639.7313750348985,
-        "first_token": 13383.957291021943,
-        "generation": 11799.994041677564,
-        "total": 16440.031125210226
+        "retrieval": 4773.675416999595,
+        "first_token": 13418.773541999599,
+        "generation": 11566.31408300018,
+        "total": 16340.743374999875
       },
-      "wall_ms": 16444.199583958834,
+      "wall_ms": 16343.614124999931,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the reference answer's key point regarding the Ministry's mandate to encourage investment in training and upskilling workers."
+      "reason": "The system answer accurately reflects the reference answer by citing Article 71 regarding the Ministry's role in encouraging investment in training and upskilling workers."
     },
     {
       "id": "cross_ar_en-005",
       "type": "cross_ar_en",
       "answerable": true,
       "question": "ما هي تعريفات أنواع العمل المسموح بها في العقد؟",
-      "answer": "تُعرّف أنماط العمل المسموح بها في العقد على أنها الدوام الكامل وهو العمل لكامل ساعات العمل اليومية طوال أيام العمل [قانون العمل الاتحادي، المادة 7]. وتُعرّف أيضًا الدوام الجزئي وهو العمل لعدد محدد من ساعات العمل أو الأيام المقررة للعمل [قانون العمل الاتحادي، المادة 7]. كما يُعرّف العمل المؤقت بأنه العمل الذي تقتضيه طبيعة تنفيذه مدة محددة، أو ينصب على عمل بذاته وينتهي بإنجازه [قانون العمل الاتحادي، المادة 7]. بالإضافة إلى ذلك، يُعرّف العمل المرن بأنه العمل الذي تتغير ساعات تأديته أو أيام عمله حسب حجم العمل والمتغيرات الاقتصادية والتشغيلية لدى صاحب العمل [قانون العمل الاتحادي، المادة 7]. وأخيرًا، تُحدّد اللائحة التنفيذية لهذا المرسوم بقانون أي أنماط أخرى غير المذكورة أعلاه [قانون العمل الاتحادي، المادة 7].",
+      "answer": "تُعد أنماط العمل التي يتم التعاقد عليها وفقًا لما يأتي: الدوام الكامل، وهو العمل لدى صاحب عمل واحد لكامل ساعات العمل اليومية طوال أيام العمل. وتُصنف أيضًا الدوام الجزئي، وهو العمل لدى صاحب عمل أو أصحاب عمل لعدد محدد من ساعات العمل أو الأيام المقررة للعمل. كما يشمل العمل المؤقت، وهو العمل الذي تقتضيه طبيعة تنفيذه مدة محددة، أو ينصب على عمل بذاته وينتهي بإنجازه. بالإضافة إلى ذلك، يُدرج العمل المرن، وهو العمل الذي تتغير ساعات تأديته أو أيام عمله حسب حجم العمل والمتغيرات الاقتصادية والتشغيلية لدى صاحب العمل، وللعامل أن يعمل بأوقات متغيرة حسب ظروف ومتطلبات العمل. وأخيرًا، أي أنماط أخرى تحددها اللائحة التنفيذية لهذا المرسوم بقانون.",
       "abstained": false,
       "abstain_reason": null,
       "top_relevance": 0.762115478515625,
-      "n_citations": 5,
-      "n_valid_citations": 5,
-      "cited_gold": 1,
+      "n_citations": 0,
+      "n_valid_citations": 0,
+      "cited_gold": 0,
       "n_gold": 1,
-      "citation_coverage": 1.0,
+      "citation_coverage": 0.0,
       "example_leaked": false,
+      "trace_id": "20261109T162003-b7980ea7",
+      "context_ids": [
+        "labour_law_2021-ar-a007-p0",
+        "labour_law_2021-ar-a001-p1",
+        "labour_law_2021-ar-a001-p0",
+        "labour_law_2021-ar-a008-p0",
+        "labour_law_2021-ar-a012-p0"
+      ],
       "latency_ms": {
-        "retrieval": 4547.259540762752,
-        "first_token": 12258.746999781579,
-        "generation": 13539.070875383914,
-        "total": 18086.824582889676
+        "retrieval": 4572.825834000014,
+        "first_token": 12240.692834000129,
+        "generation": 12503.289166000286,
+        "total": 17076.501375000134
       },
-      "wall_ms": 18088.295833207667,
+      "wall_ms": 17082.36104200023,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately lists all five work types defined in Article 7 with correct definitions and cites the proper source."
+      "reason": "The system answer accurately reflects the definitions of work types provided in Article 7 of the Federal Labour Law and matches the reference answer."
     },
     {
       "id": "cross_ar_en-007",
       "type": "cross_ar_en",
       "answerable": true,
       "question": "إذا كان العامل غير قادر على أداء العمل المتفق عليه في العقد، ما هي الإجراءات التي تحددها اللائحة التنفيذية؟",
-      "answer": "ينتهي عقد العمل إذا عجز العامل عن العمل بشكل كلي دائم، ويثبت ذلك بشهادة طبية صادرة من الجهة الطبية [قانون العمل الاتحادي، المادة 42]. وفي حال عدم تمكين صاحب العمل للعامل من القيام بالعمل المتفق عليه في العقد، يلتزم صاحب العمل بسداد أجره المتفق عليه [قانون العمل الاتحادي، المادة 26]. وتحدد اللائحة التنفيذية إجراءات ترك العامل للعمل في هذه الحالة [قانون العمل الاتحادي، المادة 26].",
+      "answer": "ينتهي عقد العمل إذا عجز العامل عن العمل بشكل كلي ودائم، ويثبت ذلك بشهادة طبية صادرة من الجهة الطبية [قانون العمل الاتحادي، المادة 42]. وفي حال عدم تمكين صاحب العمل للعامل من القيام بالعمل المتفق عليه في العقد، فإن اللائحة التنفيذية تحدد إجراءات ترك العامل للعمل [قانون العمل الاتحادي، المادة 26].",
       "abstained": false,
       "abstain_reason": null,
       "top_relevance": 0.9884874820709229,
-      "n_citations": 3,
-      "n_valid_citations": 3,
+      "n_citations": 2,
+      "n_valid_citations": 2,
       "cited_gold": 1,
       "n_gold": 1,
       "citation_coverage": 1.0,
       "example_leaked": false,
+      "trace_id": "20261109T162036-a606f524",
+      "context_ids": [
+        "labour_law_2021-ar-a026-p0",
+        "labour_law_2021-ar-a042-p0",
+        "labour_law_2021-ar-a012-p0",
+        "labour_law_2021-ar-a008-p0",
+        "labour_law_2021-ar-a050-p0"
+      ],
       "latency_ms": {
-        "retrieval": 4574.777791276574,
-        "first_token": 9622.290791012347,
-        "generation": 7962.145374622196,
-        "total": 12538.708083331585
+        "retrieval": 4597.903499999575,
+        "first_token": 10339.097832999869,
+        "generation": 8067.572666999695,
+        "total": 12665.789915999994
       },
-      "wall_ms": 12539.8531248793,
+      "wall_ms": 12670.429624999997,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the reference by citing Article 26 for procedures regarding inability to work and Article 42 for termination due to permanent incapacity."
+      "reason": "The system answer correctly cites Article 42 for permanent incapacity and Article 26 regarding the Executive Regulation's procedures for inability to work, aligning with the reference answer."
     },
     {
       "id": "cross_ar_en-008",
@@ -1380,23 +1788,31 @@
       "n_gold": 1,
       "citation_coverage": 1.0,
       "example_leaked": false,
+      "trace_id": "20261109T162101-b6d1d35b",
+      "context_ids": [
+        "labour_law_2021-ar-a046-p0",
+        "labour_law_2021-ar-a031-p0",
+        "labour_law_2021-ar-a030-p0",
+        "labour_law_2021-ar-a029-p0",
+        "labour_law_2021-ar-a047-p0"
+      ],
       "latency_ms": {
-        "retrieval": 2812.146541196853,
-        "first_token": 10436.549791134894,
-        "generation": 12559.634167235345,
-        "total": 15372.193333227187
+        "retrieval": 4496.180916999947,
+        "first_token": 12644.204000000173,
+        "generation": 13091.891207999652,
+        "total": 17589.1885420001
       },
-      "wall_ms": 15373.909416142851,
+      "wall_ms": 17593.436625000322,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the legal provisions regarding health fitness and sick leave duration as stated in the reference."
+      "reason": "The system answer correctly affirms the main legal fact from the reference and accurately cites supporting details from the provided sources without contradiction."
     },
     {
       "id": "cross_ar_en-009",
       "type": "cross_ar_en",
       "answerable": true,
       "question": "هل يجوز توظيف العامل في وظيفة مختلفة عن ما تم الاتفاق عليه في عقد العمل؟",
-      "answer": "لا يجوز تكليف العامل بعمل يختلف اختلافًا جوهريًّا عن العمل المتفق عليه في عقد العمل إلا إذا استدعت الضرورة ذلك أو بهدف منع وقوع حادث أو لإصلاح ما نشأ عنه [قانون العمل الاتحادي، المادة 12]. وفي حال تطلب التكليف العامل بعمل غير المتفق عليه في عقد العمل، يجوز لصاحب العمل تكليفه بذلك شريطة موافقة العامل خطيًا [قانون العمل الاتحادي، المادة 12]. وإذا تطلب قيام العامل بعمل غير المتفق عليه في عقد العمل تغيير مقر إقامته، يجب على صاحب العمل تحمل كافة التكاليف المالية المترتبة على ذلك بما في ذلك تكاليف انتقال العامل وإقامته [قانون العمل الاتحادي، المادة 12].",
+      "answer": "لا يجوز تكليف العامل بعمل يختلف اختلافًا جوهريًّا عن العمل المتفق عليه في عقد العمل، إلا إذا استدعت الضرورة ذلك أو بهدف منع وقوع حادث أو لإصلاح ما نشأ عنه [قانون العمل الاتحادي، المادة 12]. وفي حال تطلب التكليف العامل بعمل غير المتفق عليه في عقد العمل، يجوز لصاحب العمل تكليفه بذلك شريطة موافقة العامل خطيًا [قانون العمل الاتحادي، المادة 12]. وإذا تطلب قيام العامل بعمل غير المتفق عليه في عقد العمل تغيير مقر إقامته، يجب على صاحب العمل تحمل كافة التكاليف المالية المترتبة على ذلك بما في ذلك تكاليف انتقال العامل وإقامته [قانون العمل الاتحادي، المادة 12].",
       "abstained": false,
       "abstain_reason": null,
       "top_relevance": 0.9946306943893433,
@@ -1406,16 +1822,24 @@
       "n_gold": 1,
       "citation_coverage": 1.0,
       "example_leaked": false,
+      "trace_id": "20261109T162135-16b89e58",
+      "context_ids": [
+        "labour_law_2021-ar-a012-p0",
+        "labour_law_2021-ar-a009-p0",
+        "labour_law_2021-ar-a001-p0",
+        "labour_law_2021-ar-a008-p0",
+        "labour_law_2021-ar-a006-p0"
+      ],
       "latency_ms": {
-        "retrieval": 4075.73104230687,
-        "first_token": 12258.00354219973,
-        "generation": 12482.120249886066,
-        "total": 16558.26154211536
+        "retrieval": 4600.8340000003045,
+        "first_token": 12433.313792000263,
+        "generation": 12166.811542000232,
+        "total": 16768.048875000204
       },
-      "wall_ms": 16560.096374712884,
+      "wall_ms": 16771.131333000085,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the key conditions and exceptions regarding job changes as stated in Article 12 of the UAE Labor Law."
+      "reason": "The system answer accurately reflects the conditions and exceptions stated in Article 12 of the provided sources, matching the reference answer's key facts."
     },
     {
       "id": "cross_ar_en-010",
@@ -1432,23 +1856,31 @@
       "n_gold": 1,
       "citation_coverage": 1.0,
       "example_leaked": false,
+      "trace_id": "20261109T162208-0243eefd",
+      "context_ids": [
+        "labour_law_2021-ar-a064-p0",
+        "labour_law_2021-ar-a063-p0",
+        "labour_law_2021-ar-a039-p0",
+        "labour_law_2021-ar-a062-p0",
+        "labour_law_2021-ar-a060-p0"
+      ],
       "latency_ms": {
-        "retrieval": 4053.977374918759,
-        "first_token": 9263.227208983153,
-        "generation": 7327.375750057399,
-        "total": 11381.555084139109
+        "retrieval": 4079.9166669999067,
+        "first_token": 9804.225958999723,
+        "generation": 7916.753999999855,
+        "total": 11996.922749999612
       },
-      "wall_ms": 11384.06354188919,
+      "wall_ms": 12000.061082999764,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the source text and matches the key facts of the reference answer regarding imprisonment and doubled fines."
+      "reason": "The system answer accurately reflects the reference answer and source text regarding imprisonment and doubled fines for repeat offenses within one year."
     },
     {
       "id": "cross_ar_en-011",
       "type": "cross_ar_en",
       "answerable": true,
       "question": "ما هي أهداف هذا النظام القانوني فيما يتعلق بكفاءة سوق العمل وحماية الأطراف في العلاقة العمالية؟",
-      "answer": "يهدف هذا المرسوم بقانون إلى ضمان كفاءة سوق العمل في الدولة لجذب أفضل الكفاءات والمهارات والحفاظ عليها [قانون العمل الاتحادي، المادة 2]. كما يهدف إلى تنظيم علاقات العمل وتحديد حقوق والتزامات الأطراف في هذه العلاقة القانونية على نحو متوازن [قانون العمل الاتحادي، المادة 2]. ويعزز المرسوم مرونة واستدامة سوق العمل من خلال ضمان حماية أطراف العلاقة العمالية وتطوراتها وما قد يواجهها من ظروف استثنائية [قانون العمل الاتحادي، المادة 2]. ويدعم النظام القدرات والمهارات للعاملين في القطاع الخاص لتعزيز كفاءة وإنتاجية القوى العاملة [قانون العمل الاتحادي، المادة 2]. ويوفر المرسوم الحماية لطرفي علاقة العمل وتمكينهم من الحصول على حقوقهم في إطار هذا المرسوم بقانون [قانون العمل الاتحادي، المادة 2].",
+      "answer": "يهدف هذا المرسوم بقانون إلى ضمان كفاءة سوق العمل في الدولة لجذب أفضل الكفاءات والمهارات المستقبلية [قانون العمل الاتحادي، المادة 2]. كما يهدف إلى تنظيم علاقات العمل وتحديد حقوق والتزامات الأطراف في هذه العلاقة القانونية على نحو متوازن [قانون العمل الاتحادي، المادة 2]. ويعزز المرسوم مرونة واستدامة سوق العمل من خلال ضمان حماية أطراف العلاقة العمالية وتطوراتها وما قد يواجهها من ظروف استثنائية [قانون العمل الاتحادي، المادة 2]. ويدعم النظام تأهيل القدرات والمهارات للعاملين في القطاع الخاص لتعزيز كفاءة وإنتاجية القوى العاملة [قانون العمل الاتحادي، المادة 2]. ويوفر المرسوم الحماية لطرفي علاقة العمل وتمكينهم من الحصول على حقوقهم في إطار هذا المرسوم بقانون [قانون العمل الاتحادي، المادة 2].",
       "abstained": false,
       "abstain_reason": null,
       "top_relevance": 0.9930226802825928,
@@ -1458,23 +1890,31 @@
       "n_gold": 1,
       "citation_coverage": 1.0,
       "example_leaked": false,
+      "trace_id": "20261109T162232-33ae1ce8",
+      "context_ids": [
+        "labour_law_2021-ar-a002-p0",
+        "labour_law_2021-ar-a070-p0",
+        "labour_law_2021-ar-a071-p0",
+        "labour_law_2021-ar-preamble",
+        "labour_law_2021-ar-a001-p1"
+      ],
       "latency_ms": {
-        "retrieval": 3014.7384577430785,
-        "first_token": 9715.747625101358,
-        "generation": 11866.042792331427,
-        "total": 14881.47212471813
+        "retrieval": 4736.468999999943,
+        "first_token": 11210.709874999793,
+        "generation": 11693.347832999734,
+        "total": 16431.083999999828
       },
-      "wall_ms": 14886.760082561523,
+      "wall_ms": 16435.883416999786,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects all key objectives listed in Article 2 of the source text without adding external information."
+      "reason": "The system answer accurately reflects the objectives listed in Article 2 of the provided sources and matches the reference answer."
     },
     {
       "id": "cross_en_ar-002",
       "type": "cross_en_ar",
       "answerable": true,
       "question": "What procedure must an employer or workers follow if a collective labor dispute arises and friendly settlement is impossible?",
-      "answer": "If an amicable settlement is not possible between the Employer and all Workers regarding a collective dispute, they must submit a complaint to the Ministry following the controls and procedures specified in the Executive Regulation of this Decree by law [Federal Labour Law, Article 56]. The Minister may then impose administrative procedures or measures on the Establishment to prevent harm to public interest [Federal Labour Law, Article 56]. Upon the proposal of the Minister, the Cabinet may form one or more Collective Labor Dispute Committees to consider disputes that the Ministry cannot settle amicably [Federal Labour Law, Article 56]. The issued decision regarding these committees must specify their formation, tasks, system of work, and the mechanism for issuing and implementing their decisions [Federal Labour Law, Article 56].",
+      "answer": "If an amicable settlement is not possible between the Employer and all Workers regarding a collective dispute, they must submit a complaint to the Ministry following the controls and procedures specified in the Executive Regulation of this Decree by law [Federal Labour Law, Article 56]. The Minister may impose administrative procedures or measures on the Establishment to prevent the existing collective dispute from harming public interest [Federal Labour Law, Article 56]. Upon the proposal of the Minister, the Cabinet may form one or more Collective Labor Dispute Committees to consider disputes that the Ministry is unable to settle amicably [Federal Labour Law, Article 56]. The issued decision regarding these committees shall specify their formation, tasks, system of work, and the mechanism for issuing and implementing their decisions [Federal Labour Law, Article 56].",
       "abstained": false,
       "abstain_reason": null,
       "top_relevance": 0.9973606467247009,
@@ -1484,23 +1924,31 @@
       "n_gold": 1,
       "citation_coverage": 1.0,
       "example_leaked": false,
+      "trace_id": "20261109T162304-82ad338f",
+      "context_ids": [
+        "labour_law_2021-en-a056-p0",
+        "labour_law_2021-en-a054-p0",
+        "labour_law_2021-en-a054-p1",
+        "labour_law_2021-en-a001-p1",
+        "labour_law_2021-en-a065-p0"
+      ],
       "latency_ms": {
-        "retrieval": 5011.494583450258,
-        "first_token": 13345.871958415955,
-        "generation": 12655.187624972314,
-        "total": 17666.91608307883
+        "retrieval": 4771.808374999637,
+        "first_token": 12927.912958999968,
+        "generation": 12633.61362500018,
+        "total": 17405.66687499995
       },
-      "wall_ms": 17669.486541766673,
+      "wall_ms": 17409.085332999894,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the procedural steps and authorities outlined in Article 56 without contradicting or omitting key facts."
+      "reason": "The system answer accurately reflects the reference answer's key facts regarding filing a complaint with the Ministry and the Minister's power to impose administrative measures based on Article 56."
     },
     {
       "id": "cross_en_ar-003",
       "type": "cross_en_ar",
       "answerable": true,
       "question": "What is the maximum duration for a non-compete clause if an employee's job allows them to know the employer's clients or access work secrets?",
-      "answer": "If the work assigned to the Worker allows him to know the Employer's clients or access his work secrets, the Employer may stipulate a non-competition condition that shall not exceed two years as of the expiry date of the contract [Federal Labour Law, Article 10]. This condition must be specific in terms of time, place, and kind of work to the extent necessary to protect legitimate business interests [Federal Labour Law, Article 10]. The Executive Regulation of this Decree shall determine the provisions regulating this Article, including skill levels or occupational professions that may be excluded from the provision [Federal Labour Law, Article 10]. If the employer terminates the employment contract in violation of the provisions of this Decree by law, the said non-competition condition shall be null [Federal Labour Law, Article 10].",
+      "answer": "If the work assigned to the Worker allows him to know the Employer's clients or access his work secrets, the Employer may stipulate a non-competition condition that shall not exceed two years as of the expiry date of the contract [Federal Labour Law, Article 10]. This condition must be specific in terms of time, place, and kind of work to the extent necessary to protect legitimate business interests [Federal Labour Law, Article 10]. The Executive Regulation of this Decree by law shall determine the provisions regulating this Article, including skill levels or occupational professions that may be excluded from the provision [Federal Labour Law, Article 10]. If the employer terminates the employment contract in violation of the provisions of this Decree by law, the non-competition condition shall be null [Federal Labour Law, Article 10].",
       "abstained": false,
       "abstain_reason": null,
       "top_relevance": 0.9963627457618713,
@@ -1510,16 +1958,24 @@
       "n_gold": 1,
       "citation_coverage": 1.0,
       "example_leaked": false,
+      "trace_id": "20261109T162336-4b8ac560",
+      "context_ids": [
+        "labour_law_2021-en-a010-p0",
+        "labour_law_2021-en-a016-p0",
+        "labour_law_2021-en-a044-p0",
+        "labour_law_2021-en-a059-p0",
+        "labour_law_2021-en-a013-p0"
+      ],
       "latency_ms": {
-        "retrieval": 4493.88483306393,
-        "first_token": 12438.736999873072,
-        "generation": 12531.120541971177,
-        "total": 17025.2138748765
+        "retrieval": 4556.891833000009,
+        "first_token": 13273.844917000133,
+        "generation": 13586.979540999891,
+        "total": 18144.77850000003
       },
-      "wall_ms": 17029.431709088385,
+      "wall_ms": 18147.93950000012,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the two-year maximum duration and specific conditions for non-compete clauses as stated in Article 10 of the Federal Labour Law."
+      "reason": "The system answer accurately reflects the maximum duration of two years and correctly cites Article 10 as the source."
     },
     {
       "id": "cross_en_ar-004",
@@ -1536,23 +1992,31 @@
       "n_gold": 1,
       "citation_coverage": 1.0,
       "example_leaked": false,
+      "trace_id": "20261109T162409-74a7b9a1",
+      "context_ids": [
+        "labour_law_2021-en-a048-p0",
+        "labour_law_2021-en-a008-p0",
+        "labour_law_2021-en-a065-p0",
+        "labour_law_2021-en-a001-p0",
+        "labour_law_2021-en-a042-p0"
+      ],
       "latency_ms": {
-        "retrieval": 4248.74220835045,
-        "first_token": 12041.357791982591,
-        "generation": 10167.577750049531,
-        "total": 14416.492875199765
+        "retrieval": 4389.883790999647,
+        "first_token": 11492.880040999808,
+        "generation": 9490.945374999683,
+        "total": 13881.054499999664
       },
-      "wall_ms": 14419.82145793736,
+      "wall_ms": 13882.3286249999,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the reference answer's key facts and cites the correct source article."
+      "reason": "The system answer accurately reflects the reference answer and is fully supported by Article 48 of the provided sources."
     },
     {
       "id": "cross_en_ar-005",
       "type": "cross_en_ar",
       "answerable": true,
       "question": "What is the fine range for an employer who hires a worker in a sham manner and obtains financial benefits from government agencies as a result?",
-      "answer": "A fine not less than AED (100,000) and not more than AED (1,000,000) shall be imposed on an employer who recruits or employs a worker in a fictitious manner [Federal Labour Law, Article 60]. If this action results in the worker obtaining financial incentives from government bodies, the Court shall order the Employer to return the value of those financial incentives [Federal Labour Law, Article 60]. The fine stipulated for such an offense shall be multiplied by the number of workers who were appointed in a fictitious manner [Federal Labour Law, Article 60].",
+      "answer": "A fine not less than AED (100,000) one hundred thousand and not more than AED (1,000,000) one million shall be imposed on an employer who recruits or employs a worker in a fictitious manner [Federal Labour Law, Article 60]. If this action results in the worker obtaining financial incentives from government bodies, the Court shall order the Employer to return the value of those financial incentives [Federal Labour Law, Article 60]. The penalty stipulated for such an offense shall be multiplied by the number of workers who were appointed in a fictitious manner [Federal Labour Law, Article 60].",
       "abstained": false,
       "abstain_reason": null,
       "top_relevance": 0.9522912502288818,
@@ -1562,49 +2026,65 @@
       "n_gold": 1,
       "citation_coverage": 1.0,
       "example_leaked": false,
+      "trace_id": "20261109T162436-e92a2cdc",
+      "context_ids": [
+        "labour_law_2021-en-a060-p0",
+        "labour_law_2021-en-a059-p0",
+        "labour_law_2021-en-a001-p1",
+        "labour_law_2021-en-a060-p1",
+        "labour_law_2021-en-a001-p0"
+      ],
       "latency_ms": {
-        "retrieval": 4228.660000022501,
-        "first_token": 11679.175207857043,
-        "generation": 11106.959959026426,
-        "total": 15336.29929088056
+        "retrieval": 4240.778124999906,
+        "first_token": 12206.25687499978,
+        "generation": 11812.107499999911,
+        "total": 16053.257499999745
       },
-      "wall_ms": 15339.93741730228,
+      "wall_ms": 16055.867416999718,
       "faithfulness": 0.0,
       "correctness": 1.0,
-      "reason": "The system answer incorrectly claims the fine is multiplied by the number of workers, a detail not found in the provided text."
+      "reason": "The system answer correctly identifies the fine range and the requirement to return financial incentives as per the reference, but it incorrectly adds a multiplier clause for the number of workers which is not present in the provided source text."
     },
     {
       "id": "cross_en_ar-006",
       "type": "cross_en_ar",
       "answerable": true,
       "question": "What compensation must an employer pay if they terminate a worker's contract due to the worker filing a serious complaint with the Ministry or filing a lawsuit against them, and how is that amount capped?",
-      "answer": "Under Federal Labour Law, Article 47, an employer must pay fair compensation to the worker if the termination is unlawful due to the worker filing a serious complaint or a proven case against the employer. The amount of this compensation is determined by considering the kind of work, the damage incurred by the worker, and the duration of his service. This compensation cannot exceed the worker's wage for a period of three (3) months, calculated according to the last wage received. Additionally, this provision does not affect the worker's right to receive their warning allowance and end-of-service gratuity as stipulated in the law.",
+      "answer": "If an employer terminates a worker's service due to the worker filing a serious complaint with the Ministry or filing a proven case against them, such termination is unlawful [Federal Labour Law, Article 47]. The employer must pay the worker fair compensation estimated by the competent court based on the kind of work, damage incurred, and duration of service [Federal Labour Law, Article 47]. This compensation amount must not exceed the worker's wage for a period of three (3) months calculated according to the last wage received [Federal Labour Law, Article 47]. The right to receive warning allowance and end-of-service gratuity remains unaffected by this unlawful termination [Federal Labour Law, Article 47].",
       "abstained": false,
       "abstain_reason": null,
       "top_relevance": 0.9879768490791321,
-      "n_citations": 0,
-      "n_valid_citations": 0,
-      "cited_gold": 0,
+      "n_citations": 4,
+      "n_valid_citations": 4,
+      "cited_gold": 1,
       "n_gold": 1,
-      "citation_coverage": 0.0,
+      "citation_coverage": 1.0,
       "example_leaked": false,
+      "trace_id": "20261109T162506-a03c23f1",
+      "context_ids": [
+        "labour_law_2021-en-a047-p0",
+        "labour_law_2021-en-a009-p0",
+        "labour_law_2021-en-a054-p0",
+        "labour_law_2021-en-a001-p0",
+        "labour_law_2021-en-a043-p0"
+      ],
       "latency_ms": {
-        "retrieval": 4508.233374916017,
-        "first_token": 13210.783333983272,
-        "generation": 12123.257666826248,
-        "total": 16633.085791952908
+        "retrieval": 4513.301582999702,
+        "first_token": 13257.139457999983,
+        "generation": 12690.087124999991,
+        "total": 17203.98154099985
       },
-      "wall_ms": 16636.75716565922,
+      "wall_ms": 17216.837124999984,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects all key facts and numerical limits found in Article 47 of the source text."
+      "reason": "The system answer accurately reflects the reference answer and source Article 47 regarding compensation for unlawful termination due to filing complaints."
     },
     {
       "id": "cross_en_ar-008",
       "type": "cross_en_ar",
       "answerable": true,
       "question": "What is the fine range for an employee who obstructs or prevents a public official responsible for executing this law and its regulations from performing their duties by using force, violence, or threats?",
-      "answer": "A fine not less than (20,000) AED and not exceeding (100,000) AED shall be imposed on any person who obstructs or prevents a Worker assigned to implement the provisions of this Decree by law from performing his job by using force, violence, or threatening to use force or violence [Federal Labour Law, Article 59].",
+      "answer": "A fine not less than (20,000) AED and not exceeding (100,000) AED shall be imposed on any person who obstructs or prevents a Worker assigned to implement the provisions of this Decree by law from performing his job whether by using force, violence, or by threatening to use force or violence [Federal Labour Law, Article 59].",
       "abstained": false,
       "abstain_reason": null,
       "top_relevance": 0.9803302884101868,
@@ -1614,68 +2094,92 @@
       "n_gold": 1,
       "citation_coverage": 1.0,
       "example_leaked": false,
+      "trace_id": "20261109T162539-bc695991",
+      "context_ids": [
+        "labour_law_2021-en-a059-p0",
+        "labour_law_2021-en-a060-p0",
+        "labour_law_2021-en-a014-p0",
+        "labour_law_2021-en-a063-p0",
+        "labour_law_2021-en-a062-p0"
+      ],
       "latency_ms": {
-        "retrieval": 4104.346833191812,
-        "first_token": 8919.257750269026,
-        "generation": 7012.955625075847,
-        "total": 11117.456000298262
+        "retrieval": 4116.2434590000885,
+        "first_token": 9316.266792000079,
+        "generation": 7602.683374999742,
+        "total": 11719.218083999749
       },
-      "wall_ms": 11119.140875060111,
+      "wall_ms": 11722.812709000209,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the fine range and conditions specified in Article 59 of the source text."
+      "reason": "The system answer accurately reflects the fine range and conditions specified in Article 59 of the provided sources, matching the reference answer."
     },
     {
       "id": "cross_en_ar-009",
       "type": "cross_en_ar",
       "answerable": true,
       "question": "What is the end-of-service gratuity calculation for a foreign worker with full-time employment who has completed more than five years of continuous service?",
-      "answer": "A foreign full-time worker is entitled to an end-of-service gratuity calculated at the wage of twenty-one (21) days for each year of the first five years of service [Federal Labour Law, Article 51]. For each year in excess of those first five years, the gratuity is calculated at the wage of thirty (30) days [Federal Labour Law, Article 51]. The total end-of-service gratuity for a foreign worker must not exceed two years' wage [Federal Labour Law, Article 51].",
+      "answer": "A foreign full-time Worker is entitled to an end-of-service gratuity calculated according to the basic wage. For each year of the first five years of service, the gratuity equals twenty-one (21) days' wage. For each year in excess of those five years, the gratuity equals thirty (30) days' wage [Federal Labour Law, Article 51]. The total end-of-service gratuity for a foreign Worker must not exceed two years' wage [Federal Labour Law, Article 51].",
       "abstained": false,
       "abstain_reason": null,
       "top_relevance": 0.9993048906326294,
-      "n_citations": 3,
-      "n_valid_citations": 3,
+      "n_citations": 2,
+      "n_valid_citations": 2,
       "cited_gold": 1,
       "n_gold": 1,
-      "citation_coverage": 1.0,
+      "citation_coverage": 0.5,
       "example_leaked": false,
+      "trace_id": "20261109T162601-762202de",
+      "context_ids": [
+        "labour_law_2021-en-a051-p0",
+        "labour_law_2021-en-a052-p0",
+        "labour_law_2021-en-a047-p0",
+        "labour_law_2021-en-a068-p0",
+        "labour_law_2021-en-a039-p0"
+      ],
       "latency_ms": {
-        "retrieval": 2587.9044579342008,
-        "first_token": 7993.665041867644,
-        "generation": 8438.105875160545,
-        "total": 11026.181708090007
+        "retrieval": 3886.55666700015,
+        "first_token": 9765.929292000237,
+        "generation": 8810.361749999629,
+        "total": 12697.281125000245
       },
-      "wall_ms": 11031.212833710015,
+      "wall_ms": 12704.89950000001,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the calculation rates and caps specified in Article 51 of the Federal Labour Law."
+      "reason": "The system answer accurately reflects the calculation rules and the two-year wage cap specified in Article 51 of the provided sources."
     },
     {
       "id": "cross_en_ar-011",
       "type": "cross_en_ar",
       "answerable": true,
       "question": "What is the deadline for filing an individual labor dispute with the Ministry of Labor if the employment relationship has ended?",
-      "answer": "An individual labor dispute cannot be filed with the Ministry after the employment relationship ends because the law requires filing within two years as of the date of termination [Federal Labour Law, Article 54]. The source text states that a case for any rights under this Law shall not be heard after the lapse of two years as of the date of work relation termination [Federal Labour Law, Article 54]. While the Ministry handles disputes before they reach court, the specific deadline for filing an individual dispute with the Ministry upon termination is not explicitly defined in the provided text; only the general two-year limit for hearing cases at court is mentioned [Federal Labour Law, Article 54]. The definition of \"Individual Labor Disputes\" applies to disputes between an Employer and one Worker but does not specify a filing deadline relative to termination [Federal Labour Law, Article 1].",
+      "answer": "An individual labor dispute must be filed within two years as of the date of work relation termination [Federal Labour Law, Article 54]. This deadline applies to cases filed before the Competent Court of First Instance regarding rights under the law [Federal Labour Law, Article 54]. The Ministry examines applications for amicable settlement regardless of when they are submitted, but the court will not hear a case after the two-year lapse [Federal Labour Law, Article 54].",
       "abstained": false,
       "abstain_reason": null,
       "top_relevance": 0.9458626508712769,
-      "n_citations": 4,
-      "n_valid_citations": 4,
+      "n_citations": 3,
+      "n_valid_citations": 3,
       "cited_gold": 1,
       "n_gold": 1,
       "citation_coverage": 1.0,
       "example_leaked": false,
+      "trace_id": "20261109T162626-6a119ce8",
+      "context_ids": [
+        "labour_law_2021-en-a054-p1",
+        "labour_law_2021-en-a054-p0",
+        "labour_law_2021-en-a013-p0",
+        "labour_law_2021-en-a001-p1",
+        "labour_law_2021-en-a056-p0"
+      ],
       "latency_ms": {
-        "retrieval": 3622.69370816648,
-        "first_token": 12043.863082770258,
-        "generation": 13216.460458002985,
-        "total": 16839.54320801422
+        "retrieval": 4562.569917000019,
+        "first_token": 12551.389917000051,
+        "generation": 10638.705915999708,
+        "total": 15201.745583000047
       },
-      "wall_ms": 16845.226083882153,
-      "faithfulness": 0.0,
+      "wall_ms": 15204.247041999679,
+      "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer incorrectly claims the law requires filing within two years, whereas the source text only specifies a two-year limit for hearing cases at court."
+      "reason": "The system answer correctly identifies the two-year deadline for filing an individual labor dispute after employment termination as stated in Article 54."
     },
     {
       "id": "multi-001",
@@ -1692,68 +2196,92 @@
       "n_gold": 2,
       "citation_coverage": 1.0,
       "example_leaked": false,
+      "trace_id": "20261109T162655-a120ff8a",
+      "context_ids": [
+        "labour_law_2021-ar-a066-p0",
+        "labour_law_2021-ar-a065-p0",
+        "labour_law_2021-ar-a001-p0",
+        "labour_law_2021-ar-a013-p0",
+        "labour_law_2021-ar-a008-p0"
+      ],
       "latency_ms": {
-        "retrieval": 4667.924541980028,
-        "first_token": 15026.554459240288,
-        "generation": 14043.002000078559,
-        "total": 18711.28704212606
+        "retrieval": 4701.016624999738,
+        "first_token": 14667.709625000043,
+        "generation": 13563.79641600006,
+        "total": 18265.64958300014
       },
-      "wall_ms": 18713.067458942533,
+      "wall_ms": 18270.104167000227,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the key facts and legal provisions found in the reference answer without contradicting or omitting main details."
+      "reason": "The system answer accurately reflects the language requirements from Article 66 and the invalidity of conflicting prior conditions from Article 65 as stated in the reference."
     },
     {
       "id": "multi-002",
       "type": "multi",
       "answerable": true,
       "question": "Can an employer legally require a worker who knows their clients to refrain from competing in the same industry after termination if the contract does not specify time limits or exceeds two years?",
-      "answer": "An employer may stipulate a non-competition condition only if it is specific regarding time, place, and kind of work to the extent necessary to protect legitimate business interests [Federal Labour Law, Article 10]. The period of non-competition shall not exceed two years as of the expiry date of the contract [Federal Labour Law, Article 10]. If the condition exceeds these limits or lacks specificity, it shall be null if the employer terminates the employment contract in violation of the provisions of this Decree by law [Federal Labour Law, Article 10].",
+      "answer": "An employer may stipulate a non-competition condition only if it is specific regarding time, place, and kind of work to the extent necessary to protect legitimate business interests [Federal Labour Law, Article 10]. Such a non-competition period shall not exceed two years as of the expiry date of the contract [Federal Labour Law, Article 10]. If the condition exceeds these limits or lacks specificity, it shall be null if the employer terminates the employment contract in violation of the provisions of this Decree by law [Federal Labour Law, Article 10]. The Executive Regulation shall determine the skill levels or occupational professions that may be excluded from this provision [Federal Labour Law, Article 10].",
       "abstained": false,
       "abstain_reason": null,
       "top_relevance": 0.9977208971977234,
-      "n_citations": 3,
-      "n_valid_citations": 3,
+      "n_citations": 4,
+      "n_valid_citations": 4,
       "cited_gold": 1,
       "n_gold": 2,
       "citation_coverage": 1.0,
       "example_leaked": false,
+      "trace_id": "20261109T162731-a71ad488",
+      "context_ids": [
+        "labour_law_2021-en-a010-p0",
+        "labour_law_2021-en-a013-p0",
+        "labour_law_2021-en-a039-p0",
+        "labour_law_2021-en-a001-p0",
+        "labour_law_2021-en-a008-p0"
+      ],
       "latency_ms": {
-        "retrieval": 4330.674999859184,
-        "first_token": 12166.037874761969,
-        "generation": 11085.002957843244,
-        "total": 15415.913457982242
+        "retrieval": 4389.688375000333,
+        "first_token": 11295.473458000288,
+        "generation": 10895.53849999993,
+        "total": 15285.461542000121
       },
-      "wall_ms": 15421.831666957587,
+      "wall_ms": 15289.099541999803,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the conditions and two-year limit specified in Article 10 without contradicting or omitting key facts."
+      "reason": "The system answer accurately reflects the legal requirements and limitations regarding non-competition clauses as stated in Article 10 of the Federal Labour Law."
     },
     {
       "id": "multi-003",
       "type": "multi",
       "answerable": true,
       "question": "ما هي الإجراءات القانونية التي يتبعها صاحب العمل عند إنهاء عقد العمل بسبب خسارة مادية جسيمة أو عدم القيام بواجباته الأساسية، وما هو الحد الأدنى للوقت الذي يجب أن يظل فيه العامل في الخدمة أثناء فترة الإنذار؟",
-      "answer": "يُجوز لصاحب العمل فصل العامل دون إنذار إذا ثبت ارتكابه خطأ نشأ عنه خسارة مادية جسيمة أو عدم قيامه بواجباته الأساسية رغم التنبيه عليه مرتين [قانون العمل الاتحادي، المادة 44]. ويجب أن يكون قرار الفصل كتابيًا ومسببًا ويُسلم إلى العامل من صاحب العمل أو ممثله القانوني [قانون العمل الاتحادي، المادة 44]. وفي حالة عدم القيام بواجباته الأساسية، يستمر عقد العمل طوال مدة الإنذار المتفق عليه في العقد ولا ينتهي إلا بانتهاء تلك المدة [قانون العمل الاتحادي، المادة 43]. ويحق للعامل خلال فترة الإنذار أن يتغيب يوم عمل واحد بدون أجر في الأسبوع للبحث عن عمل آخر بشرط إخطار صاحب العمل قبل ثلاثة أيام على الأقل من يوم الغياب [قانون العمل الاتحادي، المادة 43].",
+      "answer": "يُخضع صاحب العمل لإجراء تحقيق خطي مع العامل قبل فصله دون إنذار في حال ارتكابه خطأ نشأ عنه خسارة مادية جسيمة أو عدم قيامه بواجباته الأساسية [قانون العمل الاتحادي، المادة 44]. يجب أن يكون قرار الفصل كتابيًا ومسببًا ويُسلم إلى العامل من صاحب العمل أو ممثله القانوني [قانون العمل الاتحادي، المادة 44]. في حالة عدم القيام بواجباته الأساسية، يُفصل العامل بعد تنبيهه مرتين بالفصل إذا تكرر الإخلال رغم إجراء تحقيق خطي معه [قانون العمل الاتحادي، المادة 44]. خلال فترة الإنذار المتفق عليها في العقد (ولأقل ثلاثين يومًا ولا أكثر من تسعين يومًا)، يستمر عقد العمل وينتهي بانتهاء المدة [قانون العمل الاتحادي، المادة 43]. يُحق للعامل استحقاق أجره كاملاً عن مدة الإنذار وفق آخر أجر كان يتقاضاه، مع التزامه بالعمل إذا طلب صاحب العمل منه ذلك [قانون العمل الاتحادي، المادة 43].",
       "abstained": false,
       "abstain_reason": null,
       "top_relevance": 0.9346781373023987,
-      "n_citations": 4,
-      "n_valid_citations": 4,
+      "n_citations": 5,
+      "n_valid_citations": 5,
       "cited_gold": 2,
       "n_gold": 2,
       "citation_coverage": 1.0,
       "example_leaked": false,
+      "trace_id": "20261109T162802-2480ba1d",
+      "context_ids": [
+        "labour_law_2021-ar-a043-p0",
+        "labour_law_2021-ar-a044-p0",
+        "labour_law_2021-ar-a045-p0",
+        "labour_law_2021-ar-a001-p0",
+        "labour_law_2021-ar-a065-p0"
+      ],
       "latency_ms": {
-        "retrieval": 5085.701666306704,
-        "first_token": 15713.150875177234,
-        "generation": 16019.260583911091,
-        "total": 21107.007750310004
+        "retrieval": 5283.824167000148,
+        "first_token": 15354.655667000316,
+        "generation": 16655.43854100042,
+        "total": 21939.752000000226
       },
-      "wall_ms": 21113.437375053763,
+      "wall_ms": 21943.794916000115,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the legal provisions regarding termination procedures and warning periods found in the provided articles."
+      "reason": "The system answer accurately reflects the legal requirements from the provided sources regarding termination without notice for serious financial loss or failure of duties, and correctly states the minimum notice period duration."
     },
     {
       "id": "multi-005",
@@ -1770,23 +2298,31 @@
       "n_gold": 2,
       "citation_coverage": 1.0,
       "example_leaked": false,
+      "trace_id": "20261109T162844-90e3eabd",
+      "context_ids": [
+        "labour_law_2021-ar-a002-p0",
+        "labour_law_2021-ar-a070-p0",
+        "labour_law_2021-ar-a071-p0",
+        "labour_law_2021-ar-preamble",
+        "labour_law_2021-ar-a065-p0"
+      ],
       "latency_ms": {
-        "retrieval": 3955.9779157862067,
-        "first_token": 11754.434540867805,
-        "generation": 12029.799832962453,
-        "total": 15986.166040878743
+        "retrieval": 4046.0614579997127,
+        "first_token": 12146.164249999856,
+        "generation": 12491.7989999999,
+        "total": 16538.972290999936
       },
-      "wall_ms": 15988.623999990523,
+      "wall_ms": 16543.266457999835,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects all key objectives listed in the reference answer without adding external information."
+      "reason": "The system answer accurately reflects the main objectives listed in Article 2 of the provided sources and aligns perfectly with the reference answer."
     },
     {
       "id": "multi-006",
       "type": "multi",
       "answerable": true,
       "question": "What are the conditions under which an employer can assign a worker to different work, and what financial obligation does the employer have if this assignment requires the worker to change their place of residence?",
-      "answer": "An employer may assign a worker to fundamentally different work only if it is necessary or aims to prevent an accident or repair damage resulting from such an accident, and this assignment must be temporary as specified by the Executive Regulation [Federal Labour Law, Article 12]. The employer may also assign a worker to perform unagreed work in other cases provided that the Worker agrees in writing [Federal Labour Law, Article 12]. If performing the assigned work requires the Worker to change their place of residence, the Employer must bear all financial costs resulting therefrom, including the costs of displacement and residence [Federal Labour Law, Article 12].",
+      "answer": "An employer may assign a worker to fundamentally different work only if it is necessary or aims to prevent an accident or repair damage resulting from such an accident, and this assignment must be temporary as specified by the Executive Regulation [Federal Labour Law, Article 12].\nThe employer may also assign a worker to perform unagreed work in other cases provided that the Worker agrees in writing [Federal Labour Law, Article 12].\nIf performing such work requires the Worker to change his place of residence, the Employer must bear all financial costs resulting therefrom, including the costs of the worker's displacement and residence [Federal Labour Law, Article 12].",
       "abstained": false,
       "abstain_reason": null,
       "top_relevance": 0.9971473813056946,
@@ -1796,23 +2332,31 @@
       "n_gold": 2,
       "citation_coverage": 1.0,
       "example_leaked": false,
+      "trace_id": "20261109T162918-274385a2",
+      "context_ids": [
+        "labour_law_2021-en-a012-p0",
+        "labour_law_2021-en-a013-p0",
+        "labour_law_2021-en-a045-p0",
+        "labour_law_2021-en-a007-p0",
+        "labour_law_2021-en-a060-p0"
+      ],
       "latency_ms": {
-        "retrieval": 4391.267250292003,
-        "first_token": 12052.64670914039,
-        "generation": 11280.642500147223,
-        "total": 15672.098750248551
+        "retrieval": 4493.666000000303,
+        "first_token": 11975.369584000418,
+        "generation": 11315.89887500013,
+        "total": 15810.005709000052
       },
-      "wall_ms": 15673.415499739349,
+      "wall_ms": 15817.245624999941,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the conditions and financial obligations outlined in Article 12 of the Federal Labour Law without contradicting or omitting key facts."
+      "reason": "The system answer accurately reflects the conditions and financial obligations specified in Article 12 of the Federal Labour Law as presented in the reference answer."
     },
     {
       "id": "multi-009",
       "type": "multi",
       "answerable": true,
       "question": "ما هي الحالات التي يحق فيها للعامل ترك العمل دون إنذار مع الاحتفاظ بحقوقه عند انتهاء الخدمة، وما هو الحد الزمني للإبلاغ عن اعتداء صاحب العمل أو التعرض لعنف خلال العمل؟",
-      "answer": "يحق للعامل ترك العمل دون إنذار مع الاحتفاظ بحقوقه عند انتهاء الخدمة في حالات إخلال صاحب العمل بالتزاماته تجاه العامل، أو ثبوت اعتداء صاحب العمل أو من يمثله قانونًا على العامل أو تعرضه لعنف أو تحرش خلال العمل، أو وجود خطر جسيم يهدد سلامة العامل أو صحته في مقر العمل، أو تكليف صاحب العمل العامل بعمل يختلف اختلافًا جوهريًّا عن العمل المتفق عليه دون موافقة العامل خطيًّا. [قانون العمل الاتحادي، المادة 45]\nويجب على العامل أن يبلغ السلطات المعنية والوزارة خلال (5) خمسة أيام عمل من تاريخ تمكنه من الإبلاغ في حالة اعتداء صاحب العمل أو تعرضه لعنف أو تحرش خلال العمل. [قانون العمل الاتحادي، المادة 45]",
+      "answer": "يحق للعامل ترك العمل دون إنذار مع الاحتفاظ بحقوقه عند انتهاء الخدمة في حالات إخلال صاحب العمل بالتزاماته تجاه العامل، أو ثبوت اعتداء صاحب العمل أو من يمثله قانونًا على العامل أو تعرضه لعنف أو تحرش خلال العمل، أو وجود خطر جسيم يهدد سلامة العامل أو صحته في مقر العمل، أو تكليف صاحب العمل العامل بعمل يختلف اختلافًا جوهريًّا عن العمل المتفق عليه دون موافقة العامل خطيًّا.\n[قانون العمل الاتحادي، المادة 45]\nويجب على العامل أن يبلغ السلطات المعنية والوزارة خلال (5) خمسة أيام عمل من تاريخ تمكنه من الإبلاغ في حالة اعتداء صاحب العمل أو تعرضه لعنف أو تحرش خلال العمل.\n[قانون العمل الاتحادي، المادة 45]",
       "abstained": false,
       "abstain_reason": null,
       "top_relevance": 0.9997621178627014,
@@ -1822,23 +2366,31 @@
       "n_gold": 2,
       "citation_coverage": 0.5,
       "example_leaked": false,
+      "trace_id": "20261109T162948-3eaef967",
+      "context_ids": [
+        "labour_law_2021-ar-a045-p0",
+        "labour_law_2021-ar-a044-p0",
+        "labour_law_2021-ar-a043-p0",
+        "labour_law_2021-ar-a013-p0",
+        "labour_law_2021-ar-a042-p0"
+      ],
       "latency_ms": {
-        "retrieval": 4821.501458063722,
-        "first_token": 13588.35224993527,
-        "generation": 13544.508791994303,
-        "total": 18366.40533292666
+        "retrieval": 4820.829124999818,
+        "first_token": 13715.155875000164,
+        "generation": 13724.998125000184,
+        "total": 18546.44904199995
       },
-      "wall_ms": 18367.84579185769,
+      "wall_ms": 18551.14195799979,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects all key facts and conditions outlined in the reference answer based on Article 45."
+      "reason": "The system answer accurately reflects the conditions and reporting timelines specified in Article 45 of the provided sources, matching the reference answer."
     },
     {
       "id": "multi-011",
       "type": "multi",
       "answerable": true,
       "question": "ما هي الشروط التي يجب توفرها لنقل عامل محصل على الأجر الشهري إلى فئة أخرى، وما هي الحالات الاستثنائية الوحيدة التي يُسمح فيها باقتطاع أو خصم من أجره؟",
-      "answer": "يجوز نقل العامل ذي الأجر الشهري إلى فئات أخرى مثل المياومة أو الأسبوعي أو القطعة أو الساعة إذا وافق العامل على ذلك كتابةً [قانون العمل الاتحادي، المادة 24]. ولا يجوز نقل العامل دون موافقته الكتابية، مع الحفاظ على الحقوق التي اكتسبها في فترة عمله بالأجر الشهري [قانون العمل الاتحادي، المادة 24]. لا يُسمح باقتطاع أو خصم أي مبلغ من أجر العامل إلا في حالات محددة تشمل استرداد القروض بعد موافقة العامل الخطية وبدون فوائد [قانون العمل الاتحادي، المادة 25]. وتشمل الحالات الاستثنائية الأخرى استرداد المبالغ المدفوعة زيادة على حق العامل بشرط ألا يزيد ما يتم اقتطاعه بنسبة (20)% عشرين في المائة من الأجر [قانون العمل الاتحادي، المادة 25]. وتُسمح بالاستقطاع لغايات احتساب الاشتراك في مكافآت ومعاشات التقاعد والتأمينات وفق التشريعات النافذة في الدولة [قانون العمل الاتحادي، المادة 25]. كما يُسمح باستقطاب اشتراكات العامل في صندوق الادخار أو القروض المستحقة للصندوق بشرط موافقة الوزارة [قانون العمل الاتحادي، المادة 25]. ويُسمح باستقطاع أقساط أي مشروع اجتماعي أو مزايا أخرى يقدمها صاحب العمل شريطة موافقة العامل الكتابية على الاشتراك [قانون العمل الاتحادي، المادة 25]. ولا يجوز اقتطاع مبلغ بسبب المخالفات التي يرتكبها العامل إلا بما لا يزيد على (5.%) خمسة في المائة من الأجر [قانون العمل الاتحادي، المادة 25]. ويُسمح باقتطاع الديون المستحقة تنفيذًا لحكم قضائي بشرط ألا يزيد على ربع الأجر المستحق للعامل، ما عدا دين النفقة المحكوم بها حيث يجوز اقتطاع أكثر من ربع الأجر [قانون العمل الاتحادي، المادة 25]. كما يُسمح باقتطاع المبالغ اللازمة لإصلاح الضرر الذي ألقه العامل نتيجة خطأ منه أو مخالفته لتعليمات صاحب العمل على ألا يزيد ما يتم اقتطاعه على أجر (5) خمسة أيام في الشهر [قانون العمل الاتحادي، المادة 25]. وفي حال تعدد الأسباب الموجبة للاقتطاع فلا يجوز أن تزيد نسبة الاستقطاع و/أو الخصم على (50.%) خمسين في المائة من الأجر [قانون العمل الاتحادي، المادة 25].",
+      "answer": "يجوز نقل العامل ذي الأجر الشهري إلى فئة عمال المياومة أو العمال المعينين بالأجر الأسبوعي أو بالقطعة أو بالساعة إذا وافق العامل على ذلك كتابةً [قانون العمل الاتحادي، المادة 24]. ولا يجوز نقل العامل دون موافقة كتابته منه [قانون العمل الاتحادي، المادة 24]. لا يُسمح باقتطاع أو خصم أي مبلغ من أجر العامل إلا في حالات محددة تشمل استرداد القروض المنوحة للعامل ضمن الحد الأقصى لنسبة الاستقطاع الشهري بعد موافقة العامل الخطية وبدون فوائد [قانون العمل الاتحادي، المادة 25]. وتشمل الحالات الاستثنائية الأخرى استرداد المبالغ التي دفعت إلى العامل زيادة على حقه بشرط ألا يزيد ما يتم اقتطاعه نسبة (20)% عشرين في المائة من الأجر [قانون العمل الاتحادي، المادة 25]. وتُسمح بالاستقطاع لغايات احتساب الاشتراك في مكافآت ومعاشات التقاعد والتأمينات وفق التشريعات النافذة في الدولة [قانون العمل الاتحادي، المادة 25]. كما يُسمح باستقطاب اشتراكات العامل في صندوق الادخار في المنشأة أو القروض المستحقة للصندوق بشرط موافقة الوزارة [قانون العمل الاتحادي، المادة 25]. ويُسمح باستقطاع أقساط أي مشروع اجتماعي أو مزايا أو خدمات أخرى يقدمها صاحب العمل شريطة موافقة العامل الكتابية على الاشتراك في المشروع [قانون العمل الاتحادي، المادة 25]. وتُسمح باقتطاع المبالغ التي تخصم من العامل بسبب المخالفات التي يرتكبها وفق لائحة الجزاءات المعمول بها في المنشأة وبما لا يزيد على (5.%) خمسة في المائة من الأجر [قانون العمل الاتحادي، المادة 25]. ويُسمح باستقطاع الديون المستحقة تنفيذًا لحكم قضائي وبما لا يزيد على ربع الأجر المستحق للعامل، فيما عدا دين النفقة المحكوم بها حيث يجوز اقتطاع أكثر من ربع الأجر [قانون العمل الاتحادي، المادة 25]. كما يُسمح باقتطاع المبالغ اللازمة لإصلاح ما ألحقه العامل من ضرر نتيجة خطأ منه أو مخالفته تعليمات صاحب العمل على ألا يزيد ما يتم اقتطاعه على أجر (5) خمسة أيام في الشهر [قانون العمل الاتحادي، المادة 25]. وإذا تعددت الأسباب الموجبة للاقتطاع أو الخصم فلا يجوز أن تزيد نسبة الاستقطاع و/أو الخصم على (50.%) خمسين في المائة من الأجر [قانون العمل الاتحادي، المادة 25].",
       "abstained": false,
       "abstain_reason": null,
       "top_relevance": 0.9849734306335449,
@@ -1848,42 +2400,58 @@
       "n_gold": 2,
       "citation_coverage": 1.0,
       "example_leaked": false,
+      "trace_id": "20261109T163025-873db9d0",
+      "context_ids": [
+        "labour_law_2021-ar-a024-p0",
+        "labour_law_2021-ar-a025-p0",
+        "labour_law_2021-ar-a001-p0",
+        "labour_law_2021-ar-a049-p0",
+        "labour_law_2021-ar-a039-p0"
+      ],
       "latency_ms": {
-        "retrieval": 4952.386499848217,
-        "first_token": 12411.651417147368,
-        "generation": 22377.191999927163,
-        "total": 27330.705584026873
+        "retrieval": 4963.920834000419,
+        "first_token": 12216.188917000181,
+        "generation": 22962.422375000187,
+        "total": 27928.650375000416
       },
-      "wall_ms": 27336.226208135486,
+      "wall_ms": 27931.884874999923,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects all conditions and exceptions for salary deductions as specified in the provided legal articles without contradicting or omitting key facts."
+      "reason": "The system answer accurately reflects the conditions for transferring monthly wage workers and lists all specific exceptions for deductions as defined in the provided legal sources."
     },
     {
       "id": "multi-012",
       "type": "multi",
       "answerable": true,
       "question": "What specific work permit requirement must an employer fulfill before recruiting a worker who is under fifteen years of age, and what additional restriction applies to this worker regarding overtime or rest days?",
-      "answer": "The Federal Labour Law defines a juvenile as any person between fifteen and eighteen years of age [Federal Labour Law, Article 1]. It is prohibited to employ any person before he completes fifteen years of age [Federal Labour Law, Article 5]. To employ a Juvenile, the employer must obtain a written consent of his guardian or custodian [Federal Labour Law, Article 5]. Additionally, a certificate of health fitness for the required work issued by the Medical Authority is required [Federal Labour Law, Article 5]. The worker shall not be required to work overtime, nor may he be required to stay at the workplace after fixed times or work on rest days or official holidays [Federal Labour Law, Article 5].",
+      "answer": "An employer may not employ any person before he completes fifteen years of age [Federal Labour Law, Article 5].\nTo employ a Juvenile (defined as a person between fifteen and eighteen years of age), the employer must obtain a written consent of his guardian or custodian [Federal Labour Law, Article 5].\nThe employer must also secure a certificate of health fitness for the required work issued by the Medical Authority [Federal Labour Law, Article 5].\nAdditionally, the Juvenile shall not be required to work overtime, nor shall he be required to stay at the workplace after the times fixed for him or work on rest days or official holidays [Federal Labour Law, Article 5].",
       "abstained": false,
       "abstain_reason": null,
       "top_relevance": 0.8597267270088196,
-      "n_citations": 5,
-      "n_valid_citations": 5,
+      "n_citations": 4,
+      "n_valid_citations": 4,
       "cited_gold": 1,
       "n_gold": 2,
       "citation_coverage": 1.0,
       "example_leaked": false,
+      "trace_id": "20261109T163111-d879503c",
+      "context_ids": [
+        "labour_law_2021-en-a005-p0",
+        "labour_law_2021-en-a019-p0",
+        "labour_law_2021-en-a001-p0",
+        "labour_law_2021-en-a006-p0",
+        "labour_law_2021-en-a060-p0"
+      ],
       "latency_ms": {
-        "retrieval": 4578.487625345588,
-        "first_token": 12904.759167227894,
-        "generation": 12319.770750124007,
-        "total": 16898.51887524128
+        "retrieval": 4585.657499999797,
+        "first_token": 12936.533499999769,
+        "generation": 12299.896499999704,
+        "total": 16886.216666999644
       },
-      "wall_ms": 16904.38533294946,
-      "faithfulness": 0.0,
+      "wall_ms": 16888.760082999852,
+      "faithfulness": 1.0,
       "correctness": 0.0,
-      "reason": "The system answer incorrectly cites Article 5 for the work permit requirement, which is actually stipulated in Article 6."
+      "reason": "The system answer incorrectly identifies the work permit as a requirement for juveniles under fifteen (who are prohibited from employment), whereas the reference answer and Article 5 clarify that the work permit is required only for employing juveniles aged fifteen to eighteen."
     },
     {
       "id": "unanswerable-001",
@@ -1900,11 +2468,19 @@
       "n_gold": 0,
       "citation_coverage": 0.0,
       "example_leaked": false,
+      "trace_id": "20261109T163145-4e7ee179",
+      "context_ids": [
+        "labour_law_2021-ar-a062-p0",
+        "labour_law_2021-ar-a063-p0",
+        "labour_law_2021-ar-a064-p0",
+        "labour_law_2021-ar-a059-p0",
+        "labour_law_2021-ar-a061-p0"
+      ],
       "latency_ms": {
-        "retrieval": 4221.249333117157,
-        "total": 4221.277917269617
+        "retrieval": 4194.638041999951,
+        "total": 4194.675833000019
       },
-      "wall_ms": 4222.887000069022
+      "wall_ms": 4195.964874999845
     },
     {
       "id": "unanswerable-002",
@@ -1921,11 +2497,19 @@
       "n_gold": 0,
       "citation_coverage": 0.0,
       "example_leaked": false,
+      "trace_id": "20261109T163149-693c04fd",
+      "context_ids": [
+        "labour_law_2021-en-a001-p0",
+        "labour_law_2021-en-a013-p0",
+        "labour_law_2021-en-preamble",
+        "labour_law_2021-en-a060-p0",
+        "labour_law_2021-en-a074-p0"
+      ],
       "latency_ms": {
-        "retrieval": 2854.848084039986,
-        "total": 2854.8664590343833
+        "retrieval": 2868.1289589999324,
+        "total": 2868.147209000199
       },
-      "wall_ms": 2857.7227080240846
+      "wall_ms": 2871.6022919998068
     },
     {
       "id": "unanswerable-005",
@@ -1942,11 +2526,19 @@
       "n_gold": 0,
       "citation_coverage": 0.0,
       "example_leaked": false,
+      "trace_id": "20261109T163152-96e98926",
+      "context_ids": [
+        "labour_law_2021-en-a001-p0",
+        "labour_law_2021-en-a013-p0",
+        "labour_law_2021-en-a074-p0",
+        "labour_law_2021-en-a029-p0",
+        "labour_law_2021-en-a067-p0"
+      ],
       "latency_ms": {
-        "retrieval": 3006.721750367433,
-        "total": 3006.7414580844343
+        "retrieval": 3008.815042000151,
+        "total": 3008.8327920002484
       },
-      "wall_ms": 3008.635625243187
+      "wall_ms": 3009.5130419999805
     },
     {
       "id": "unanswerable-007",
@@ -1963,11 +2555,19 @@
       "n_gold": 0,
       "citation_coverage": 0.0,
       "example_leaked": false,
+      "trace_id": "20261109T163155-0b86c6dc",
+      "context_ids": [
+        "labour_law_2021-en-a001-p0",
+        "labour_law_2021-en-preamble",
+        "labour_law_2021-en-a005-p0",
+        "labour_law_2021-en-a074-p0",
+        "labour_law_2021-en-a013-p0"
+      ],
       "latency_ms": {
-        "retrieval": 2828.2801252789795,
-        "total": 2828.29804206267
+        "retrieval": 2826.090000000022,
+        "total": 2826.1071669999183
       },
-      "wall_ms": 2832.304125186056
+      "wall_ms": 2826.9753750000746
     },
     {
       "id": "unanswerable-009",
@@ -1984,11 +2584,19 @@
       "n_gold": 0,
       "citation_coverage": 0.0,
       "example_leaked": false,
+      "trace_id": "20261109T163158-946fd83e",
+      "context_ids": [
+        "labour_law_2021-en-a001-p0",
+        "labour_law_2021-en-preamble",
+        "labour_law_2021-en-a074-p0",
+        "labour_law_2021-en-a013-p0",
+        "labour_law_2021-en-a054-p0"
+      ],
       "latency_ms": {
-        "retrieval": 2952.1735003218055,
-        "total": 2952.191958203912
+        "retrieval": 3014.9987909999254,
+        "total": 3015.017125000213
       },
-      "wall_ms": 2955.3654161281884
+      "wall_ms": 3016.863625000042
     },
     {
       "id": "unanswerable-011",
@@ -2005,11 +2613,19 @@
       "n_gold": 0,
       "citation_coverage": 0.0,
       "example_leaked": false,
+      "trace_id": "20261109T163201-884f9032",
+      "context_ids": [
+        "labour_law_2021-en-a001-p0",
+        "labour_law_2021-en-preamble",
+        "labour_law_2021-en-a074-p0",
+        "labour_law_2021-en-a025-p0",
+        "labour_law_2021-en-a060-p0"
+      ],
       "latency_ms": {
-        "retrieval": 3016.295332927257,
-        "total": 3016.31599990651
+        "retrieval": 2973.528792000252,
+        "total": 2973.5459590001483
       },
-      "wall_ms": 3016.980499960482
+      "wall_ms": 2974.564624999857
     },
     {
       "id": "unanswerable-013",
@@ -2026,11 +2642,19 @@
       "n_gold": 0,
       "citation_coverage": 0.0,
       "example_leaked": false,
+      "trace_id": "20261109T163204-2e246eea",
+      "context_ids": [
+        "labour_law_2021-en-a061-p0",
+        "labour_law_2021-en-preamble",
+        "labour_law_2021-ar-a063-p0",
+        "labour_law_2021-en-a059-p0",
+        "labour_law_2021-en-a013-p0"
+      ],
       "latency_ms": {
-        "retrieval": 2064.060874748975,
-        "total": 2064.1664578579366
+        "retrieval": 2051.0045420001006,
+        "total": 2051.0227089998807
       },
-      "wall_ms": 2066.722000017762
+      "wall_ms": 2051.9854579997627
     },
     {
       "id": "unanswerable-014",
@@ -2047,11 +2671,19 @@
       "n_gold": 0,
       "citation_coverage": 0.0,
       "example_leaked": false,
+      "trace_id": "20261109T163206-0e1f742f",
+      "context_ids": [
+        "labour_law_2021-ar-a001-p0",
+        "labour_law_2021-ar-preamble",
+        "labour_law_2021-ar-a013-p0",
+        "labour_law_2021-ar-a070-p0",
+        "labour_law_2021-ar-a006-p0"
+      ],
       "latency_ms": {
-        "retrieval": 2938.17749992013,
-        "total": 2938.196000177413
+        "retrieval": 2968.655334000232,
+        "total": 2968.6732500003927
       },
-      "wall_ms": 2940.764999948442
+      "wall_ms": 2972.153832999993
     },
     {
       "id": "unanswerable-015",
@@ -2068,11 +2700,19 @@
       "n_gold": 0,
       "citation_coverage": 0.0,
       "example_leaked": false,
+      "trace_id": "20261109T163209-07118c7e",
+      "context_ids": [
+        "labour_law_2021-en-preamble",
+        "labour_law_2021-en-a001-p0",
+        "labour_law_2021-en-a059-p0",
+        "labour_law_2021-en-a050-p0",
+        "labour_law_2021-en-a070-p0"
+      ],
       "latency_ms": {
-        "retrieval": 2338.2165408693254,
-        "total": 2338.2351249456406
+        "retrieval": 2348.7740000000485,
+        "total": 2348.794084000019
       },
-      "wall_ms": 2340.281291399151
+      "wall_ms": 2349.4247080002424
     },
     {
       "id": "unanswerable-016",
@@ -2089,11 +2729,19 @@
       "n_gold": 0,
       "citation_coverage": 0.0,
       "example_leaked": false,
+      "trace_id": "20261109T163211-cc5dc0e9",
+      "context_ids": [
+        "labour_law_2021-en-a064-p0",
+        "labour_law_2021-ar-a063-p0",
+        "labour_law_2021-ar-a039-p0",
+        "labour_law_2021-en-a062-p0",
+        "labour_law_2021-ar-a061-p0"
+      ],
       "latency_ms": {
-        "retrieval": 2040.8988329581916,
-        "total": 2040.9172498621047
+        "retrieval": 2047.006667000005,
+        "total": 2047.0245000001341
       },
-      "wall_ms": 2041.5999577380717
+      "wall_ms": 2047.6219160000255
     },
     {
       "id": "unanswerable-017",
@@ -2110,11 +2758,19 @@
       "n_gold": 0,
       "citation_coverage": 0.0,
       "example_leaked": false,
+      "trace_id": "20261109T163213-c622574e",
+      "context_ids": [
+        "labour_law_2021-en-a001-p0",
+        "labour_law_2021-en-a074-p0",
+        "labour_law_2021-en-a065-p0",
+        "labour_law_2021-en-preamble",
+        "labour_law_2021-en-a060-p0"
+      ],
       "latency_ms": {
-        "retrieval": 3002.172499895096,
-        "total": 3002.191583160311
+        "retrieval": 3034.187374999874,
+        "total": 3034.207041999707
       },
-      "wall_ms": 3006.348832976073
+      "wall_ms": 3039.9141249999957
     },
     {
       "id": "unanswerable-019",
@@ -2131,11 +2787,19 @@
       "n_gold": 0,
       "citation_coverage": 0.0,
       "example_leaked": false,
+      "trace_id": "20261109T163216-5527e35d",
+      "context_ids": [
+        "labour_law_2021-en-a001-p0",
+        "labour_law_2021-en-preamble",
+        "labour_law_2021-en-a025-p0",
+        "labour_law_2021-ar-a063-p0",
+        "labour_law_2021-en-a074-p0"
+      ],
       "latency_ms": {
-        "retrieval": 2999.206124804914,
-        "total": 2999.226833693683
+        "retrieval": 3006.232541999907,
+        "total": 3006.2489169999935
       },
-      "wall_ms": 3008.425167296082
+      "wall_ms": 3006.857041999865
     },
     {
       "id": "unanswerable-020",
@@ -2152,11 +2816,19 @@
       "n_gold": 0,
       "citation_coverage": 0.0,
       "example_leaked": false,
+      "trace_id": "20261109T163219-3f1f5c2f",
+      "context_ids": [
+        "labour_law_2021-ar-a013-p0",
+        "labour_law_2021-ar-a001-p0",
+        "labour_law_2021-ar-preamble",
+        "labour_law_2021-ar-a074-p0",
+        "labour_law_2021-ar-a008-p0"
+      ],
       "latency_ms": {
-        "retrieval": 2911.2409171648324,
-        "total": 2911.2590001896024
+        "retrieval": 2903.2592089997706,
+        "total": 2903.2787090000056
       },
-      "wall_ms": 2912.4768753536046
+      "wall_ms": 2904.7631670000555
     },
     {
       "id": "unanswerable-021",
@@ -2173,11 +2845,19 @@
       "n_gold": 0,
       "citation_coverage": 0.0,
       "example_leaked": false,
+      "trace_id": "20261109T163222-2882f48f",
+      "context_ids": [
+        "labour_law_2021-ar-a063-p0",
+        "labour_law_2021-en-preamble",
+        "labour_law_2021-en-a061-p0",
+        "labour_law_2021-en-a062-p0",
+        "labour_law_2021-ar-a059-p0"
+      ],
       "latency_ms": {
-        "retrieval": 1874.3362501263618,
-        "total": 1874.3542921729386
+        "retrieval": 1881.0661670004265,
+        "total": 1881.084459000249
       },
-      "wall_ms": 1877.6346668601036
+      "wall_ms": 1881.7263339997226
     },
     {
       "id": "unanswerable-022",
@@ -2194,11 +2874,19 @@
       "n_gold": 0,
       "citation_coverage": 0.0,
       "example_leaked": false,
+      "trace_id": "20261109T163224-876dc7ee",
+      "context_ids": [
+        "labour_law_2021-ar-a051-p0",
+        "labour_law_2021-en-a065-p1",
+        "labour_law_2021-ar-a013-p0",
+        "labour_law_2021-ar-a001-p0",
+        "labour_law_2021-ar-a074-p0"
+      ],
       "latency_ms": {
-        "retrieval": 2890.500499866903,
-        "total": 2890.5232502147555
+        "retrieval": 2925.1730410001073,
+        "total": 2925.1911660003316
       },
-      "wall_ms": 2891.6784999892116
+      "wall_ms": 2925.831790999837
     },
     {
       "id": "unanswerable-023",
@@ -2215,11 +2903,19 @@
       "n_gold": 0,
       "citation_coverage": 0.0,
       "example_leaked": false,
+      "trace_id": "20261109T163227-67e31179",
+      "context_ids": [
+        "labour_law_2021-en-a001-p0",
+        "labour_law_2021-en-preamble",
+        "labour_law_2021-en-a063-p0",
+        "labour_law_2021-en-a074-p0",
+        "labour_law_2021-en-a059-p0"
+      ],
       "latency_ms": {
-        "retrieval": 2353.0950411222875,
-        "total": 2353.1156247481704
+        "retrieval": 2381.9505420001406,
+        "total": 2381.9683750002696
       },
-      "wall_ms": 2353.859375230968
+      "wall_ms": 2383.2833339997705
     }
   ]
 }

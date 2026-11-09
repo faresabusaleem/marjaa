@@ -3,20 +3,23 @@
     "date": "2026-11-07",
     "split": "test",
     "generator": "ollama:qwen3.5:4b",
-    "judge": "ollama:qwen3.5:4b",
+    "judge": "ollama:qwen3.5:9b",
     "retrieval": "article chunks, hybrid_rerank",
-    "min_relevance": 0.0919
+    "min_relevance": 0.0919,
+    "original_judge": "ollama:qwen3.5:4b",
+    "rejudged": "2026-11-09"
   },
   "summary": {
     "n_answerable": 71,
     "n_unanswerable": 16,
-    "correctness": 0.9296,
-    "faithfulness": 0.8451,
-    "correct_over_all_answerable": 0.9296,
+    "correctness": 0.9014,
+    "faithfulness": 0.9296,
+    "correct_over_all_answerable": 0.9014,
     "citation_validity": 1.0,
     "answers_with_citation": 0.7887,
     "gold_article_cited": 0.7535,
     "citation_coverage": 0.5906,
+    "format_example_leaks": null,
     "unanswerable_abstention": 1.0,
     "false_abstention": 0.0,
     "latency": {
@@ -61,7 +64,20 @@
       "wall_ms": 25566.67224969715,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects all four conditions and specific timeframes listed in the reference answer based on Article 45."
+      "reason": "The system answer accurately reflects all conditions and durations specified in the reference answer based on Article 45 of the UAE Labor Law.",
+      "previous_judge": {
+        "judge": "ollama:qwen3.5:4b",
+        "correctness": 1.0,
+        "faithfulness": 1.0
+      },
+      "context_ids": [
+        "labour_law_2021-ar-a045-p0",
+        "labour_law_2021-ar-a044-p0",
+        "labour_law_2021-ar-a043-p0",
+        "labour_law_2021-ar-a042-p0",
+        "labour_law_2021-ar-a013-p0"
+      ],
+      "judged_by": "ollama:qwen3.5:9b"
     },
     {
       "id": "ar-002",
@@ -86,7 +102,20 @@
       "wall_ms": 15455.481582786888,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the compensation rules for working during official holidays as stated in Article 28 of the UAE Labour Law."
+      "reason": "The system answer accurately reflects the compensation rules for working on official holidays as stated in Article 28 of the provided sources.",
+      "previous_judge": {
+        "judge": "ollama:qwen3.5:4b",
+        "correctness": 1.0,
+        "faithfulness": 1.0
+      },
+      "context_ids": [
+        "labour_law_2021-ar-a028-p0",
+        "labour_law_2021-ar-a029-p0",
+        "labour_law_2021-ar-a037-p0",
+        "labour_law_2021-ar-a031-p0",
+        "labour_law_2021-ar-a013-p0"
+      ],
+      "judged_by": "ollama:qwen3.5:9b"
     },
     {
       "id": "ar-004",
@@ -111,7 +140,20 @@
       "wall_ms": 13842.198041733354,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the conditions and exceptions outlined in Article 12 of the UAE Labour Law without contradicting or omitting key facts."
+      "reason": "The system answer accurately reflects the conditions and exceptions provided in both the reference answer and the source Article 12.",
+      "previous_judge": {
+        "judge": "ollama:qwen3.5:4b",
+        "correctness": 1.0,
+        "faithfulness": 1.0
+      },
+      "context_ids": [
+        "labour_law_2021-ar-a012-p0",
+        "labour_law_2021-ar-a045-p0",
+        "labour_law_2021-ar-a026-p0",
+        "labour_law_2021-ar-a065-p0",
+        "labour_law_2021-ar-a016-p0"
+      ],
+      "judged_by": "ollama:qwen3.5:9b"
     },
     {
       "id": "ar-005",
@@ -136,7 +178,20 @@
       "wall_ms": 11680.45650003478,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the maximum working hours specified in Article 17 of the source text without contradicting or omitting key facts."
+      "reason": "The system answer accurately reflects the maximum daily and weekly working hours specified in Article 17 of the Federal Labour Law, matching the reference answer.",
+      "previous_judge": {
+        "judge": "ollama:qwen3.5:4b",
+        "correctness": 1.0,
+        "faithfulness": 1.0
+      },
+      "context_ids": [
+        "labour_law_2021-ar-a017-p0",
+        "labour_law_2021-ar-a051-p0",
+        "labour_law_2021-ar-a007-p0",
+        "labour_law_2021-ar-a018-p0",
+        "labour_law_2021-ar-a019-p0"
+      ],
+      "judged_by": "ollama:qwen3.5:9b"
     },
     {
       "id": "ar-006",
@@ -161,7 +216,20 @@
       "wall_ms": 11711.18912473321,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the conditions and restrictions outlined in Article 24 of the source text."
+      "reason": "The system answer accurately reflects the conditions and content of Article 24 as stated in both the reference answer and the provided source text.",
+      "previous_judge": {
+        "judge": "ollama:qwen3.5:4b",
+        "correctness": 1.0,
+        "faithfulness": 1.0
+      },
+      "context_ids": [
+        "labour_law_2021-ar-a024-p0",
+        "labour_law_2021-ar-a025-p0",
+        "labour_law_2021-ar-a012-p0",
+        "labour_law_2021-ar-a001-p1",
+        "labour_law_2021-ar-a017-p0"
+      ],
+      "judged_by": "ollama:qwen3.5:9b"
     },
     {
       "id": "ar-007",
@@ -186,7 +254,20 @@
       "wall_ms": 12663.04445778951,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the source text regarding the one-year deadline and the minister's authority to extend it."
+      "reason": "The system answer accurately reflects the reference answer and is fully supported by Article 68 of the provided sources.",
+      "previous_judge": {
+        "judge": "ollama:qwen3.5:4b",
+        "correctness": 1.0,
+        "faithfulness": 1.0
+      },
+      "context_ids": [
+        "labour_law_2021-ar-a068-p0",
+        "labour_law_2021-ar-a065-p0",
+        "labour_law_2021-ar-a008-p0",
+        "labour_law_2021-ar-a001-p0",
+        "labour_law_2021-ar-a048-p0"
+      ],
+      "judged_by": "ollama:qwen3.5:9b"
     },
     {
       "id": "ar-009",
@@ -211,7 +292,20 @@
       "wall_ms": 12974.802166689187,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects all penalties and the maximum duration for work suspension as stated in Article 39 of the source text."
+      "reason": "The system answer accurately lists all disciplinary penalties and correctly states the maximum suspension period of 14 days without pay as per Article 39.",
+      "previous_judge": {
+        "judge": "ollama:qwen3.5:4b",
+        "correctness": 1.0,
+        "faithfulness": 1.0
+      },
+      "context_ids": [
+        "labour_law_2021-ar-a039-p0",
+        "labour_law_2021-ar-a060-p0",
+        "labour_law_2021-ar-a065-p0",
+        "labour_law_2021-ar-a064-p0",
+        "labour_law_2021-ar-a063-p0"
+      ],
+      "judged_by": "ollama:qwen3.5:9b"
     },
     {
       "id": "ar-010",
@@ -236,7 +330,20 @@
       "wall_ms": 14910.149208270013,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer correctly identifies the court as the authority for determining wages when not specified in the contract, aligning with Article 22 of the UAE Labour Law."
+      "reason": "The system answer correctly identifies the competent court as the authority to determine the wage when not specified in the contract, matching the reference answer and supported by Article 22.",
+      "previous_judge": {
+        "judge": "ollama:qwen3.5:4b",
+        "correctness": 1.0,
+        "faithfulness": 1.0
+      },
+      "context_ids": [
+        "labour_law_2021-ar-a022-p0",
+        "labour_law_2021-ar-a008-p0",
+        "labour_law_2021-ar-a001-p0",
+        "labour_law_2021-en-a001-p1",
+        "labour_law_2021-ar-a026-p0"
+      ],
+      "judged_by": "ollama:qwen3.5:9b"
     },
     {
       "id": "ar-011",
@@ -261,7 +368,20 @@
       "wall_ms": 13603.021750226617,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the two-year duration limit and conditions specified in Article 10 of the UAE Labor Law."
+      "reason": "The system answer accurately reflects the reference answer and is fully supported by Article 10 of the provided sources.",
+      "previous_judge": {
+        "judge": "ollama:qwen3.5:4b",
+        "correctness": 1.0,
+        "faithfulness": 1.0
+      },
+      "context_ids": [
+        "labour_law_2021-ar-a010-p0",
+        "labour_law_2021-ar-a059-p0",
+        "labour_law_2021-ar-a001-p0",
+        "labour_law_2021-ar-a016-p0",
+        "labour_law_2021-ar-a065-p0"
+      ],
+      "judged_by": "ollama:qwen3.5:9b"
     },
     {
       "id": "ar-013",
@@ -286,7 +406,20 @@
       "wall_ms": 16108.027541078627,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the key facts and conditions outlined in Article 37 of the UAE Labour Law without contradicting or omitting main details."
+      "reason": "The system answer accurately reflects the reference answer and source material regarding medical expenses and wage compensation for work-related injuries.",
+      "previous_judge": {
+        "judge": "ollama:qwen3.5:4b",
+        "correctness": 1.0,
+        "faithfulness": 1.0
+      },
+      "context_ids": [
+        "labour_law_2021-ar-a037-p0",
+        "labour_law_2021-ar-a013-p0",
+        "labour_law_2021-ar-a016-p0",
+        "labour_law_2021-ar-a001-p1",
+        "labour_law_2021-ar-a031-p0"
+      ],
+      "judged_by": "ollama:qwen3.5:9b"
     },
     {
       "id": "ar-014",
@@ -309,9 +442,22 @@
         "total": 16227.083958219737
       },
       "wall_ms": 16227.93533327058,
-      "faithfulness": 0.0,
+      "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer includes an unsupported claim that a lawsuit cannot be filed without following Article 54 procedures."
+      "reason": "The system answer accurately reflects the procedural steps, conditions, and time limits specified in the reference answer and Article 54 of the provided sources.",
+      "previous_judge": {
+        "judge": "ollama:qwen3.5:4b",
+        "correctness": 1.0,
+        "faithfulness": 0.0
+      },
+      "context_ids": [
+        "labour_law_2021-ar-a054-p0",
+        "labour_law_2021-ar-a065-p0",
+        "labour_law_2021-ar-a056-p0",
+        "labour_law_2021-ar-a011-p0",
+        "labour_law_2021-ar-a008-p0"
+      ],
+      "judged_by": "ollama:qwen3.5:9b"
     },
     {
       "id": "ar-015",
@@ -335,8 +481,21 @@
       },
       "wall_ms": 15797.46387526393,
       "faithfulness": 1.0,
-      "correctness": 1.0,
-      "reason": "The system answer accurately reflects the reference text without adding unsupported claims."
+      "correctness": 0.0,
+      "reason": "The system answer adds an unsupported claim about providing a safe work environment, whereas the reference answer strictly limits the obligations to compliance with Federal Law No. (13) and the Executive Regulations.",
+      "previous_judge": {
+        "judge": "ollama:qwen3.5:4b",
+        "correctness": 1.0,
+        "faithfulness": 1.0
+      },
+      "context_ids": [
+        "labour_law_2021-ar-a036-p0",
+        "labour_law_2021-ar-a016-p0",
+        "labour_law_2021-ar-a013-p0",
+        "labour_law_2021-ar-a070-p0",
+        "labour_law_2021-ar-a001-p0"
+      ],
+      "judged_by": "ollama:qwen3.5:9b"
     },
     {
       "id": "ar-016",
@@ -361,7 +520,20 @@
       "wall_ms": 11215.537916868925,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the fine amounts and conditions specified in Article 59 of the source text."
+      "reason": "The system answer accurately reflects the penalty amount and conditions specified in Article 59 of the provided sources, matching the reference answer.",
+      "previous_judge": {
+        "judge": "ollama:qwen3.5:4b",
+        "correctness": 1.0,
+        "faithfulness": 1.0
+      },
+      "context_ids": [
+        "labour_law_2021-ar-a059-p0",
+        "labour_law_2021-ar-a039-p0",
+        "labour_law_2021-ar-a063-p0",
+        "labour_law_2021-ar-a064-p0",
+        "labour_law_2021-ar-a065-p0"
+      ],
+      "judged_by": "ollama:qwen3.5:9b"
     },
     {
       "id": "ar-017",
@@ -386,7 +558,20 @@
       "wall_ms": 13883.43166699633,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the reference by citing Article 70 for the non-discrimination clause regarding citizen participation and correctly identifies Article 4 as prohibiting discrimination."
+      "reason": "The system answer correctly cites the relevant articles and confirms that rules promoting citizen participation are not considered discrimination, matching the reference answer.",
+      "previous_judge": {
+        "judge": "ollama:qwen3.5:4b",
+        "correctness": 1.0,
+        "faithfulness": 1.0
+      },
+      "context_ids": [
+        "labour_law_2021-ar-a004-p0",
+        "labour_law_2021-ar-a070-p0",
+        "labour_law_2021-ar-preamble",
+        "labour_law_2021-ar-a002-p0",
+        "labour_law_2021-ar-a001-p0"
+      ],
+      "judged_by": "ollama:qwen3.5:9b"
     },
     {
       "id": "ar-019",
@@ -409,9 +594,22 @@
         "total": 17227.78616612777
       },
       "wall_ms": 17228.573959320784,
-      "faithfulness": 0.0,
+      "faithfulness": 1.0,
       "correctness": 0.0,
-      "reason": "The system answer discusses general conditions for employing minors instead of the specific penalty for an employer who employed a minor in violation of the law."
+      "reason": "The system answer describes the conditions for employing minors (Article 5) instead of answering the specific question about the penalty for illegal employment (Article 60).",
+      "previous_judge": {
+        "judge": "ollama:qwen3.5:4b",
+        "correctness": 0.0,
+        "faithfulness": 0.0
+      },
+      "context_ids": [
+        "labour_law_2021-ar-a060-p0",
+        "labour_law_2021-ar-a005-p0",
+        "labour_law_2021-ar-a039-p0",
+        "labour_law_2021-ar-a065-p0",
+        "labour_law_2021-ar-a063-p0"
+      ],
+      "judged_by": "ollama:qwen3.5:9b"
     },
     {
       "id": "ar-020",
@@ -434,9 +632,22 @@
         "total": 17439.581624697894
       },
       "wall_ms": 17442.887915764004,
-      "faithfulness": 0.0,
+      "faithfulness": 1.0,
       "correctness": 0.0,
-      "reason": "The system answer incorrectly claims the employment is completely prohibited due to age, ignoring the reference's explicit allowance for non-dangerous jobs under Article 5."
+      "reason": "The system answer incorrectly states that employing a 14-year-old is completely prohibited, whereas the reference answer and Article 5 clarify that employment is allowed with specific conditions (parental consent, health certificate, limited hours) for those aged 15-18.",
+      "previous_judge": {
+        "judge": "ollama:qwen3.5:4b",
+        "correctness": 0.0,
+        "faithfulness": 0.0
+      },
+      "context_ids": [
+        "labour_law_2021-ar-a005-p0",
+        "labour_law_2021-ar-a001-p0",
+        "labour_law_2021-ar-a060-p0",
+        "labour_law_2021-ar-a006-p0",
+        "labour_law_2021-ar-a070-p0"
+      ],
+      "judged_by": "ollama:qwen3.5:9b"
     },
     {
       "id": "ar-024",
@@ -461,7 +672,20 @@
       "wall_ms": 14790.594333782792,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the obligations of the employer under Article 26 and correctly cites Article 12 regarding costs for reassignment without consent."
+      "reason": "The system answer correctly identifies the main obligation (paying agreed wages if work is not enabled) and accurately cites Article 26, while also including relevant supplementary information from Article 12 without contradiction.",
+      "previous_judge": {
+        "judge": "ollama:qwen3.5:4b",
+        "correctness": 1.0,
+        "faithfulness": 1.0
+      },
+      "context_ids": [
+        "labour_law_2021-ar-a026-p0",
+        "labour_law_2021-ar-a012-p0",
+        "labour_law_2021-ar-a045-p0",
+        "labour_law_2021-ar-a013-p0",
+        "labour_law_2021-ar-a016-p0"
+      ],
+      "judged_by": "ollama:qwen3.5:9b"
     },
     {
       "id": "ar-027",
@@ -486,7 +710,20 @@
       "wall_ms": 15643.69016699493,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately extracts the definitions of 'employer' and 'employee' from Article 1 without adding external information or contradicting the reference."
+      "reason": "The system answer accurately reflects the definitions of 'employer' and 'employee' as stated in Article 1 of the provided sources and matches the reference answer.",
+      "previous_judge": {
+        "judge": "ollama:qwen3.5:4b",
+        "correctness": 1.0,
+        "faithfulness": 1.0
+      },
+      "context_ids": [
+        "labour_law_2021-ar-a001-p0",
+        "labour_law_2021-ar-a001-p1",
+        "labour_law_2021-ar-a065-p0",
+        "labour_law_2021-ar-a008-p0",
+        "labour_law_2021-ar-a013-p0"
+      ],
+      "judged_by": "ollama:qwen3.5:9b"
     },
     {
       "id": "ar-029",
@@ -510,8 +747,21 @@
       },
       "wall_ms": 15562.615417409688,
       "faithfulness": 0.0,
-      "correctness": 0.0,
-      "reason": "The system answer incorrectly claims a 6-month breastfeeding break based on Article 32, which does not exist in the provided text."
+      "correctness": 1.0,
+      "reason": "The system answer correctly states the maternity leave duration and pay structure from Article 30 but includes an extra detail about breastfeeding breaks that is not present in the provided source text.",
+      "previous_judge": {
+        "judge": "ollama:qwen3.5:4b",
+        "correctness": 0.0,
+        "faithfulness": 0.0
+      },
+      "context_ids": [
+        "labour_law_2021-ar-a030-p0",
+        "labour_law_2021-ar-a029-p0",
+        "labour_law_2021-ar-a028-p0",
+        "labour_law_2021-ar-a032-p0",
+        "labour_law_2021-ar-a031-p0"
+      ],
+      "judged_by": "ollama:qwen3.5:9b"
     },
     {
       "id": "ar-030",
@@ -536,7 +786,20 @@
       "wall_ms": 9569.361958187073,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the legal provisions and conditions outlined in Article 64 of the source text."
+      "reason": "The system answer accurately reflects the penalty and conditions stated in the reference answer and supported by Source [قانون العمل الاتحادي، المادة 64].",
+      "previous_judge": {
+        "judge": "ollama:qwen3.5:4b",
+        "correctness": 1.0,
+        "faithfulness": 1.0
+      },
+      "context_ids": [
+        "labour_law_2021-ar-a064-p0",
+        "labour_law_2021-ar-a063-p0",
+        "labour_law_2021-ar-a039-p0",
+        "labour_law_2021-ar-a061-p0",
+        "labour_law_2021-ar-a062-p0"
+      ],
+      "judged_by": "ollama:qwen3.5:9b"
     },
     {
       "id": "ar-031",
@@ -561,7 +824,20 @@
       "wall_ms": 10540.610665921122,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the limits of two hours per day and 144 hours every three weeks as stated in Article 19."
+      "reason": "The system answer accurately reflects the maximum overtime hours (2 per day) and the three-week total limit (144 hours) as stated in Article 19 of the provided sources.",
+      "previous_judge": {
+        "judge": "ollama:qwen3.5:4b",
+        "correctness": 1.0,
+        "faithfulness": 1.0
+      },
+      "context_ids": [
+        "labour_law_2021-ar-a019-p0",
+        "labour_law_2021-ar-a017-p0",
+        "labour_law_2021-ar-a018-p0",
+        "labour_law_2021-ar-a005-p0",
+        "labour_law_2021-ar-a028-p0"
+      ],
+      "judged_by": "ollama:qwen3.5:9b"
     },
     {
       "id": "ar-033",
@@ -586,7 +862,20 @@
       "wall_ms": 13755.592207890004,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the key facts and legal provisions of Article 46 found in the source text."
+      "reason": "The system answer accurately reflects the reference answer and is fully supported by Article 46 of the provided sources.",
+      "previous_judge": {
+        "judge": "ollama:qwen3.5:4b",
+        "correctness": 1.0,
+        "faithfulness": 1.0
+      },
+      "context_ids": [
+        "labour_law_2021-ar-a046-p0",
+        "labour_law_2021-ar-a031-p0",
+        "labour_law_2021-ar-a030-p0",
+        "labour_law_2021-ar-a029-p0",
+        "labour_law_2021-ar-a047-p0"
+      ],
+      "judged_by": "ollama:qwen3.5:9b"
     },
     {
       "id": "ar-034",
@@ -611,7 +900,20 @@
       "wall_ms": 16736.88150011003,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the key facts and calculations regarding sick leave entitlement and pay structure as stated in Article 31 of the source."
+      "reason": "The system answer accurately reflects the duration (90 days), payment structure (15 full, 30 half, remainder unpaid), and condition (after probation) as stated in the reference and source Article 31.",
+      "previous_judge": {
+        "judge": "ollama:qwen3.5:4b",
+        "correctness": 1.0,
+        "faithfulness": 1.0
+      },
+      "context_ids": [
+        "labour_law_2021-ar-a031-p0",
+        "labour_law_2021-ar-a029-p0",
+        "labour_law_2021-ar-a009-p0",
+        "labour_law_2021-ar-a001-p0",
+        "labour_law_2021-ar-a032-p0"
+      ],
+      "judged_by": "ollama:qwen3.5:9b"
     },
     {
       "id": "en-002",
@@ -636,7 +938,20 @@
       "wall_ms": 15832.69333327189,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the payment schedule (6 months full wage followed by 6 months half wage) as specified in Article 37 of the Federal Labour Law."
+      "reason": "The system answer accurately reflects the reference answer and Article 37 of the Federal Labour Law regarding the payment structure for work injuries lasting seven months.",
+      "previous_judge": {
+        "judge": "ollama:qwen3.5:4b",
+        "correctness": 1.0,
+        "faithfulness": 1.0
+      },
+      "context_ids": [
+        "labour_law_2021-en-a037-p0",
+        "labour_law_2021-en-a001-p1",
+        "labour_law_2021-en-a031-p0",
+        "labour_law_2021-en-a038-p0",
+        "labour_law_2021-en-a047-p0"
+      ],
+      "judged_by": "ollama:qwen3.5:9b"
     },
     {
       "id": "en-003",
@@ -661,7 +976,20 @@
       "wall_ms": 16100.299749989063,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the definition and exclusions of 'Basic Wage' as stated in Article 1 of the provided text."
+      "reason": "The system answer accurately reflects the definition of 'Basic Wage' provided in Article 1 of the Federal Labour Law and matches the reference answer.",
+      "previous_judge": {
+        "judge": "ollama:qwen3.5:4b",
+        "correctness": 1.0,
+        "faithfulness": 1.0
+      },
+      "context_ids": [
+        "labour_law_2021-en-a001-p1",
+        "labour_law_2021-en-a051-p0",
+        "labour_law_2021-en-a037-p0",
+        "labour_law_2021-en-a019-p0",
+        "labour_law_2021-en-a001-p0"
+      ],
+      "judged_by": "ollama:qwen3.5:9b"
     },
     {
       "id": "en-004",
@@ -686,7 +1014,20 @@
       "wall_ms": 18219.97920796275,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately cites the correct fines and penalties from Articles 59 and 64 without contradicting or omitting key facts."
+      "reason": "The system answer accurately reflects the penalties and conditions stated in the reference answer and is fully supported by the provided source articles.",
+      "previous_judge": {
+        "judge": "ollama:qwen3.5:4b",
+        "correctness": 1.0,
+        "faithfulness": 1.0
+      },
+      "context_ids": [
+        "labour_law_2021-en-a059-p0",
+        "labour_law_2021-en-a060-p0",
+        "labour_law_2021-en-a065-p0",
+        "labour_law_2021-en-a064-p0",
+        "labour_law_2021-en-a016-p0"
+      ],
+      "judged_by": "ollama:qwen3.5:9b"
     },
     {
       "id": "en-005",
@@ -709,9 +1050,22 @@
         "total": 13337.830666918308
       },
       "wall_ms": 13342.160750180483,
-      "faithfulness": 0.0,
+      "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer incorrectly uses the word 'redeemed' instead of 'repealed' as stated in Article 73."
+      "reason": "The system answer accurately reflects the repeal of Federal Law No. (8) of 1980 and the status of conflicting previous resolutions as stated in Article 73.",
+      "previous_judge": {
+        "judge": "ollama:qwen3.5:4b",
+        "correctness": 1.0,
+        "faithfulness": 0.0
+      },
+      "context_ids": [
+        "labour_law_2021-en-a073-p0",
+        "labour_law_2021-en-a064-p0",
+        "labour_law_2021-en-preamble",
+        "labour_law_2021-en-a068-p0",
+        "labour_law_2021-en-a065-p0"
+      ],
+      "judged_by": "ollama:qwen3.5:9b"
     },
     {
       "id": "en-006",
@@ -736,7 +1090,20 @@
       "wall_ms": 14536.708207800984,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately cites Article 17 and correctly states the eight-hour limit without contradicting or omitting key facts from the reference."
+      "reason": "The system answer correctly states the 8-hour daily limit and accurately reflects the conditions and exclusions provided in Article 17 of the Federal Labour Law.",
+      "previous_judge": {
+        "judge": "ollama:qwen3.5:4b",
+        "correctness": 1.0,
+        "faithfulness": 1.0
+      },
+      "context_ids": [
+        "labour_law_2021-en-a017-p0",
+        "labour_law_2021-en-a019-p0",
+        "labour_law_2021-en-a005-p0",
+        "labour_law_2021-en-a018-p0",
+        "labour_law_2021-en-a051-p0"
+      ],
+      "judged_by": "ollama:qwen3.5:9b"
     },
     {
       "id": "en-008",
@@ -761,7 +1128,20 @@
       "wall_ms": 11869.160834234208,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the calculation rates and the two-year wage cap specified in Article 51."
+      "reason": "The system answer accurately reflects the calculation rules and the two-year wage cap stated in the reference answer and supported by Article 51.",
+      "previous_judge": {
+        "judge": "ollama:qwen3.5:4b",
+        "correctness": 1.0,
+        "faithfulness": 1.0
+      },
+      "context_ids": [
+        "labour_law_2021-en-a051-p0",
+        "labour_law_2021-en-a052-p0",
+        "labour_law_2021-en-a047-p0",
+        "labour_law_2021-en-a068-p0",
+        "labour_law_2021-en-a039-p0"
+      ],
+      "judged_by": "ollama:qwen3.5:9b"
     },
     {
       "id": "en-011",
@@ -786,7 +1166,20 @@
       "wall_ms": 16580.19708376378,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the reference answer's key facts and citations without contradicting the source material."
+      "reason": "The system answer accurately reflects the reference answer's core requirements regarding Federal Law No. (13) of 2020 and correctly incorporates additional relevant details from Article 16 without contradicting the main facts.",
+      "previous_judge": {
+        "judge": "ollama:qwen3.5:4b",
+        "correctness": 1.0,
+        "faithfulness": 1.0
+      },
+      "context_ids": [
+        "labour_law_2021-en-a036-p0",
+        "labour_law_2021-en-a044-p0",
+        "labour_law_2021-en-a016-p0",
+        "labour_law_2021-en-a001-p0",
+        "labour_law_2021-en-a013-p0"
+      ],
+      "judged_by": "ollama:qwen3.5:9b"
     },
     {
       "id": "en-013",
@@ -811,7 +1204,20 @@
       "wall_ms": 14050.319999922067,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the conditions and two-year duration limit specified in Article 10 of the Federal Labour Law."
+      "reason": "The system answer accurately reflects the conditions and maximum duration specified in Article 10 of the Federal Labour Law as presented in the reference.",
+      "previous_judge": {
+        "judge": "ollama:qwen3.5:4b",
+        "correctness": 1.0,
+        "faithfulness": 1.0
+      },
+      "context_ids": [
+        "labour_law_2021-en-a010-p0",
+        "labour_law_2021-en-a013-p0",
+        "labour_law_2021-en-a017-p0",
+        "labour_law_2021-en-a040-p0",
+        "labour_law_2021-en-a043-p0"
+      ],
+      "judged_by": "ollama:qwen3.5:9b"
     },
     {
       "id": "en-014",
@@ -836,7 +1242,20 @@
       "wall_ms": 16200.452374760062,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the reference answer's key facts and cites the correct source articles."
+      "reason": "The system answer accurately reflects the reference answer's key facts regarding equal pay for equal work and correctly cites the supporting articles.",
+      "previous_judge": {
+        "judge": "ollama:qwen3.5:4b",
+        "correctness": 1.0,
+        "faithfulness": 1.0
+      },
+      "context_ids": [
+        "labour_law_2021-en-a004-p0",
+        "labour_law_2021-en-a001-p1",
+        "labour_law_2021-en-a013-p0",
+        "labour_law_2021-en-a026-p0",
+        "labour_law_2021-ar-a001-p0"
+      ],
+      "judged_by": "ollama:qwen3.5:9b"
     },
     {
       "id": "en-015",
@@ -861,7 +1280,20 @@
       "wall_ms": 12947.80429173261,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the exemption conditions and monetary threshold specified in Article 55 without contradicting or omitting key facts."
+      "reason": "The system answer accurately reflects the reference answer and is fully supported by the provided source text.",
+      "previous_judge": {
+        "judge": "ollama:qwen3.5:4b",
+        "correctness": 1.0,
+        "faithfulness": 1.0
+      },
+      "context_ids": [
+        "labour_law_2021-en-a055-p0",
+        "labour_law_2021-en-a060-p0",
+        "labour_law_2021-en-a061-p0",
+        "labour_law_2021-en-a059-p0",
+        "labour_law_2021-en-a054-p0"
+      ],
+      "judged_by": "ollama:qwen3.5:9b"
     },
     {
       "id": "en-016",
@@ -886,7 +1318,20 @@
       "wall_ms": 15206.507625058293,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects all key facts and deadlines found in the reference answer without contradicting the source text."
+      "reason": "The system answer accurately reflects the mourning leave entitlements and parental leave duration and deadline specified in Article 32 of the Federal Labour Law.",
+      "previous_judge": {
+        "judge": "ollama:qwen3.5:4b",
+        "correctness": 1.0,
+        "faithfulness": 1.0
+      },
+      "context_ids": [
+        "labour_law_2021-en-a032-p0",
+        "labour_law_2021-en-a015-p0",
+        "labour_law_2021-en-a029-p0",
+        "labour_law_2021-en-a030-p0",
+        "labour_law_2021-en-a037-p0"
+      ],
+      "judged_by": "ollama:qwen3.5:9b"
     },
     {
       "id": "en-019",
@@ -911,7 +1356,20 @@
       "wall_ms": 16742.024874780327,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the key facts and conditions of Article 31 without contradicting or omitting main details."
+      "reason": "The system answer accurately reflects the sick leave entitlements, conditions, and procedural requirements stated in the reference answer and supported by Article 31 of the Federal Labour Law.",
+      "previous_judge": {
+        "judge": "ollama:qwen3.5:4b",
+        "correctness": 1.0,
+        "faithfulness": 1.0
+      },
+      "context_ids": [
+        "labour_law_2021-en-a031-p0",
+        "labour_law_2021-en-a029-p0",
+        "labour_law_2021-en-a037-p0",
+        "labour_law_2021-en-a009-p0",
+        "labour_law_2021-en-a034-p0"
+      ],
+      "judged_by": "ollama:qwen3.5:9b"
     },
     {
       "id": "en-020",
@@ -935,8 +1393,21 @@
       },
       "wall_ms": 14865.086208563298,
       "faithfulness": 0.0,
-      "correctness": 0.0,
-      "reason": "The system answer incorrectly cites Clause 8 of Article 44 and falsely claims the law specifies 'twenty non-consecutive days,' whereas the provided text contains no such clause or duration."
+      "correctness": 1.0,
+      "reason": "The system answer is factually correct regarding the outcome but lacks faithfulness because it hallucinates a 'Clause 8' in Article 44, whereas the provided source text for Article 44 only lists clauses 1 through 5.",
+      "previous_judge": {
+        "judge": "ollama:qwen3.5:4b",
+        "correctness": 0.0,
+        "faithfulness": 0.0
+      },
+      "context_ids": [
+        "labour_law_2021-en-a044-p0",
+        "labour_law_2021-en-a043-p0",
+        "labour_law_2021-en-a045-p0",
+        "labour_law_2021-en-a050-p0",
+        "labour_law_2021-en-a040-p0"
+      ],
+      "judged_by": "ollama:qwen3.5:9b"
     },
     {
       "id": "en-022",
@@ -961,7 +1432,20 @@
       "wall_ms": 14032.175542321056,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the reference answer's conclusion and reasoning based on Article 38."
+      "reason": "The system answer accurately reflects the reference answer and is fully supported by Article 38 of the provided sources.",
+      "previous_judge": {
+        "judge": "ollama:qwen3.5:4b",
+        "correctness": 1.0,
+        "faithfulness": 1.0
+      },
+      "context_ids": [
+        "labour_law_2021-en-a038-p0",
+        "labour_law_2021-en-a037-p0",
+        "labour_law_2021-en-a044-p0",
+        "labour_law_2021-en-a001-p1",
+        "labour_law_2021-en-a047-p0"
+      ],
+      "judged_by": "ollama:qwen3.5:9b"
     },
     {
       "id": "en-023",
@@ -984,9 +1468,22 @@
         "total": 15357.181457802653
       },
       "wall_ms": 15361.49137467146,
-      "faithfulness": 1.0,
-      "correctness": 1.0,
-      "reason": "The system answer accurately reflects the 5% limit and court approval condition found in Article 25(f) of the source text."
+      "faithfulness": 0.0,
+      "correctness": 0.0,
+      "reason": "The system answer incorrectly cites Article 25(h) (which does not exist in the provided text) and misstates the legal basis for court approval; the reference answer explicitly states a 5% limit under Article 25(f) without mentioning court approval as a condition for the deduction itself.",
+      "previous_judge": {
+        "judge": "ollama:qwen3.5:4b",
+        "correctness": 1.0,
+        "faithfulness": 1.0
+      },
+      "context_ids": [
+        "labour_law_2021-en-a025-p0",
+        "labour_law_2021-en-a044-p0",
+        "labour_law_2021-en-a016-p0",
+        "labour_law_2021-en-a001-p1",
+        "labour_law_2021-en-a039-p0"
+      ],
+      "judged_by": "ollama:qwen3.5:9b"
     },
     {
       "id": "en-025",
@@ -1011,7 +1508,20 @@
       "wall_ms": 12449.406625237316,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the key facts and conditions regarding wage restoration upon a non-violation outcome as stated in Article 40."
+      "reason": "The system answer accurately reflects the reference answer and is fully supported by Article 40 of the provided sources.",
+      "previous_judge": {
+        "judge": "ollama:qwen3.5:4b",
+        "correctness": 1.0,
+        "faithfulness": 1.0
+      },
+      "context_ids": [
+        "labour_law_2021-en-a040-p0",
+        "labour_law_2021-en-a044-p0",
+        "labour_law_2021-en-a039-p0",
+        "labour_law_2021-en-a045-p0",
+        "labour_law_2021-en-a043-p0"
+      ],
+      "judged_by": "ollama:qwen3.5:9b"
     },
     {
       "id": "en-026",
@@ -1036,7 +1546,20 @@
       "wall_ms": 13594.64875003323,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately cites Article 74 for the effective date and correctly identifies the President's name without contradicting the reference."
+      "reason": "The system answer correctly identifies the effective date as 02 February 2022 based on Article 74 and accurately cites supporting details from the provided sources without contradiction.",
+      "previous_judge": {
+        "judge": "ollama:qwen3.5:4b",
+        "correctness": 1.0,
+        "faithfulness": 1.0
+      },
+      "context_ids": [
+        "labour_law_2021-en-a074-p0",
+        "labour_law_2021-en-preamble",
+        "labour_law_2021-en-a001-p0",
+        "labour_law_2021-en-a073-p0",
+        "labour_law_2021-en-a068-p0"
+      ],
+      "judged_by": "ollama:qwen3.5:9b"
     },
     {
       "id": "en-027",
@@ -1061,7 +1584,20 @@
       "wall_ms": 13557.536917272955,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the conditions and protections specified in Article 24 of the Federal Labour Law."
+      "reason": "The system answer accurately reflects the reference answer and is fully supported by Article 24 of the provided sources.",
+      "previous_judge": {
+        "judge": "ollama:qwen3.5:4b",
+        "correctness": 1.0,
+        "faithfulness": 1.0
+      },
+      "context_ids": [
+        "labour_law_2021-en-a024-p0",
+        "labour_law_2021-en-a001-p1",
+        "labour_law_2021-en-a012-p0",
+        "labour_law_2021-en-a043-p0",
+        "labour_law_2021-en-a025-p0"
+      ],
+      "judged_by": "ollama:qwen3.5:9b"
     },
     {
       "id": "en-028",
@@ -1086,7 +1622,20 @@
       "wall_ms": 14172.330915927887,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the maximum duration and notice requirements found in Article 9 without contradicting or omitting key facts."
+      "reason": "The system answer accurately reflects the maximum probation duration of six months and the fourteen-day written notice requirement as stated in Article 9.",
+      "previous_judge": {
+        "judge": "ollama:qwen3.5:4b",
+        "correctness": 1.0,
+        "faithfulness": 1.0
+      },
+      "context_ids": [
+        "labour_law_2021-en-a009-p0",
+        "labour_law_2021-en-a031-p0",
+        "labour_law_2021-en-a029-p0",
+        "labour_law_2021-en-a001-p0",
+        "labour_law_2021-en-a047-p0"
+      ],
+      "judged_by": "ollama:qwen3.5:9b"
     },
     {
       "id": "en-029",
@@ -1111,7 +1660,20 @@
       "wall_ms": 11685.172541067004,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the specific punishment (imprisonment and/or double fine) and conditions (within one year) stated in Article 64 of the source text."
+      "reason": "The system answer accurately reflects the reference answer and source text regarding the penalty for repeat offenses within one year.",
+      "previous_judge": {
+        "judge": "ollama:qwen3.5:4b",
+        "correctness": 1.0,
+        "faithfulness": 1.0
+      },
+      "context_ids": [
+        "labour_law_2021-en-a064-p0",
+        "labour_law_2021-ar-a063-p0",
+        "labour_law_2021-en-a062-p0",
+        "labour_law_2021-en-a039-p0",
+        "labour_law_2021-en-a060-p0"
+      ],
+      "judged_by": "ollama:qwen3.5:9b"
     },
     {
       "id": "en-030",
@@ -1136,7 +1698,20 @@
       "wall_ms": 12118.563333060592,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the source text without adding unsupported claims or contradicting facts."
+      "reason": "The system answer accurately reflects the reference answer by stating that the Executive Regulation defines the mechanism for non-full-time foreign workers, while correctly noting that the specific two-year cap mentioned in Article 51 applies only to full-time workers.",
+      "previous_judge": {
+        "judge": "ollama:qwen3.5:4b",
+        "correctness": 1.0,
+        "faithfulness": 1.0
+      },
+      "context_ids": [
+        "labour_law_2021-en-a052-p0",
+        "labour_law_2021-en-a051-p0",
+        "labour_law_2021-en-a039-p0",
+        "labour_law_2021-en-a015-p0",
+        "labour_law_2021-en-a068-p0"
+      ],
+      "judged_by": "ollama:qwen3.5:9b"
     },
     {
       "id": "en-032",
@@ -1161,7 +1736,20 @@
       "wall_ms": 15012.247290927917,
       "faithfulness": 0.0,
       "correctness": 1.0,
-      "reason": "The system answer correctly identifies the 30-day limit but falsely cites Article 16 as the source for this provision."
+      "reason": "The system answer is correct regarding the 30-day limit but hallucinates a second condition about extending the stay based on Article 16, which only lists worker obligations and does not contain this provision.",
+      "previous_judge": {
+        "judge": "ollama:qwen3.5:4b",
+        "correctness": 1.0,
+        "faithfulness": 0.0
+      },
+      "context_ids": [
+        "labour_law_2021-en-a016-p0",
+        "labour_law_2021-en-a029-p0",
+        "labour_law_2021-en-a065-p1",
+        "labour_law_2021-en-a013-p0",
+        "labour_law_2021-en-a051-p0"
+      ],
+      "judged_by": "ollama:qwen3.5:9b"
     },
     {
       "id": "en-033",
@@ -1186,7 +1774,20 @@
       "wall_ms": 14963.379458989948,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the conditions and timelines specified in Article 45 of the Federal Labour Law."
+      "reason": "The system answer accurately reflects the conditions and timelines specified in Article 45 of the Federal Labour Law as presented in the reference answer.",
+      "previous_judge": {
+        "judge": "ollama:qwen3.5:4b",
+        "correctness": 1.0,
+        "faithfulness": 1.0
+      },
+      "context_ids": [
+        "labour_law_2021-en-a045-p0",
+        "labour_law_2021-en-a044-p0",
+        "labour_law_2021-en-a043-p0",
+        "labour_law_2021-en-a009-p0",
+        "labour_law_2021-en-a016-p0"
+      ],
+      "judged_by": "ollama:qwen3.5:9b"
     },
     {
       "id": "en-034",
@@ -1209,9 +1810,22 @@
         "total": 14137.022291775793
       },
       "wall_ms": 14149.139292072505,
-      "faithfulness": 0.0,
+      "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer incorrectly cites Article 62 for the fine amount, whereas the reference answer correctly attributes the fine to Article 60."
+      "reason": "The system answer correctly cites the fine range from Article 60 and accurately incorporates the cumulative penalty rule from Article 62 as stated in the reference.",
+      "previous_judge": {
+        "judge": "ollama:qwen3.5:4b",
+        "correctness": 1.0,
+        "faithfulness": 0.0
+      },
+      "context_ids": [
+        "labour_law_2021-en-a060-p0",
+        "labour_law_2021-en-a059-p0",
+        "labour_law_2021-en-a006-p0",
+        "labour_law_2021-en-a009-p0",
+        "labour_law_2021-en-a062-p0"
+      ],
+      "judged_by": "ollama:qwen3.5:9b"
     },
     {
       "id": "cross_ar_en-001",
@@ -1236,7 +1850,20 @@
       "wall_ms": 15909.574166871607,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the calculation rules and caps specified in Article 51 of the UAE Labour Law."
+      "reason": "The system answer accurately reflects the calculation rules and the two-year cap for foreign employees with over five years of service as stated in Article 51.",
+      "previous_judge": {
+        "judge": "ollama:qwen3.5:4b",
+        "correctness": 1.0,
+        "faithfulness": 1.0
+      },
+      "context_ids": [
+        "labour_law_2021-ar-a051-p0",
+        "labour_law_2021-ar-a052-p0",
+        "labour_law_2021-ar-a065-p0",
+        "labour_law_2021-ar-a047-p0",
+        "labour_law_2021-ar-a037-p0"
+      ],
+      "judged_by": "ollama:qwen3.5:9b"
     },
     {
       "id": "cross_ar_en-002",
@@ -1261,7 +1888,20 @@
       "wall_ms": 16017.89866713807,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the reference answer's key point regarding the Ministry's mandate to encourage investment in training and upskilling workers."
+      "reason": "The system answer accurately reflects the reference answer by citing Article 71 regarding the Ministry's role in encouraging investment in training and upskilling workers.",
+      "previous_judge": {
+        "judge": "ollama:qwen3.5:4b",
+        "correctness": 1.0,
+        "faithfulness": 1.0
+      },
+      "context_ids": [
+        "labour_law_2021-ar-a071-p0",
+        "labour_law_2021-ar-a013-p0",
+        "labour_law_2021-ar-a001-p0",
+        "labour_law_2021-ar-a070-p0",
+        "labour_law_2021-ar-a036-p0"
+      ],
+      "judged_by": "ollama:qwen3.5:9b"
     },
     {
       "id": "cross_ar_en-005",
@@ -1286,7 +1926,20 @@
       "wall_ms": 17343.189833685756,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects all five work types defined in Article 7 with identical definitions and conditions as the reference."
+      "reason": "The system answer accurately reflects the definitions provided in Article 7 of the Federal Labour Law and aligns perfectly with the reference answer.",
+      "previous_judge": {
+        "judge": "ollama:qwen3.5:4b",
+        "correctness": 1.0,
+        "faithfulness": 1.0
+      },
+      "context_ids": [
+        "labour_law_2021-ar-a007-p0",
+        "labour_law_2021-ar-a001-p1",
+        "labour_law_2021-ar-a001-p0",
+        "labour_law_2021-ar-a008-p0",
+        "labour_law_2021-ar-a012-p0"
+      ],
+      "judged_by": "ollama:qwen3.5:9b"
     },
     {
       "id": "cross_ar_en-007",
@@ -1309,9 +1962,22 @@
         "total": 10062.628500163555
       },
       "wall_ms": 10065.877417102456,
-      "faithfulness": 0.0,
-      "correctness": 0.0,
-      "reason": "The system answer incorrectly cites Article 42 for the specific procedure regarding inability to work and fails to identify the correct article as stated in the reference."
+      "faithfulness": 1.0,
+      "correctness": 1.0,
+      "reason": "The system answer correctly cites Article 26 regarding the employer's obligation to enable work and the Executive Regulation's role in defining procedures for termination due to inability to work, matching the reference answer.",
+      "previous_judge": {
+        "judge": "ollama:qwen3.5:4b",
+        "correctness": 0.0,
+        "faithfulness": 0.0
+      },
+      "context_ids": [
+        "labour_law_2021-ar-a026-p0",
+        "labour_law_2021-ar-a042-p0",
+        "labour_law_2021-ar-a012-p0",
+        "labour_law_2021-ar-a008-p0",
+        "labour_law_2021-ar-a050-p0"
+      ],
+      "judged_by": "ollama:qwen3.5:9b"
     },
     {
       "id": "cross_ar_en-008",
@@ -1336,7 +2002,20 @@
       "wall_ms": 14756.327792070806,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the reference answer's conclusion and correctly cites the relevant articles without contradicting any key facts."
+      "reason": "The system answer correctly states the main fact from Article 46 and accurately cites the relevant leave entitlements from Articles 31 and 29 without contradiction.",
+      "previous_judge": {
+        "judge": "ollama:qwen3.5:4b",
+        "correctness": 1.0,
+        "faithfulness": 1.0
+      },
+      "context_ids": [
+        "labour_law_2021-ar-a046-p0",
+        "labour_law_2021-ar-a031-p0",
+        "labour_law_2021-ar-a030-p0",
+        "labour_law_2021-ar-a029-p0",
+        "labour_law_2021-ar-a047-p0"
+      ],
+      "judged_by": "ollama:qwen3.5:9b"
     },
     {
       "id": "cross_ar_en-009",
@@ -1361,7 +2040,20 @@
       "wall_ms": 15242.517083417624,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the key conditions and exceptions regarding job changes as stated in Article 12 of the UAE Labor Law."
+      "reason": "The system answer accurately reflects the conditions and exceptions outlined in Article 12 of the provided sources, matching the reference answer.",
+      "previous_judge": {
+        "judge": "ollama:qwen3.5:4b",
+        "correctness": 1.0,
+        "faithfulness": 1.0
+      },
+      "context_ids": [
+        "labour_law_2021-ar-a012-p0",
+        "labour_law_2021-ar-a009-p0",
+        "labour_law_2021-ar-a001-p0",
+        "labour_law_2021-ar-a008-p0",
+        "labour_law_2021-ar-a006-p0"
+      ],
+      "judged_by": "ollama:qwen3.5:9b"
     },
     {
       "id": "cross_ar_en-010",
@@ -1386,7 +2078,20 @@
       "wall_ms": 11380.257624667138,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the source text regarding imprisonment and doubled fines with a one-year condition."
+      "reason": "The system answer accurately reflects the reference answer and source text regarding the penalty of imprisonment and doubled fine for repeat offenses within one year.",
+      "previous_judge": {
+        "judge": "ollama:qwen3.5:4b",
+        "correctness": 1.0,
+        "faithfulness": 1.0
+      },
+      "context_ids": [
+        "labour_law_2021-ar-a064-p0",
+        "labour_law_2021-ar-a063-p0",
+        "labour_law_2021-ar-a039-p0",
+        "labour_law_2021-ar-a062-p0",
+        "labour_law_2021-ar-a060-p0"
+      ],
+      "judged_by": "ollama:qwen3.5:9b"
     },
     {
       "id": "cross_ar_en-011",
@@ -1411,7 +2116,20 @@
       "wall_ms": 15681.116874795407,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects all key objectives listed in Article 2 of the source text without adding external information."
+      "reason": "The system answer accurately reflects the objectives listed in Article 2 of the Federal Labour Law as presented in the reference answer.",
+      "previous_judge": {
+        "judge": "ollama:qwen3.5:4b",
+        "correctness": 1.0,
+        "faithfulness": 1.0
+      },
+      "context_ids": [
+        "labour_law_2021-ar-a002-p0",
+        "labour_law_2021-ar-a070-p0",
+        "labour_law_2021-ar-a071-p0",
+        "labour_law_2021-ar-preamble",
+        "labour_law_2021-ar-a001-p1"
+      ],
+      "judged_by": "ollama:qwen3.5:9b"
     },
     {
       "id": "cross_en_ar-002",
@@ -1436,7 +2154,20 @@
       "wall_ms": 16462.891375180334,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the procedural steps and authorities outlined in Article 56 without contradicting or omitting key facts."
+      "reason": "The system answer accurately reflects the procedures and authorities described in the reference answer based on Article 56 of the Federal Labour Law.",
+      "previous_judge": {
+        "judge": "ollama:qwen3.5:4b",
+        "correctness": 1.0,
+        "faithfulness": 1.0
+      },
+      "context_ids": [
+        "labour_law_2021-en-a056-p0",
+        "labour_law_2021-en-a054-p0",
+        "labour_law_2021-en-a054-p1",
+        "labour_law_2021-en-a001-p1",
+        "labour_law_2021-en-a065-p0"
+      ],
+      "judged_by": "ollama:qwen3.5:9b"
     },
     {
       "id": "cross_en_ar-003",
@@ -1461,7 +2192,20 @@
       "wall_ms": 13714.619165752083,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the two-year maximum duration and specific conditions for non-compete clauses as stated in Article 10 of the Federal Labour Law."
+      "reason": "The system answer accurately reflects the maximum duration of two years and the necessary conditions specified in Article 10 of the Federal Labour Law.",
+      "previous_judge": {
+        "judge": "ollama:qwen3.5:4b",
+        "correctness": 1.0,
+        "faithfulness": 1.0
+      },
+      "context_ids": [
+        "labour_law_2021-en-a010-p0",
+        "labour_law_2021-en-a016-p0",
+        "labour_law_2021-en-a044-p0",
+        "labour_law_2021-en-a059-p0",
+        "labour_law_2021-en-a013-p0"
+      ],
+      "judged_by": "ollama:qwen3.5:9b"
     },
     {
       "id": "cross_en_ar-004",
@@ -1486,7 +2230,20 @@
       "wall_ms": 12542.82508417964,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the key facts of Article 48 without contradicting or omitting main provisions."
+      "reason": "The system answer accurately reflects the reference answer and is fully supported by Article 48 of the provided sources.",
+      "previous_judge": {
+        "judge": "ollama:qwen3.5:4b",
+        "correctness": 1.0,
+        "faithfulness": 1.0
+      },
+      "context_ids": [
+        "labour_law_2021-en-a048-p0",
+        "labour_law_2021-en-a008-p0",
+        "labour_law_2021-en-a065-p0",
+        "labour_law_2021-en-a001-p0",
+        "labour_law_2021-en-a042-p0"
+      ],
+      "judged_by": "ollama:qwen3.5:9b"
     },
     {
       "id": "cross_en_ar-005",
@@ -1511,7 +2268,20 @@
       "wall_ms": 15183.017666917294,
       "faithfulness": 0.0,
       "correctness": 1.0,
-      "reason": "The system answer incorrectly claims the fine is multiplied by the number of workers, a detail not found in the provided text."
+      "reason": "The system answer correctly identifies the fine range and the requirement to return financial incentives as per the reference, but it includes a statement about multiplying the penalty by the number of workers which is not present in the provided source text.",
+      "previous_judge": {
+        "judge": "ollama:qwen3.5:4b",
+        "correctness": 1.0,
+        "faithfulness": 0.0
+      },
+      "context_ids": [
+        "labour_law_2021-en-a060-p0",
+        "labour_law_2021-en-a059-p0",
+        "labour_law_2021-en-a001-p1",
+        "labour_law_2021-en-a060-p1",
+        "labour_law_2021-en-a001-p0"
+      ],
+      "judged_by": "ollama:qwen3.5:9b"
     },
     {
       "id": "cross_en_ar-006",
@@ -1536,7 +2306,20 @@
       "wall_ms": 17301.600667182356,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects all key facts and numerical limits found in Article 47 of the source text."
+      "reason": "The system answer accurately reflects the reference answer and source Article 47 regarding the compensation cap of three months' wages and the factors for calculation.",
+      "previous_judge": {
+        "judge": "ollama:qwen3.5:4b",
+        "correctness": 1.0,
+        "faithfulness": 1.0
+      },
+      "context_ids": [
+        "labour_law_2021-en-a047-p0",
+        "labour_law_2021-en-a009-p0",
+        "labour_law_2021-en-a054-p0",
+        "labour_law_2021-en-a001-p0",
+        "labour_law_2021-en-a043-p0"
+      ],
+      "judged_by": "ollama:qwen3.5:9b"
     },
     {
       "id": "cross_en_ar-008",
@@ -1561,7 +2344,20 @@
       "wall_ms": 10858.68858313188,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the fine range and conditions specified in Article 59 of the source text."
+      "reason": "The system answer accurately reflects the fine range and conditions specified in Article 59 of the provided sources, matching the reference answer.",
+      "previous_judge": {
+        "judge": "ollama:qwen3.5:4b",
+        "correctness": 1.0,
+        "faithfulness": 1.0
+      },
+      "context_ids": [
+        "labour_law_2021-en-a059-p0",
+        "labour_law_2021-en-a060-p0",
+        "labour_law_2021-en-a014-p0",
+        "labour_law_2021-en-a063-p0",
+        "labour_law_2021-en-a062-p0"
+      ],
+      "judged_by": "ollama:qwen3.5:9b"
     },
     {
       "id": "cross_en_ar-009",
@@ -1585,8 +2381,21 @@
       },
       "wall_ms": 10897.196291945875,
       "faithfulness": 1.0,
-      "correctness": 1.0,
-      "reason": "The system answer accurately reflects the calculation rates and cap for foreign full-time workers as specified in Article 51."
+      "correctness": 0.0,
+      "reason": "The system answer incorrectly omits the gratuity calculation for the first five years of service (21 days per year), which is a key fact present in both the reference and source Article 51.",
+      "previous_judge": {
+        "judge": "ollama:qwen3.5:4b",
+        "correctness": 1.0,
+        "faithfulness": 1.0
+      },
+      "context_ids": [
+        "labour_law_2021-en-a051-p0",
+        "labour_law_2021-en-a052-p0",
+        "labour_law_2021-en-a047-p0",
+        "labour_law_2021-en-a068-p0",
+        "labour_law_2021-en-a039-p0"
+      ],
+      "judged_by": "ollama:qwen3.5:9b"
     },
     {
       "id": "cross_en_ar-011",
@@ -1609,9 +2418,22 @@
         "total": 14946.984708774835
       },
       "wall_ms": 14950.090500060469,
-      "faithfulness": 0.0,
+      "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer incorrectly claims the law requires filing before termination, contradicting the reference which states the deadline is two years after the relationship ends."
+      "reason": "The system answer correctly identifies the two-year deadline from the date of termination as stated in Article 54, aligning with the reference answer.",
+      "previous_judge": {
+        "judge": "ollama:qwen3.5:4b",
+        "correctness": 1.0,
+        "faithfulness": 0.0
+      },
+      "context_ids": [
+        "labour_law_2021-en-a054-p1",
+        "labour_law_2021-en-a054-p0",
+        "labour_law_2021-en-a013-p0",
+        "labour_law_2021-en-a001-p1",
+        "labour_law_2021-en-a056-p0"
+      ],
+      "judged_by": "ollama:qwen3.5:9b"
     },
     {
       "id": "multi-001",
@@ -1636,7 +2458,20 @@
       "wall_ms": 17811.61733297631,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the key facts and legal provisions found in the reference answer without contradiction."
+      "reason": "The system answer accurately reflects the language requirements from Article 66 and the invalidity of conflicting prior conditions from Article 65 as stated in the reference.",
+      "previous_judge": {
+        "judge": "ollama:qwen3.5:4b",
+        "correctness": 1.0,
+        "faithfulness": 1.0
+      },
+      "context_ids": [
+        "labour_law_2021-ar-a066-p0",
+        "labour_law_2021-ar-a065-p0",
+        "labour_law_2021-ar-a001-p0",
+        "labour_law_2021-ar-a013-p0",
+        "labour_law_2021-ar-a008-p0"
+      ],
+      "judged_by": "ollama:qwen3.5:9b"
     },
     {
       "id": "multi-002",
@@ -1661,7 +2496,20 @@
       "wall_ms": 15366.789999883622,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the source text regarding the two-year limit and specific requirements for non-competition clauses."
+      "reason": "The system answer accurately reflects the legal requirements and nullity conditions for non-competition clauses as stated in Article 10 of the Federal Labour Law.",
+      "previous_judge": {
+        "judge": "ollama:qwen3.5:4b",
+        "correctness": 1.0,
+        "faithfulness": 1.0
+      },
+      "context_ids": [
+        "labour_law_2021-en-a010-p0",
+        "labour_law_2021-en-a013-p0",
+        "labour_law_2021-en-a039-p0",
+        "labour_law_2021-en-a001-p0",
+        "labour_law_2021-en-a008-p0"
+      ],
+      "judged_by": "ollama:qwen3.5:9b"
     },
     {
       "id": "multi-003",
@@ -1685,8 +2533,21 @@
       },
       "wall_ms": 22880.517959129065,
       "faithfulness": 1.0,
-      "correctness": 1.0,
-      "reason": "The system answer accurately reflects the legal provisions regarding termination procedures and warning periods found in the provided articles."
+      "correctness": 0.0,
+      "reason": "The system answer incorrectly states that the employer must notify the employee within 7 days for material loss, whereas Article 44 only requires notifying the Ministry within 7 days, and it fails to mention the mandatory 30-90 day notice period required under Article 43.",
+      "previous_judge": {
+        "judge": "ollama:qwen3.5:4b",
+        "correctness": 1.0,
+        "faithfulness": 1.0
+      },
+      "context_ids": [
+        "labour_law_2021-ar-a043-p0",
+        "labour_law_2021-ar-a044-p0",
+        "labour_law_2021-ar-a045-p0",
+        "labour_law_2021-ar-a001-p0",
+        "labour_law_2021-ar-a065-p0"
+      ],
+      "judged_by": "ollama:qwen3.5:9b"
     },
     {
       "id": "multi-005",
@@ -1711,7 +2572,20 @@
       "wall_ms": 15010.991417337209,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the key objectives listed in Article 2 of the source text without adding external information."
+      "reason": "The system answer accurately reflects the main objectives listed in Article 2 of the provided sources and aligns with the reference answer.",
+      "previous_judge": {
+        "judge": "ollama:qwen3.5:4b",
+        "correctness": 1.0,
+        "faithfulness": 1.0
+      },
+      "context_ids": [
+        "labour_law_2021-ar-a002-p0",
+        "labour_law_2021-ar-a070-p0",
+        "labour_law_2021-ar-a071-p0",
+        "labour_law_2021-ar-preamble",
+        "labour_law_2021-ar-a065-p0"
+      ],
+      "judged_by": "ollama:qwen3.5:9b"
     },
     {
       "id": "multi-006",
@@ -1736,7 +2610,20 @@
       "wall_ms": 14867.885624989867,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects the conditions and financial obligations outlined in Article 12 of the Federal Labour Law."
+      "reason": "The system answer accurately reflects the conditions and financial obligations specified in Article 12 of the Federal Labour Law as presented in the reference answer.",
+      "previous_judge": {
+        "judge": "ollama:qwen3.5:4b",
+        "correctness": 1.0,
+        "faithfulness": 1.0
+      },
+      "context_ids": [
+        "labour_law_2021-en-a012-p0",
+        "labour_law_2021-en-a013-p0",
+        "labour_law_2021-en-a045-p0",
+        "labour_law_2021-en-a007-p0",
+        "labour_law_2021-en-a060-p0"
+      ],
+      "judged_by": "ollama:qwen3.5:9b"
     },
     {
       "id": "multi-009",
@@ -1761,7 +2648,20 @@
       "wall_ms": 17634.958500042558,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects all key facts and conditions found in the reference answer without contradictions."
+      "reason": "The system answer accurately reflects the conditions and reporting timelines specified in Article 45 of the provided sources, matching the reference answer.",
+      "previous_judge": {
+        "judge": "ollama:qwen3.5:4b",
+        "correctness": 1.0,
+        "faithfulness": 1.0
+      },
+      "context_ids": [
+        "labour_law_2021-ar-a045-p0",
+        "labour_law_2021-ar-a044-p0",
+        "labour_law_2021-ar-a043-p0",
+        "labour_law_2021-ar-a013-p0",
+        "labour_law_2021-ar-a042-p0"
+      ],
+      "judged_by": "ollama:qwen3.5:9b"
     },
     {
       "id": "multi-011",
@@ -1786,7 +2686,20 @@
       "wall_ms": 26688.70083335787,
       "faithfulness": 1.0,
       "correctness": 1.0,
-      "reason": "The system answer accurately reflects all conditions and specific percentages found in the reference text without adding unsupported claims."
+      "reason": "The system answer accurately reflects the conditions for transferring monthly wage workers and lists all specific exceptions for deductions as stated in the provided sources and reference answer.",
+      "previous_judge": {
+        "judge": "ollama:qwen3.5:4b",
+        "correctness": 1.0,
+        "faithfulness": 1.0
+      },
+      "context_ids": [
+        "labour_law_2021-ar-a024-p0",
+        "labour_law_2021-ar-a025-p0",
+        "labour_law_2021-ar-a001-p0",
+        "labour_law_2021-ar-a049-p0",
+        "labour_law_2021-ar-a039-p0"
+      ],
+      "judged_by": "ollama:qwen3.5:9b"
     },
     {
       "id": "multi-012",
@@ -1810,8 +2723,21 @@
       },
       "wall_ms": 20434.780249837786,
       "faithfulness": 1.0,
-      "correctness": 1.0,
-      "reason": "The system answer accurately reflects the requirements and restrictions outlined in Article 5 of the Federal Labour Law without contradicting the reference."
+      "correctness": 0.0,
+      "reason": "The system answer incorrectly identifies the work permit as a requirement for juveniles under fifteen, whereas the reference answer and Article 5 explicitly state that employment before age fifteen is prohibited.",
+      "previous_judge": {
+        "judge": "ollama:qwen3.5:4b",
+        "correctness": 1.0,
+        "faithfulness": 1.0
+      },
+      "context_ids": [
+        "labour_law_2021-en-a005-p0",
+        "labour_law_2021-en-a019-p0",
+        "labour_law_2021-en-a001-p0",
+        "labour_law_2021-en-a006-p0",
+        "labour_law_2021-en-a060-p0"
+      ],
+      "judged_by": "ollama:qwen3.5:9b"
     },
     {
       "id": "unanswerable-001",

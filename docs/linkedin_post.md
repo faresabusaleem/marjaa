@@ -14,7 +14,7 @@ What I learned building it:
 
 🔹 Cross-lingual search works. An Arabic question can be answered from the English text and vice versa, because BGE-M3 puts both languages in one vector space. BM25 gets this right 0 to 8% of the time; the hybrid gets 92 to 100%.
 
-🔹 Don't trust citations blindly. Every citation the LLM writes is checked in code against the articles it was actually given. 100% of citations pointed to a real retrieved article. The surprising lesson: the 4B model skipped citations in 1 answer out of 5 until I added a single worked example to the prompt, which raised answers with a citation from 79% to 97%. And all 16 out-of-scope questions got "not found" instead of a made-up answer.
+🔹 Don't trust citations blindly. Every citation the LLM writes is checked in code against the articles it was actually given. 100% of citations pointed to a real retrieved article. The surprising lesson: the 4B model skipped citations in 1 answer out of 5 until I added a single worked example to the prompt, which raised answers with a citation from 79% to 96%. And all 16 out-of-scope questions got "not found" instead of a made-up answer.
 
 🔹 Measure, don't guess. The evaluation set has 126 auto-generated questions (Arabic, English, cross-language, multi-article and out-of-scope; LLM-written, so the scores are an upper bound), and every number in the README comes from one command: make eval.
 

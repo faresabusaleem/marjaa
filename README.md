@@ -10,7 +10,7 @@ articles, and when the law does not cover the question it says so instead of gue
 > **Not legal advice.** This is a portfolio project. The Arabic text of UAE legislation is the
 > legally authoritative version; the English text is a translation.
 
-<!-- After pushing to GitHub, add: ![CI](https://github.com/<you>/marjaa/actions/workflows/ci.yml/badge.svg) -->
+[![CI](https://github.com/faresabusaleem/marjaa/actions/workflows/ci.yml/badge.svg)](https://github.com/faresabusaleem/marjaa/actions/workflows/ci.yml)
 
 <!-- examples:start -->
 **Real outputs** (local `qwen3.5:4b`, copied from `data/traces/`):

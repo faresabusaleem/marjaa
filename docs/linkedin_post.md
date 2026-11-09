@@ -20,7 +20,7 @@ What I learned building it:
 
 Stack (all free, runs on a MacBook): BGE-M3 embeddings + BM25 + Reciprocal Rank Fusion + BGE reranker, Qdrant, Qwen 3.5 (4B) via Ollama, Gemini free tier for the hosted demo, FastAPI, Gradio, GitHub Actions.
 
-Code and results: {{REPO_URL}}
+Code and results: https://github.com/faresabusaleem/marjaa
 
 Not legal advice. The Arabic text of UAE law is the authoritative version.
 

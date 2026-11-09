@@ -57,7 +57,7 @@ export function LawPanel({ chunkId, onClose }: { chunkId: string; onClose: () =>
       />
       <aside
         aria-label={head ? `${t.article} ${head.article}` : t.article}
-        className="rise fixed inset-x-0 bottom-0 z-50 flex max-h-[85dvh] flex-col rounded-t-2xl border border-line bg-surface shadow-card lg:sticky lg:top-[4.5rem] lg:z-0 lg:max-h-[calc(100dvh-6rem)] lg:rounded-2xl"
+        className="rise fixed inset-x-0 bottom-0 z-50 flex max-h-[85dvh] flex-col rounded-t-2xl border border-line bg-surface shadow-card lg:sticky lg:top-[4.5rem] lg:z-[25] lg:max-h-[calc(100dvh-6rem)] lg:rounded-2xl"
       >
         <div className="flex items-start gap-3 border-b border-line px-5 pb-3 pt-4">
           <div className="min-w-0 flex-1" dir={tab === "ar" ? "rtl" : "ltr"}>

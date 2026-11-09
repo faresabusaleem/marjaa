@@ -45,6 +45,11 @@ class Settings(BaseSettings):
     # --- Retrieval -------------------------------------------------------------
     embedder: EmbedderName = "bge-m3"
     embedding_model: str = "BAAI/bge-m3"
+    # Pinned to the commit that adds model.safetensors (Hub PR #130). BGE-M3's
+    # main branch only ships pytorch_model.bin, so an unpinned load downloads
+    # BOTH formats (2 x 2.3 GB); pinning keeps one safetensors copy and makes
+    # the embedding model reproducible. Set to "main" to follow upstream.
+    embedding_revision: str | None = "9a0624b896d81da7492a910ffa53731274b6cf3d"
     reranker_model: str = "BAAI/bge-reranker-v2-m3"
     device: str | None = None  # None = auto (cuda > mps > cpu)
     retrieval_mode: RetrievalMode = "hybrid_rerank"

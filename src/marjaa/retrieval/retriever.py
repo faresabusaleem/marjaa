@@ -121,7 +121,9 @@ def build_retriever(settings: Settings, strategy: ChunkStrategy | None = None) -
     """Load chunks, then load the dense index or (re)build it if chunks changed."""
     strategy = strategy or settings.chunk_strategy
     chunks = load_chunks(settings, strategy)
-    embedder = load_embedder(settings.embedder, settings.embedding_model, settings.device)
+    embedder = load_embedder(
+        settings.embedder, settings.embedding_model, settings.device, settings.embedding_revision
+    )
     collection = f"{strategy}_{embedder.name.split('/')[-1]}".replace(".", "_")
     dense = DenseIndex(settings.index_dir / "qdrant", collection)
     fp = fingerprint(chunks, embedder.name)

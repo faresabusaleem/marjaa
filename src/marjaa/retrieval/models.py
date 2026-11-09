@@ -50,12 +50,18 @@ class SentenceTransformerEmbedder:
     It needs no query instruction prefix.
     """
 
-    def __init__(self, model_name: str, device: str | None = None, max_seq_length: int = 1024):
+    def __init__(
+        self,
+        model_name: str,
+        device: str | None = None,
+        max_seq_length: int = 1024,
+        revision: str | None = None,
+    ):
         from sentence_transformers import SentenceTransformer
 
         self.name = model_name
         self.device = pick_device(device)
-        self.model = SentenceTransformer(model_name, device=self.device)
+        self.model = SentenceTransformer(model_name, device=self.device, revision=revision)
         # Articles are short; capping length keeps memory and latency low.
         self.model.max_seq_length = max_seq_length
         self.dim = int(self.model.get_embedding_dimension() or 1024)
@@ -144,10 +150,12 @@ class OverlapReranker:
 
 
 @lru_cache(maxsize=4)
-def load_embedder(name: str, model_name: str, device: str | None) -> Embedder:
+def load_embedder(
+    name: str, model_name: str, device: str | None, revision: str | None = None
+) -> Embedder:
     if name == "hashing":
         return HashingEmbedder()
-    return SentenceTransformerEmbedder(model_name, device)
+    return SentenceTransformerEmbedder(model_name, device, revision=revision)
 
 
 @lru_cache(maxsize=4)

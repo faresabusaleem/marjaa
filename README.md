@@ -22,6 +22,13 @@ the article in Arabic (the authoritative text) and English. The demo runs a ligh
 version of the pipeline (Gemini embeddings and answers, no reranker), measured with the same
 test set as the full local one: see [The hosted pipeline](#the-hosted-pipeline-live-demo).
 
+<details>
+<summary>Arabic question, dark mode</summary>
+
+![An Arabic question about whether an employer may keep a worker's documents, answered in Arabic with a verified citation to Article 13](docs/images/answer-ar-dark.png)
+
+</details>
+
 <!-- examples:start -->
 **Real outputs** (local `qwen3.5:4b`, copied from `data/traces/`):
 

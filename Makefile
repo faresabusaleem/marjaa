@@ -12,7 +12,7 @@ HOSTED = MARJAA_PROFILE=hosted MARJAA_LLM_PROVIDER=gemini $(UV) run
 
 .PHONY: help install ingest testset eval eval-retrieval calibrate eval-answers serve ui \
 	test lint format eval-smoke docker-build docker-run space readme eval-rerank-fast eval-rejudge \
-	hosted-index eval-hosted serve-hosted web web-build
+	hosted-index eval-hosted serve-hosted web web-build web-test web-data brand
 
 help:  ## Show this help
 	@grep -E '^[a-z-]+:.*## ' $(MAKEFILE_LIST) | awk -F':.*## ' '{printf "  %-15s %s\n", $$1, $$2}'
@@ -61,6 +61,15 @@ serve-hosted:  ## The hosted API locally on :8000 (Gemini, routes under /api)
 
 web:  ## Next.js web app on :3000 (talks to the API on :8000)
 	cd web && npm run dev
+
+brand:  ## Redraw the logo, icon, favicon and Open Graph files (docs/brand.md)
+	$(UV) run scripts/build_brand.py
+
+web-data:  ## Export the law text for the web Library (web/src/data/law.json)
+	$(UV) run python scripts/export_law.py
+
+web-test:  ## Web unit tests (design tokens, law text, search, citations)
+	cd web && npm test
 
 web-build:  ## Type-check and build the web app
 	cd web && npm ci && npm run typecheck && npm run build

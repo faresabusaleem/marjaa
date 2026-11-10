@@ -54,5 +54,8 @@ jobs:
       - name: Type-check
         run: npm run typecheck
 
+      - name: Unit tests (design tokens, law text, search, citations)
+        run: npm test
+
       - name: Build
         run: npm run build

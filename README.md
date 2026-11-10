@@ -1,3 +1,5 @@
+<img src="web/public/brand/logo-primary.svg" alt="Marjaa (مرجع)" width="168">
+
 # Marjaa (مرجع)
 
 **Bilingual Arabic/English question answering over UAE law, with exact article citations.**
@@ -13,7 +15,9 @@ articles, and when the law does not cover the question it says so instead of gue
 [![CI](https://github.com/faresabusaleem/marjaa/actions/workflows/ci.yml/badge.svg)](https://github.com/faresabusaleem/marjaa/actions/workflows/ci.yml)
 
 **Live demo: [marjaa-uae.vercel.app](https://marjaa-uae.vercel.app)** ·
-[How it works, with measured results](https://marjaa-uae.vercel.app/about)
+[in Arabic](https://marjaa-uae.vercel.app/ar) ·
+[How it works, with measured results](https://marjaa-uae.vercel.app/how-it-works) ·
+[Read the law](https://marjaa-uae.vercel.app/library)
 
 ![Marjaa answering a question about annual leave, with verified citation chips and Article 29 open beside the answer](docs/images/answer-en.png)
 
@@ -23,11 +27,23 @@ version of the pipeline (Gemini embeddings and answers, no reranker), measured w
 test set as the full local one: see [The hosted pipeline](#the-hosted-pipeline-live-demo).
 
 <details>
-<summary>Arabic question, dark mode</summary>
+<summary>Arabic interface, dark mode</summary>
 
-![An Arabic question about whether an employer may keep a worker's documents, answered in Arabic with a verified citation to Article 13](docs/images/answer-ar-dark.png)
+![The Arabic interface in dark mode: a question about whether an employer may keep a worker's documents, answered in Arabic with a verified citation to Article 13, and the article's authoritative Arabic text open beside it](docs/images/answer-ar-dark.png)
 
 </details>
+
+<details>
+<summary>The Library: every article in Arabic and English</summary>
+
+![Article 29 on annual leave in the Library, the English translation on the left and the authoritative Arabic text on the right](docs/images/library-article.png)
+
+</details>
+
+The interface is fully bilingual (English at `/`, Arabic at `/ar`, right to left) and follows
+a small brand system, documented in [docs/brand.md](docs/brand.md): the Sadu-band logo, a
+palette of Pearl, Sand, Dune, Sea and Date with every text colour checked against WCAG AA in
+both themes, and IBM Plex Sans with Plex Sans Arabic.
 
 <!-- examples:start -->
 **Real outputs** (local `qwen3.5:4b`, copied from `data/traces/`):
@@ -396,7 +412,12 @@ Other commands: `make eval` (reproduce every result), `make test`, `make lint`,
 
 **The web app** (Node 20.9+): with `make serve` running, `cd web && npm ci && cd ..` once,
 then `make web` serves it on http://localhost:3000 against the local pipeline. To run the
-hosted pipeline instead, put a free Gemini key in `.env` and use `make serve-hosted`.
+hosted pipeline instead, put a free Gemini key in `.env` and use `make serve-hosted`. It has
+four pages, each in English and Arabic: Ask, the Library (all 74 articles, side by side, with
+search), How it works (the measured results, read from `web/src/data/results.json`) and About.
+`make web-test` runs its unit tests (design-token contrast, law text layout, search, citation
+parsing); `make brand` redraws the logo files and `make web-data` re-exports the Library's
+text from the hosted chunks.
 
 To use the free Gemini API instead of Ollama, copy `.env.example` to `.env`, add a key from
 [Google AI Studio](https://aistudio.google.com/apikey) and set `MARJAA_LLM_PROVIDER=gemini`.
@@ -506,7 +527,9 @@ citation check and the latency of each stage. Logs are JSON lines on stderr.
 **Vercel (the live demo, free Hobby plan).** One project with two
 [services](https://vercel.com/docs/services), defined in `vercel.json`:
 
-- `web/`: the Next.js app. Pages are static; every `/api/*` request is routed to the Python service.
+- `web/`: the Next.js app. Pages are static (both languages, all 74 Library articles); a small
+  proxy (`web/src/proxy.ts`) serves English at `/` and sends visitors who chose Arabic to `/ar`.
+  Every `/api/*` request is routed to the Python service.
 - `api/`: a FastAPI function that installs the `marjaa` package from the repository root
   without the ML extras (about 90 MB, no PyTorch) and serves `marjaa.api.hosted` under `/api`.
 
@@ -593,18 +616,24 @@ src/marjaa/
   api/          FastAPI app (app.py), hosted entry point (hosted.py)    ui/  Gradio app
   hosted/       the hosted index: article chunks, Gemini vectors, its threshold
   config.py     all settings (env vars MARJAA_*, MARJAA_PROFILE=hosted)
-web/            Next.js app: chat with citation chips, article panel, "How it works" page
+web/            Next.js app, English + Arabic: Ask (citation chips, article panel), Library,
+                How it works, About; design tokens in src/app/tokens.css
 api/            Vercel Python service: installs marjaa without ML extras, serves /api
 vercel.json     one Vercel project, two services (web + api)
 evals/
   datasets/     testset.jsonl (auto-generated)
   runners/      generate_testset, run_retrieval, calibrate, run_answers, rejudge
   results/      JSON + Markdown output of every run
-deploy/hf_space/  Hugging Face Space entry point     scripts/  build_space, update_readme
+deploy/hf_space/  Hugging Face Space entry point
+scripts/        build_space, update_readme, export_law (Library text), build_brand (logo files)
+docs/           brand.md (logo, palette, type, Sadu band rules), screenshots, LinkedIn draft
 tests/          unit + API + UI + hosted-profile tests, offline eval smoke test (toy law)
 ```
 
 ## License
 
 Code: MIT. The law texts are published by the UAE government on
-[uaelegislation.gov.ae](https://uaelegislation.gov.ae) and are not redistributed here.
+[uaelegislation.gov.ae](https://uaelegislation.gov.ae). The official PDFs are not
+redistributed here; the text extracted from them is included in `src/marjaa/hosted/` and
+`web/src/data/law.json` so the hosted demo and its Library can run. Fonts: Reem Kufi and
+IBM Plex, SIL Open Font License.

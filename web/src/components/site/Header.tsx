@@ -77,7 +77,7 @@ export function Header() {
             onClick={rememberOther}
             lang={other}
             hrefLang={other}
-            aria-label={t.nav.switchLangLabel}
+            title={t.nav.switchLangLabel}
             className="rounded-md px-3 py-2 text-small font-medium text-ink transition-colors hover:bg-surface"
           >
             {t.nav.switchLang}

@@ -30,3 +30,6 @@ deploy/hf_space/build/
 
 # Downloaded fonts for scripts/build_brand.py
 .cache/
+
+# Local preview servers (machine-specific paths)
+.claude/launch.json

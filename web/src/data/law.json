@@ -1,0 +1,1894 @@
+{
+ "law": {
+  "id": "labour_law_2021",
+  "name_en": "Federal Labour Law",
+  "name_ar": "قانون العمل الاتحادي",
+  "number": 33,
+  "year": 2021
+ },
+ "preamble": {
+  "ar": {
+   "title": "",
+   "text": "مرسوم بقانون اتحادي رقم (33 ) لسنة2021\nبشأن تنظيم علاقات العمل\n\nنحن خليفة بن زايد آل نهيان رئيس دولة الإمارات العربية المتحدة\n− بعد الاطلاع على الدستور،\n− وعلى القانون الاتحادي رقم (1 ) لسنة1972 بشأن اختصاصات الوزارات وصلاحيات الوزراء، وتعديلاته،\n− وعلى القانون الاتحادي رقم (6 ) لسنة1973 في شأن دخول وإقامة الأجانب، وتعديلاته،\n− وعلى القانون الاتحادي رقم (8 ) لسنة1980 في شأن تنظيم علاقات العمل، وتعديلاته،\n− وعلى القانون الاتحادي رقم (3 ) لسنة1987 بإصدار قانون العقوبات، وتعديلاته،\n− وعلى القانون الاتحادي رقم (10 ) لسنة1992 بإصدار قانون الإثبات في المعاملات المدنية، وتعديلاته،\n− وعلى القانون الاتحادي رقم (11 ) لسنة1992 بشأن الإجراءات المدنية، وتعديلاته،\n− وعلى القانون الاتحادي رقم (35 ) لسنة1992 بإصدار قانون الإجراءات الجزائية، وتعديلاته،\n− وعلى القانون الاتحادي رقم (7 ) لسنة1999 بإصدار قانون المعاشات والتأمينات الاجتماعية، وتعديلاته،\n− وعلى القانون الاتحادي رقم (29 ) لسنة2006 في شأن حقوق المعاقين، وتعديلاته،\n− وعلى المرسوم بقانون اتحادي رقم (2 ) لسنة2015 بشأن مكافحة التمييز والكراهية، وتعديلاته،\n− وعلى القانون الاتحادي رقم (13 ) لسنة2016 بشأن الرسوم القضائية أمام المحاكم الاتحادية،\n− وعلى القانون الاتحادي رقم (14 ) لسنة2016 بشأن المخالفات والجزاءات الإدارية في الحكومة الاتحادية،\n− وعلى القانون الاتحادي رقم (13 ) لسنة2020 بشأن الصحة العامة،\n− وبناءً على ما عرضه وزير الموارد البشرية والتوطين، وموافقة مجلس الوزراء،\nأصدرنا المرسوم بقانون الآتي:",
+   "pages": [
+    1,
+    1
+   ],
+   "chunks": [
+    "labour_law_2021-ar-preamble"
+   ]
+  },
+  "en": {
+   "title": "",
+   "text": "Federal Decree by Law No. (33) of 2021\nRegulating Labor Relations\n\nWe Khalifa bin Zayed Al Nahyan President of the United Arab Emirates,\n− Upon reviewing the Constitution;\n− Federal Law No. (1) of 1972 Concerning the Jurisdictions of Ministries and the Powers of\nMinisters, and any amendments thereto;\n− Federal Law No. (6) of 1973 Concerning the Entry and Residence of Foreigners, and any\namendments thereto;\n− Federal Law No. (8) of 1980 Regulating the Labor Relations, and any amendments\nthereto;\n− Federal Law No. (3) of 1987 Promulgating the Penal Code, and any amendments thereto;\n− Federal Law No. (10) of 1992 Promulgating the Law of Evidence of Civil Transactions Law,\nand any amendments thereto;\n− Federal Law No. (11) of 1992 Promulgating the Civil Procedures Code, and any\namendments thereto;\n− Federal Law No. (35) of 1992 Promulgating the Criminal Procedures Law, and any\namendments thereto;\n− Federal Law No. (7) of 1999 Promulgating Pensions and Social Security Law, and any\namendments thereto;\n− Federal Law No. (29) of 2006 Concerning the Rights of Disabled Persons, and any\namendments thereto;\n− Federal Decree by Law No. (2) of 2015 Concerning Combating Hatred and Discrimination,\nand any amendments thereto;\n− Federal Law No. (13) of 2016 Concerning Judicial Fees Before Federal Courts;\n− Federal Law No. (14) of 2016 Concerning Administrative Violations and Sanctions in the\nFederal Government;\n− Federal Law No. (13) of 2020 Concerning Public Health;\n− And upon the proposal of the Minister of Human Resources and Emiratisation and the\napproval of the Cabinet;\nHave promulgated the following Federal Decree by law:",
+   "pages": [
+    1,
+    2
+   ],
+   "chunks": [
+    "labour_law_2021-en-preamble"
+   ]
+  }
+ },
+ "articles": [
+  {
+   "n": 1,
+   "ar": {
+    "title": "التعريفات",
+    "text": "في تطبيق أحكام هذا المرسوم بقانون، يقصد بالكلمات والعبارات التالية المعاني المبينة قرين كل منها، ما لم\nيقض سياق النص بغير ذلك:\nالدولة : الإمارات العربية المتحدة.\nالوزارة : وزارة الموارد البشرية والتوطين.\nالوزير : وزير الموارد البشرية والتوطين.\nالقطاع الخاص : الشركات والمؤسسات والمنشآت أو أي كيانات أخرى مملوكة للأفراد بالكامل أو\nبالاشتراك مع الحكومة الاتحادية أو المحلية، والشركات والمؤسسات المملوكة\nبالكامل للحكومة الاتحادية أو المحلية ما لم تنص قوانين إنشائها على خضوعها\nلأحكام قانون آخر.\nالمنشأة : كل وحدة اقتصادية فنية أو صناعية أو تجارية أو غيرها من الفئات المعتمدة في\nالدولة، يعمل فيها عمال، تهدف إلى إنتاج سلع أو تسويقها أو تقديم خدمات،\nومرخصة من الجهات المختصة.\nصاحب العمل : كل شخص طبيعي أو اعتباري يستخدم عاملاً أو أكثر لقاء أجر.\nالعامل : كل شخص طبيعي مصرح له من الوزارة، للعمل لدى إحدى المنشآت المرخصة في\nالدولة، تحت إشراف وتوجيه صاحب العمل.\nالحدث : كل من أتم الخامسة عشرة ولم يجاوز الثامنة عشرة من عمره.\nالعمل : كل جهد إنساني، فكري أو فني أو جسماني، يُؤدى وفق أنماط العمل المختلفة.\nتصريح العمل : وثيقة تصدرها الوزارة، والتي يسمح بموجبها للشخص الطبيعي أن يعمل لدى\nالمنشأة المرخصة.\nعقد العمل : كل اتفاق يُبرم بين صاحب العمل والعامل، يلتزم فيه الأخير بأن يعمل في خدمة\nصاحب العمل وتحت إشرافه وتوجيهه، مقابل أجر يلتزم به صاحب العمل، وفق\nنماذج العقود التي تحددها اللائحة التنفيذية لهذا المرسوم بقانون.\nفترة التجربة : المدة التي قد يشترطها صاحب العمل، والتي تمكن صاحب العمل من تقييم أداء\nالعامل، وتمكن العامل من الإلمام بمهامه الوظيفية والاطلاع على بيئة العمل، والتي\nبناءً عليها، يتم الاستمرار في عقد العمل أو إنهاءه وفق أحكام هذا المرسوم بقانون.\nمدة الإنذار : فترة الإشعار المحددة في عقد العمل، والتي تتطلب من طرفي العقد الالتزام بها في\nحالة رغبة أي منهما إنهاء عقد العمل.\nالأجر الأساس ي : الأجر الذي ينص عليه عقد العمل، والذي يُعطى للعامل لقاء عمله بموجب عقد\nالعمل، شهريًّا أو أسبوعيًّا أو يوميًّا أو على أساس الساعة أو القطعة، ولا تدخل\nضمنه أي بدلات أو مزايا عينية أخرى.\nالأجر : الأجر الأساس ي، مُضافًا إليه البدلات النقدية والمزايا العينية التي تتقرر للعامل\nبموجب عقد العمل أو هذا المرسوم بقانون، وقد تشمل: الميزات العينية التي يلتزم\nصاحب العمل بتوفيرها للعامل أو ما يقابلها نقدًا، إذا كانت مقررة كجزء من الأجر\nفي عقد العمل أو نظام المنشأة، أو البدلات التي يستحقها العامل لقاء جهد يبذله،\nأو مخاطر يتعرض لها في أداء عمله، أو أية أسباب أخرى، أو البدلات التي تُمنح\nلمواجهة غلاء المعيشة، أو نسبة مئوية من المبيعات، أو نسبة م ئوية من الأرباح التي\nتُدفع مقابل ما يقوم بتسويقه العامل أو إنتاجه أو تحصيله.\nيوم العمل : يوم العمل الرسمي الذي تحدده القرارات المنفذة لهذا المرسوم بقانون.\nمكان العمل : موقع العمل المتفق عليه في عقد العمل، أو الذي يقدم فيه العامل المهام\nوالخدمات المتفق عليها، لصاحب العمل.\nالخدمة المستمرة : الخدمة المتصلة لدى صاحب العمل نفسه أو خلفه القانوني، من تاريخ مباشرة\nالعمل.\nعامل مياومة : كل عامل يتقاض ى أجر يومي.\nإصابة العمل :\n:\nالإصابة بأحد الأمراض المهنية المحددة في الجدول الذي يصدر بقرار من مجلس\nالوزراء، أو بأية إصابة أخرى ناشئة أثناء تأدية العامل للعمل أو بسببه، ويعتبر في\nحكم إصابة العمل كل حادث يثبت أنه وقع للعامل خلال فترة ذهابه إلى عمله أو\nعودته منه، دون توقف أو انحراف عن الطريق الاعتيادي.\nالجهة الطبية : أي جهة حكومية اتحادية أو محلية تُعنى بالشؤون الصحية أو أي منشأة صحية\nخاصة مرخصة لتقديم الخدمات الصحية في الدولة.\nأسرة العامل : الزوجة أو الزوج، والأبناء من الذكور والإناث.\nمنازعات العمل\nالفردية\n: كل خلاف بين صاحب عمل والعامل بمفرده، يتصل موضوعه بهذا المرسوم بقانون\nولائحته التنفيذية والقرارات الصادرة تنفيذًا له.\nمنازعات العمل\nالجماعية\n: كل خلاف بين صاحب عمل وعماله، يتصل موضوعه بمصلحة مشتركة لجميع\nالعمال أو لفريق منهم.",
+    "pages": [
+     1,
+     3
+    ],
+    "chunks": [
+     "labour_law_2021-ar-a001-p0",
+     "labour_law_2021-ar-a001-p1"
+    ]
+   },
+   "en": {
+    "title": "Definitions",
+    "text": "In application of the provisions of this Decree by law, the following words and phrases shall\nhave the meanings assigned to each of them, unless the context otherwise requires:\nState : United Arab Emirates\nMinistry : Ministry of Human Resources & Emiratisation.\nMinister : Minister of Human Resources & Emiratisation.\nPrivate Sector : Companies, institutions, establishments, or any other\nentities wholly owned by individuals or jointly with the\nfederal or local government, and companies and\nestablishments wholly owned by the federal or local\ngovernment unless their Articles of Associatio ns stipulate\nthat they are subject to the provisions of another law.\nEstablishment\n: Every economic, technical, industrial or commercial unit,\nor any other unit approved in the State, in which Workers\nare employed and whose objective is to produce or\nmarket commodities or to provide services, and which is\nlicensed by the Competent Authorities.\nEmployer\n: Every natural or legal person employing one or more\nWorkers in return for a Wage.\nWorker\n: Every natural person authorized by the Ministry to work\nfor one of the licensed Establishments in the State, under\nthe supervision and direction of the Employer.\nJuvenile : Every person who is between fifteen and eighteen years of\nage.\nWork\n: Every human effort, whether intellectual, technical or\nphysical, performed according to different types of work.\nWork Permit\n: A document issued by the Ministry, according to which a\nnatural person is allowed to work for a licensed\nEstablishment.\nEmployment\nContract\n: Every agreement concluded between the Employer and\nthe Worker, in which the latter commits to work for the\nEmployer and under his supervision and direction, in\nreturn for a wage that the employer is obligated to pay,\naccording to the contract forms specified by the Executive\nRegulations of this Decree by law.\nProbation\nPeriod\n: The period that may be required by the Employer, which\nenables the Employer to evaluate the Worker's\nperformance, and enables the Worker to become familiar\nwith his job duties and familiarize himself with the work\nenvironment, and according to which he shall determine\nwhether the employment contract shall be continued or\nterminated in accordance with the provisions of this\nDecree by law.\nWarning\nPeriod:\n: The notice period specified in the employment contract,\nwhich both parties to the contract shall abide by in the\nevent that either of them wishes to terminate the\nemployment contract.\nBasic Wage\n: The wage specified in the employment contract, which is\npaid to the Worker in return for his work under the\nemployment contract, on a monthly, weekly, daily, hourly\nor piece -meal basis, and does not include any other\nallowances or benefits in kind.\nWage : The basic wage, plus the cash allowances and benefits in\nkind that are decided for the Worker under the\nemployment contract or this Decree by law, and it may\ninclude: The benefits in kind that the Employer is\nobligated to provide to the Worker or their cash\nequivalent, if they are determined as part of the wage in\nthe employment contract or the Articles of Association of\nthe Establishment, or the allowances to which the Worker\nis entitled to in return for the effort he exerts, or the risks\nhe is exposed to in the performance of his work, or any\nother reasons; or the allowances given to meet the high\ncost of living, or a percentage of sales, or a percentage of\nthe profits paid in return for what the worker markets,\nproduces, or collects.\nBusiness Day\n: The official working day determined by the resolutions\nimplementing this Decree by law.\nWorkplace\n: The work location agreed upon in the employment\ncontract, or in which the worker performs the duties and\nservices agreed upon for the employer.\nContinuous\nService\n: The uninterrupted service with the same Employer or his\nlegal successor from the date of commencement of work.\nDay Laborer: : Every worker receiving a daily wage.\nWork Injury:\n: Any of the occupational diseases stipulated in the table\nissued by virtue of Cabinet resolution or any other injury\narising from the Worker's work and sustained by the\nWorker while performing and as a result of such work. It\nis deemed as Work Injury any ac cident proven to be\nsustained by the Worker on his way to or back from his\nwork, without any stopping or diversion from the usual\nroute.\nMedical : Any federal or local government entity concerned with\nAuthority\nhealth affairs or any private health facility licensed to\nprovide health services in the State.\nWorker's\nfamily\n: Wife or husband, and male and female children.\nIndividual\nLabor\nDisputes\n: Any dispute between the Employer and one Worker\nindividually, the subject matter of which is related to this\nDecree by law, its Executive Regulation and the resolution\nissued in implementation thereof.\nCollective\nLabor\nDisputes\n: Any dispute between the Employer and his Workers, the\nsubject matter of which is related to the common interest\nof all Workers or a group of them.",
+    "pages": [
+     2,
+     5
+    ],
+    "chunks": [
+     "labour_law_2021-en-a001-p0",
+     "labour_law_2021-en-a001-p1",
+     "labour_law_2021-en-a001-p2"
+    ]
+   }
+  },
+  {
+   "n": 2,
+   "ar": {
+    "title": "الأهداف",
+    "text": "يهدف هذا المرسوم بقانون إلى تحقيق ما يأتي:\n\n\n1. ضمان كفاءة سوق العمل في الدولة، مما يساهم في جذب أفضل الكفاءات والمهارات المستقبلية من\nالعمالة والحفاظ عليها، وتوفير بيئة أعمال جاذبة لأصحاب العمل، مما يساعد الطرفين للمشاركة في\nتحقيق أهداف التنمية الوطنية للدولة.\n2. تنظيم علاقات العمل وتحديد حقوق والتزاماتالأطراف في هذه العلاقة القانونية على نحو متوازن.\n3. تعزيز مرونة واستدامة سوق العمل في الدولة من خلال ضمان حماية أطراف العلاقة العمالية وتطوراتها\nوما قد يواجهها من ظروف استثنائية من شأنها التأثير على تلك العلاقة.\n4. دعم وتأهيل القدرات والمهارات للعاملين في القطاع الخاص، على النحو الذي يحقق تعزيز كفاءة وإنتاجية\nالقوى العاملة في سوق العمل في الدولة.\n5. توفير الحماية لطرفي علاقة العمل، وتمكينهم من الحصول على حقوقهم في إطار هذا المرسوم بقانون.",
+    "pages": [
+     3,
+     4
+    ],
+    "chunks": [
+     "labour_law_2021-ar-a002-p0"
+    ]
+   },
+   "en": {
+    "title": "Objectives",
+    "text": "This Decree by law aims to achieve the following:\n1. Ensuring the efficiency of the labor market in the State, which contributes to attracting\nand maintaining the best competencies and future skills from the workforce, and\nproviding an attractive business environment for Employers, which helps both parties\nto participate in achieving the State's national development goals.\n2. Regulating labor relations and determining the rights and obligations of the parties in\nthis legal relation in a balanced manner.\n3. Enhancing the flexibility and sustainability of the labor market in the State by ensuring the\nprotection of the parties to the labor relation, its developments, and the exceptional\ncircumstances that they may face which may affect that relation.\n4. Supporting and rehabilitating the capabilities and skills of Workers in the Private Sector,\nin a manner that enhances the efficiency and productivity of the workforce in the labor\nmarket in the State.\n5. Providing protection to both parties to the labor relation and enabling them to obtain their\nrights within the framework of this Decree by law.",
+    "pages": [
+     5,
+     5
+    ],
+    "chunks": [
+     "labour_law_2021-en-a002-p0"
+    ]
+   }
+  },
+  {
+   "n": 3,
+   "ar": {
+    "title": "نطاق السريان",
+    "text": "1. تسري أحكام هذا المرسوم بقانون على كافة المنشآت وأصحاب العمل والعمال في القطاع الخاص في الدولة.\n2. لا تخضع الفئات التالية لأحكام هذا المرسوم بقانون:\nأ. موظفو الجهات الحكومية الاتحادية والمحلية\nب. منتسبو القوات المسلحة والشرطة والأمن.\nج. عمالة الخدمة المساعدة.\n3. لمجلس الوزراء، بناءً على اقتراح الوزير، استثناء أي فئة من الخضوع لكل أو بعض أحكام هذا المرسوم\nبقانون، وتحديد التشريع الواجب التطبيق عليها.",
+    "pages": [
+     4,
+     4
+    ],
+    "chunks": [
+     "labour_law_2021-ar-a003-p0"
+    ]
+   },
+   "en": {
+    "title": "Scope of Application",
+    "text": "1. The provisions of this Decree by law shall apply to all Establishments, Employers and\nWorkers in the Private Sector in the State.\n2. The following categories are not subject to the provisions of this Decree by law:\na. Employees of federal and local government agencies.\nb. Members of the armed forces, police and security.\nc. Domestic Workers.\n3. The Cabinet may, upon a proposal by the Minister, exclude any category from being\nsubject to all or some of the provisions of this Decree by law, and specify the legislation\napplicable thereto.",
+    "pages": [
+     6,
+     6
+    ],
+    "chunks": [
+     "labour_law_2021-en-a003-p0"
+    ]
+   }
+  },
+  {
+   "n": 4,
+   "ar": {
+    "title": "المساواة وعدم التمييز",
+    "text": "1. لايحظر التمييز على أساس العرق أو اللون أو الجنس أو الدين أو الأصل الوطني أو الأصل اجتماعي أو بسبب\nالإعاقة بين الأشخاص، الذي يكون من شأنه إضعاف تكافؤ الفرص أو المساس بالمساواة في الحصول على\nالوظيفة أو الاستمرار فيها والتمتع بحقوقها، كما يحظر على صاحب العمل التمييز في الأعمال ذات المهام\nالوظيفية الواحدة.\n2. لا تُعد القواعد والإجراءات التي ي كون من شأنها تعزيز مشاركة مواطني الدولة في سوق العمل، تمييزًا.\n\n\n3. مع عدم الإخلال بالحقوق المقررة للمرأة العاملة المنصوص عليها في هذا المرسوم بقانون، تسري على النساء\nالعاملات جميع الأحكام المنظمة لتشغيل العمال دون تمييز.\n4. تمنح المرأة الأجر المماثل لأجر الرجل إ ذا كانت تقوم بذات العمل، أو عمل آخر ذو قيمة متساوية، ويصدر\nبقرار من مجلس الوزراء، بناءً على اقتراح الوزير، الإجراءات والضوابط والمعايير اللازمة لتقييم العمل ذي\nالقيمة المتساوية.",
+    "pages": [
+     4,
+     5
+    ],
+    "chunks": [
+     "labour_law_2021-ar-a004-p0"
+    ]
+   },
+   "en": {
+    "title": "Equality and Non-Discrimination",
+    "text": "1. Discrimination between persons, on the grounds of race, color, sex, religion, nationality,\nsocial origin, or disability is prohibited, which would weaken equal opportunities or\nwould prejudice equality in obtaining or continuing a job and enjoying its rights. The\nEmployer is also prohibited from practicing discrimination in jobs with the same job\nfunctions.\n2. Rules and procedures that enhance the participation of the State's citizens in the labor\nmarket are not deemed as discriminatory.\n3. Without prejudice to the rights of working women stipulated in this Decree by law, all\nprovisions regulating the employment of workers without discrimination shall apply to\nworking women.\n4. A woman shall be paid a wage similar to a man's wage if she performs the same work, or\nanother work of equal value. A Cabinet resolution shall be issued, upon a proposal by the\nMinister, to determine the procedures, controls, and criteria necessary for evaluating work\nof equal value.",
+    "pages": [
+     6,
+     6
+    ],
+    "chunks": [
+     "labour_law_2021-en-a004-p0"
+    ]
+   }
+  },
+  {
+   "n": 5,
+   "ar": {
+    "title": "تشغيل الأحداث",
+    "text": "1. لا يجوز تشغيل أي شخص قبل تمام سن الخامسة عشرة منالعمر.\n2. يشترط لتشغيل الحدث ما يأتي:\nأ. الموافقة الخطية ممن له الولاية أو الوصاية عليه.\nب. شهادة تثبت اللياقة الصحية للعمل المطلوب صادرة عن الجهة الطبية.\nج. ألا تزيد ساعات العمل الفعلية على ست ساعات يوميًّا، ويجب أن تتخللها فترة أو أكثر للراحة، لا تقل\nفي مجموعها عن ساعة، وتحدد هذه الفترة أو الفترات بحيث لا يعمل الحدث أكثر من أربع ساعات\nمتوالية.\nد. عدم تشغيله خلال الفترة من الساعة السابعة مساءً حتى السابعة صباحًا.\nه. عدم تشغيله في الأعمال الخطرة أو الشاقة أو في أعمال تُلحق بحكم طبيعتها أضرارًا بصحته أو سلامته\nأو أخلاقه، وال تي يصدر بتحديدها قرار من الوزير بالتنسيق مع الجهات المعنية.\nو. عدم تكليفه بساعات عمل إضافية، أو إبقائه في مكان العمل بعد المواعيد المقررة له، أو تشغيله في أيام\nالراحة أو العطلات الرسمية.\n3. تحدد اللائحة التنفيذية لهذا المرسوم بقانون نظام تشغيل الأحداث والإجراءات التي يلتزم بها صاحب\nالعمل، والأعمال التي يحظر تشغيل الأحداث فيها، وضوابط استثناء الجهات التي تهدف إلى تدريب وتأهيل\nالحدث مهنيًّا، بما في ذلك المؤسسات الخيرية والتربوية والتدريبية، من بعض أحكام هذه المادة.",
+    "pages": [
+     5,
+     5
+    ],
+    "chunks": [
+     "labour_law_2021-ar-a005-p0"
+    ]
+   },
+   "en": {
+    "title": "Employment of Juveniles",
+    "text": "1. It is prohibited to employ any person before he completes fifteen years of age.\n2. The following are required to employ a Juvenile:\na. A written consent of his guardian or custodian.\nb. A certificate of health fitness for the required work issued by the Medical Authority.\nc. The actual working hours shall not exceed six hours per day, and shall include one or\nmore breaks, the total of which shall not be less than one hour. Such period(s) shall be\ndetermined so that the Juvenile shall not work for more than four consecutive hours.\nd. He shall not work during the period between 7 pm and 7 am.\ne. He shall not be employed in dangerous or arduous jobs or in jobs that are, by its\nnature, detrimental to his health, safety or morals, which are determined by a decision\nissued by the Minister in coordination with the Concerned Authorities.\nf. He shall not be required to work overtime, or to stay at the workplace after the times\nfixed for him, or to work on rest days or official holidays.\n3. The Executive Regulation of this Decree by law shall define the juvenile employment\nsystem, the procedures that the employer must abide by, the jobs in which it is prohibited\nto employ juveniles and the controls for excluding entities that provide juvenile\nvocational training and qualification, including charitable, educational and training\ninstitutions, from some provisions of this Article.",
+    "pages": [
+     7,
+     7
+    ],
+    "chunks": [
+     "labour_law_2021-en-a005-p0"
+    ]
+   }
+  },
+  {
+   "n": 6,
+   "ar": {
+    "title": "استقدام وتشغيل العمال",
+    "text": "1. لا يجوز ممارسة العمل في الدولة، كما لا يجوز لصاحب العمل استقدام أو تشغيل أي عامل لديه، إلا بعد\nالحصول على تصريح عمل من الوزارة وفقًا لأحكام هذا المرسوم بقانون ولائحته التنفيذية.\n\n\n2. تحدد اللائحة التنفيذية لهذا المرسوم بقانون شروط وضوابط وأنواع تصاريح العمل، و إجراءات منحها\nوتجديدها وإلغائها.\n3. لا يجوز ممارسة نشاط التوظيف أو التوسط لاستقدام أو لاستخدام العمال إلا بترخيص من الوزارة،\nوذلك وفق الشروط والإجراءات التي تحددها اللائحة التنفيذية لهذا المرسوم بقانون.\n4. يحظر على صاحب العمل تحميل العامل رسوم وتكلفة الاستقداموالاستخدام أو تحصيلها منه، سواء\nبطريقة مباشرة أو غير مباشرة.\n5. يصدر الوزير، بالتنسيق مع الجهات المعنية في الدولة، القرارات المنظمة للأعمال التي يحظر استقدام\nوتشغيل العمال فيها، وضوابط ذلك.",
+    "pages": [
+     5,
+     6
+    ],
+    "chunks": [
+     "labour_law_2021-ar-a006-p0"
+    ]
+   },
+   "en": {
+    "title": "Recruitment and Employment of Workers",
+    "text": "1. Work may not be practiced in the State, and the Employer may not recruit or employ any\nWorker, except after obtaining a work permit from the Ministry in accordance with the\nprovisions of this Decree by law and its Executive Regulation.\n2. The Executive Regulation of this Decree by law shall determine the conditions, controls\nand types of work permits, and the procedures for granting, renewing and cancelling\nthem.\n3. It is not permissible to carry out the activity of recruitment or mediation to recruit or\nemploy Workers without a license from the Ministry, in accordance with the conditions\nand procedures specified in the Executive Regulation of this Decree by law.\n4. The Employer is prohibited from charging the Worker the fees and costs of recruitment\nand employment or collecting them from him, whether directly or indirectly.\n5. The Minister shall, in coordination with the Concerned Authorities in the State, issue the\nresolutions decisions regulating the jobs for which the recruitment and employment of\nworkers is prohibited, and the controls therefor.",
+    "pages": [
+     7,
+     8
+    ],
+    "chunks": [
+     "labour_law_2021-en-a006-p0"
+    ]
+   }
+  },
+  {
+   "n": 7,
+   "ar": {
+    "title": "أنماط العمل",
+    "text": "1. تكون أنماط العمل التي يتم التعاقد عليها وفقًا لما يأتي:\nأ. الدوام الكامل، وهو العمل لدى صاحب عمل واحد لكامل ساعات العمل اليومية طوال أيام العمل.\nب. الدوام الجزئي، وهو العمل لدى صاحب عمل أو أصحاب عمل لعدد محدد من ساعات العمل أو الأيام\nالمقررة للعمل.\nج. العمل المؤقت، وهو العمل الذي تقتض ي طبيعة تنفيذه مدة محددة، أو ينصب على عمل بذاته وينتهي\nبإنجازه.\nد. العمل المرن، وهو العمل الذي تتغير ساعات تأديته أو أيام عمله حسب حجم العمل والمتغيرات\nالاقتصادية والتشغيلية لدى صاحب العمل، وللعامل أن يعمل لدى صاحب العمل بأوقات متغيرة\nحسب ظروف ومتطلبات العمل.\nه. أي أنماط أخرى تحددها اللا ئحة التنفيذية لهذا المرسوم بقانون.\n2. تحدد اللائحة التنفيذية، شروط وضوابط أنماط العمل، والالتزامات المترتبة على كل من العامل وصاحب\nالعمل، وفق كل نمط.",
+    "pages": [
+     6,
+     7
+    ],
+    "chunks": [
+     "labour_law_2021-ar-a007-p0"
+    ]
+   },
+   "en": {
+    "title": "Types of Work",
+    "text": "1. The work types to be contracted shall be according to the following:\na. Full-time, which is working for one employer for the full daily working hours\nthroughout business days.\nb. Part-time, which is working for one or multiple employers for a specified number of\nworking hours or days.\nc. Temporary work, which is work of which nature requires a specific period of time, or\nwhich focuses on a specific job and ends by the completion thereof.\nd. Flexible work, which is work of which hours or working days change according to the\nvolume of work and the economic and operational variables of the Employer. The\nWorker may work for the Employer for times that change according to work\nconditions and requirements.\ne. Any other types specified by the Executive Regulation of this Decree by law.\n2. The Executive Regulation shall determine the conditions and controls for work types, and\nthe obligations of both the worker and the employer, according to each type.",
+    "pages": [
+     8,
+     8
+    ],
+    "chunks": [
+     "labour_law_2021-en-a007-p0"
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "ar": {
+    "title": "عقد العمل",
+    "text": "1. على صاحب العمل إبرام عقد عمل مع العامل، وفق نمط العمل المتفق عليه، على أن يكونالعقد من\nنسختين، يحتفظ صاحب العمل بنسخة، وتسلم الأخرى للعامل، ووفقًا للنماذج التي تحددها اللائحة\nالتنفيذية لهذا المرسوم بقانون.\n2. يجوز للعامل أو من يمثله إثبات عقد العمل ومقدار الأجر وأي من الحقوق التي يستحقها بموجب أحكام\nهذا المرسوم بقانون ولائحته التنفيذية والقرارات الصادرة تنفيذًا له، بجميع طرق الإثبات.\n3. يُبرم عقد العمل لمدة محددة قابلة للتجديد وفقًا لما يتفق عليه الطرفان.\n4. في حالة تمديد أو تجديد العقد، تعتبر المدة أو المدد الجديدة امتدادًا للمدة الأصلية وتضاف إليها في\nاحتساب مدة الخدمة المستمرة للعامل.\n5. إذا استمر الطرفان في تنفيذ العقد بعد انقضاء مدته الأصلية أو انتهاء العمل المتفق عليه دون اتفاق صريح\nاعتبر العقد الأصلي ممتدًا ضمنيًّا بالشروط ذاتها الواردة فيه.\n6. ( مع مراعاة البند 3) من هذه المادة، تحدد اللائحة التنفيذية لهذا المرسوم بقانون نماذج عقود العمل وفق\nالمستويات المهارية المعتمدة، وأحكام تغيير العقد من نمط عمل إلى نمط آخر، وتسجيلها في الوزارة.",
+    "pages": [
+     7,
+     7
+    ],
+    "chunks": [
+     "labour_law_2021-ar-a008-p0"
+    ]
+   },
+   "en": {
+    "title": "Employment Contract",
+    "text": "1. The Employer must conclude an employment contract with the Worker, according to the\nform of work agreed upon, provided that the contract is in two copies, one of which shall\nbe kept by the Employer and the other shall be handed to the Worker, in accordance with\nthe forms specified by the Executive Regulation of this Decree by law.\n2. The Worker or his representative may establish the employment contract, the amount of\nthe wage and any of the rights he is entitled to under the provisions of this Decree by law\nand its Executive Regulation and the decisions issued in implementation thereo f, by all\nmeans of evidence.\n3. The employment contract shall be concluded for a definite period, renewable, based upon\nthe parties' agreement.\n4. In the event of an extension or renewal of the contract, the new period(s) shall be deemed\nto be an extension of the original period and shall be added thereto when calculating the\nWorker's continuous service period.\n5. If both parties continue to implement the contract after the expiry of its original term or\nthe expiry of the agreed-upon work without express agreement, the original contract shall\nbe deemed to be impliedly extended with the same conditions stated therein.\n6. Subject to Clause (3) of this Article, the Executive Regulation of this Decree by law shall\ndetermine the forms of employment contracts according to the approved skill levels, and\nthe provisions for changing the contract from one type of work to another, and registering\nthem with the Ministry.",
+    "pages": [
+     8,
+     9
+    ],
+    "chunks": [
+     "labour_law_2021-en-a008-p0"
+    ]
+   }
+  },
+  {
+   "n": 9,
+   "ar": {
+    "title": "فترة التجربة",
+    "text": "1. ( لصاحب العمل تعيين العامل تحت فترة التجربة مدة لا تزيد على 6 ) ستة أشهر من تاريخ مباشرة العمل،\nولصاحب العمل إنهاء خدمة العامل خلال هذه الفترة بعد إخطار العامل بذلك خطيًّا قبل ( 14 ) أربعة عشر\nيومًا بحد أدنى من التاريخ المحدد لإنهاء الخدمة.\n2. لا يجوز تعيين العامل تحت التجربة أكثر من مرة واحدة لدى صاحب عمل واحد، وإذا اجتاز العامل فترة\nالتجربة بنجاح واستمر في العمل يصبح العقد ساريًا وفق البنود المتفق عليها فيه، ووجب احتساب تلك\nالفترة ضمن مدة الخدمة.\n3. في حالة رغبة العامل الانتقال، خلال فترة التجربة، للعمل لدى صاحب عمل آخر في الدولة، يجب عليه\nإخطار صاحب العمل الأصلي بذلك خطيًّا بمدة لا تقل عن شهر من تاريخ رغبته بإنهاء العقد، ويلتزم صاحب\nالعمل الجديد بتعويض صاحب العمل الأصلي بتكاليف الاستقدام أو التعاقد مع العامل، ما لم يتم الاتفاق\nعلى خلاف ذلك.\n\n\n4. في حالة رغبة العامل الأجنبي بإنهاء عقد العمل، خلال فترة التجربة، لمغادرة الدولة، عليه إخطار صاحب\nالعمل بذلك خطيًّا، قبل ( 14) أربعة عشر يومًا بحد أدنى من ا لتاريخ المحدد لإنهاء العقد. وفي حال رغبته في\nالعودة للدولة والحصول على تصريح عمل جديد خلال (3 ) ثلاثة أشهر من تاريخ المغادرة يلتزم صاحب العمل\nالجديد بالتعويض المنصوص عليه في البند (3 ) من هذه المادة، ما لم يكن هناك اتفاق بين العامل وصاحب\nالعمل الأصلي على خلا ف ذلك.\n5. إذا أنهى أي من الطرفين عقد العمل دون مراعاة أحكام هذه المادة، ألزم بأن يؤدي إلى الطرف الثاني تعويضًا\nمساويًا لأجر العامل عن مدة الإخطار أو المدة المتبقية من مدة الإخطار.\n6. إذا غادر العامل الأجنبي الدولة دون التقيد بأحكام هذه المادة، لا يمنح تصريح عمل للعمل في الدولة لمدة\nسنة من تاريخ مغادرة الدولة.\n7. للوزارة استثناء بعض الفئات الوظيفية، أو المستويات المهارية، أو العمالة من شرط عدم منح تصريح\nالعمل، المنصوص عليه بالبندين (4() و6) من هذه المادة، وفق الضوابط والإجراءات التي تحددها اللائحة\nالتنفيذية لهذا المرسوم بقانون.",
+    "pages": [
+     7,
+     8
+    ],
+    "chunks": [
+     "labour_law_2021-ar-a009-p0"
+    ]
+   },
+   "en": {
+    "title": "Probation Period",
+    "text": "1. The Employer may appoint the Worker under the Probation Period for a period not\nexceeding six (6) months as of the date of commencing work, and he may terminate the\nWorker's service during this period after notifying the Worker in writing at least fourteen\n(14) days prior to the date specified for termination of service.\n2. A Worker may not be appointed under probation more than once with one employer, and\nif the Worker successfully passes the Probation Period and continues to work, the contract\nbecomes valid in accordance with the terms agreed upon, and that period must be\ncounted within the service period.\n3. In the event that the Worker wishes to move, during the Probation Period, to work for\nanother employer in the State, he must notify the original Employer in writing within a\nperiod not less than one month as of the date of his desire to terminate the contract. The\nnew Employer shall compensate the original Employer with the costs of recruiting or\ncontracting with the Worker, unless agreed otherwise.\n4. In the event that the foreign Worker wishes to terminate the employment contract, during\nthe Probation Period, to leave the State, he must notify the Employer in writing, at least\n(14) fourteen days prior to the date specified for the termination of the co ntract. And in\nthe event that he wishes to return to the State and obtain a new work permit within three\n(3) months as of the date of leaving, the new Employer shall pay the compensation\nstipulated in Clause (3) of this Article, unless agreed otherwise bet ween the Worker and\nthe original Employer.\n5. If either party terminates the employment contract without observing the provisions of\nthis Article, it shall pay the second party a compensation equal to the Worker's wage for\nthe notice period or the remaining period of the notice period.\n6. If the foreign worker leaves the State without being bound by the provisions of this article,\nhe will not be granted a work permit to work in the State for a period of one year as of the\ndate of leaving the State.\n7. The Ministry may exempt some job categories, skill levels, or labor from the condition of\nnot granting a work permit, stipulated in Clauses (4) and (6) of this Article, in accordance\nwith the controls and procedures specified by the Executive Regulation of this Decree by\nlaw.",
+    "pages": [
+     9,
+     10
+    ],
+    "chunks": [
+     "labour_law_2021-en-a009-p0"
+    ]
+   }
+  },
+  {
+   "n": 10,
+   "ar": {
+    "title": "شرط عدم المنافسة",
+    "text": "1. إذا كان العمل المنوط بالعامل يسمح له بمعرفة عملاء صاحب العمل أو بالاطلاع على أسرار عمله، جاز\nلصاحب العمل أن يشترط على العامل في عقد العمل، ألا يقوم بعد انتهاء العقد بمنافسته أو بالاشتراك في\nأي مشروع منافس له في القطاع ذاته، على أن يكون الشرط محددًا من حيث الزمان والمكان ونوع العمل على\nالقدر الضروري لحماية مصالح العمل المشروعة، وألا تزيد مدة عدم المنافسة على سنتين من تاريخ انتهاء\nالعقد.\n2. يبطل هذا الشرط إذا أنهى صاحب العمل عقد العمل بالمخالفة لأحكام هذا المرسوم بقانون.\n3. لا تسمع الدعوى المرفوعة من صاحب العمللمخالفة العامل أحكام هذه المادة بعد مض ي سنة من تاريخ\nاكتشافه المخالفة.\n4. تحدد اللائحة التنفيذية لهذا المرسوم بقانون، الأحكام المنظمة لهذه المادة، والمستويات المهارية أو المهن\nالوظيفية التي يجوز استثنائها من حكم البند ( 1) من هذه المادة، وذلك وفقًا للشروط وال ضوابط التي\nتحددها اللائحة.",
+    "pages": [
+     8,
+     9
+    ],
+    "chunks": [
+     "labour_law_2021-ar-a010-p0"
+    ]
+   },
+   "en": {
+    "title": "Non-Competition Condition",
+    "text": "1. If the work assigned to the Worker allows him to know the Employer's clients or access his\nwork secrets, the Employer may stipulate in the work contract that the Worker shall not,\nafter the termination of the contract, compete with him or participate in any competing\nproject in the same industry; provided that such condition is specific in terms of time, place\nand kind of work to the extent necessary to protect the legitimate b usiness interests, and\nthat the period of non-competition shall not exceed two years as of the expiry date of the\ncontract.\n2. Said condition shall be null if the employer terminates the employment contract in\nviolation of the provisions of this Decree by law.\n3. The lawsuit filed by the Employer for the Worker's violation of the provisions of this Article\nshall not be heard after the lapse of one year from the date of discovering the violation.\n4. The Executive Regulation of this Decree by law shall determine the provisions regulating\nthis Article, and the skill levels or occupational professions that may be excluded from the\nprovision of Clause (1) of this Article, in accordance with the conditions and controls\nspecified by the Regulation.",
+    "pages": [
+     10,
+     11
+    ],
+    "chunks": [
+     "labour_law_2021-en-a010-p0"
+    ]
+   }
+  },
+  {
+   "n": 11,
+   "ar": {
+    "title": "تعهيد صاحب العمل لصاحب عمل آخر في بعض أعماله",
+    "text": "لصاحب العمل أن يعهد إلى صاحب عمل آخر، تأدية أي عمل من أعماله الأصلية أو جزء منها، ويكون الأخير\nفي هذه الحالة مسؤولاً وحده عن حقوق عماله القائمين بذلك العمل والمترتبة لهم بموجب أحكام هذا المرسوم\nبقانون، وذلك ما لم يتفق الطرفان على خلاف ذلك.",
+    "pages": [
+     9,
+     9
+    ],
+    "chunks": [
+     "labour_law_2021-ar-a011-p0"
+    ]
+   },
+   "en": {
+    "title": "Outsourcing Some of Employer's Tasks to Another Employer",
+    "text": "The Employer may assign any of his work to another Employer; and in which case, the latter\nshall be solely responsible for the rights entitled by virtue of the provisions of this Decree by\nlaw to his Workers performing such work, unless agreed otherwise between the two parties.",
+    "pages": [
+     11,
+     11
+    ],
+    "chunks": [
+     "labour_law_2021-en-a011-p0"
+    ]
+   }
+  },
+  {
+   "n": 12,
+   "ar": {
+    "title": "تكليف العامل بعمل آخر",
+    "text": "1. لا يجوز تكليف العامل بعمل يختلف اختلافًا جوهريًّا عن العمل المتفق عليه في عقد العمل، إلا إذا\nاستدعت الضرورة ذلك أو بهدف منع وقوع حادث أو لإصلاح ما نشأ عنه، على أن يكون التكليف مؤقتًا\nوفق ما تحدده اللائحة التنفيذية لهذا المرسوم بقانون.\n2. ( لصاحب العمل تكليف العامل في غير الأحوال المشار إليها في البند 1 ) من هذه المادة، للقيام بعمل غير\nالمتفق عليه في عقد العمل، شريطة موافقة العامل الخطية.\n3. إذا تطلب قيام العامل بعمل غير المتفق عليه في عقد العمل، تغيير العامل لمقر إقامته، على صاحب العمل\nتحمل كافة التكاليف المالية المترتبة على ذلك، بما في ذلك تكاليف انتقال العامل وإقامته.",
+    "pages": [
+     9,
+     9
+    ],
+    "chunks": [
+     "labour_law_2021-ar-a012-p0"
+    ]
+   },
+   "en": {
+    "title": "Assigning Worker to Other Work",
+    "text": "1. It is not permissible to assign the Worker a work that is fundamentally different from the\nwork agreed upon in the employment contract, unless necessary, or with the aim of\npreventing the occurrence of an accident or repairing what resulted from such accid ent;\nprovided that such assignment is temporary in accordance with what is specified by the\nExecutive Regulation of this Decree by law.\n2. The Employer may assign the Worker, in cases other than those referred to in Clause (1)\nof this Article, to perform a kind of work that is not agreed upon in the employment\ncontract, provided that the Worker agrees in writing.\n3. If performing the work that is not agreed upon in the employment contract requires that\nthe Worker changes his place of residence, the Employer must bear all the financial costs\nresulting therefrom, including the costs of the worker's displacement and residence.",
+    "pages": [
+     11,
+     11
+    ],
+    "chunks": [
+     "labour_law_2021-en-a012-p0"
+    ]
+   }
+  },
+  {
+   "n": 13,
+   "ar": {
+    "title": "التزامات صاحب العمل",
+    "text": "على صاحب العمل الالتزام بما يأتي:\n1. الاحتفاظ بملفات وسجلات العمال وفق الشروط والضوابط والإجراءات التي يصدر بها قرار من الوزارة،\nعلى ألا تقل مدة الاحتفاظ بملف العامل عن سنتين بعد تاريخ انتهاء خدمة العامل لديه.\n2. لاعدم حجز الوثائق الرسمية الخاصة بالعامل، أو إجباره على مغادرة الدولة حال انتهاء عقة العمل.\n3. وضع لوائح تنظيم العمل، مثل لائحة تعليمات العمل والجزاءات والترقيات والمكافآت وغيرها من اللوائح\nوالأنظمة حسب الضوابط التي تحددها اللائحة التنفيذية لهذا المرسوم بقانون.\n4. أن يوفر للعامل سكنًا ملائمًا مرخصًا من الجهات المختصة وفق القواعد والشروط والمع ايير المعمول بها في\nالدولة، أو يدفع له بدلاً نقديًّا للسكن أو أن يكون مشمولاً ضمن الأجر.\n5. الاستثمار في تنمية مهارات العمال الذين يعملون لخدمته، وتوفير الحد الأدنى من أدوات وبرامج التدريب\nوالتأهيل والتمكين وفق أحكام هذا المرسوم بقانون ولائحته التنفيذية.\n\n\n6. توفير وسائل الوقاية اللازمة لحماية العمال من أخطار الإصابات والأمراض المهنية التي قد تحدث أثناء\nالعمل، وضمان توفير اللوائح الإرشادية والتوعوية، وتوفير التدريب المناسب للعمال لتجنب الوقوع في مثل\nهذه المخاطر، وإجراء التقييم الدوري للتأكد من التزام واستيفاء كافة أطراف العمل بمتطلبات الأمن\nوالسلامة الصحية والمهنية، وذلك وفق أحكام هذا المرسوم بقانون ولائحته التنفيذية والتشريعات النافذة\nفي هذا الشأن.\n7. اتخاذ ما يلزم لضمان معرفة العامل لحقوقه والتزاماته في العمل، وفق الأدوات والأساليب الملائمة لطبيعة\nالعمل والعاملين ف يها.\n8. تحمل تكاليف الرعاية الطبية للعامل وفق التشريعات النافذة في الدولة.\n9. تحمل نفقات التأمينات والاشتراكات والضمانات التي تحددها التشريعات النافذة.\n10. عدم ترك العامل يعمل لدى الغير إلا وفق أحكام هذا المرسوم بقانون.\n11. إعطاء العامل بناءً على طلبه عند انتهاء عقد العمل، شهادة خبرة دون مقابل، يبين فيها تاريخ التحاقه\nبالعمل، وتاريخ انتهائه، ومدة خدمته الإجمالية، والمسمى الوظيفي أو نوع العمل الذي كان يؤديه، وآخر\nأجر كان يتقاضاه، وسبب انتهاء عقد العمل، على ألا يتم تضمين الشهادة ما قد يس يء إلى سمعة العامل أو\nيقلل من فرص العمل أمامه.\n12. تحمل نفقات عودة العامل إلى جهة استقدامه أو أي مكان آخر يكون الطرفان قد اتفقا عليه، ما لم يكن\nقد التحق بخدمة صاحب عمل آخر، أو كان سبب إنهاء العقد يرجع إلى العامل فيكون هذا الأخير ملتزمًا\nبتلك النفقات.\n13. توفير بيئة عمل آمنة ومناسبة للعمل.\n14. أي الت زامات أخرى مقررة بموجب أحكام هذا المرسوم بقانون ولائحته التنفيذية أو قرارات من مجلس\nالوزراء أو أي تشريعات أخرى نافذة في الدولة.",
+    "pages": [
+     9,
+     10
+    ],
+    "chunks": [
+     "labour_law_2021-ar-a013-p0"
+    ]
+   },
+   "en": {
+    "title": "Employer's Obligations",
+    "text": "The Employer must:\n1. Maintain Workers' files and records in accordance with the conditions, controls and\nprocedures determined by a resolution issued by the Ministry, provided that the period of\nmaintaining the Worker's file shall not be less than two years as of the date of the end of\nthe Worker's service.\n2. Not withhold the official documents of the Worker or force him to leave the State upon\nthe end of the labor relation.\n3. Lay down work organization regulations, such as the regulation of work instructions,\nsanctions, promotions, bonuses, and other regulations and systems according to the\ncontrols specified by the Executive Regulation of this Decree by law.\n4. Provide the Worker with adequate accommodation licensed by the Competent\nAuthorities in accordance with the rules, conditions and standards in force in the State, or\npay him housing allowance, or include it in the wage.\n5. Invest in developing the skills of Workers who work for him, and provide the minimum\namount of training, qualification and empowerment tools and programmes in accordance\nwith the provisions of this Decree by law and its Executive Regulation.\n6. Provide the necessary means of prevention to protect Workers from the dangers of\noccupational injuries and diseases that may occur during work, ensure the provision of\nguidance and awareness regulations, provide appropriate training for workers to avoid\nsuch risks, and conduct periodic evaluation to ensure that all work parties comply with\nthe requirements of health and occupational safety and security, in accordance with the\nprovisions of this Decree by law, its Executive Regulation, and the legislation in force in\nthis regard.\n7. Take what is necessary to ensure that the Worker knows his rights and obligations at work,\nin accordance with the tools and methods appropriate to the nature of work and its\nWorkers.\n8. Bear the costs of medical care for the Worker in accordance with the legislation in force in\nthe State.\n9. Bear the expenses of insurances, subscriptions and guarantees determined by the\nlegislation in force.\n10. Not let the Worker perform work for others except in accordance with the provisions of\nthis Decree by law.\n11. Give the Worker, at his request, upon the expiry of the employment contract, an\nexperience certificate free of charge, indicating the date of his joining the work, the date\non which his work ends, the total period of his service, the job title or the kind of work he\nwas performing, the last wage he was receiving, and the reason for the end of the\nemployment contract, provided that the certificate shall not include anything that might\nharm the Worker's reputation or reduce his employment opportunities.\n12. Bear the expenses of returning the Worker to where he was recruited from or any other\nplace that the two parties have agreed upon, unless he has joined the service of another\nEmployer, or the reason for terminating the contract is due to the worker, in which case,\nthe latter shall incur those expenses.\n13. Provide a safe and appropriate work environment.\n14. Perform any other obligations stipulated under the provisions of this Decree by law and\nits Executive Regulations, Cabinet resolutions, or any other legislation in force in the State.",
+    "pages": [
+     12,
+     13
+    ],
+    "chunks": [
+     "labour_law_2021-en-a013-p0",
+     "labour_law_2021-en-a013-p1"
+    ]
+   }
+  },
+  {
+   "n": 14,
+   "ar": {
+    "title": "حظر العمل الجبري والمحظورات الأخرى",
+    "text": "1. لا يجوز أن يستعمل صاحب العمل أي وسيلة من شأنها حمل أو إجبار العامل عنوة أو تهديده بأي عقوبة\nللعمل لديه أو إجباره على القيام بعمل أو تقديم خدمة رغمًا عن إرادته.\n2. يحظر التحرش الجنس ي أو التنمر أو ممارسة أي عنف لفظي أو جسدي أو نفس ي على العامل من قبل\nصاحب العمل أو رؤسائه في العمل أو زملائه أو العاملين معه.",
+    "pages": [
+     10,
+     11
+    ],
+    "chunks": [
+     "labour_law_2021-ar-a014-p0"
+    ]
+   },
+   "en": {
+    "title": "Prohibition of Forced Labor and Other Prohibitions",
+    "text": "1. The Employer may not use any means that would make or force the Worker or threaten\nhim with any penalty to work for him or force him to perform work or provide a service\nagainst his will.\n2. Sexual harassment, bullying, or any verbal, physical or psychological violence against the\nWorker by the Employer, his superiors, colleagues, or co-workers shall be prohibited.",
+    "pages": [
+     13,
+     13
+    ],
+    "chunks": [
+     "labour_law_2021-en-a014-p0"
+    ]
+   }
+  },
+  {
+   "n": 15,
+   "ar": {
+    "title": "مستحقات العامل حينوفاته",
+    "text": "1. على صاحب العمل، في حال وفاة العامل، تسليم أسرة العامل، أي أجور أو مستحقات مالية للعامل مضافًا\nإليها مكافأة نهاية الخدمة والتي يستحقها العامل وفق أحكام هذا المرسوم بقانون ولائحته التنفيذية، وذلك\nخلال مدة لا تزيد على ( 10 ) عشرة أيام من تاريخ الوفاة أومن تاريخ علم صاحب العمل بوفاة العامل.\n2. ( مع مراعاة حكم البند 1 ) من هذه المادة، للعامل أن يحدد خطيًّا الشخص المعني من أسرته باستلام حقوقه\nفي حال وفاته.\n3. يتحمل صاحب العمل كافة التكاليف المترتبة على تجهيز ونقل جثمان العامل المتوفى إلى موطنه الأصلي أو\nمحل إقامته إذا طلب ذووه ذلك.\n4. للوزارة وبالتنسيق مع الجهات المعنية وضع آلية للاحتفاظ بمستحقات العامل حال وفاته وتعذر تسليمها\nلأسرته أو أصحاب الحق فيها.",
+    "pages": [
+     11,
+     11
+    ],
+    "chunks": [
+     "labour_law_2021-ar-a015-p0"
+    ]
+   },
+   "en": {
+    "title": "Worker's Entitlements at the Time of His Death",
+    "text": "1. In the event of the Worker's death, the Employer shall hand over to the worker's family\nany wages or financial entitlements to the Worker in addition to the end -of-service\ngratuity to which the worker is entitled in accordance with the provisions of this D ecree\nby law and its Executive Regulation, within a period not exceeding ten (10) days as of the\ndate of death or as of the date of the Employer's knowledge of the Worker's death.\n2. Subject to the provisions of Clause (1) of this Article, the Worker may specify in writing a\nfamily member to receive his rights in the event of his death.\n3. The employer shall bear all costs incurred in preparing and transporting the body of the\ndeceased Worker to his country of origin or place of residence if his relatives so request.\n4. The Ministry may, in coordination with the Concerned Authorities, may establish a\nmechanism to retain the Worker's entitlements in the event of his death if it is not possible\nto hand them over to his family or those entitled thereto.",
+    "pages": [
+     14,
+     14
+    ],
+    "chunks": [
+     "labour_law_2021-en-a015-p0"
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "ar": {
+    "title": "التزامات العامل",
+    "text": "على العامل الالتزام بما يأتي:\n1. أن يؤدي العمل بنفسه وفق توجيه وإشراف صاحب العمل أو من ينو ب عنه، وطبقًا لما هو محدد في\nالعقد، وألا يقوم بتعهيد العمل إلى أي عامل أو أي شخص آخر.\n2. أن يلتزم بحسن السلوك والأخلاق أثناء العمل، وتوخي الأمانة والنزاهة المهنية.\n3. المحافظة على وسائل الإنتاج وأدوات العمل التي في عهدته، ويحافظ عليها من خلال اتخاذ الإجراءات\nالضرورية لحفظها في الأماكن المخصصة لها.\n4. المحافظة على سرية المعلومات والبيانات التي يطّلع عليها بحكم عمله، وعدم إفشاء أسرار العمل، وإعادة\nالعهدة لصاحب العمل عند نهاية خدمته.\n5. عدم الاحتفاظ بصفة شخصية بأي أصول للأوراق أو المستندات الورقية أو الإلكترونية المرتبطة بأسرار\nالعمل بدون إذن من صاحب العمل أو من ينوب عنه.\n6. تنفيذ تعليمات السلامة والصحة المهنية المقررة بالمنشأة وفق التشريعات النافذة أو نظم العمل\nوتعليماته.\n7. العمل خلال أيام العمل المعتمدة وساعات العمل المحددة في عقد العمل، والتواصل والتجاوب بشكلٍ\nفعال لإنجاز الأعمال المكلف بها بكفاءة.\n\n\n8. العمل باستمرار وباجتهاد لتنمية مهاراته الوظيفية والمهنية، والارتقاء بمستوى الأداء الذي يقدمه\nلصاحب العمل.\n9. عدم العمل لدى الغير، بالمخالفة لأحكام هذا المرسوم بقانون وغيرها من التشريعات النافذة في هذا\nالشأن.\n10. إخلاء السكن الذي وفره صاحب العمل له، خلال مدة لا تزيد على ( 30 ) ثلاثين يومًا من تاريخ انتهاء\nخدمته، ومع ذلك للعامل البقاء في السكن بعد انتهاء المدة المشار إليها، في حال موافقة صاحب العمل،\nمقابل تحمل العامل تكلفة البقاء، أو ما يتم الاتفاق عليه خطيًّا مع صاحب العمل.\n11. أي التزامات أخرى مقررة بموجب أحكام هذا المرسوم بقانون ولائحته التنفيذية أو أي تشريعات أخرى\nنافذة في الدولة.",
+    "pages": [
+     11,
+     12
+    ],
+    "chunks": [
+     "labour_law_2021-ar-a016-p0"
+    ]
+   },
+   "en": {
+    "title": "Worker's Obligations",
+    "text": "The Worker must:\n1. To perform the work personally under the direction and supervision of the Employer or\nhis representative, and in accordance with what is specified in the contract, and not to\noutsource the work to any other worker or any other person.\n2. Abide by proper conduct and ethical norms during work and display honesty and\nprofessional integrity.\n3. Preserve the means of production and work tools in his custody and preserve them by\ntaking the necessary measures to keep them in the places designated for them.\n4. Maintain confidentiality of the information and data to which he has access by virtue of\nhis work, not disclose trade secrets, and return anything under his custody to the Employer\nat the end of his service.\n5. Not keep in a personal capacity any original copies of papers or paper or electronic\ndocuments related to trade secrets without the permission of the Employer or his\nrepresentative.\n6. Implement the occupational safety and health instructions determined in the\nEstablishment in accordance with the legislation in force or work systems and\ninstructions.\n7. Work during the approved business days and working hours specified in the employment\ncontract and communicate and interact effectively to efficiently accomplish the tasks\nassigned thereto.\n8. Work continuously and diligently to develop his functional and professional skills and\nraise the level of performance he provides to the Employer.\n9. Not work for others, in violation of the provisions of this Decree by law and other\napplicable legislation in this regard.\n10. Evacuate the accommodation provided thereto by the Employer, within a period not\nexceeding thirty (30) days as of the date of the end of his service; however, the Worker\nmay remain in the accommodation after the expiry of the aforementioned period, upon\nthe Employer's approval, in return for the incurring the cost of accommodation, or what is\nagreed upon in writing with the Employer.\n11. Perform any other obligations stipulated under the provisions of this Decree by law and\nits Executive Regulations or any other legislation in force in the State.",
+    "pages": [
+     14,
+     15
+    ],
+    "chunks": [
+     "labour_law_2021-en-a016-p0"
+    ]
+   }
+  },
+  {
+   "n": 17,
+   "ar": {
+    "title": "ساعات العمل",
+    "text": "1. ( يكون الحد الأقص ى لساعات العمل العادية للعمال8( ) ثماني ساعات في اليوم الواحد أو 48 ) ثمانٍ وأربعين\nساعة في الأسبوع.\n2. لمجلس الوزراء، بناءً على اقتراح الوزير وبالتنسيق مع الجهات المعنية، زيادة ساعات العمل اليومية أو\nتخفيضها لبعض القطاعات الاقتصادية أو بعض الفئات من العمالة، بالإضافة إلى مواعيد العمل والراحة\nوالساعات التي يحظر العمل فيها لفئات معينة من العمالة، وذلك وفق تصنيف العمالة الذي يحدد\nفي اللائحة التنفيذية لهذا المرسوم بقانون.\n3. لالا تحتسب ضمن ساعات العمل الفترات التي يقضيها العامل في الانتقال بين محل سكنه ومكان العمل، إ\nلبعض الفئات من العمال وفق الضوابط التي تحددها اللائحة التنفيذية لهذا المرسوم بقانون.\n4. تحدد اللائحة التنفيذية لهذا المرسوم بقانون ساعات العمل في شهر رمضان.\n5. في حال كان العامل يعمل بغير نظام الدوام الكامل، لا يجوز لصاحب العمل الأصلي، أو أي صاحب عمل\nآخر يعمل لديه العامل وفق أحكام هذا المرسوم بقانون، أن يطالب العامل بأن يعمل لديه أكثر من\nالساعات المتفق عليها في عقد العمل، إلا بموافقة العامل الخطية.\n6. في حال رغبة العامل بتأدية عمله عن بعد، سواءً من داخل الدولة أو خارجها، وبموافقة صاحب العمل،\nفلصاحب العمل اشتراط ساعات عمل محددة.",
+    "pages": [
+     12,
+     13
+    ],
+    "chunks": [
+     "labour_law_2021-ar-a017-p0"
+    ]
+   },
+   "en": {
+    "title": "Working Hours",
+    "text": "1. The maximum normal working hours for Workers shall be eight (8) hours per day or forty-\neight (48) hours per week.\n2. The Cabinet may, upon the proposal of the Minister and in coordination with the\nConcerned Authorities, increase or decrease the daily working hours for some economic\nsectors or some categories of labor, in addition to the working hours, rest hours, and hours\nduring which it is prohibited to work for certain categories of labor, according to the\nclassification of labor specified in the Executive Regulation of this Decree by law.\n3. The periods spent by a Worker in travelling between his home and place of work shall not\nbe included in his working hours, except for some categories of Workers in accordance\nwith the controls specified by the Executive Regulation of this Decree by law.\n4. The Executive Regulation of this Decree by law shall determine the working hours in the\nmonth of Ramadan.\n5. In the event that the Worker works full-time, the original Employer, or any other Employer\nfor whom the Worker works in accordance with the provisions of this Decree by law, may\nnot require the worker to work for him more than the hours agreed upon in the\nemployment contract, except with the Worker's written consent.\n6. In the event that the worker desires to perform his work remotely, whether from inside or\noutside the State, and with the approval of the Employer, the Employer may stipulate\nspecific working hours.",
+    "pages": [
+     15,
+     16
+    ],
+    "chunks": [
+     "labour_law_2021-en-a017-p0"
+    ]
+   }
+  },
+  {
+   "n": 18,
+   "ar": {
+    "title": "ساعات العمل المتتالية",
+    "text": "لا يجوز أن يعمل العامل أكثر من (5 ) خمس ساعات متتالية دون فترةأو فترات للراحة لا تقل في مجموعها عن\nساعة، على ألا تدخل هذه الفترات في حساب ساعات العمل، ويتم تنظيم ساعات العمل وفترات الراحة في\nالمنشأة التي تعمل بنظام الورديات، أو لبعض الفئات الوظيفية حسب طبيعتها -كالوظائف الميدانية - وحسب\nتصنيف العمالة المحدد في اللائحة التنفيذية لهذا المرسوم بقانون.",
+    "pages": [
+     13,
+     13
+    ],
+    "chunks": [
+     "labour_law_2021-ar-a018-p0"
+    ]
+   },
+   "en": {
+    "title": "Consecutive Working Hours",
+    "text": "The worker may not work for more than five (5) consecutive hours without a rest period or\nperiods amounting in aggregate to not less than one hour. Working hours and rest periods\nshall be regulated in the Establishment that operates on the shift system, or for some job\ncategories according to their nature - such as field jobs - and according to the labor\nclassification specified in the Executive Regulation of this Decree by law.",
+    "pages": [
+     16,
+     16
+    ],
+    "chunks": [
+     "labour_law_2021-en-a018-p0"
+    ]
+   }
+  },
+  {
+   "n": 19,
+   "ar": {
+    "title": "ساعات العمل الإضافية",
+    "text": "1. لصاحب العمل تشغيل العامل ساعات عمل إضافية على ساعات العمل العادية، على ألا تزيد على ساعتين\nفي اليوم الواحد، ولا يجوز تشغيله أكثر من ذلك إلا وفقًا للشروط والضوابط التي تحددها اللائحة\nالتنفيذية لهذا المرسوم بقانون، وفي جميع الأحوال يجب ألا يزيد مجموع ساعات العمل على (144 ) مائة\nوأربعًا وأربعين ساعة كل ( 3.) ثلاثة أسابيع\n2. إذا استدعت ظروف العمل تشغيل العامل أكثر من ساعات العمل العادية، اعتبرت مدة الزيادة وقتًا\nإضافيًّا يتقاض ى العامل عنه أجرًا مساويًّ ا للأجر المقابل لساعات العمل العادية -يحسب وفق الأجر\nالأساس ي - مضافًا إليه زيادة لا تقل عن ( 25.%) خمس وعشرين بالمائة من ذلك الأجر\n3. إذا استدعت ظروف العمل تشغيل العامل وقتًا إضافيًّا فيما بين الساعة العاشرة مساءً والساعة الرابعة\nصباحًا، استحق العامل عن الوقت الإضافي الأجر المقرر بالنسبة إلى ساعات العمل العادية -يحسب وفق\nالأجر الأساس ي - مضافًا إليه زيادة لا تقل عن ( 50 %) خمسين بالمائة من ذلك الأجر، ويستثنى من هذا البند\nالعاملين بنظام الورديات.\n4. إذا استدعت الظروف تشغيل العامل في يوم الراحة المحدد في عقد العمل، أو اللائحة التنظيمية للعمل،\nوجب تعويضه بيوم آخر للراحة، أو أن يدفع له أجر ذلك اليوم حسب الأجر المقرر بالنسبة إلى أيام العمل\nالعادية، مضافًا إليه زيادة لا تقل عن ( 50%) خمسين بالمائة من الأجر الأساس ي لذلك اليوم.\n5. لا يجوز تشغيل العامل أكثر من يومي راحة متتاليين فيما عدا عمال المياومة.",
+    "pages": [
+     13,
+     14
+    ],
+    "chunks": [
+     "labour_law_2021-ar-a019-p0"
+    ]
+   },
+   "en": {
+    "title": "Overtime",
+    "text": "1. The Employer may require the Worker to work for additional working hours beyond the\nnormal working hours, provided that they do not exceed two hours per day, and he may\nnot be required to work for more than that except in accordance with the conditions and\ncontrols specified in the Executive Regulation of this Decree by law. In all cases, the total\nworking hours shall not exceed one hundred and forty -four (144) hours every (3) three\nweeks.\n2. If circumstances of work require that the Worker works for more than the normal working\nhours, the extra time shall be considered overtime, for which the Worker shall receive a\nwage equal to that corresponding to his normal working hours - calculated according to\nthe basic wage - plus an increase of at least twenty-five percent (25%) of such wage.\n3. If circumstances of work necessitate that the Worker works overtime between 10 pm and\n4 am, he shall be entitled to the wage determined for normal working hours - calculated\naccording to the basic wage - plus an increase equal to at least fifty percent (50%) of such\nwage. Shift Workers shall be excluded from the above.\n4. If circumstances of work necessitate that the Worker works on the rest day specified in the\nemployment contract or the work organizational regulation, he shall be compensated\nwith another rest day, or with payment of the wage for that day according to the wage\nestablished for normal business days, plus an increase not less than fifty percent (50%) of\nthe basic wage for that day.\n5. The Worker may not be required to work for more than two consecutive rest days,\nexcluding day laborers.",
+    "pages": [
+     16,
+     17
+    ],
+    "chunks": [
+     "labour_law_2021-en-a019-p0"
+    ]
+   }
+  },
+  {
+   "n": 20,
+   "ar": {
+    "title": "فئات العمالة المستثناة",
+    "text": "تحدد اللائحة التنفيذية لهذا المرسوم بقانون فئات العمالة التي يجوز استثنائهم من الأحكام الواردة بشأن\nساعات العمل الواردة في هذا المرسوم بقانون.",
+    "pages": [
+     14,
+     14
+    ],
+    "chunks": [
+     "labour_law_2021-ar-a020-p0"
+    ]
+   },
+   "en": {
+    "title": "Excluded Labor Categories",
+    "text": "The Executive Regulation of this Decree by law shall determine the categories of laborer’s that\nmay be exempted from the provisions regarding working hours contained in this Decree by\nlaw.",
+    "pages": [
+     17,
+     17
+    ],
+    "chunks": [
+     "labour_law_2021-en-a020-p0"
+    ]
+   }
+  },
+  {
+   "n": 21,
+   "ar": {
+    "title": "الراحة الأسبوعية",
+    "text": "يمنح العامل راحة أسبوعية مدفوعة الأجر لا تقل عن يوم واحد وفقًا لما يحدده عقد العمل أو اللائحة\nالتنظيمية للعمل، ويجوز بقرار من مجلس الوزراء زيادة يوم الراحة الأسبوعية المنصوص عليه في هذه المادة.",
+    "pages": [
+     14,
+     14
+    ],
+    "chunks": [
+     "labour_law_2021-ar-a021-p0"
+    ]
+   },
+   "en": {
+    "title": "Weekly Rest",
+    "text": "The worker shall be granted a paid weekly rest not less than one day, according to what is\nspecified in the employment contract or the work organizational regulation. It is permissible\nby a Cabinet resolution to increase the weekly rest day stipulated in this Article.",
+    "pages": [
+     17,
+     17
+    ],
+    "chunks": [
+     "labour_law_2021-en-a021-p0"
+    ]
+   }
+  },
+  {
+   "n": 22,
+   "ar": {
+    "title": "تحديد مقدار أو نوع الأجر وسداده",
+    "text": "1. يتعين تحديد مقدار أو نوع الأجر في عقد العمل، وإذا لم يحدد، تولت المحكمة المختصة تحديده باعتباره\nنزاعًا عماليًّا.\n2. يلتزم صاحب العمل بأن يؤدي الأجور للعاملين لديه في مواعيد استحقاقها وفق الأنظمة المعتمدة في الوزارة\nوالشروط والضوابط والإجراءات التي تحددها اللائحة التنفيذية لهذا المرسوم بقانون.\n3. تؤدي الأجور بالدرهم الإماراتي، ويمكن تأدية الأجر بعملة أخرى إذا تم الاتفاق عليه بين الطرفين في عقد\nالعمل.",
+    "pages": [
+     14,
+     14
+    ],
+    "chunks": [
+     "labour_law_2021-ar-a022-p0"
+    ]
+   },
+   "en": {
+    "title": "Determining the Amount or Type of Wage and Paying It",
+    "text": "1. The amount or type of wage shall be specified in the employment contract, and if it is not\nspecified therein, the competent court shall determine it as a labor dispute.\n2. The Employer is obligated to pay the wages to his Workers on their due dates in\naccordance with the systems approved in the Ministry and the conditions, controls and\nprocedures specified in the Executive Regulation of this Decree by law.\n3. The wages shall be paid in AED, and they can be paid in another currency if it is agreed\nupon between the parties in the employment contract.",
+    "pages": [
+     18,
+     18
+    ],
+    "chunks": [
+     "labour_law_2021-en-a022-p0"
+    ]
+   }
+  },
+  {
+   "n": 23,
+   "ar": {
+    "title": "طريقة حساب الأجر للعاملين بنظام القطعة",
+    "text": "يحسب الأجر اليومي للعمال الذين يتقاضون أجورهم بالقطعة وفق متوسط ما تقاضاه العامل عن أيام العمل\nالفعلية خلال (6.) الستة أشهر السابقة على الطلب أو الدعوى بشأن أي موضوع يتعلق بالأجر",
+    "pages": [
+     14,
+     15
+    ],
+    "chunks": [
+     "labour_law_2021-ar-a023-p0"
+    ]
+   },
+   "en": {
+    "title": "Method of Calculating Wages for Workers on Piecemeal Basis",
+    "text": "The daily wage of Workers who receive their wages on piece -meal basis is calculated\naccording to the average of what the Worker received for the actual working days during the\nsix (6) months preceding the request or the lawsuit regarding any matter related to the wage.",
+    "pages": [
+     18,
+     18
+    ],
+    "chunks": [
+     "labour_law_2021-en-a023-p0"
+    ]
+   }
+  },
+  {
+   "n": 24,
+   "ar": {
+    "title": "نقل العامل ذي الأجر الشهري إلى فئات أخرى",
+    "text": "يجوز نقل العامل ذي الأجر الشهري إلى فئة عمال المياومة أو العمال المعينين بالأجر الأسبوعي أو بالقطعة أو\nبالساعة، إذا وافق العامل على ذلك كتابةً، ودون الإخلال بالحقوق التي اكتسبها العامل في المدة التي قضاها\nبالأجر الشهري.",
+    "pages": [
+     15,
+     15
+    ],
+    "chunks": [
+     "labour_law_2021-ar-a024-p0"
+    ]
+   },
+   "en": {
+    "title": "Transferring Monthly Wage Worker to Other Categories",
+    "text": "A worker with a monthly wage may be transferred to the category of day workers or workers\nappointed for a weekly, piece-meal or hourly wage, if the Worker agrees to this in writing, and\nwithout prejudice to the rights acquired by the worker during the period he spent working for\nmonthly wage.",
+    "pages": [
+     18,
+     18
+    ],
+    "chunks": [
+     "labour_law_2021-en-a024-p0"
+    ]
+   }
+  },
+  {
+   "n": 25,
+   "ar": {
+    "title": "حالات الاقتطاع أو الخصم من أجر العامل",
+    "text": "1. لا يجوز اقتطاع أو خصم أي مبلغمن أجر العامل إلا في الحالات الآتية:\nأ. استرداد القروض التي منحت إلى العامل، ضمن الحد الأقص ى لنسبة الاستقطاع الشهري من أجر\nالعامل المنصوص عليها في هذه المادة، بعد موافقة العامل الخطية، وبدون أي فوائد.\nب. استرداد المبالغ التي دفعت إلى العامل زيادة على حقه، بشرط ألا يزيد ما يتم اقتطاعه نسبة ( 20 )%\nعشرين في المائة من الأجر.\nج. المبالغ التي يتم استقطاعها لغايات احتساب الاشتراك في مكافآت ومعاشات التقاعد والتأمينات، وفق\nالتشريعات النافذة في الدولة.\nد. اشتراكات العامل في صندوق الادخار في المنشأة أو القروض المستحقة للصندوق، الموافق عليها من قبل\nالوزارة.\nه. أقساط أي مشروع اجتماعي أو أي مزايا أو خدمات أخرى يقدمها صاحب العمل وتوافق عليها الوزارة،\nشريطة موافقة العامل الكتابية على الاشتراك في المشروع.\nو. المبالغ التي تخصم من العامل بسبب المخالفات التي يرتكبها وفق لائحة الجزاءات المعمول بها في المنشأة\nوالمعتمدة من الوزارة، وبما لا يزيد على (5.%) خمسة في المائة من الأجر\nز. الديون المستحقة تنفيذًا لحكم قضائي، وبما لا يزيد على ربع الأجر المستحق للعامل، فيما عدا دين\nالنفقة المحكوم بها حيث يجوز اقتطاع أكثر من ربع الأجر، وإذا تعددت الديون توزع المبالغ المطلوب\nاستيفاؤها حسب مراتب الامتياز.\nح. المبالغ اللازمة لإصلاح ما ألحقه العامل من ضرر، نتيجة خطأ منه أو مخالفته تعليمات صاحب العمل،\nأدى إلى إتلاف أو تدمير أو فقدان أدوات أو آلات أو منتجات أو مواد مملوكة لصاحب العمل، على ألا\nيزيد ما يتم اقتطاعه على أجر ( 5) خمسة أيام في الشهر، ولا يجوز اقتطاع مبلغ أكثر من ذلك إلا بناءً\nعلى موافقة المحكمة المختصة.\n\n\n2. إذا تعددت الأسباب الموجبة للاقتطاع أو الخصم من الأجر، فلا يجوز في جميع الأحوال أن تزيد نسبة\nالاستقطاع و/ أو الخصم على ( 50.%) خمسين في المائة من الأجر",
+    "pages": [
+     15,
+     16
+    ],
+    "chunks": [
+     "labour_law_2021-ar-a025-p0"
+    ]
+   },
+   "en": {
+    "title": "Cases of Deduction from Worker's Wage",
+    "text": "1. No amount of money shall be deducted from the Worker's wage except in the following\ncases:\na. Recovering loans granted to the Worker, within the maximum monthly deduction rate\nfrom the Worker's wage stipulated in this Article, after obtaining the Worker's written\nconsent, and without any interests.\nb. Recovering the amounts paid to the Worker in excess of his entitlements, provided\nthat the amount deducted shall not exceed twenty percent (20%) of the wage.\nc. Amounts deducted for the purposes of calculating contributions to bonuses,\nretirement pensions, and insurances, in accordance with the legislation in force in the\nState.\nd. The Worker's contributions to the Establishment's savings fund or the loans owed to\nthe fund, approved by the Ministry.\ne. Instalments of any welfare scheme or any other benefits or services provided by the\nEmployer and approved by the Ministry, provided that the worker agrees in writing to\nparticipate in the scheme.\nf. Amounts deducted from the Worker due to the violations he commits in accordance\nwith the sanction regulation in force in the Establishment and approved by the\nMinistry, provided that it shall not exceed five percent (5%) of the wage.\ng. Debts owed in implementation of a court judgment, provided that they shall not\nexceed a quarter of the wage due to the Worker, except for the alimony debt, where\nmore than a quarter of the wage may be deducted. In the event of multiple debts, the\namounts required to be paid shall be distributed according to the ranks of the privilege.\nh. Amounts necessary to repair any damages caused by the Worker, as a result of his fault\nor violation of the Employer's instructions, that lead to the damage, destruction or loss\nof tools, machines, products or materials owned by the Employer, provided that the\namount deducted shall not exceed the wage of (5) five days per month, and no more\namounts shall be deducted except upon the approval of the competent court.\n2. If there are multiple reasons for deduction from the wage, it is not permissible in all cases\nfor the percentage of deduction to exceed fifty percent (50%) of the wage.",
+    "pages": [
+     18,
+     19
+    ],
+    "chunks": [
+     "labour_law_2021-en-a025-p0"
+    ]
+   }
+  },
+  {
+   "n": 26,
+   "ar": {
+    "title": "تمكين العامل من القيام بعمله",
+    "text": "1. يكون الأجر مقابل العمل، ويلتزم صاحب العمل بتمكين العامل من القيام بعمله، وإلا كان ملزمًا بسداد\nأجره المتفق عليه.\n2. تحدد اللائحة التنفيذية إجراءات ترك العامل للعمل في حال عدم تمكينه من القيام بالعمل المتفق عليه في\nعقد العمل.",
+    "pages": [
+     16,
+     16
+    ],
+    "chunks": [
+     "labour_law_2021-ar-a026-p0"
+    ]
+   },
+   "en": {
+    "title": "Enabling Worker to Perform His Work",
+    "text": "1. The wage shall be in exchange for the work, and the Employer is obligated to enable the\nWorker to perform his work, otherwise he is obligated to pay his wage agreed upon.\n2. The Executive Regulation shall determine the procedures for the Worker's leaving work in\nthe event that he is not able to perform the work agreed upon in the employment contract.",
+    "pages": [
+     20,
+     20
+    ],
+    "chunks": [
+     "labour_law_2021-en-a026-p0"
+    ]
+   }
+  },
+  {
+   "n": 27,
+   "ar": {
+    "title": "الحد الأدنى للأجور",
+    "text": "لمجلس الوزراء، بناءً على اقتراح الوزير وبالتنسيق مع الجهات المعنية، أن يصدر قرارًا بتحديد الحد الأدنى لأجور\nالعمال، أو أي فئة منهم.",
+    "pages": [
+     16,
+     16
+    ],
+    "chunks": [
+     "labour_law_2021-ar-a027-p0"
+    ]
+   },
+   "en": {
+    "title": "Minimum Wage",
+    "text": "The Cabinet may, upon the proposal of the Minister and in coordination with the Concerned\nAuthorities, issue a resolution setting the minimum wage for Workers, or any category of\nthem.",
+    "pages": [
+     20,
+     20
+    ],
+    "chunks": [
+     "labour_law_2021-en-a027-p0"
+    ]
+   }
+  },
+  {
+   "n": 28,
+   "ar": {
+    "title": "العطلات الرسمية وتشغيل العامل فيها",
+    "text": "1. يستحق العامل إجازة رسمية بأجر كامل في العطلاتالرسمية التي يصدر بتحديدها قرار من مجلس الوزراء.\n2. إذا استدعت ظروف العمل تشغيل العامل أثناء أي من العطلات الرسمية، وجب على صاحب العمل\nتعويضه بيوم آخر للراحة مقابل كل يوم يعمل فيه أثناء العطلة، أو أن يدفع له أجر ذلك اليوم حسب الأجر\nالمقرر بالنسبة إلى أيام العمل العادية، مضافًا إليه زيادة لا تقل عن ( 50 %) خمسين بالمائة من الأجر الأساس ي\nلذلك اليوم.",
+    "pages": [
+     16,
+     16
+    ],
+    "chunks": [
+     "labour_law_2021-ar-a028-p0"
+    ]
+   },
+   "en": {
+    "title": "Official Holidays and Requiring Worker to Work Therein",
+    "text": "1. The Worker is entitled to an official leave with full pay on the official holidays to be\ndetermined by a Cabinet resolution.\n2. If circumstances of work necessitate that the Worker works in any of the official holidays,\nthe Employer shall compensate him with another rest day for each day in which he works\nduring the holiday, or with payment of the wage for that day according to the wage\nestablished for normal business days, plus an increase not less than fifty percent (50%) of\nthe basic wage for that day.",
+    "pages": [
+     20,
+     20
+    ],
+    "chunks": [
+     "labour_law_2021-en-a028-p0"
+    ]
+   }
+  },
+  {
+   "n": 29,
+   "ar": {
+    "title": "الإجازة السنوية",
+    "text": "1. مع عدم الإخلال بحقوق العامل المكتسبة عن المدة السابقة على تاريخ العمل بأحكام هذا المرسوم بقانون،\nيستحق العامل إجازة سنوية بأجر كامل لا تقل عن:\n\n\nأ. ثلاثين يومًا عن كل سنة من سنوات خدمته الممتدة.\nب. يومان عن كل شهر إذا كانت مدة خدمته تزيد على ستة أشهر وتقل عن سنة.\nج. إجازة عن أجزاء السنة الأخيرة التي قضاها في العمل، وذلك في حال انتهاء خدمته قبل استخدام رصيد\nإجازته السنوية.\n2. يستحق العامل بنمط العمل بال دوام الجزئي، إجازة سنوية حسب ساعات العمل الفعلية التي يقضيها\nالعامل لدى صاحب العمل، تحدد مدتها في عقد العمل، وذلك وفق ما تقرره اللائحة التنفيذية لهذا\nالمرسوم بقانون.\n3. لصاحب العمل أن يوافق على منح العامل إجازة من رصيد إجازته السنوية خلال فترة التجربة، مع احتفاظ\nالعامل بحقه في التعويض عما تبقى من رصيد إجازته السنوية، في حال عدم اجتيازه فترة التجربة.\n4. يجب أن يتمتع العامل بإجازته في سنة استحقاقها، ولصاحب العمل أن يحدد مواعيد هذه الإجازات وفقًا\nلمقتضيات العمل وبالاتفاق مع العامل، أو يمنحها بالتناوب بين عمال المنشأة لكي يؤمن سير عمله، وعليه\nإشعار العامل بالموعد المحدد لتمتعه بالإجازة بوقت كافٍ لا يقل عن شهر.\n5. للعامل بموافقة صاحب العمل ووفق اللوائح التنظيمية المعمول بها في المنشأة، أن يرحل رصيد إجازته\nالسنوية أو أيامًا منها إلى السنة التالية.\n6. يستحق العامل الأجر عن مدة إجازته السنوية.\n7. تدخل في حساب مدة الإجازة السنوية، أيام الإجازات المقررة قانونًا أو اتفاقًا إذا تخللت الإجازة السنوية\nالتي يتمتع بها العامل، وتعتبر جزءًا منها، ما لم ينص عقد العمل أو اللوائح التنظيمية المعمول بها في المنشأة\nما هو أكثر منفعة للعامل.\n8. لا يجوز لصاحب العمل منع العامل من الاستفادة من إجازته السنوية المستحقة لأكثر من سنتين، إلا إذا\nرغب العامل بترحيلها أو الحصول على بدل نقدي عنها وفق اللوائح التنظيمية المعمول بها في المنشأة، وما\nتحدده اللائحة التنفيذية لهذا المرسوم بقانون.\n9. يحق للعامل الحصول على أجرة أيام الإجازة المستحقة إذا ترك العمل قبل استعماله لها، أيًّا كانت مدتها،\nوذلك بالنسبة إلى المدة التي لم يحصل على إجازته عنها، كما يستحق أجرة الإجازة عن أجزاء السنة بنسبة\nما قضاه منها في العمل، وتحسب وفق الأجر الأساس ي.\n10. تحدد اللائحة التنفيذية لهذا المرسوم بقانون قواعد وشروط تنظيم الإجازات والتعويض عنها.",
+    "pages": [
+     16,
+     18
+    ],
+    "chunks": [
+     "labour_law_2021-ar-a029-p0"
+    ]
+   },
+   "en": {
+    "title": "Annual leave",
+    "text": "1. Without prejudice to the Worker's rights acquired for the period preceding the date of\nenforcement of the provisions of this Decree by law, the Worker shall be entitled to an\nannual leave with full pay of not less than:\na. Thirty days for each year of his extended service.\nb. Two days for each month if his service period is more than six months and less than\none year.\nc. A leave for parts of the last year he spent at work, in the event that his service ends\nbefore using his annual leave balance.\n2. The part-time Worker is entitled to an annual leave according to the actual working hours\nspent by the Worker with the Employer, the duration of which is specified in the\nemployment contract, in accordance with what is determined by the Executive Regulation\nof this Decree by law.\n3. The Employer may agree to grant the Worker a leave from the balance of his annual leave\nduring the Probation Period, and the Worker shall retain the right to be compensated for\nthe remainder of his annual leave balance, if he have not passed the Probation Period.\n4. The Worker must enjoy his leave in the year of its entitlement, and the Employer may\ndetermine the dates of these leaves in accordance with work requirements and in\nagreement with the Worker or grant them in rotation among the Establishment's Workers\nin order to ensure the progress of his work, and he must notify the Worker of the specified\ndate for enjoying his leave at least one month in advance.\n1. The Worker may, upon the approval of the Employer and in accordance with the\napplicable organizational regulations in the Establishment, carry forward the balance of\nhis annual leave, or days thereof, to the following year.\n6. The Worker is entitled to the wage for the period of his annual leave.\n7. Rest days established by law or by agreement shall be included in the annual leave period\nif the annual leave enjoyed by the Worker is interrupted by, and is considered, part of it,\nunless the employment contract or the organizational regulations in force in the\nEstablishment stipulate what is more beneficial to the Worker.\n8. The Employer may not prevent the Worker from benefiting from his entitled annual leave\nfor more than two years, unless the Worker wishes to carry it forward or obtain a cash\nallowance for it in accordance with the organizational regulations in force in the\nEstablishment, and what is specified by the Executive Regulation of this Decree by law.\n9. The Worker is entitled to receive wages for the days of the entitled rest days if he leaves\nthe work before using it, regardless of their duration, in relation to the period for which he\nhas not obtained his leave.\n10. The Executive Regulation of this Decree by law shall specify the rules and conditions for\norganizing vacations and compensation for them.",
+    "pages": [
+     20,
+     22
+    ],
+    "chunks": [
+     "labour_law_2021-en-a029-p0",
+     "labour_law_2021-en-a029-p1"
+    ]
+   }
+  },
+  {
+   "n": 30,
+   "ar": {
+    "title": "إجازة الوضع",
+    "text": "1. ( تستحق العاملة إجازة وضع مدتها60:) ستين يومًا وفق ما يأتي\nأ. (45.) خمسة وأربعين يومًا الأولى بأجر كامل\nب. (15.) خمسة عشر يومًا التي تليها بنصف أجر\n2. للعاملة بعداستنفادها إجازة الوضع أن تنقطع عن العمل بدون أجر لمدة لا تزيد على (45 ) خمسة وأربعين\nيومًا متصلة أو متقطعة، إذا كان هذا الانقطاع بسبب مرض أصابها أو أصاب طفلها ناتج عن الحمل أو\nالوضع ولا يمكنها من العودة إلى عملها، ويثبت المرض بشهادة طبية صادرة عن الجهة الطبية، ولا تدخل\nهذه المدة ضمن مدة الخدمة التي تستحق عنها العاملة مكافأة نهاية الخدمة أو مدة الاشتراك في نظام\nالتقاعد وفق التشريعات النافذة في هذا الشأن.\n3. ( تستحق العاملة إجازة الوضع المذكورة في البند رقم1( ) من هذه المادة، إذا تم الوضع بعد6 ) ستة أشهر\nأو أكثر من الحمل، سواءً ولد الجنين ميتًا أو ولد حيًّا ثم مات.\n4. للعاملة، في حالة إنجاب طفل مريض أو من ذوي الإعاقة \"أصحاب الهمم\"، وتتطلب حالته الصحية مرافقًا\nمستمرًا له وفق تقرير طبي صادر من الجهة الطبية، الحق في إجازة مدتها (30 ) ثلاثين يومًا بأجر كامل تبدأ\nبعد انتهاء مدة إجازة الوضع، ولها الحق في تمديد الإجازة لمدة (30.) ثلاثين يومًا دون أجر\n5. على صاحب العمل منح العاملة إجازة وضع متى طلبتها في أي وقت اعتبارًا من اليوم الأخير للشهر السابق\nمباشرةً على الشهر المتوقع الوضع فيه، ويثبت ذلك بموجب شهادة من الجهة الطبية.\n6. لا يخل حصول العاملة على إجازة الوضع أو الانقطاع المشار إليها في هذه المادة، بحقها في الحصول على\nالإجازات الأخرى.\n7. إذا عملت المرأة العاملة لدى صاحب عمل آخر أثناء مدة إجازتها المصرح بها في هذه المادة، جاز لصاحب\nالعمل الأصلي، أن يحرمها من أجرها عن مدة الإجاز ة، أو أن يسترد ما أداه لها.\n8. لا يجوز إنهاء خدمة العاملة أو إنذارها بذلك بسبب الحمل أو بسبب حصولها على إجازة الوضع أو\nانقطاعها عن العمل وفق أحكام هذه المادة.\n9. ( تستحق العاملة بعد عودتها من إجازة الوضع ولفترة لا تزيد على6 ) ستة أشهر من تاريخ الوضع، فترة أو\nفتر تين راحة يوميًا لإرضاع طفلها، على ألا تزيد مدة الفترتين على ساعة.",
+    "pages": [
+     18,
+     19
+    ],
+    "chunks": [
+     "labour_law_2021-ar-a030-p0"
+    ]
+   },
+   "en": {
+    "title": "Maternity Leave",
+    "text": "1. The female Worker shall be entitled to maternity leave of (60) sixty days, according to the\nfollowing:\na. The first forty-five (45) days with full pay.\nb. The following fifteen (15) days with half pay.\n2. The female Worker may, after using her maternity leave, be absent work without pay for\na period not exceeding forty-five (45) consecutive or intermittent days, if such absence is\ndue to an illness suffered by her or her child as a result of pregnancy or childbirth and that\ndoes not enable her to return to her work. Said illness shall be proven by a medical\ncertificate issued by the Medical Authority, and this period shall not be included in the\nperiod of service for which the female Worker is entitled to the end of service gratui ty or\nthe period of contribution to the retirement system in accordance with the legislation in\nforce in this regard.\n3. The female Worker is entitled to the maternity leave stated in Clause (1) of this Article, if\nshe gives birth after six (6) months or more of pregnancy, whether the foetus is born dead\nor born alive then died.\n4. The female Worker, in the event that she gives birth to a sick or disabled child whose\nhealth condition requires a constant companion according to a medical report issued by\nthe Medical Authority, is entitled to a leave of thirty (30) days with full pay st arting after\nthe end of the maternity leave period, and she has the right to extend the leave for a period\nof thirty (30) days without pay.\n5. The Employer must grant the female Worker maternity leave whenever she requests it at\nany time, starting as of the last day of the month immediately preceding the month in\nwhich she is expected to give birth, and this shall be proven by a certificate from the\nMedical Authority.\n6. Obtaining the maternity leave or the absence referred to in this Article shall not prejudice\nher right to obtain other leaves.\n7. If the female Worker works for another Employer during the period of her leave\nauthorized in this article, the original Employer may deprive her of her wage for the period\nof the leave or recover what he paid to her.\n8. It is not permissible to terminate the service of a female Worker or to give her notice\nbecause of pregnancy, or because she has obtained maternity leave, or because she is\nabsent from work in accordance with the provisions of this Article.\n9. After returning from maternity leave and for a period not exceeding six (6) months as of\nthe date of giving birth, the female Worker is entitled to one or two rest periods per day to\nbreastfeed her child, provided that the period of both periods shall not exceed one hour.",
+    "pages": [
+     22,
+     23
+    ],
+    "chunks": [
+     "labour_law_2021-en-a030-p0",
+     "labour_law_2021-en-a030-p1"
+    ]
+   }
+  },
+  {
+   "n": 31,
+   "ar": {
+    "title": "الإجازة المرضية",
+    "text": "1. على العامل إذا أصيب بمرض غير ناش ئ عن إصابة عمل، أن يبلغ صاحب العمل أو من يمثله، عن مرضه،\nوذلك خلال مدة لا تزيد على ( 3.) ثلاثة أيام عمل، وأن يقدم تقريرًا طبيًّا عن حالته صادرًا عن الجهة الطبية\n2. لا يستحق العامل إجازة مرضية مدفوعة الأجر خلال فترة التجربة، ومع ذلك يجوز لصاحب العمل منحه\nإجازة مرضية بدون أجر، بناءً على تقرير طبي صادر عن الجهة الطبية يتضمن ضرورة منح الإجازة.\n3. ( للعامل بعد انتهاء فترة التجربة، إجازة مرضية لا تزيد مدتها على90 ) تسعين يومًا متصلة أو متقطعة عن\nكل سنة، على أن تحسب على النحو الآتي:\nأ. (15 ).خمسة عشر يومًا الأولى بأجر كامل\nب. (30.) ثلاثين يومًا التالية بنصف أجر\nج. المدة التي تلي ذلك بدون أجر.\n4. لا يُستحق الأجر عن الإجازة المرضية إذا كان المرض قد نشأ عن سوء سلوك العامل، وفق الحالات التي\nيصدر بتحديدها اللائحة التنفيذية لهذا المرسوم بقانون.\n5. لصاحب العمل إنهاء خدمة العامل بعد استنفاذ إجازته المرضية المشار إليها في هذه المادة، إذا تعذر عليه\nالعودة إلى عمله، على أن يتقاض ى العامل كافة مستحقاته المالية وفق أحكام هذا المرسوم بقانون ولائحته\nالتنفيذية.",
+    "pages": [
+     19,
+     19
+    ],
+    "chunks": [
+     "labour_law_2021-ar-a031-p0"
+    ]
+   },
+   "en": {
+    "title": "Sick Leave",
+    "text": "1. If the Worker suffers an illness that is not caused by a work injury, he must inform the\nEmployer or his representative of his illness, within a period not exceeding three (3)\nbusiness days and submit a medical report on his condition issued by the Medical\nAuthority.\n2. The Worker is not entitled to a paid sick leave during the Probation Period, but the\nEmployer may grant him a sick leave without pay, based on a medical report issued by the\nMedical Authority that includes the necessity of granting the leave.\n3. After the Probation Period, the Worker may receive a sick leave of no more than (90)\nninety consecutive or intermittent days per year, provided that it shall be calculated as\nfollows:\na. The first fifteen (15) days with full pay.\nb. The following thirty (30) days with half pay.\nc. The following period shall be unpaid.\n4. The sick leave shall not be paid if the illness is a result from the Worker's misconduct, in\naccordance with the cases specified in the Executive Regulation of this Decree by law.\n5. The Employer may terminate the Worker's service after completing his sick leave referred\nto in this article, if he is unable to return to work, provided that the Worker receives all his\nfinancial dues in accordance with the provisions of this Decree by law and its Executive\nRegulation.",
+    "pages": [
+     23,
+     24
+    ],
+    "chunks": [
+     "labour_law_2021-en-a031-p0"
+    ]
+   }
+  },
+  {
+   "n": 32,
+   "ar": {
+    "title": "إجازات متنوعة",
+    "text": "1. يستحق العامل إجازةبأجر وفق الحالات الآتية:\nأ. إجازة حداد لمدة (5() خمسة أيام، في حال وفاة الزوج أو الزوجة. و3 ) ثلاثة أيام في حال وفاة أي من الأم\nأو الأب أو أحد الأبناء أو الأخ أو الأخت أو أحد الأحفاد أو الجد أو الجدة، وذلك ابتداءً من تاريخ الوفاة.\nب. إجازة والدية لمدة (5) خمسة أيام عمل، للعامل (سواءً الأب أو الأم) الذي يرزق بمولود، لرعاية طفله،\nيستحقها بصورة متصلة أو متقطعة خلال مدة (6.) ستة أشهر من تاريخ ولادة الطفل\nج. أي إجازات أخرى يقررها مجلس الوزراء.\n2. ( يجوز منح العامل إجازة دراسية لمدة10 ) عشرة أيام عمل في السنة الواحدة، للعامل المنتسب أو المنتظم\nبالدراسة في إحدى المؤسسات التعليمية المعتمدة في الدولة، وذلك لأداء الاختبارات، شريطة ألا تقل مدة\nالخدمة لدى صاحب العمل عن سنتين.\n\n\n3. يستحق العامل المواطن إجازة تفرغ لأداء الخدمة الوطنية والاحتياطية بأجر، وفق التشريعات النافذة في\nالدولة.\n4. يشترط للحصول على الإجازات المشار إليها في هذه المادة، تقديم ما يثبت ذلك من الجهات المعنية.\n5. تحدد اللائحة التنفيذية الأحكام الخاصة بمنح وتنظيم الإجازات المشار إليها في هذه المادة.",
+    "pages": [
+     19,
+     20
+    ],
+    "chunks": [
+     "labour_law_2021-ar-a032-p0"
+    ]
+   },
+   "en": {
+    "title": "Various holidays",
+    "text": "1. The Worker is entitled to a paid leave in the following cases:\na. A mourning leave of five (5) days, in the event of the death of the spouse; and Three\n(3) days in the event of the death of the mother, father, son, brother, sister, grandson,\ngrandfather or grandmother, starting as of the date of death.\nb. Parental leave for a period of (5) five working days, for the Worker (whether the father\nor the mother) who has a child, to care for his child, to be enjoyed, continuously or\nintermittently, within a period of six (6) months as of the date of the child's birth.\nc. Any other leaves determined by the Cabinet.\n2. The Worker may be granted a study leave for a period of ten (10) business days per year,\nfor the Worker who is enrolled - by affiliation or regularly - in one of the educational\ninstitutions approved in the State, in order to perform the tests, provided th at the period\nof service with the Employer is not less than two years.\n3. The national Worker is entitled to a full -time leave to perform the national and reserve\nservice with pay, in accordance with the legislation in force in the State.\n4. In order to obtain the leaves referred to in this Article, a proof of the same must be\nprovided by the Concerned Authorities.\n5. The Executive Regulation shall determine the provisions for granting and organizing the\nleaves referred to in this Article.",
+    "pages": [
+     24,
+     24
+    ],
+    "chunks": [
+     "labour_law_2021-en-a032-p0"
+    ]
+   }
+  },
+  {
+   "n": 33,
+   "ar": {
+    "title": "الإجازة بدون أجر",
+    "text": "1. للعامل بعد موافقة صاااااااااااحب العمل، الحصااااااااااول على إجازة بدون أجر، غير المشااااااااااار إليها في هذا المرسااااااااااوم\nبقانون.\n2. لا تحسااااب الإجازة المشااااار إليها في هذه المادة، ضاااامن مدة خدمة العامل لدى صاااااحب العمل أو ضاااامن مدة\nالاشتراك في نظام التقاعد وفق التشريعات المعمول بها في هذا الشأن.",
+    "pages": [
+     20,
+     20
+    ],
+    "chunks": [
+     "labour_law_2021-ar-a033-p0"
+    ]
+   },
+   "en": {
+    "title": "Leave Without Pay",
+    "text": "1. The Worker may, upon the approval of the Employer, obtain leave without pay, other than\nthose referred to in this Decree by law.\n2. The leave referred to in this Article shall not be included in the Worker's period of service\nwith the Employer or within the period of contribution to the retirement system in\naccordance with the legislation in force in this regard.",
+    "pages": [
+     25,
+     25
+    ],
+    "chunks": [
+     "labour_law_2021-en-a033-p0"
+    ]
+   }
+  },
+  {
+   "n": 34,
+   "ar": {
+    "title": "الغياب بعد انتهاء الإجازة",
+    "text": "لا يستحق العامل الذي لا يعود مباشرة إلى عمله دون سبب مشروع عقب انتهاء إجازته، أجره عن مدة الغياب\nالتالية لانتهاء الإجازة.",
+    "pages": [
+     20,
+     20
+    ],
+    "chunks": [
+     "labour_law_2021-ar-a034-p0"
+    ]
+   },
+   "en": {
+    "title": "Absence After Leave",
+    "text": "The Worker who does not return directly to work without a legitimate reason after the end of\nhis leave shall not be entitled to his wage for the period of absence following the end of the\nleave.",
+    "pages": [
+     25,
+     25
+    ],
+    "chunks": [
+     "labour_law_2021-en-a034-p0"
+    ]
+   }
+  },
+  {
+   "n": 35,
+   "ar": {
+    "title": "سريان مدة الإنذار في حال إنهاء العقد خلال فترة الإجازة",
+    "text": "في حالة رغبة أي من طرفي عقد العمل، إنهاء العقد وفق أحكام هذا المرسوم بقانون ولائحته التنفيذية، وذلك\nخلال فترة وجود العامل في إجازة، فلا يبدأ سريان مدة الإنذار المتفق عليه في عقد العمل، إلا ابتداءً من اليوم\nالتالي المقرر لعودة العامل من الإجازة، ما لم يتفق الطرفان على خلاف ذلك.",
+    "pages": [
+     20,
+     21
+    ],
+    "chunks": [
+     "labour_law_2021-ar-a035-p0"
+    ]
+   },
+   "en": {
+    "title": "Effecting the Warning Period in the Event of Termination of the Contract",
+    "text": "During the Leave Period\nIn the event that either party to the employment contract desires to terminate the contract in\naccordance with the provisions of this Decree by law and its Executive Regulation, during the\nperiod of the Worker's leave, the period of warning agreed upon in the employment contract\nshall not start to take effect, except as of the day following the scheduled return of the Worker\nfrom leave, unless agreed otherwise by both parties.",
+    "pages": [
+     25,
+     25
+    ],
+    "chunks": [
+     "labour_law_2021-en-a035-p0"
+    ]
+   }
+  },
+  {
+   "n": 36,
+   "ar": {
+    "title": "الرعاية والسلامة والمهنية",
+    "text": "تلتزم المنشآت بالأحكام الواردة في القانون الاتحادي رقم (13 ) لسنة2020 بشأن الصحة العامة وكافة القرارات\nالصادرة تنفيذًا له، وأية تشريعات أخرى صادرة في ذات الشأن، وتحدد اللائحة التنفيذية لهذا المرسوم بقانون\nدور الوزارة والأحكام الخاصة بسلامة العمال ووقايتهم ورعايتهم الصحية.",
+    "pages": [
+     21,
+     21
+    ],
+    "chunks": [
+     "labour_law_2021-ar-a036-p0"
+    ]
+   },
+   "en": {
+    "title": "Occupational Care and Safety",
+    "text": "Establishments shall abide by the provisions contained in Federal Law No. (13) of 2020\nConcerning Public Health and all resolutions issued in implementation thereof, and any other\nlegislation issued in this regard. The Executive Regulation of this Decree b y law shall define\nthe role of the Ministry and the provisions relating to Workers' safety, protection and health\ncare.",
+    "pages": [
+     25,
+     26
+    ],
+    "chunks": [
+     "labour_law_2021-en-a036-p0"
+    ]
+   }
+  },
+  {
+   "n": 37,
+   "ar": {
+    "title": "التعويض عن إصابات العمل وأمراض المهنة",
+    "text": "1. تُحدد بقرار من مجلس الوزراء، بناءً على اقتراح الوزير وبالتنسيق مع الجهات المعنية، إصابات العمل\nوأمراض المهنة، والشروط والإجراءات التي يتعين اتباعها في حال حدوث أيًّا منها، والالتزامات المترتبة على\nصاحب العمل في هذا الشأن ومقدار التعويض المستحق للعامل حال العجز الكلي الدائم أو الجزئي الدائم،\nوالتعويض المستحق لعائلته حال وفاته وقواعد توزيعه ومقداره.\n2. يلتزم صاحب العمل في حالة إصابة العامل بإصابة عمل أو م رض مهني بما يأتي:\nأ. تحمل نفقات علاج العامل إلى أن يشفى ويكون قادرًا للعودة إلى العمل أو يثبت عجزه، وفق الشروط\nوالضوابط والإجراءات التي تحددها اللائحة التنفيذية لهذا المرسوم بقانون.\nب. إذا حالت إصابة العمل أو المرض المهني بين العامل وأداء عمله، وجب على صاحب العم ل أن يؤدي إلى\nالعامل ما يوازي أجره كاملاً طوال مدة العلاج أو مدة ( 6 ) ستة أشهر أيهما أقل، فإذا زادت مدة العلاج\nعلى (6( ) ستة أشهر، يصرف له نصف الأجر وذلك لمدة 6 ) ستة أشهر أخرى أو حتى يتم شفاء العامل أو\nيثبت عجزه أو وفاته أيهما أقرب.\n3. لمإذا أدت إصابة العمل أو ارض المهني إلى وفاة العامل، استحق أسرة المتوفي تعويضًا مساويًّا لأجر العامل\nالأساس ي عن فترة مقدارها (24( ) أربعًا وعشرون شهرًا على ألا تقل قيمة التعويض عن 18.000 ) ثمانية عشر\nألف درهم وألا تزيد على (200.000) مائتين ألف درهم، وتحسب قيمة التعويض وفق الأجر الأساس ي الذي\nكان يتقاضاه العامل قبل وفاته ويوزع التعويض على المستحقين عن العامل المتوفي وفق ما تحدده اللائحة\nالتنفيذية لهذا المرسوم بقانون، مع الحفاظ على حقوق أسرة المتوفي من مكافأة نهاية الخدمة، وأي\nمستحقات مالية أخرى يستحقها العامل.",
+    "pages": [
+     21,
+     22
+    ],
+    "chunks": [
+     "labour_law_2021-ar-a037-p0"
+    ]
+   },
+   "en": {
+    "title": "Compensation for Work Injuries and Occupational Illness",
+    "text": "1. A Cabinet resolution shall be issued, upon a proposal by the Minister and in coordination\nwith the Concerned Authorities, to specify work injuries and occupational illness, the\nconditions and procedures to be followed in the event of any of them occurring, the\nEmployer's obligations in this regard, the amount of compensation due to the Worker in\nthe event of total permanent or partial permanent disability, the compensation due to his\nfamily in the event of his death, and the rules for its distribution and the amount thereof.\n2. In the event that the Worker suffers a work injury or an occupational illness, the Employer\nshall commit to do the following:\na. Bear the expenses of the Worker's treatment until he is cured and is able to return to\nwork or proven to be disabled, in accordance with the conditions, controls and\nprocedures specified in the Executive Regulation of this Decree by law.\nb. If a work injury or occupational illness prevents the Worker from performing his work,\nthe Employer must pay the Worker the equivalent of his full wage for the duration of\nthe treatment or for a period of six (6) months, whichever is less. If the treatment\nperiod exceeds six (6) months, he shall be paid half the wage for another six (6)\nmonths, or until the Worker is cured, proven to be disabled, or dies, whichever is\ncomes first.\n3. If the work injury or occupational illness leads to the death of the Worker, the family of\nthe deceased shall be entitled to compensation equal to the basic wage of the Worker for\na period of twenty -four (24) months, provided that the value of the compensa tion shall\nnot be less than eighteen thousand (18,000) AED and not exceed two hundred thousand\n(200,000) AED. The value of the compensation shall be calculated according to the basic\nwage received by the Worker before his death, and the compensation shall be distributed\nto the beneficiaries of the deceased Worker as determined by the Executive Regulation of\nthis Decree by law, while preserving the rights of the family of the deceased from the end-\nof-service gratuity, and any other financial entitlements due to the Worker.",
+    "pages": [
+     26,
+     27
+    ],
+    "chunks": [
+     "labour_law_2021-en-a037-p0"
+    ]
+   }
+  },
+  {
+   "n": 38,
+   "ar": {
+    "title": "حالات عدم استحقاق العامل لتعويض إصابة العمل",
+    "text": "لا يستحق العامل تعويض إصابة العمل، إذا ثبت من خلال تحقيقات السلطات المختصة تحقق أي من\nالحالات الآتية:\n1. تعمد العامل إصابة نفسه لأي سبب.\n2. حدوث الإصابة تحت تأثير الخمر أو المخدرات أو غيرها من المؤثرات العقلية.\n3. حدوث الإصابة نتيجة مخالفة عمدية للتعليمات الوقائية المعلنة في أماكن ظاهرة في محل العمل، على\nالنحو الذي تحدده اللائحة التنفيذية لهذا المرسوم بقانون.\n4. حدوث الإصابة نتيجة سوء سلوك متعمد من جانب العامل.\n5. رفض العامل دون سبب جدي الكشف عليه أو اتباع العلاج الذي قررته الجهة الطبية.",
+    "pages": [
+     22,
+     22
+    ],
+    "chunks": [
+     "labour_law_2021-ar-a038-p0"
+    ]
+   },
+   "en": {
+    "title": "Cases Where the Worker Is Not Entitled to Work Injury Compensation",
+    "text": "The Worker shall not be entitled to compensation for a work injury, if it is proven through the\ninvestigations of the competent authorities that any of the following cases have been\nachieved:\n1. The Worker deliberately injured himself for any reason.\n2. The injury occurred under the influence of alcohol, narcotics, or other psychotropic\nsubstances.\n3. The injury occurred as a result of an intentional violation of the preventive instructions\ndisplayed in visible places in the workplace, as determined by the Executive Regulation of\nthis Decree by law.\n4. The injury occurred as a result of wilful misconduct on the part of the Worker.\n5. The Worker refused, without serious reason, to examine him or to follow the treatment\ndecided by the Medical Authority.",
+    "pages": [
+     27,
+     27
+    ],
+    "chunks": [
+     "labour_law_2021-en-a038-p0"
+    ]
+   }
+  },
+  {
+   "n": 39,
+   "ar": {
+    "title": "الجزاءات التأديبية",
+    "text": "1. لصاحب العمل أو من ينوب عنه أن يوقع على العامل المخالف لأحكام هذا المرسوم بقانون ولائحته\nالتنفيذية والقرارات الصادرة تنفيذًا له، أي من الجزاءات الآتية:\nأ. لفت النظر الخطي.\nب. الإنذار الخطي.\nج. الخصم من الأجر بما لا يجاوز أجر (5 ).خمسة أيام في الشهر\nد. الوقف عن العمل لمدة لا تزيد على ( 14.) أربعة عشر يومًا وعدم دفع أجر أيام الوقف\nه. الحرمان من العلاوة الدورية لمدة لا تزيد على سنة، وذلك بالنسبة للمنشآت التي تعتمد نظام العلاوات\nالدورية، وكان العامل مستحقًا لها وفق أحكام عقد العمل أو اللوائح التنظيمية للمنشأة.\nو. الحرمان من الترقية، في المنشآت التي يوجد بها نظام للترقية، لمدة لا تزيد على سنتين.\nز. الفصل من الخدمة مع حفظ حق العامل في مكافأة نهاية الخدمة.\n2. تحدد اللائحة التنفيذية الشروط والضوابط والإجراءات اللازمة لتوقيع أي من الجزاءات المشار إليها فيالبند\n(1.) من هذه المادة، وآلية التظلم منها",
+    "pages": [
+     22,
+     23
+    ],
+    "chunks": [
+     "labour_law_2021-ar-a039-p0"
+    ]
+   },
+   "en": {
+    "title": "Disciplinary Sanctions",
+    "text": "1. The Employer or his representative may impose any of the following sanctions on the\nWorker who violates the provisions of this Decree by law, its Executive Regulation and the\nresolutions issued in implementation thereof:\na. Written caution.\nb. Written warning.\nc. Deduction from the wage not exceeding the wages of five (5) days per month.\nd. Suspension from work for a period not exceeding fourteen (14) days, and non -\npayment of wages for the days of suspension.\ne. Deprivation of the periodic raise for a period not exceeding one year, for\nEstablishments that adopt the system of periodic raises, which the Worker is entitled\nto in accordance with the terms of the employment contract or the provisions of the\nEstablishment's organizational regulations.\nf. Deprivation from promotion, in Establishments where there is a promotion system,\nfor a period not exceeding two years.\ng. Dismissal from service while preserving the Worker's right to end-of-service gratuity.\n2. The Executive Regulation shall determine the conditions, controls, and procedures\nnecessary to impose any of the sanctions referred to in Clause (1) of this Article, and the\nmechanism for grievance against them.",
+    "pages": [
+     27,
+     28
+    ],
+    "chunks": [
+     "labour_law_2021-en-a039-p0"
+    ]
+   }
+  },
+  {
+   "n": 40,
+   "ar": {
+    "title": "الإيقاف المؤقت عن العمل",
+    "text": "1. ( لصاحب العمل إيقاف العامل مؤقتًا عن العمل لمدة لا تزيد على 30 ) ثلاثين يومًا، بهدف إجراء تحقيق\nتأديبي معه إذا اقتضت مصلحة التحقيق ذلك، مع وقف نصف الأجر خلال مدة الوقف، وإذا انتهى\nالتحقيق إلى الحفظ أو لعدم المخالفة أو مجازاة العامل بجزاء الإنذار، يصرف له ما تم إيقافه من الأجر\nخلال مدة الإيقاف.\n2. لصاحب العمل إيقاف العامل مؤقتًا عن العمل عند اتهامه بارتكاب جريمة من جرائم الاعتداء على النفس\nأو المال أو الجرائم الماسة بالشرف أو الأمانة، وذلك إلى حين صدور قرار نهائي من الجهة القضائية\nالمختصة، ويوقف أجره عن مدة الوق ف، فإذا صدر قرار بعدم تقديم العامل للمحاكمة أو قض ي ببراءته\nلعدم الجناية أو انتهى التحقيق إلى الحفظ لعدم كفاية الأدلة، وجب إعادته إلى عمله مع صرف كامل\nأجره الموقوف.",
+    "pages": [
+     23,
+     23
+    ],
+    "chunks": [
+     "labour_law_2021-ar-a040-p0"
+    ]
+   },
+   "en": {
+    "title": "Suspension of Work",
+    "text": "1. The Employer may suspend the Worker temporarily from work for a period not exceeding\nthirty (30) days, with the aim of conducting a disciplinary investigation with him if the\ninterest of the investigation so requires, with a suspension of half the wage during the\nsuspension period. If the investigation ends with being reserved, finding no violation, or\ngiving the Worker a warning sanction, the wage suspended during the suspension period\nshall be paid to him.\n2. The Employer may suspend the Worker temporarily when he is accused of committing a\ncrime of physical assault or robbery of property or other crimes such as the abuse of\nhonesty or breach of trust, until a final decision is issued by the competent judicial\nauthority, and his wage shall be suspended for the period of suspension. If a decision is\nissued to release the Worker from standing a trial or acquit him for non -felony, or if the\ninvestigation ends up being reserved due to insufficient evidence, he must be returned to\nwork with the full payment of his suspended wage.",
+    "pages": [
+     28,
+     28
+    ],
+    "chunks": [
+     "labour_law_2021-en-a040-p0"
+    ]
+   }
+  },
+  {
+   "n": 41,
+   "ar": {
+    "title": "بعض ضوابط توقيع الجزاءات التأديبية",
+    "text": "1. لا يجوز توقيع أي جزاء تأديبي على العامل لأمر ارتكبه خارج مكان العمل ما لم يكن متصلاً بالعمل.\n2. ( لا يجوز توقيع أكثر من جزاء تأديبي للمخالفة الواحدة، طبقًا لنص المادة 39.) من هذا المرسوم بقانون",
+    "pages": [
+     23,
+     23
+    ],
+    "chunks": [
+     "labour_law_2021-ar-a041-p0"
+    ]
+   },
+   "en": {
+    "title": "Certain Controls for Imposing Disciplinary Sanctions",
+    "text": "1. No disciplinary sanction may be imposed on the Worker for an act committed outside the\nworkplace unless it is related to work.\n2. It is not permissible to impose more than one disciplinary sanction for a single violation,\nin accordance with the provisions of Article (39) of this Decree by law.",
+    "pages": [
+     29,
+     29
+    ],
+    "chunks": [
+     "labour_law_2021-en-a041-p0"
+    ]
+   }
+  },
+  {
+   "n": 42,
+   "ar": {
+    "title": "حالات انتهاء عقد العمل",
+    "text": "ينتهي عقد العمل في أي من الحالات الآتية:\n1. اتفاق الطرفين كتابةً على إنهائه.\n2. انتهاء المدة المحددة في العقد، ما لم يمدد أو يجدد وفق أحكام هذا المرسوم بقانون\n3. بناءً على رغبة أحد الطرفين، شريطة التقيد بأحكام هذا المرسوم بقانون بشأن إنهاء عقد العمل، وفترة\nالإنذار المتفق عليها في العقد.\n4. وفاة صاحب العمل إذا كان موضوع العقد مرتبطًا بشخصه.\n5. وفاة العامل أو عجزه عن العمل عجزًا كليًّا دائمًا، ويثبت ذلك بموجب شهادة صادرة من الجهة الطبية.\n6. ( الحكم على العامل بحكم نهائي بعقوبة مقيدة للحرية مدة لا تقل عن 3.) ثلاثة أشهر\n7. إغلاق المنشأة نهائيًّا، وفقًا للتشريعات النافذة في الدولة.\n\n\n8. إفلاس صاحب العمل أو إعساره أو أية أسباب اقتصادية أو استثنائية تحول دون استمرار المشروع، وفق\nالشروط والضوابط والإجراءات التي تحددها اللائحة التنفيذية، والتشريعات النافذة في الدولة.\n9. عدم استيفاء العامل شروط تجديد تصريح العمل لأي سبب خارج عن إرادة صاحب العمل.",
+    "pages": [
+     23,
+     24
+    ],
+    "chunks": [
+     "labour_law_2021-ar-a042-p0"
+    ]
+   },
+   "en": {
+    "title": "Cases of Termination of the Employment Contract",
+    "text": "The employment contract shall be terminated in any of the following cases:\n1. If the parties agree in writing to terminate it.\n2. Upon the expiry of the period specified in the contract unless it is extended or renewed in\naccordance with the provisions of this Decree by law.\n3. At the request of one of the parties, provided that the provisions of this Decree by law\nregarding the termination of the employment contract and the warning period agreed\nupon in the contract are abided by.\n4. The death of the Employer if the subject of the contract is related to his person.\n5. The death of the Worker or his total permanent disability, as proven by a certificate issued\nby the Medical Authority.\n6. The Worker has been sentenced by a final judgment of imprisonment for a period not less\nthan three (3) months.\n7. The Establishment is closed permanently, in accordance with the legislation in force in the\nState.\n8. The bankruptcy or insolvency of the Employer or any economic or exceptional reasons\nthat prevent the continuation of the business, in accordance with the conditions, controls\nand procedures specified by the Executive Regulation and the legislation in force in the\nState.\n9. The Worker's failure to fulfil the conditions for renewing the work permit for any reason\nbeyond the control of the Employer.",
+    "pages": [
+     29,
+     29
+    ],
+    "chunks": [
+     "labour_law_2021-en-a042-p0"
+    ]
+   }
+  },
+  {
+   "n": 43,
+   "ar": {
+    "title": "إنذار إنها ء عقد العمل",
+    "text": "1. يجوز لأي من طرفي عقد العمل إنهاء العقد لأي سبب مشروع، شريطة إنذار الطرف الآخر كتابةً، والالتزام\nبالعمل خلال مدة الإنذار المتفق عليها في العقد، على ألا تقل المدة عن (30( ) ثلاثين يومًا، ولا تزيد على 90 )\nتسعين يومًا.\n2. يستمر عقد العمل طوال مدة الإنذار المشار إليها في هذه المادة، وينتهي بانتهاء المدة، ويستحق العامل أجره\nكاملاً عن تلك المدة وفق آخر أجر كان يتقاضاه، ويجب عليه أن يقوم بالعمل خلالها إذا طلب صاحب العمل\nمنه ذلك، ويجوز الاتفاق على الإعفاء من شرط الإنذار أو تخفي ض مدته مع الحفاظ على كامل حقوق\nالعامل عن فترة الإنذار المتفق عليها في عقد العمل، ويشترط أن تكون مدة الإنذار واحدة للطرفين ما لم تكن\nلصالح العامل.\n3. يجب على الطرف الذي لم يلتزم بفترة الإنذار أن يؤدي إلى الطرف الآخر تعويضًا يسمى بدل إنذار، ولو لم\nيترتب على عدم الإنذار ضرر للطرف الآخر، ويكون التعويض مساويًّا لأجر العامل عن مدة الإنذار كلها أو\nالجزء المتبقي منها.\n4. يحسب بدل الإنذار وفق آخر أجر كان يتقاضاه العامل لمن يتقاضون أجورهم بالشهر أو الأسبوع أو اليوم\nأو الساعة، ووفق متوسط الأجر اليومي المشار إليه في هذا المرسوم بقانون لمن يتقاضون أجورهم بالقطعة.\n5. إذا كان إنهاء عقد العمل من جانب صاحب العمل، فيحق للعامل أن يتغيب خلال مهلة الإنذار يوم عمل\nبدون أجر في الأسبوع، وذلك للبحث عن عمل آخر، ويجوز للعامل تحديد يوم الغياب بشرط أن يخطر\nصاحب العمل بذلك قبل (3) ثلاثة أيام على الأقل من يوم الغياب.",
+    "pages": [
+     24,
+     24
+    ],
+    "chunks": [
+     "labour_law_2021-ar-a043-p0"
+    ]
+   },
+   "en": {
+    "title": "Employment Contract Termination Warning",
+    "text": "1. Either party to the employment contract may terminate the contract for any legitimate\nreason, provided that the other party is notified in writing, and commits to work within\nthe warning period agreed upon in the contract, provided that the period is not less than\nthirty (30) days, and not more than ninety (90) days.\n2. The employment contract shall remain effective for the duration of the warning period\nreferred to in this Article, and end upon the expiry of the period, and the Worker shall be\nentitled to his full wage for that period according to the last wage received thereby, and\nhe must work during that period if the Employer asks him to do so. An agreement may be\nmade to exempt from the warning condition or reduce its duration while preserving all\nthe rights of the Worker for the warning period agreed upon in the employment contract.\nThe warning period must be the same for both parties unless it is in the interest of the\nWorker.\n3. The party who does not abide by the warning period must pay the other party a\ncompensation called a warning allowance, even if the failure to warn does not result in\nharm to the other party. Such compensation shall be equal to the Worker's wage for the\nentire warning period or the remaining part of it.\n4. The warning allowance shall be calculated according to the last wage received by the\nWorker for those who receive their wages by month, week, day or hour, and according to\nthe average daily wage referred to in this Decree by law for those who receive their wages\nby piece-meal.\n5. If the employment contract is terminated by the Employer, the Worker has the right to be\nabsent during the warning period for one unpaid working day per week, in order to search\nfor another job. The Worker may specify the day of absence provided that he in forms the\nemployer thereof at least (3) three days prior to the day of absence.",
+    "pages": [
+     30,
+     30
+    ],
+    "chunks": [
+     "labour_law_2021-en-a043-p0"
+    ]
+   }
+  },
+  {
+   "n": 44,
+   "ar": {
+    "title": "حالات فصل العامل دون إنذار",
+    "text": "لصاحب العمل فصل العامل دون إنذار، بعد إجراء تحقيق خطي معه، ويكون قرار الفصل كتابيًّا ومسببًا،\nويسلمه صاحب العمل أو من ينوب عنه إلى العامل في أي من الحالات الآتية:\n1. ثبوت انتحال العامل شخصية غيره، أو قدم شهادات أو مستندات مزورة.\n\n\n2. ارتكاب العامل خطأ نشأ عنه خسارة مادية جسيمة لصاحب العمل، أو تعمد العامل الإضرار بممتلكات\nصاحب العمل وإقراره بذلك، بشرط أن يبلغ الأخير الوزارة بالحادث خلال (7 ) سبعة أيام عمل من وقت\nعلمه بوقوع الحادث.\n3. مخالفة العامل تعليمات النظام الداخلي للمنشأة المتعلق بسلامة العمل والعمال أو مكان العمل، بشرط\nأن تكون مكتوبة ومعلقة في مكان ظاهر، وأن يكون العامل قد أحيط بها علمًا.\n4. عدم قيام العامل بواجباته الأساسية وفق عقد العمل، واستمرار الإخلال بها رغم إجراء تحقيق خطي معه\nلهذا السبب، والتنبيه عليه مرتين بالفصل إذا تكرر منه ذلك.\n5. إفشاء العامل سرًا من أسرار العمل المتعلقة بالملكية الصناعية أو الفكرية، نتج عنه إلحاق خسائر\nبصاحب العمل أو ضياع فرصة عليه أو جلب منفعة شخصية للعامل\n6. وجود العامل أثناء ساعات العمل في حالة سكر بين، أو متأثرًا بما تعاطاه منمادة مخدرة أو مؤثر عقلي،\nأو ارتكب فعلاً مخلاً بالآداب العامة في مكان العمل.\n7. اعتداء العامل أثناء العمل على صاحب العمل أو المدير المسؤول أو أحد رؤسائه أو زملائه في العمل بالقول\nأو الفعل أو أي شكل من أشكال الاعتداء المعاقب عليها بمقتض ى التشريعات النافذة في ال دولة.\n8. ( تغيب العامل دون سبب مشروع أو عذر يقبله صاحب العمل لأكثر من20 ) عشرين يومًا متقطعة خلال\nالسنة الواحدة، أو أكثر من ( 7.) سبعة أيام متتالية\n9. استغلال العامل مركزه الوظيفي بطريقة غير مشروعة للحصول على نتائج ومكاسب شخصية.\n10. التحاق العامل بالعمل لدى منشأة أخرى دون الالتزام بالضوابط والإجراءات المقررة في هذا الشأن.",
+    "pages": [
+     24,
+     25
+    ],
+    "chunks": [
+     "labour_law_2021-ar-a044-p0"
+    ]
+   },
+   "en": {
+    "title": "Cases of Dismissal of Worker Without Warning",
+    "text": "The Employer may dismiss the Worker without warning, after conducting a written\ninvestigation with him, and the decision to dismiss shall be in writing and reasoned, and the\nEmployer or his representative shall hand it to the Worker in any of the following cases:\n1. If it is proven that the Worker impersonates another person or has submitted false\ncertificates or documents.\n2. If the Worker makes a mistake that results in a grave material loss to the Employer, or if\nthe Worker deliberately harms the property of the Employer and acknowledges the same,\nprovided that the latter shall inform the Ministry of the incident within seven (7) business\ndays as of the time of his knowledge of the occurrence of the incident.\n3. If the Worker violates the instructions of the Establishment's internal system related to the\nsafety of work and Workers or the workplace, provided that they are written and displayed\nin a visible place, and that the Worker has been informed thereof.\n4. If the Worker fails to perform his basic duties according to the employment contract and\ncontinues to breach them despite conducting a written investigation with him for this\nreason and warning him twice of dismissal in case of repetition.\n5. If the Worker discloses any of the work secrets related to industrial or intellectual property,\nwhich results in losses to the Employer, missing an opportunity for the Employer or\ngaining a personal benefit to the Worker.\n6. If during working hours he is found drunk or under the influence of a narcotic or\npsychotropic substance or has committed an act contrary to public morals in the\nworkplace.\n7. If in the course of his work, the Worker commits, against the Employer, the manager or\nany of his superiors or colleagues, a verbal or physical assault or any other form of assault\npunishable under the laws in force in the State.\n8. If the Worker is absent from work without a legitimate reason or an excuse acceptable to\nthe Employer for more than twenty (20) non-consecutive days, or more than seven (7)\nconsecutive days.\n9. If the Worker illegally exploits his job position to obtain personal results and gains.\n10. If the Worker works for another Establishment without complying with the controls and\nprocedures established in this regard.",
+    "pages": [
+     31,
+     32
+    ],
+    "chunks": [
+     "labour_law_2021-en-a044-p0"
+    ]
+   }
+  },
+  {
+   "n": 45,
+   "ar": {
+    "title": "حالات ترك العامل العمل دون إنذار",
+    "text": "للعامل أن يترك العمل دون إنذار مع احتفاظه بحقوقه عند انتهاء الخدمة في أي من الحالات الآتية:\n1. إخلال صاحب العمل بالتزاماته تجاه العامل الواردة في العقد أو في هذا المرسوم بقانون أو القرارات\nالصادرة تنفيذًا له، شريطة أن يكون العامل قد أبلغ الوزارة قبل ( 14 ) أربعة عشر يوم عمل من تاريخ ترك\nالعمل، ودون قيام صاحب العمل بإزالة الآثار الناجمة عن هذا الإخلال رغم إخطاره من قبل الوزارة بذلك.\n2. ثبوت اعتداء صاحب العمل أو منيمثله قانونًا على العامل أو تعرضه لعنف أو تحرش خلال العمل،\nبشرط أن يبلغ السلطات المعنية والوزارة خلال (5.) خمسة أيام عمل من تاريخ تمكنه من الإبلاغ\n\n\n3. إذا كان في مقر العمل خطر جسيم يهدد سلامة العامل أو صحته، شريطة أن يكون صاحب العمل قد علم\nبوجوده، ولم يتخذ من الإجراءات ما يدل على إزالته، وتحدد اللائحة التنفيذية لهذا المرسوم بقانون\nضوابط الخطر الجسيم.\n4. تكليف صاحب العمل العامل بالقيام بعمل يختلف اختلافًا جوهريًّا عن العمل المتفق عليه بموجب عقد\nالعمل، دون موافقة العامل خطيًّا على ذلك، باستثناء حالات الضرورة وفق أح كام المادة (12 ) من هذا\nالمرسوم بقانون.",
+    "pages": [
+     25,
+     26
+    ],
+    "chunks": [
+     "labour_law_2021-ar-a045-p0"
+    ]
+   },
+   "en": {
+    "title": "Cases of Worker Leaving Work Without Warning",
+    "text": "The Worker may leave work without warning while retaining his rights upon termination of\nservice in any of the following cases:\n1. If the Employer breaches his obligations towards the Worker stipulated in the contract,\nthis Decree by law, or the resolutions issued in implementation thereof, provided that the\nWorker notifies the Ministry fourteen (14) business days prior to the date of leaving work,\nand that the E mployer has not removed the effects resulting from such breach although\nhe had been notified by the Ministry.\n2. If it is proven that the Employer or his legal representative has assaulted the Worker or\nsubjected him to violence or harassment during work, provided that he informs the\nconcerned authorities and the Ministry within five (5) business days as of the date he is\nable to report.\n3. If there is a grave danger in the workplace that threatens the safety or health of the Worker,\nprovided that the Employer has known of its existence, and has not taken measures that\nindicate its removal. The Executive Regulations of this Decree by law shal l specify the\ncontrols for grave danger.\n4. If the Employer assigns the Worker to perform work that is fundamentally different from\nthe work agreed upon under the employment contract, without the Worker's written\nconsent, except in cases of necessity in accordance with the provisions of Article (12) of\nthis Decree by law.",
+    "pages": [
+     32,
+     32
+    ],
+    "chunks": [
+     "labour_law_2021-en-a045-p0"
+    ]
+   }
+  },
+  {
+   "n": 46,
+   "ar": {
+    "title": "إنهاء الخدمة لعدم اللياقة الصحية",
+    "text": "لا يجوز لصاااااااااااحب العمل إنهاء خدمة العامل لعدم لياقته الصااااااااااحية، قبل اسااااااااااتنفاذه الإجازات المسااااااااااتحقة له\nقانونًا، ويقع باطلاً كل اتفاق على خلاف ذلك، ولو كان مبرمًا قبل العمل بأحكام هذا المرسوم بقانون.",
+    "pages": [
+     26,
+     26
+    ],
+    "chunks": [
+     "labour_law_2021-ar-a046-p0"
+    ]
+   },
+   "en": {
+    "title": "Termination of service due to medical unfitness",
+    "text": "The Employer may not terminate the Worker's service for lack of health fitness, before he has\ncompleted the leaves legally entitled to him, and any agreement to the contrary shall be void,\neven if it has been concluded before the provisions of this Decree by law come into force.",
+    "pages": [
+     32,
+     33
+    ],
+    "chunks": [
+     "labour_law_2021-en-a046-p0"
+    ]
+   }
+  },
+  {
+   "n": 47,
+   "ar": {
+    "title": "الإنهاء غير المشروع لخدمة العامل",
+    "text": "1. يعد إنهاء خدمة العامل من قبل صاحب العمل غير مشروع إذا كان إنهاء خدمة العامل بسبب تقدمه\nبشكوى جدية إلى الوزارة أو إقامة دعوى على صاحب العمل ثبت صحتها.\n2. يلتزم صاحب العمل بدفع تعويض عادل للعامل تق دره المحكمة المختصة، إذا ثبت أن الفصل غير مشروع\nطبقًا للبند ( 1 ) من هذه المادة، ويحدد مقدار التعويض بمراعاة نوع العمل ومقدار الضرر الذي لحق\nبالعامل ومدة خدمته، ويشترط في جميع الأحوال ألا يزيد مبلغ التعويض على أجر العامل لمدة ( 3 ) ثلاثة\nأشهر تحسب وفق آخر أجر كان يتقاضاه.\n3. ( لا تخل أحكام البند2 ) من هذه المادة بحق العامل في بدل الإنذار ومكافأة نهاية الخدمة المستحقة له وفق\nأحكام هذا المرسوم بقانون.",
+    "pages": [
+     26,
+     26
+    ],
+    "chunks": [
+     "labour_law_2021-ar-a047-p0"
+    ]
+   },
+   "en": {
+    "title": "Unlawful Termination of Worker's Service",
+    "text": "1. The termination of the Worker's service by the Employer shall be unlawful if the\ntermination of the Worker's service is due to his filing a serious complaint to the Ministry\nor filing a case against the Employer that has been proven to be true.\n2. The Employer is obligated to pay a fair compensation to the Worker estimated by the\ncompetent court, if it is proven that the dismissal is unlawful in accordance with Clause\n(1) of this Article. The amount of compensation shall be determined taking into ac count\nthe kind of work, the amount of damage incurred by the Worker and the duration of his\nservice. In all cases, the amount of compensation must not exceed the wage of the Worker\nfor a period of three (3) months, calculated according to the last wage received thereby.\n3. The provisions of Clause (2) of this Article shall not prejudice the right of the Worker to\nthe warning allowance and the end-of-service gratuity entitled thereto in accordance with\nthe provisions of this Decree by law.",
+    "pages": [
+     33,
+     33
+    ],
+    "chunks": [
+     "labour_law_2021-en-a047-p0"
+    ]
+   }
+  },
+  {
+   "n": 48,
+   "ar": {
+    "title": "استمرارية عقود العمل",
+    "text": "تستمر عقود العمل السارية وقت حدوث تغيير في شكل المنشأة أو مركزها القانوني، ويكون صاحب العمل\nالجديد مسؤولاً عن تنفيذ أحكام تلك العقود، بالإضافة إلى تنفيذ أحكام هذا المرسوم بقانون ولائحته\nالتنفيذية والقرارات الصادرة تنفيذًا له، وذلك من تاريخ تعديل بيانات المنشأة لدى الجهات المختصة.",
+    "pages": [
+     26,
+     27
+    ],
+    "chunks": [
+     "labour_law_2021-ar-a048-p0"
+    ]
+   },
+   "en": {
+    "title": "Continuity of Employment Contracts",
+    "text": "Employment contracts in force at the time of a change in the form or legal status of the\nEstablishment shall remain effective, and the new Employer shall be responsible for\nimplementing the terms of those contracts, in addition to implementing the provisions of this\nDecree by law and its Executive Regulation and the resolutions issued in implementation\nthereof, as of the date of amending the Establishment's data with the Competent Authorities.",
+    "pages": [
+     33,
+     33
+    ],
+    "chunks": [
+     "labour_law_2021-en-a048-p0"
+    ]
+   }
+  },
+  {
+   "n": 49,
+   "ar": {
+    "title": "انتقال العامل بعد انتهاء عقد العمل",
+    "text": "للعامل في حال انتهاء عقد العمل وفق أحكام هذا المرساااااااااااااوم بقانون، الانتقال للعمل لدى صااااااااااااااحب عمل آخر\nوفق الشروط والإجراءات التي تحددها اللائحة التنفيذية لهذا المرسوم بقانون.",
+    "pages": [
+     27,
+     27
+    ],
+    "chunks": [
+     "labour_law_2021-ar-a049-p0"
+    ]
+   },
+   "en": {
+    "title": "Transfer of Worker After End of the Employment Contract",
+    "text": "In the event of the end of the employment contract in accordance with the provisions of this\nDecree by law, the Worker may move to work for another Employer in accordance with the\nconditions and procedures specified in the Executive Regulation of this Decree by law.",
+    "pages": [
+     33,
+     34
+    ],
+    "chunks": [
+     "labour_law_2021-en-a049-p0"
+    ]
+   }
+  },
+  {
+   "n": 50,
+   "ar": {
+    "title": "الانقطاع غير المشروع عن العمل",
+    "text": "1. إذا انقطع العامل الأجنبي عن العمل، لسبب غير مشروع قبل نهاية مدة العقد، فلا يمنح تصريح عمل آخر\nللالتحاق بعمل آخر في الدولة وفق أحكام هذا المرسوم بقانون، لمدة سنة من تاريخ الانقطاع عن العمل،\nكما لا يجوز لأي صاحب عمل آخر يعلم بذلك أن يستخدمه أو يبقيه في خدمته خلال تلك المدة.\n2. ( للوزارة استثناء بعض الفئات الوظيفية، أو المستويات المهارية، أو العمالة من حكم البند1 ) من هذه\nالمادة، وفق الضوابط والإجراءات التي تحددها اللائحة التنفيذية لهذا المرسوم بقانون.\n3. لإعلى صاحب العمل إخطار الوزارة بواقعة الانقطاع عن العمل وفق ا جراءات التي تحددها اللائحة\nالتنفيذية لهذا المرسوم بقانون.",
+    "pages": [
+     27,
+     27
+    ],
+    "chunks": [
+     "labour_law_2021-ar-a050-p0"
+    ]
+   },
+   "en": {
+    "title": "Unlawful Absence from Work",
+    "text": "1. If the foreign Worker is absent from work, for no legitimate reason, before the end of the\ncontract period, no other work permit shall be granted thereto to join other work in the\nState in accordance with the provisions of this Decree by law, for a period of one year as\nof the date of the absence from work. Also, no other Employer who knows of the foregoing\nmay employ him or keep him in his service during that period.\n2. The Ministry may exempt some job categories, skill levels, or labor from the provisions of\nClause (1) of this Article, in accordance with the controls and procedures specified by the\nExecutive Regulation of this Decree by law.\n3. The Employer shall notify the Ministry of the incident of absence from work in accordance\nwith the procedures specified in the Executive Regulation of this Decree by law.",
+    "pages": [
+     34,
+     34
+    ],
+    "chunks": [
+     "labour_law_2021-en-a050-p0"
+    ]
+   }
+  },
+  {
+   "n": 51,
+   "ar": {
+    "title": "مكافأة نهاية الخدمة للعاملين بنمط الدوام الكامل",
+    "text": "1. يستحق العامل المواطن مكافأة نهاية الخدمة عند انتهاء خدمته وذلك وفقًا للتشريعات المنظمة للمعاشات\nوالتأمينات الاجتماعية السارية في الدولة.\n2. يستحق العامل الأجنبي الذي يعمل وفق نمط العمل بالدوام الكامل، والذي أكمل سنة أو أكثر في الخدمة\nالمستمرة مكافأة نهاية الخدمة عند انتهاء خدمته، تحسب وفق الأجر الأساس ي، وذلك على النحو الآتي:\nأ. أجر (21.) واحد وعشرين يوم عن كل سنة من سنوات الخدمة الخمس الأولى\nب. أجر (30.) ثلاثين يوم عن كل سنة مما زاد على ذلك\n3. يستحق العامل الأجنبي مكافأة عن أجزاء السنة بنسبة ما قضاه منها في العمل بشرط أن يكون قد أكمل\nسنة من الخدمة المستمرة.\n4. لا تدخل أيام الانقطاع عن العمل بدون أجر في حساب مدة الخدمة.\n5. مع عدم الإخلال بما تقرره التشريعات بشأن منح معاشات أو مكافآت تقاعد للعاملين في بعض المنشآت،\nتُحسب مكافأة نهاية الخدمة وفق آخر أجر أساس ي كان يستحقه العامل الأجنبي بالنسبة إلى من يتقاضون\n\n\nأجورهم بالشهر أو بالأسبوع أو باليوم ووفق متوسط الأجر اليومي المنصوص عليه في أحكام هذا المرسوم\nبقانون لمن يتقاضون أجورهم بالقطعة.\n6. يشترط فيما تقدم ألا تزيد مكافأة نهاية الخدمة للعامل الأجنبي في مجموعها عن أجر سنتين.\n7. لصاحب العمل أن يقتطع من مكافأة نهاية الخدمة، أي مبالغ تكون مستحقة قانونًا أو بحكم قضائي،\nوفق الشروط والإجراءات التي تحددها اللائحة التنفيذية لهذا المرسوم بقانو ن.\n8. لمجلس الوزراء، بناءً على اقتراح الوزير وبعد التنسيق مع الجهات المعنية، إقرار أنظمة أخرى بديلة لنظام\nمكافأة نهاية الخدمة، ويحدد القرار الصادر منه، شروط وضوابط وآلية الاشتراك في هذه الأنظمة.",
+    "pages": [
+     27,
+     28
+    ],
+    "chunks": [
+     "labour_law_2021-ar-a051-p0"
+    ]
+   },
+   "en": {
+    "title": "End-of-Service Gratuity for Full-Time Workers",
+    "text": "1. The national Worker is entitled to an end -of-service gratuity upon the end of his service,\nin accordance with the legislation regulating pensions and social security in force in the\nState.\n2. The foreign full-time Worker, who has completed one or more years of continuous service,\nis entitled to an end -of-service gratuity upon the end of his service, calculated according\nto the basic wage, as follows:\na. The wage of twenty-one (21) days for each year of the first five years of service.\nb. The wage of thirty (30) days for each year in excess of that.\n3. The foreign Worker is entitled to a bonus for parts of the year in proportion to the amount\nspent in work, provided that he has completed one year of continuous service.\n4. The days of absence from work without pay shall not be included in the calculation of the\nduration of service.\n5. Without prejudice to what is decided by legislation regarding the granting of pensions or\nretirement benefits to Workers in some Establishments, the end -of-service gratuity shall\nbe calculated according to the last basic wage received by the foreign Worker , for those\nwho receive their wages by month, week, or day, and according to the average daily wage\nstipulated in the provisions of this Decree by law for those who receive their wages by\npiece-meal.\n6. The foregoing is provided that the total end-of-service gratuity for the foreign Worker does\nnot exceed two years' wage.\n7. The Employer may deduct from the end -of-service gratuity any amounts that are due by\nlaw or by a judgment, in accordance with the conditions and procedures specified by the\nExecutive Regulation of this Decree by law.\n8. The Cabinet may, upon the proposal of the Minister and after coordination with the\nConcerned Authorities, approve other alternative systems for the end -of-service gratuity\nsystem, and the decision issued thereby shall specify the conditions, controls and\nmechanism of contribution to these systems.",
+    "pages": [
+     34,
+     35
+    ],
+    "chunks": [
+     "labour_law_2021-en-a051-p0"
+    ]
+   }
+  },
+  {
+   "n": 52,
+   "ar": {
+    "title": "مكافأة نهاية الخدمة للعاملين بأنماطالعمل الأخرى",
+    "text": "تحدد اللائحة التنفيذية لهذا المرسوم بقانون آلية تنظيم مكافأة نهاية الخدمة للعاملين الأجانب بأنماط العمل\nالأخرى غير نمط العمل بالدوام الكامل، على النحو الذي يعزز من كفاءة وجاذبية سوق العمل، وما تقتضيه\nمصلحة طرفي عقد العمل.",
+    "pages": [
+     28,
+     28
+    ],
+    "chunks": [
+     "labour_law_2021-ar-a052-p0"
+    ]
+   },
+   "en": {
+    "title": "End-of-Service Gratuity for Workers of Other Types of Work",
+    "text": "The Executive Regulation of this Decree by law shall define the mechanism for regulating the\nend-of-service gratuity for foreign Workers in work types other than full -time, in a manner\nthat enhances the efficiency and attractiveness of the labor market, and what the interests of\nboth parties to the employment contract require.",
+    "pages": [
+     35,
+     35
+    ],
+    "chunks": [
+     "labour_law_2021-en-a052-p0"
+    ]
+   }
+  },
+  {
+   "n": 53,
+   "ar": {
+    "title": "سداد مستحقات العامل حين انتهاء العقد",
+    "text": "على صاحب العمل أن يؤدي للعامل خلال ( 14 ) أربعة عشر يومًا من تاريخ انتهاء العقد، أجوره وجميع\nمستحقاته الأخرى التي ينص عليها هذا المرسوم بقانون والقرارات الصادرة تنفيذًا له أو العقد أو نظام المنشأة.",
+    "pages": [
+     28,
+     28
+    ],
+    "chunks": [
+     "labour_law_2021-ar-a053-p0"
+    ]
+   },
+   "en": {
+    "title": "Payment of Worker's Entitlement at the End of the Contract",
+    "text": "The Employer shall pay the Worker, within fourteen (14) days as of the date of the end of the\ncontract, his wages and all other entitlements stipulated in this Decree by law and the\nresolutions issued in implementation thereof, the contract or the Establishment's Articles of\nAssociation.",
+    "pages": [
+     35,
+     36
+    ],
+    "chunks": [
+     "labour_law_2021-en-a053-p0"
+    ]
+   }
+  },
+  {
+   "n": 54,
+   "ar": {
+    "title": "منازعات العملالفردية",
+    "text": "1. إذا تنازع صاحب العمل أو العامل أو أي مستحق عنهما في أي حق من الحقوق المترتبة لأي منهما بمقتض ى\nأحكام هذا المرسوم بقانون، عليه أن يُ قدم طلباً بذلك إلى الوزارة والتي تقوم ببحث الطلب واتخاذ ما تراه\nلازماً لتسوية النزاع بينهما ودياً .\n2. تتولى ا لوزارة الفصل في المنازعة بقرار متى كانت قيمة المطالبة موضوع النزاع لا تجاوز مبلغ ( 50,000)\nخمسين ألف درهم، أو متى كانت المنازعة بشأن عدم التزام أي من طرفيها بقرار التسوية الودية السابق\nصدوره في موضوعه ا من ق بل الوزارة وبغض النظر عن قيمة المطالبة.\n\n\n3. ( يكون قرار الوزارة الصادر بالفصل في المنازعة وفقاً لصلاحياتها المنصوص عليها في البند رقم 2 ) من هذه\nالمادة في قوة السند التنفيذي، ويُمهر بالصيغة التنفيذية وفقاً للإجراءات المعتادة، ولأي طرف من طرفي\nالنزاع إقامة دعوى أمام المحكمة الابتدائية المختصة للنظر في موضوع النزاع وذلك خلال ( 15 ) خمسة\nعشر يوم عمل من تاريخ إخطاره بالقرار أو إعلانه به، وتُحدد المحكمة جلسة للنظر في الدعوى خلال ( 3 )\nثلاثة أيام عمل من تاريخقيد الدعوى ويعلن بها طرفا النزاع، وتفصل فيه خلال ( 30 ) ثلاثين يوم عمل من\nتاريخ قيد الدعوى لديها، ويكون الحكم الصادر من المحكمة الابتدائية المختصة في موضوع النزاع وفقاً\nلأحكام هذا البند حكماً انتهائياً، ويترتب على إقامة الدعوى وقف تنفيذ قرار الوزارة المشار إليه في هذا البند .\n4. على الوزارة، في حال تعذر التسوية الودّية خلال المدة التي تُ حددها اللائحة التنفيذية لهذا المرسوم بقانون،\nوفي غير الأحوال المنصوص عليها في البند رقم (2 ) من هذه المادة، إحالة النزاع إلى المحكمة المختصة وتكون\nالإحالة مصحوبة بمذكرة تتضمن ملخصاً للنزاع وحُ ج ج الطرفين وتوصية الوزارة.\n5. يجوز للوزارة خلال سريان النزاع إلزام صاحب العمل باستمرار دفع أجر العامل لمدة (2 ) شهرين بحد\nأقص ى، إذا تسبب النزاع بإيقاف صرف أجر العامل، ووفق اللائحة التنفيذية لهذا المرسوم بقانون.\n6. يجوز بقرار من الوزير، فرض إجراءات أو تدابير إدارية أخرى على المنشأة، لتجنب أن يؤدي النزاع الفردي\nالقائم إلى حدو ث نزاع عمالي جماعي يضر بالمصلحة العامة.\n7. على المحكمة الابتدائية المختصة خلال ( 3) ثلاثة أيام عمل من تاريخ استلام الطلب ، أن تقوم بتحديد\nجلسة لنظر الدعوى ويُ علن بها طرفا النزاع، وتفصل فيها على وجه السرعة.\n8. لا تُقبل الدعوى المقامة من أي طرف في منازعة من المنازعات المشار إليها في هذه المادة أمام المحكمة\nالابتدائية المختصة دون مراعاة أو إتباع أي من الإجراءات والمواعيد المنصوص عليها في هذه المادة.\n9. لا تسمع الدعوى عن أي حق من الحقوق المترتبة بمقتض ى أحكام هذا المرسوم بقانون بعد مرورسنتين\nمن تاريخ انتهاء علاقة العمل.",
+    "pages": [
+     28,
+     29
+    ],
+    "chunks": [
+     "labour_law_2021-ar-a054-p0"
+    ]
+   },
+   "en": {
+    "title": "Individual Labor Disputes",
+    "text": "1. If the Employer, Worker or any beneficiary thereof disputes concerning any of the\nrights entitled to any of them pursuant to the provisions of this Law by Decree, he shall\napply to the Ministry that shall examine the application and take whatever is consid-\nered necessary for amicable settlement of dispute.\n2. The Ministry shall resolve the dispute by a resolution whenever the value of the claim\nsubject to the dispute does not exceed the amount of (50,000) fifty thousand AED, or\nwhenever the dispute concerns the failure of either party to comply with the amicable\nsettlement resolution previously issued on the subject by the Ministry, regardless of\nthe value of the claim.\n3. The Ministry resolution to settle the dispute in accordance with its powers stipulated\nin Clause No. (2) of this Article shall have the force of executive instrument, and it shall\nbe stamped with the executive enforcement in accordance with the normal proc e-\ndures. Any party to the dispute may file a case before the Competent Court of First\nInstance to consider the subject of the dispute within (15) fifteen working days from\nthe date of notice or announcement of the resolution. The Court shall set a session t o\nconsider the case within (3) three working days from the date of filing the case. The\ntwo parties to the dispute shall be informed thereof. It shall decide on it within (30)\nthirty working days from the date of filing the case. The judgment issued by the Com-\npetent Court of First Instance on the subject of the dispute in accordance with the pro-\nvisions of this clause shall be a final judgment. Filing the case shall result in the sus-\npension of the implementation of the Ministry resolution referred to in this clause.\n4. If amicable settlement is not possible within the period specified by the Executive Reg-\nulation of this Law by Decree, in cases other than those stipulated in Clause No. (2) of\nthis Article, the Ministry shall refer the dispute to the Competent Court, and the referral\nshall be accompanied by a memorandum containing a summary of the dispute, the\narguments of both parties and the Ministry recommendation.\n5. During the course of the dispute, the Ministry may oblige the Employer to continue\npaying the worker wages for a maximum period of (2) months. If the dispute results in\nthe worker salary being suspended, in accordance with the Executive Regulations of\nthis Law by Decree.\n6. The Minister may issue a resolution to impose other administrative procedures or\nmeasures on the Establishment, to avoid that the current individual dispute may lead\nto a collective labor dispute that would harm the public interest.\n7. The Competent Court of First Instance shall, within three (3) business days as of the\ndate of receipt of the application, set a date for a session to consider the case, and a\nsummon to this effect shall be served upon both parties of the dispute and it sh all re-\nsolve the case promptly.\n8. A case filed by any party in any of the disputes referred to in this article before the\nCompetent Court of First Instance shall not be accepted without observing or follow-\ning any of the procedures and deadlines stipulated in this article.\n9. The case for any rights entitled under the provisions of this Law by Decree shall not be\nheard after the lapse of two years as of the date of work relation termination.",
+    "pages": [
+     36,
+     37
+    ],
+    "chunks": [
+     "labour_law_2021-en-a054-p0",
+     "labour_law_2021-en-a054-p1"
+    ]
+   }
+  },
+  {
+   "n": 55,
+   "ar": {
+    "title": "الإعفاء من الرسوم القضائية",
+    "text": "1. تُعفى الدعاوى العمالية من الرسوم القضائية في جميع مراحل التقاض ي والتنفيذ، والطلبات التي يرفعها\nالعمال أو ورثتهم والتي لا تزيد قيمتها على ( 100.000.) مائة ألف درهم\n2. لمجلس الوزراء-بناءً على اقتراح وزير العدل - تعديل القيمة المشار إليها في البند (1 ) من هذه المادة، بالزيادة\nأو النقصان متى اقتضت الحاجة ذلك.",
+    "pages": [
+     29,
+     30
+    ],
+    "chunks": [
+     "labour_law_2021-ar-a055-p0"
+    ]
+   },
+   "en": {
+    "title": "Exemption from Judicial Fees",
+    "text": "1. Labor lawsuits shall be exempted from judicial fees at all stages of litigation and execution,\nas well as the requests submitted by Workers or their heirs of which value does not exceed\none hundred thousand (100,000) AED.\n2. The Cabinet may - upon the proposal of the Minister of Justice - amend the value referred\nto in Clause (1) of this Article, by increase or decrease, whenever necessary.",
+    "pages": [
+     37,
+     37
+    ],
+    "chunks": [
+     "labour_law_2021-en-a055-p0"
+    ]
+   }
+  },
+  {
+   "n": 56,
+   "ar": {
+    "title": "منازعات العمل الجماعية",
+    "text": "1. إذا تنازع صاحب العمل وجميع عمال المنشأة أو فريق منهم، وتعذرت التسوية الودية، على صاحب العمل\nأو العمال التقدم بشكوى إلى الوزارة وفق الضوابط والإجراءات التي تحددها اللائحة التنفيذية لهذا\nالمرسوم بقانون.\n2. للوزير فرض إجراءات أو تدابير إدارية على المنشأة، لتجنب أن يؤدي النزاع الجماعي القائم إلى حدوث ما\nيضر بالمصلحة العامة.\n3. لمجلس الوزراء -بناءً على اقتراح الوزير - إنشاء لجنة أو أكثر تسمى (لجنة منازعات العمل الجماعية)، للنظر\nفي منازعات العمل الجماعية التي يتعذر على الوزارة تسويتها وديًّا، ويحدد القرار الصادر تشكيلها ومهامها\nونظام عملها وآلية إصدار قراراتها وتنفيذها، وغيرها من الأحكام المتعلقة بحسن سير العمل أمام اللجنة.",
+    "pages": [
+     30,
+     30
+    ],
+    "chunks": [
+     "labour_law_2021-ar-a056-p0"
+    ]
+   },
+   "en": {
+    "title": "Collective Labor Disputes",
+    "text": "1. If the Employer and all Workers of the Establishment or a group of them have a dispute,\nand an amicable settlement is not possible, the Employer or Workers must submit a\ncomplaint to the Ministry in accordance with the controls and procedures specified in the\nExecutive Regulation of this Decree by law.\n2. The Minister may impose administrative procedures or measures on the Establishment,\nto avoid that the existing collective dispute may harm the public interest.\n3. The Cabinet may - upon the proposal of the Minister - form one or more committees called\n(the Collective Labor Dispute Committee), to consider collective the labor disputes which\nthe Ministry is unable to settle amicably. The issued decision shall specify the formation,\ntasks, and system of work of such committees, the mechanism for issuing and\nimplementing their decisions, and other provisions related to the proper conduct of work\nbefore the committees.",
+    "pages": [
+     37,
+     38
+    ],
+    "chunks": [
+     "labour_law_2021-en-a056-p0"
+    ]
+   }
+  },
+  {
+   "n": 57,
+   "ar": {
+    "title": "تفتيش العمل",
+    "text": "1. يكون لموظفي الوزارة، الذين يصدر بتخويلهم قرار من وزير العدل بالاتفاق مع الوزير، صفة الضبطية\nالقضائية في إثبات ما يقع بالمخالفة لأحكام هذا المرسوم بقانون ولائحته التنفيذية والقرارات الصادرة\nتنفيذًا له، ويكون لهم حق دخول المنشآت ذات الصلة وضبط المخالفات وتح رير المحاضر اللازمة.\n2. تحدد اللائحة التنفيذية لهذا المرسوم بقانون إجراءات تفتيش العمل.\n\nالعقوبات",
+    "pages": [
+     30,
+     30
+    ],
+    "chunks": [
+     "labour_law_2021-ar-a057-p0"
+    ]
+   },
+   "en": {
+    "title": "Labor Inspection",
+    "text": "1. The Ministry's staff, who are authorized by a decision issued by the Minister of Justice in\nagreement with the Minister, shall have the capacity of judicial enforcement in proving\nwhat is in violation of the provisions of this Decree by law and its Executive Regulation\nand decisions issued in im plementation thereof. They shall have the right to enter the\nrelevant establishments, detect violations, and issue the necessary reports.\n2. The Executive Regulation of this Decree by law shall define labor inspection procedures.",
+    "pages": [
+     38,
+     38
+    ],
+    "chunks": [
+     "labour_law_2021-en-a057-p0"
+    ]
+   }
+  },
+  {
+   "n": 58,
+   "ar": {
+    "title": "",
+    "text": "لا يخل تطبيق العقوبات المنصوص عليها في هذا المرسوم بقانون بأي عقوبة أشد ينص عليها أي قانون آخر.",
+    "pages": [
+     30,
+     30
+    ],
+    "chunks": [
+     "labour_law_2021-ar-a058-p0"
+    ]
+   },
+   "en": {
+    "title": "Penalties",
+    "text": "The application of the penalties stipulated in this Decree by law shall not prejudice any\nseverer penalty stipulated by any other law.",
+    "pages": [
+     38,
+     38
+    ],
+    "chunks": [
+     "labour_law_2021-en-a058-p0"
+    ]
+   }
+  },
+  {
+   "n": 59,
+   "ar": {
+    "title": "",
+    "text": "( يعاقب بالغرامة التي لا تقل عن 20.000 )( عشرين ألف درهم ولا تزيد على100.000:) مائة ألف درهم، كل من\n1. قام بتقديم معلومات أو مستندات غير صحيحة بقصد استقدام أجنبي إلى الدولة للعمل فيها.\n\n\n2. عرقل أو منع أحد الموظفين المكلفين بتنفيذ أحكام هذا المرسوم بقانون ولائحته التنفيذية والقرارات\nالصادرة تنفيذًا له، أو حاول أو شرع في منعه من أداء وظيفته سواء باستعمال القوة أو العنف أو التهديد\nباستعمالها.\n3. أفش ى سرًا من أسرار العمل يكون قد أطلع عليه بحكم عمله كموظف عام مكلف بتنفيذ أحكام هذا\nالمرسوم بقانون ولائحته التنفيذية والقرارات الصادرة تنفيذًا له، ولو بعد تركه العمل .",
+    "pages": [
+     30,
+     31
+    ],
+    "chunks": [
+     "labour_law_2021-ar-a059-p0"
+    ]
+   },
+   "en": {
+    "title": "",
+    "text": "A fine not less than (20,000) AED and not exceeding (100,000) AED shall be imposed on any\nperson who:\n1. Provides incorrect information or documents with the intention of recruiting a foreigner\nto the State to work therein.\n2. Obstructs or prevents a Worker assigned to implement the provisions of this Decree by\nlaw and its Executive Regulation and the resolutions issued in implementation thereof or\nattempts or starts to attempt to prevent him from performing his job, whether by using\nforce, violence, or by threatening to use force or violence.\n3. Discloses a work secret that he has had access thereto by virtue of his work as a public\nservant charged with implementing the provisions of this Decree by law and its Executive\nRegulation and the resolutions issued in implementation thereof, even after leaving work.",
+    "pages": [
+     38,
+     39
+    ],
+    "chunks": [
+     "labour_law_2021-en-a059-p0"
+    ]
+   }
+  },
+  {
+   "n": 60,
+   "ar": {
+    "title": "",
+    "text": "1. يُعاقب بالغرامة التي لا تقل عن (100,000) مائة ألف درهم ولا تزيد على (1,000,000 ) مليوندرهم، كل\nمن:\nأ. استخدم عاملاً لم يصرح له بالعمل لديه.\nب. استقدم أو استخدم عاملاً ، وتركه دون أن يعمل.\nج. استعمل تصاريح العمل في غير الغرض المخصص لإصدارها.\nد. أغلق منشأة أو أوقف نشاطها دون اتخاذ إجراءات تسوية حقوق العاملين، بالمخالفة لأحكام هذا\nالمرسوم بقانون ولائحته التنفيذية والقرارات الصادرة تنفيذاً لهما.\nه. قام بتشغيل حدث لديه بالمخالفة لأحكام هذا المرسوم بقانون .\nو. من وافق على تشغيل الحدث بالمخالفة لأحكام هذا المرسوم بقانون ممن له الولاية أو الوصاية على\nالحدث.\n2. يُعاقب بالغرامة التي لا تقل عن (100,000) مائة ألف درهم ولا تزيد على (1,000,000 ) مليوندرهم، كل\nصاحب عمل تحايل على أحكام القوانين أو اللوائح أو القرارات المنظمة لسوق العمل وقام بتعيين عامل أو\nأكثر لديه بشكل صوري، فإذا ترتب على ذلك حصول العامل على أي منفعة أو ميزة من أي وزارة أو مجلس\nأو صندوق أو هيئة أو أي جهة حكومية أخرى منحها القانون أو القرارات الصادرة عن مجلس الوزراء\nاختصاصاً أو أكثر بتنظيم سوق العمل أو بزيادة تنافسية الكوادر العاملة به أو ساعده على التهرب من\nالوفاء بالتزامات مقررة بموجب التشريعات، تحكم المحكمة على صاحب العمل برد قيمة الحوافز المالية\nالتي تم تقديمها للعامل، إلى أي من الجهات المشار إليها في هذا البند، ولا يجوز لصاحب العمل الرجوع على\nالعامل بالمطالبة بقيمة الحوافز المالية التي قام بسدادها لصالح أي من تلك الجهات، وتتعدد العقوبة\nالمنصوص عليها في هذا البند بتعدد العمال الذين تم تعيينهم بشكل صوري.\n3. ( لا يجوز تحريك الدعوى الجزائية بشأن الجريمة المنصوص عليها في البند2 لا) من هذه المادة إبطلب من\nالوزير أو من يفوضه.\n\n\n4. للوزارة إجراءالصلح بشأن الجريمة المنصوص عليها في البند ( 2 ) من هذه المادة بناءً على طلب صاحب\nالعمل قبل صدور حكم فيها، وذلك مقابل أداء مبلغ لا يقل عن (50%) من الحد الأدنى من قيمة الغرامة\nالمحددة لهذه الجريمة، بالإضافة لرد صاحب العمل كافة قيم الحوافز المالية التي تحصل عليها عماله\nالذين تم تعيينهم بشكل صوري، وتنقض ي الدعوى الجزائية بسداد مبلغ التصالح.",
+    "pages": [
+     31,
+     32
+    ],
+    "chunks": [
+     "labour_law_2021-ar-a060-p0"
+    ]
+   },
+   "en": {
+    "title": "",
+    "text": "1. A fine not less than on hundred thousand AED (100,000) and not exceeding two million\nAED (1,000,000) shall be imposed on any person who:\na. Employs a Worker with no permit to work for him.\nb. Recruits or employs a Worker, and leaves him unemployed.\nc. Uses work permits for purposes other than those for which they are issued.\nd. Closes an Establishment or suspends its activity without taking the procedures for set-\ntling the rights of Workers, in violation of the provisions of this Law by Decree, its Ex-\necutive Regulation and the resolutions issued in implementation thereof.\ne. Employs a juvenile in violation of the provisions of this Law by Decree.\nf. Agrees to employ a juvenile in violation of the provisions of this Law by Decree, who\nhas guardianship or custodianship over the juvenile.\n2. Any employer who circumvents the provisions of the laws, regulations or resolutions reg-\nulating the labor market and appoints one or more workers in a fictitious manner shall be\npunished by a fine of not less than AED (100,000) one hundred thousand and not more\nthan AED (1,000,000) one million. If this results in the worker obtaining any benefit or\nadvantage from any ministry, council, fund, authority or any other governmental body\nthat the law or resolutions issued by the Cabinet have granted one or more powers to reg-\nulate the labor market or increase the competitiveness of its working cadres, or helps him\nevade fulfilling obligations stipulated by the legislation, the Court shall order the Employer\nto return the value of the financial incentives provided to the worker to any of the entities\nreferred to in this clause. The Employer may not refer to the worker to claim the value of\nthe financial incentives that he paid to any of those entities. The penalty stipulated in this\nclause shall be multiplied by the number of workers who were appointed in a fictitious\nmanner.\n3. A criminal action may not be initiated concerning the crime stipulated in Clause (2) of this\nArticle except at the request of the Minister or his delegate.\n4. The Ministry may make a settlement concerning the crime stipulated in Clause (2) of this\nArticle based on the Employer request before a ruling is issued in it, in return for paying an\namount not less than (50%) of the minimum value of the fine specified fo r this crime, in\naddition to the Employer returning all the values of the financial incentives received by his\nworkers who were appointed in a fictitious manner. The criminal case shall expire upon\npayment of the settlement amount.",
+    "pages": [
+     39,
+     40
+    ],
+    "chunks": [
+     "labour_law_2021-en-a060-p0",
+     "labour_law_2021-en-a060-p1"
+    ]
+   }
+  },
+  {
+   "n": 61,
+   "ar": {
+    "title": "",
+    "text": "( يعاقب بالحبس مدة لا تقل عن سنة وبالغرامة التي لا تقل عن 200.000 ) مائتي ألف درهم ولا تزيد على\n(1.000.000 ) مليون درهم، أو بإحدى هاتين العقوبتين، كل من استغل أو أساء استخدام الصلاحيات\nالإلكترونية الممنوحة له في الدخول إلى أنظمة الوزارة أو مكن غيره من ذلك، مما ترتب عليه اختلال في إجراءات\nأو علاقات العمل.",
+    "pages": [
+     32,
+     32
+    ],
+    "chunks": [
+     "labour_law_2021-ar-a061-p0"
+    ]
+   },
+   "en": {
+    "title": "",
+    "text": "A penalty of imprisonment for a period not less than one year and/or a fine not less than two\nhundred thousand (200,000) AED and not exceeding one million (1,000,000) AED shall be\nimposed on any person who exploits or misuses the electronic powers granted thereto to\naccess the Ministry's systems, or enables others to do so, resulting in a disruption in the labor\nprocedures or relations.",
+    "pages": [
+     40,
+     40
+    ],
+    "chunks": [
+     "labour_law_2021-en-a061-p0"
+    ]
+   }
+  },
+  {
+   "n": 62,
+   "ar": {
+    "title": "",
+    "text": "تتعدد الغرامة المحكوم بها وفق أحكام هذا المرسوم بقانون بالنسبة إلى أصحاب العمل بتعدد العمال الذين\nوقعت في شأنهم المخالفة وبحد أقص ى (10.000.000 ).عشرة ملايين درهم",
+    "pages": [
+     32,
+     32
+    ],
+    "chunks": [
+     "labour_law_2021-ar-a062-p0"
+    ]
+   },
+   "en": {
+    "title": "",
+    "text": "The fine imposed in accordance with the provisions of this Decree by law shall be repeatedly\nimposed on Employers according to the number of Workers against whom the violation is\ncommitted, not exceeding ten million (10,000,000) AED.",
+    "pages": [
+     40,
+     40
+    ],
+    "chunks": [
+     "labour_law_2021-en-a062-p0"
+    ]
+   }
+  },
+  {
+   "n": 63,
+   "ar": {
+    "title": "",
+    "text": "( يعاقب بالغرامة التي لا تقل عن 5000( ) خمسة آلاف درهم ولا تزيد على1.000.000 ) مليون درهم كل من\nيخالف أي حكم آخر من أحكام هذا المرسوم بقانون ولائحته التنفيذية والقرارات الصادرة تنفيذًا له.",
+    "pages": [
+     32,
+     32
+    ],
+    "chunks": [
+     "labour_law_2021-ar-a063-p0"
+    ]
+   },
+   "en": {
+    "title": "",
+    "text": "A fine not less than five thousand (5,000) AED and not exceeding one million (1,000,000)\nAED shall be imposed on any person who violates any other provision of this Decree by law,\nits Executive Regulation and the resolutions issued in implementation thereof.",
+    "pages": [
+     40,
+     40
+    ],
+    "chunks": [
+     "labour_law_2021-en-a063-p0"
+    ]
+   }
+  },
+  {
+   "n": 64,
+   "ar": {
+    "title": "",
+    "text": "في حالة العودة إلىارتكاب أية مخالفة من المخالفات المشار إليها في هذا المرسوم بقانون ولائحته التنفيذية\nوالقرارات الصادرة تنفيذًا له، وذلك قبل مض ي سنة على سابقة الحكم على الفاعل في مخالفة مماثلة لها،\nيعاقب الفاعل بالحبس مع مضاعفة الغرامة المقررة في هذا المرسوم بقانون أو إحدى هاتين العقوبتين.\n\n\nأحكام ختامية",
+    "pages": [
+     32,
+     33
+    ],
+    "chunks": [
+     "labour_law_2021-ar-a064-p0"
+    ]
+   },
+   "en": {
+    "title": "",
+    "text": "In the event of repetition of any of the violations referred to in this Decree by law and its\nExecutive Regulation and resolutions issued in implementation of it, before the lapse of one\nyear as of the previous judgment against the perpetrator for a similar violation, the perpetrator\nshall be punished by imprisonment and/or double the fine stipulated in this Decree by law.",
+    "pages": [
+     41,
+     41
+    ],
+    "chunks": [
+     "labour_law_2021-en-a064-p0"
+    ]
+   }
+  },
+  {
+   "n": 65,
+   "ar": {
+    "title": "",
+    "text": "1. الحقوق المقررة في هذا المرسوم بقانون تمثل الحد الأدنى لحقوق العمال، ولا تخل أحكام هذاالمرسم (1 )\nبقانون بأي حق من الحقوق المقررة للعامل بموجب أي تشريع آخر أو اتفاق أو إقرار أو نظام أو عقد العمل،\nيرتب للعامل حقوقًا أكثر منفعة من الحقوق المقررة بموجب أحكام هذا المرسوم بقانون.\n2. لا يجوز لصاحب العمل أو العامل إساءة تطبيق أحكام هذا المرسوم بقانون ولائحته التنفيذية والقرارات\nالصادرة تنفيذًا لأحكامه، كما لا يجوز لأي منهما القيام بعمل من شأنه الضغط على حرية الآخر أو حرية\nعمال أو أصحاب عمل آخرين لتحقيق أي مصلحة أو وجهة نظر يتبناها مما يتنافى مع حرية العمل أو\nاختصاص الجهة المختصة بتسوية الخلافات.\n3. يعد باطلاً كل شرط يخالف أحكام هذا المرسوم بقانون، ولو كان سابقًا على نفاذه، ما لم يكن أكثر فائدة\nللعامل، ويقع باطلاً كل إبراء أو مصالحة أو تنازل عن الحقوق الناشئة للعامل بموجب هذا المرسوم بقانون،\nإن كان مخالفًا لأحكامه.\n4. لصاحب العمل استحداث وتطبيق برامج أو لوائح تنظيمية في المنشأة، تكون أكثر منفعة للعامل مما هو\nمقرر بموجب أحكام هذا المرسوم بقانون ولائحته التنفيذية، وإذا تعارضت هذه البرامج واللوائح مع أحكام\nهذا المرسوم بقانون، تطبق الشروط الأكثر منفعة للعامل.\n5. لا يجوز لصاحب العمل مراجعة بنود وشروط عقد العمل الساري نفاذه مع العامل قبل صدور هذا المرسوم\nبقانون، بهدف تطبيق أحكام هذا المرسوم بقانون، إلا إذا كانت تلك التعديلات تهدف إلى تحقيق فائد ة\nومنفعة أكبر للعامل، ويمكن تحديث عقد العمل بعد انتهاءه وفق أحكام هذا المرسوم بقانون.\n6. لصاحب العمل أو العامل إنهاء عقد العمل غير محدد المدة، المبرم قبل سريان هذا المرسوم بقانون، لسبب\nمشروع بعد إنذار الطرف الآخر كتابةً بمدة لا تقل عن ( 30) ثلاثين يومًا إذا كا نت مدة الخدمة أقل من (5 )\n( خمس سنوات، ومدة لا تقل عن 60( ) ستين يومًا إذا كانت مدة الخدمة تزيد على 5 ) خمس سنوات، ومدة\nلا تقل عن (90( ) تسعين يومًا إذا زادت مدة الخدمة عن 10.) عشر سنوات\n7. يكون للمبالغ المستحقة للعامل أو أفراد عائلته بمقتض ى أحكام هذا المرسوم بقانون، امتياز على جميع\nأموال صاحب العمل، وتُستوفى مباشرة بعد المبالغ المستحقة للخزانة العامة، والنفقة الشرعية المحكوم بها\nللزوجة والأولاد.",
+    "pages": [
+     33,
+     34
+    ],
+    "chunks": [
+     "labour_law_2021-ar-a065-p0"
+    ]
+   },
+   "en": {
+    "title": "Final Provisions",
+    "text": "1. The rights stipulated in this Decree by law represent the minimum rights for Workers, and\nthe provisions thereof shall not prejudice any of the rights granted to the Worker under\nany other legislation, agreement, acknowledgment, system, or employment contr act that\ngrants the Worker rights that are more beneficial than the rights established under the\nprovisions of this Decree by law.\n2. An Employer or Worker may not misapply the provisions of this Decree by law, its\nExecutive Regulation, and the resolutions issued in implementation thereof. Neither of\nthem may do any act that would pressure the freedom of the other or the freedom of other\nWorkers or Employers to achieve any interest or point of view adopted thereby, which is\nincompatible with the freedom of work or the competence of the authority competent to\nsettle disputes.\n3. Every condition that violates the provisions of this Decree by law, even if it is prior to its\nentry into force, shall be considered null unless it is more beneficial to the Worker; and\nevery release, reconciliation, or waiver of the rights arising to the Worker under this\nDecree by law shall be considered null, if it is in violation of its provisions.\n4. The Employer may create and implement organizational programmes or organizational\nregulations in the Establishment that are more beneficial to the Worker than what is\nestablished under the provisions of this Decree by law and its Executive Regulation. If such\nprogrammes and regulations conflict with the provisions of this Decree by law , the\nconditions that are more beneficial to the Worker shall apply.\n5. The Employer may not review the terms and conditions of the valid employment contract\nwith the Worker prior to the issuance of this Decree by law, with the aim of implementing\nthe provisions of this Decree by law, unless such amendments aim to achieve a greater\ninterest and benefit for the Worker. The employment contract may be updated upon its\nexpiry in accordance with the provisions of this Decree by law.\n6. The Employer or Worker may terminate the indefinite -term employment contract\nconcluded before the entry into force of this Decree by law, for a legitimate reason after\nnotifying the other party in writing for a period not less than thirty (30) days if the service\nperiod is less than five (5) years; a period not less than sixty (60) days if the service period\nis more than five (5) years; and a period not less than ninety (90) days if the service period\nis more than ten (10) years.\n7. The amounts of money entitled to the Worker or his family members under the provisions\nof this Decree by law shall have a priority over all the money of the Employer, and they\nshall be collected directly after the paying the amounts due to the public treasury and the\nlegal alimony awarded to the wife and children.",
+    "pages": [
+     41,
+     42
+    ],
+    "chunks": [
+     "labour_law_2021-en-a065-p0",
+     "labour_law_2021-en-a065-p1"
+    ]
+   }
+  },
+  {
+   "n": 66,
+   "ar": {
+    "title": "اللغة المعتمدة",
+    "text": "1. اللغة العربية هي اللغة المعتمدة في كافة السجلات والملفات والبيانات والنماذج، وغيرها مما هو منصوص\nعليه في هذا المرسوم بقانون ولائحته التنفيذية والقرارات الصادرة تنفيذًا له.\n2. يلتزم صاحب العمل باستخدام اللغة العربية في إبرام العقود مع العمال، وفي كتابة ونشر التعليمات\nوالتعاميم التي يكون ملزمًا بإصدارها، على أن تكون بجانب اللغة العربية لغة أخرى يفهمها العامل غير\nالناطق باللغة العربية، ويراعى أن يتطابق النص الذي باللغة الأخرى مع النص العربي، وفي حال الاختلاف\nيعتد بالنص العربي.",
+    "pages": [
+     34,
+     34
+    ],
+    "chunks": [
+     "labour_law_2021-ar-a066-p0"
+    ]
+   },
+   "en": {
+    "title": "Adopted Language",
+    "text": "1. Arabic shall be the language adopted in all records, files, data, forms, and others stipulated\nin this Decree by law, its Executive Regulation and the resolutions issued in\nimplementation thereof.\n2. The Employer is obligated to use Arabic in concluding contracts with Workers, and in\nwriting and publishing instructions and circulars that he is obligated to issue; provided\nthat, besides Arabic, another language understood by the non -Arabic speaking Worker\nshall be used, and the text in the other language shall match the Arabic text, and in the\nevent case of dispute, the Arabic text shall prevail.",
+    "pages": [
+     42,
+     42
+    ],
+    "chunks": [
+     "labour_law_2021-en-a066-p0"
+    ]
+   }
+  },
+  {
+   "n": 67,
+   "ar": {
+    "title": "حساب المدد والمواعيد",
+    "text": "يكون حساب المدد والمواعيد المنصوص عليها في هذا المرسوم بقانون بالتقويم الميلادي، وتعد السنة الميلادية\nفي تطبيق أحكام هذا المرسوم بقانون (365( ) ثلاثمائة وخمس وستون يومًا والشهر 30.) ثلاثون يومًا",
+    "pages": [
+     34,
+     34
+    ],
+    "chunks": [
+     "labour_law_2021-ar-a067-p0"
+    ]
+   },
+   "en": {
+    "title": "Calculation of Periods and Dates",
+    "text": "The periods and dates referred to in this Decree by law shall be calculated according to the\nGregorian calendar; and in the implementation of this Decree by law, a calendar year shall be\ndeemed as three hundred and sixty-five (365) days, and the month shall be deemed as thirty\n(30) days.",
+    "pages": [
+     43,
+     43
+    ],
+    "chunks": [
+     "labour_law_2021-en-a067-p0"
+    ]
+   }
+  },
+  {
+   "n": 68,
+   "ar": {
+    "title": "توفيق الأوضاع",
+    "text": "1. تسري أحكام هذا المرسوم بقانون على عقود العمل غير محددة المدة والمبرمة وفق القانون الاتحادي رقم\n(8 ) لسنة1980 المشار إليه.\n2. على أصحاب العمل تصحيح أوضاعهم، وتحويل عقود العمل غير المحددة (2 ) المدة إلى عقود عمل محددة\nالمدة، وفق الشروط والضوابط والإجراءات الواردة في هذا المرسوم بقانون خلال سنة من تاريخ نفاذه،\nويجوز للوزير تمديد هذه المدة، لمدد أخرى وفق ما تقتضيه المصلحة العامة.\n3. ( مع مراعاة حكم البند 2 ) من هذه المادة، لصاحب العمل احتساب مكافأة نهاية الخدمة وفق أحكام عقد\nالعمل غير محدد المدة الواردة في القانون الاتحادي رقم (8 ) لسنة1980 المشار إليه.",
+    "pages": [
+     34,
+     35
+    ],
+    "chunks": [
+     "labour_law_2021-ar-a068-p0"
+    ]
+   },
+   "en": {
+    "title": "Regularization",
+    "text": "1. The provisions of this Decree by law shall apply to indefinite-term employment contracts\nconcluded in accordance with the aforementioned Federal Law No. (8) of 1980.\n2. Employers must rectify their situation and convert indefinite-term employment contracts\ninto fixed-term employment contracts, in accordance with the conditions, controls and\nprocedures stipulated in this Decree by law within one year as of the date of its entry into\nforce; and the Minister may extend this period for other periods as required by the public\ninterest.\n3. Subject to the provisions of Clause (2) of this Article, the Employer may calculate the end-\nof-service gratuity in accordance with the provisions of the indefinite -term employment\ncontract stipulated in the aforementioned Federal Law No. (8) of 1980.",
+    "pages": [
+     43,
+     43
+    ],
+    "chunks": [
+     "labour_law_2021-en-a068-p0"
+    ]
+   }
+  },
+  {
+   "n": 69,
+   "ar": {
+    "title": "التظلم من قرارات الوزارة",
+    "text": "يجوز لطرفي علاقة العمل التظلم من القرارات الصادرة من الوزارة وفقًا للإجراءات التي تحددها اللائحة\nالتنفيذية لهذا المرسوم بقانون.",
+    "pages": [
+     35,
+     35
+    ],
+    "chunks": [
+     "labour_law_2021-ar-a069-p0"
+    ]
+   },
+   "en": {
+    "title": "Grievance Against Ministry's Decisions",
+    "text": "The parties to the labor relation may file a grievance against the decisions issued by the\nMinistry in accordance with the procedures specified in the Executive Regulation of this\nDecree by law.",
+    "pages": [
+     43,
+     43
+    ],
+    "chunks": [
+     "labour_law_2021-en-a069-p0"
+    ]
+   }
+  },
+  {
+   "n": 70,
+   "ar": {
+    "title": "اختصاصات مجلس الوزراء",
+    "text": "لغايات هذا المرسوم بقانون، يختص مجلس الوزراء بما يأتي:\n1. اعتماد شروط وضوابط وإجراءات تصنيف المنشآت الخاضعة لأحكام هذا المرسوم بقانون، والامتيازات\nالمقدمة لكل فئة من هذه المنشآت.\n2. اعتماد شروط وضوابط وإجراءات تصنيف المستويات المهارية للعمالة في سوق العمل الخاضعة لأحكام\nهذا المرسوم بقانون، والامتيازات المقدمة لكل مستوى.\n3. اعتماد شروط وضوابط وإجراءات توظيف طلاب المؤسسات التعليمية المعتمدة في الدولة، على النحو\nالذي يعزز كفاءة سوق العمل وتنافسية الأيدي العاملة وتمكين أصحاب العمل من الاستفادة من\nالقدرات البشرية.\n4. )اعتماد شروط وضوابط توظيف الأشخاص ذوي الإعاقة (أصحاب الهمم في الدولة، في الوظائف\nالمناسبة لهم ولقدراتهم الجسدية والفنية والفكرية، وتحديد حقوقهم وواجباتهم والامتيازات المقررة لهم،\nعلى النحو الذي يساهم في تمكين هذه الفئة وإشراكهم في مسيرة التنمية، وتحفيز أصحاب العمل\nلتوظيفهم وتقديم كل سبل الدعم والتمكين لهم.\n5. اعتمادالسياسات والتشريعات والنظم التي من شأنها تنظيم سوق العمل في الدولة، وتعزيز مشاركة\nمواطني الدولة في سوق العمل، وتحفيز أصحاب العمل على استقطاب وتوظيف المواطنين.\n6. إصدار القرارات التي من شأنها الحد من تداعيات أي ظروف استثنائية عامة تمر بها الدولة على قطاع\nالعمل في الدولة.\n7. تغيير المدد أو النسب أو القيم الواردة في هذا المرسوم بقانون، وفق متغيرات واحتياجات سوق العمل،\nوما تقتضيه المصلحة العامة.\n8. تحديد الرسوم اللازمة لتنفيذ أحكام هذا المرسوم بقانون ولائحته التنفيذية.",
+    "pages": [
+     35,
+     36
+    ],
+    "chunks": [
+     "labour_law_2021-ar-a070-p0"
+    ]
+   },
+   "en": {
+    "title": "Powers of the Cabinet",
+    "text": "For the purposes of this Decree by law, the Cabinet shall:\n1. Approve the conditions, controls, and procedures for classifying the Establishments\nsubject to the provisions of this Decree by law, and the privileges offered for each category\nof these Establishments.\n2. Approve the conditions, controls and procedures for classifying the skill levels of laborers\nin the labor market subject to the provisions of this Decree by law, and the privileges\noffered for each level.\n3. Approve the conditions, controls and procedures for employing students of educational\ninstitutions accredited in the State, in a manner that enhances the efficiency of the labor\nmarket and the competitiveness of laborer’s and enables Employers to benefit from\nhuman capabilities.\n4. Approve the conditions and controls for employing disabled persons in the State, in jobs\nappropriate to them and their physical, technical and intellectual abilities; determining\ntheir rights, duties and privileges, in a manner that contributes to empowering this\ncategory and involving them in the development proc ess; and motivating Employers to\nemploy them and provide all means of support and empowerment to them.\n5. Adopt policies, legislation and systems that would regulate the labor market in the State,\nenhance the participation of the State's citizens in the labor market, and motivate\nEmployers to attract and employ citizens.\n6. Issue decisions that would limit the repercussions of any general exceptional\ncircumstances that the State is going through on the labor sector in the State.\n7. Change the periods, percentages, or values contained in this Decree by law, according to\nthe changes and needs of the labor market, and what is required by the public interest.\n8. Determine the fees necessary to implement the provisions of this Decree by law and its\nExecutive Regulation.",
+    "pages": [
+     44,
+     44
+    ],
+    "chunks": [
+     "labour_law_2021-en-a070-p0"
+    ]
+   }
+  },
+  {
+   "n": 71,
+   "ar": {
+    "title": "اختصاصات الوزارة",
+    "text": "لغايات هذا المرسوم بقانون، تختص الوزارة بما يأتي:\n1. اقتراح السياسات والاستراتيجيات والتشريعات بشأن بما يأتي:\nأ. تشجيع وتحفيز المنشآت للاستثمار في تدريب وتمكين العمال، ورفع المستوى المهاري والكفاءة،\nوالإنتاجية لهم.\nب. تبني التقنيات الحديثة والتكنولوجية، واستقطاب أفضل الكفاءات وفق مت طلبات سوق العمل في\nالدولة لرفع الإنتاجية.\nج. تدريب طلاب مؤسسات التعليم العام والعالي المعتمدة في الدولة.\n2. وضع نماذج موحدة للوائح التنظيمية لعلاقات العمل في المنشآت، وإصدار ضوابط وآليات اعتمادها بما\nيحقق مصلحة العامل وصاحب العمل.",
+    "pages": [
+     36,
+     36
+    ],
+    "chunks": [
+     "labour_law_2021-ar-a071-p0"
+    ]
+   },
+   "en": {
+    "title": "Competences of the Ministry",
+    "text": "For the purposes of this Decree by law, the Ministry shall:\n1. Propose policies, strategies and legislation regarding the following:\na. Encouraging and motivating Establishments to invest in training and empowering\nWorkers, and raising their skill level, efficiency, and productivity.\nb. Adopting modern and technological techniques and attracting the best competencies\naccording to the requirements of the labor market in the State to raise productivity.\nc. Training students of public and higher education institutions accredited in the State.\n2. Developing unified models for the organizational regulations for labor relations in\nEstablishments and issuing controls and mechanisms for their adoption in the interest of\nthe Worker and the Employer.",
+    "pages": [
+     45,
+     45
+    ],
+    "chunks": [
+     "labour_law_2021-en-a071-p0"
+    ]
+   }
+  },
+  {
+   "n": 72,
+   "ar": {
+    "title": "اللائحة التنفيذية",
+    "text": "يصدر مجلس الوزراء -بناءً على اقتراح الوزير - اللائحة التنفيذية لأحكام هذا المرسوم بقانون.",
+    "pages": [
+     36,
+     36
+    ],
+    "chunks": [
+     "labour_law_2021-ar-a072-p0"
+    ]
+   },
+   "en": {
+    "title": "The Executive Regulation",
+    "text": "The Cabinet shall - upon the proposal of the Minister - issue the Executive Regulation of this\nDecree by law.",
+    "pages": [
+     45,
+     45
+    ],
+    "chunks": [
+     "labour_law_2021-en-a072-p0"
+    ]
+   }
+  },
+  {
+   "n": 73,
+   "ar": {
+    "title": "الإلغاءات",
+    "text": "1. يُلغى القانون الاتحادي رقم (8 ) لسنة1980 بشأن تنظيم علاقات العمل.\n2. يُلغى كل حكم يخالف أو يتعارض مع أحكام هذا المرسوم بقانون.\n3. لا يستمر العمل بالقرارات والأنظمة والقواعد المعمول بها قبل سريان أحكام هذا المرسوم بقانون، وبما\nيتعارض مع أحكامه، إلى حين صدور ما يحل محلها وفقًا لأحكام هذا المرسوم بقانون.",
+    "pages": [
+     36,
+     37
+    ],
+    "chunks": [
+     "labour_law_2021-ar-a073-p0"
+    ]
+   },
+   "en": {
+    "title": "Repeals",
+    "text": "1. Federal Law No. (8) of 1980 Regulating the Labor Relations shall be redeemed.\n2. Any provision that violates or contradicts the provisions of this Decree by law is hereby\nrepealed.\n3. The resolutions, systems, and rules in force before the entry into force of the provisions of\nthis Decree by law shall remain in force in a manner that does not conflict with its\nprovisions until the issuance of their replacements in accordance with the provis ions of\nthis Decree by law.",
+    "pages": [
+     45,
+     45
+    ],
+    "chunks": [
+     "labour_law_2021-en-a073-p0"
+    ]
+   }
+  },
+  {
+   "n": 74,
+   "ar": {
+    "title": "نشر المرسوم بقانون والعمل به",
+    "text": "يُنشر هذا المرسوم بقانون في الجريدة الرسم ية، ويُعمل به اعتبارًا من 02 فبراير 2022.\n\nخليفة بن زايد آل نهيان\nرئيس دولة الإمارات العربية المتحدة\n\n________________________________\nصدر عنا في قصر الرئاسة في أبو ظبي:\nبتاريخ: 13/ /صفر1443هـ\nالموافق: 20/ /سبتمبر2021م",
+    "pages": [
+     37,
+     37
+    ],
+    "chunks": [
+     "labour_law_2021-ar-a074-p0"
+    ]
+   },
+   "en": {
+    "title": "Publication & Enforcement of this Decree by law",
+    "text": "This Decree by law shall by published in the Official Gazette and shall come into force as of\n02 February 2022.\n\nKhalifah Bin Zayed Al Nahyan\nPresident of the United Arab Emirates\n\nIssued by us at the Palace of the Presidency in Abu Dhabi:\nOn: 13/Safar/1443H\nCorresponding to: 20/September/2021",
+    "pages": [
+     46,
+     46
+    ],
+    "chunks": [
+     "labour_law_2021-en-a074-p0"
+    ]
+   }
+  }
+ ]
+}

@@ -27,3 +27,6 @@ deploy/hf_space/build/
 
 .DS_Store
 .smoke/
+
+# Downloaded fonts for scripts/build_brand.py
+.cache/

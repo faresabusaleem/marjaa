@@ -1,147 +1,280 @@
 @import "tailwindcss";
+@import "./tokens.css";
 
-/* Dark mode follows the .dark class set on <html> (system default, user toggle). */
+/* Dark mode follows the .dark class on <html>: the system setting, or the toggle. */
 @custom-variant dark (&:where(.dark, .dark *));
 
-:root {
-  --bg: #f6f4ef;
-  --surface: #ffffff;
-  --surface-2: #efece4;
-  --ink: #171a1f;
-  --muted: #5b616b;
-  --faint: #8a8f97;
-  --line: #e3dfd5;
-  --accent: #0b6b5c;
-  --accent-ink: #ffffff;
-  --accent-soft: #e1efeb;
-  --accent-line: #b7d9d0;
-  --warn: #9a5b0b;
-  --warn-soft: #fbf0dc;
-  --danger: #a8382a;
-  --danger-soft: #f9e5e1;
-  --shadow: 0 1px 2px rgb(23 26 31 / 0.04), 0 8px 24px -12px rgb(23 26 31 / 0.12);
-  /* Chart bars: checked with the dataviz palette validator against each surface. */
-  --chart: #00826b;
-}
-
-.dark {
-  --bg: #0e1114;
-  --surface: #151a1f;
-  --surface-2: #1b2127;
-  --ink: #eae7e0;
-  --muted: #a1a7b0;
-  --faint: #737a84;
-  --line: #262d35;
-  --accent: #4fc2a6;
-  --accent-ink: #062520;
-  --accent-soft: #12302a;
-  --accent-line: #1f4d43;
-  --warn: #e3b05c;
-  --warn-soft: #2d2412;
-  --danger: #ef8a78;
-  --danger-soft: #331b17;
-  --shadow: 0 1px 2px rgb(0 0 0 / 0.3), 0 8px 24px -12px rgb(0 0 0 / 0.5);
-  --chart: #36a98e;
-}
-
+/* Tailwind utilities read the semantic tokens only (bg-bg, text-ink, border-line...). */
 @theme inline {
+  --color-*: initial;
   --color-bg: var(--bg);
   --color-surface: var(--surface);
-  --color-surface-2: var(--surface-2);
-  --color-ink: var(--ink);
-  --color-muted: var(--muted);
-  --color-faint: var(--faint);
+  --color-surface-strong: var(--surface-strong);
   --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-ink: var(--ink);
+  --color-ink-muted: var(--ink-muted);
+  --color-ink-faint: var(--ink-faint);
   --color-accent: var(--accent);
-  --color-accent-ink: var(--accent-ink);
-  --color-accent-soft: var(--accent-soft);
+  --color-accent-fill: var(--accent-fill);
+  --color-accent-fill-hover: var(--accent-fill-hover);
+  --color-accent-fill-press: var(--accent-fill-press);
+  --color-on-accent: var(--on-accent);
+  --color-accent-subtle: var(--accent-subtle);
   --color-accent-line: var(--accent-line);
+  --color-brand-sea: var(--brand-sea);
+  --color-brand-gold: var(--brand-gold);
+  --color-brand-ink: var(--brand-ink);
+  --color-focus: var(--focus);
   --color-warn: var(--warn);
-  --color-warn-soft: var(--warn-soft);
+  --color-warn-subtle: var(--warn-subtle);
+  --color-warn-line: var(--warn-line);
   --color-danger: var(--danger);
-  --color-danger-soft: var(--danger-soft);
-  --font-sans: var(--font-plex), var(--font-plex-arabic), ui-sans-serif, system-ui, sans-serif;
-  --font-read: var(--font-newsreader), var(--font-naskh), ui-serif, Georgia, serif;
-  --shadow-card: var(--shadow);
+  --color-danger-subtle: var(--danger-subtle);
+  --color-danger-line: var(--danger-line);
   --color-chart: var(--chart);
+  --color-chart-track: var(--chart-track);
+  --color-scrim: var(--scrim);
+  --color-transparent: transparent;
+  --color-current: currentColor;
+
+  /* One family for both scripts: Plex Sans for Latin, Plex Sans Arabic for Arabic. */
+  --font-sans: var(--font-plex), var(--font-plex-arabic), ui-sans-serif, system-ui, sans-serif;
+  --font-display-ar: var(--font-reem), var(--font-plex-arabic), sans-serif;
+  --font-mono: var(--font-plex-mono), ui-monospace, monospace;
+
+  /* Type scale. Arabic gets more line height (see the :lang(ar) rules below). */
+  --text-display: clamp(2.5rem, 1.6rem + 3.6vw, 4.5rem);
+  --text-display--line-height: 1.02;
+  --text-display--letter-spacing: -0.025em;
+  --text-h1: clamp(2rem, 1.55rem + 1.8vw, 3rem);
+  --text-h1--line-height: 1.1;
+  --text-h1--letter-spacing: -0.02em;
+  --text-h2: clamp(1.5rem, 1.3rem + 0.8vw, 2rem);
+  --text-h2--line-height: 1.2;
+  --text-h2--letter-spacing: -0.012em;
+  --text-h3: 1.25rem;
+  --text-h3--line-height: 1.35;
+  --text-lead: 1.1875rem;
+  --text-lead--line-height: 1.6;
+  --text-body: 1.0625rem;
+  --text-body--line-height: 1.7;
+  --text-small: 0.9375rem;
+  --text-small--line-height: 1.55;
+  --text-caption: 0.8125rem;
+  --text-caption--line-height: 1.45;
+
+  --radius-sm: 3px;
+  --radius-md: 4px;
+  --radius-lg: 6px;
+  --shadow-float: var(--shadow-float);
+
+  --ease-out: cubic-bezier(0.2, 0.7, 0.2, 1);
 }
 
-/* Base styles sit in the base layer so Tailwind utilities can override them. */
 @layer base {
   html {
     background: var(--bg);
     color: var(--ink);
     -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
   }
 
   body {
     font-family: var(--font-sans);
+    font-size: var(--text-body);
+    line-height: var(--text-body--line-height);
     background: var(--bg);
     color: var(--ink);
     -webkit-font-smoothing: antialiased;
+    font-feature-settings: "kern";
+  }
+
+  /* Arabic needs more room between lines than Latin text at the same size. */
+  :lang(ar) {
+    --text-display--line-height: 1.3;
+    --text-h1--line-height: 1.35;
+    --text-h2--line-height: 1.45;
+    --text-h3--line-height: 1.6;
+    --text-lead--line-height: 1.85;
+    --text-body--line-height: 1.95;
+    --text-small--line-height: 1.8;
+    --text-caption--line-height: 1.7;
+    letter-spacing: 0;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-weight: 600;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
   }
 
   ::selection {
-    background: var(--accent-soft);
+    background: var(--accent-subtle);
     color: var(--ink);
   }
 
   :focus-visible {
-    outline: 2px solid var(--accent);
+    outline: 2px solid var(--focus);
     outline-offset: 2px;
-    border-radius: 6px;
+    border-radius: var(--radius-sm);
+  }
+
+  ::placeholder {
+    color: var(--ink-faint);
+    opacity: 1;
   }
 }
+
+@layer components {
+  /* Body links: Sea text, underline on hover. */
+  .link {
+    color: var(--accent);
+    text-decoration: underline;
+    text-decoration-color: var(--accent-line);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.22em;
+    transition: text-decoration-color 150ms;
+  }
+  .link:hover {
+    text-decoration-color: currentColor;
+  }
+
+  /* Law text and answers: comfortable measure in either script. */
+  .reading {
+    font-size: var(--text-body);
+    line-height: var(--text-body--line-height);
+  }
+  .reading:lang(ar) {
+    font-size: 1.125rem;
+  }
+
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* ---------- Motion: small and purposeful. All of it stops for reduced motion. ---------- */
 
 @keyframes caret {
   50% {
     opacity: 0;
   }
 }
-
 .caret::after {
   content: "";
   display: inline-block;
-  width: 0.5em;
-  height: 1.05em;
+  width: 0.45em;
+  height: 1.1em;
   margin-inline-start: 2px;
-  vertical-align: -0.15em;
-  background: var(--accent);
+  vertical-align: -0.18em;
+  background: var(--brand-sea);
   animation: caret 1s steps(1) infinite;
 }
 
-@keyframes rise {
+@keyframes enter {
   from {
     opacity: 0;
-    transform: translateY(6px);
+    transform: translateY(8px);
   }
-  to {
+}
+.enter {
+  animation: enter 360ms var(--ease-out) both;
+}
+
+@keyframes sheet-in {
+  from {
+    transform: translateY(24px);
+    opacity: 0;
+  }
+}
+.sheet-in {
+  animation: sheet-in 260ms var(--ease-out) both;
+}
+
+@keyframes panel-in {
+  from {
+    transform: translateX(12px);
+    opacity: 0;
+  }
+}
+.panel-in {
+  animation: panel-in 240ms var(--ease-out) both;
+}
+:dir(rtl) .panel-in,
+[dir="rtl"] .panel-in {
+  animation-name: panel-in-rtl;
+}
+@keyframes panel-in-rtl {
+  from {
+    transform: translateX(-12px);
+    opacity: 0;
+  }
+}
+
+/* The Sadu band draws in once: each tile rises into place, in reading order. */
+@keyframes tile-in {
+  from {
+    transform: translateY(40%);
+    opacity: 0;
+  }
+}
+.sadu-draw .sadu-tile {
+  animation: tile-in 420ms var(--ease-out) both;
+  animation-delay: calc(var(--i) * 45ms + 120ms);
+  transform-box: fill-box;
+}
+
+/* Loading: the tiles fill one after another, like a weave on the loom. */
+@keyframes tile-pulse {
+  0%,
+  100% {
+    opacity: 0.22;
+  }
+  40% {
     opacity: 1;
-    transform: none;
   }
 }
-
-.rise {
-  animation: rise 0.35s ease-out both;
+.sadu-loading .sadu-tile {
+  animation: tile-pulse 1.4s ease-in-out infinite;
+  animation-delay: calc(var(--i) * 120ms);
 }
 
-@keyframes shimmer {
-  to {
-    background-position: -200% 0;
+@keyframes placeholder {
+  50% {
+    opacity: 0.5;
   }
 }
-
 .skeleton {
-  background: linear-gradient(90deg, var(--surface-2) 25%, var(--line) 37%, var(--surface-2) 63%);
-  background-size: 200% 100%;
-  animation: shimmer 1.4s ease-in-out infinite;
-  border-radius: 6px;
+  background: var(--surface-strong);
+  animation: placeholder 1.6s ease-in-out infinite;
+  border-radius: var(--radius-sm);
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .caret::after,
-  .rise,
-  .skeleton {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .caret::after {
     animation: none;
+  }
+  .sadu-loading .sadu-tile {
+    animation: none;
+    opacity: 1;
   }
 }

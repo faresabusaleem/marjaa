@@ -1,0 +1,128 @@
+/*
+ * Marjaa design tokens: the only place colours are defined.
+ * docs/brand.md explains each one; src/lib/contrast.test.ts checks that every
+ * text/background pair below passes WCAG AA in both themes.
+ *
+ * Two layers:
+ *   1. Brand primitives: the seven brand colours and the scales derived from them.
+ *   2. Semantic roles (--bg, --ink, --accent, ...) that components use. Dark mode
+ *      redefines the roles, never the primitives.
+ */
+
+:root {
+  /* Brand colours (fixed) */
+  --pearl: #faf7f1;
+  --sand: #f3ebdd;
+  --dune: #e9dcc4;
+  --sea: #4f7c7a;
+  --pearl-gold: #c9a46a;
+  --date: #3a2e26;
+  --date-muted: #6b5e52;
+
+  /* Sea scale, derived in OKLCH at the brand hue. 500 is the brand Sea. */
+  --sea-50: #eef3f1;
+  --sea-100: #e1ebe8;
+  --sea-200: #c6d8d4;
+  --sea-300: #a3c3bf;
+  --sea-400: #85aeac;
+  --sea-500: #4f7c7a;
+  --sea-600: #406c6b;
+  --sea-700: #315e5c;
+  --sea-800: #23504f;
+  --sea-900: #11403f;
+
+  /* Warm neutrals, derived at the hue of Date. */
+  --neutral-500: #8b7d71;
+  --neutral-550: #75685b;
+
+  /* Night: the dark-mode grounds, deep date-brown. */
+  --night-900: #1e150e;
+  --night-800: #281e17;
+  --night-700: #322821;
+  --night-600: #40362f;
+  --night-400: #7c6f63;
+  --night-300: #a2968a;
+  --night-200: #c2b5a9;
+}
+
+/* ---------- Light (default) ---------- */
+:root {
+  color-scheme: light;
+
+  --bg: var(--pearl); /* page */
+  --surface: var(--sand); /* raised: panels, chips, the composer */
+  --surface-strong: var(--dune); /* hover on raised things, selected rows */
+  --line: var(--dune); /* dividers and borders */
+  --line-strong: var(--neutral-500); /* form fields: 3:1 against the page */
+
+  --ink: var(--date); /* body text */
+  --ink-muted: var(--date-muted); /* secondary text */
+  --ink-faint: var(--neutral-550); /* captions, placeholders: still AA */
+
+  --accent: var(--sea-700); /* links and accent text: Sea is too light for small text */
+  --accent-fill: var(--sea-600); /* primary buttons */
+  --accent-fill-hover: var(--sea-700);
+  --accent-fill-press: var(--sea-800);
+  --on-accent: var(--pearl); /* text on accent fills */
+  --accent-subtle: var(--sea-50); /* verified chips, selected tabs */
+  --accent-line: var(--sea-200);
+
+  --brand-sea: var(--sea); /* the Sadu band, the logo, chart bars */
+  --brand-gold: var(--pearl-gold);
+  --brand-ink: var(--date); /* the wordmark */
+  --focus: var(--sea); /* focus rings: 4.4:1 on Pearl */
+
+  --warn: #755829; /* unverified citations, the busy state */
+  --warn-subtle: #f6ead6;
+  --warn-line: #dfc49a;
+  --danger: #993b29; /* errors */
+  --danger-subtle: #f8e6df;
+  --danger-line: #e5b6a9;
+
+  --chart: var(--sea);
+  --chart-track: var(--dune);
+
+  --shadow-float: 0 12px 32px -12px rgb(58 46 38 / 0.28), 0 2px 6px rgb(58 46 38 / 0.08);
+  --scrim: rgb(58 46 38 / 0.36); /* behind the mobile article sheet */
+}
+
+/* ---------- Dark: warm date-brown, never black or blue-grey ---------- */
+.dark {
+  color-scheme: dark;
+
+  --bg: var(--night-900);
+  --surface: var(--night-800);
+  --surface-strong: var(--night-700);
+  --line: var(--night-600);
+  --line-strong: var(--night-400);
+
+  --ink: var(--sand);
+  --ink-muted: var(--night-200);
+  --ink-faint: var(--night-300);
+
+  --accent: #99c0be;
+  --accent-fill: var(--sea-400);
+  --accent-fill-hover: var(--sea-300);
+  --accent-fill-press: var(--sea-200);
+  --on-accent: var(--night-900);
+  --accent-subtle: #20302d;
+  --accent-line: #3a5753;
+
+  --brand-sea: #689694;
+  --brand-gold: var(--pearl-gold);
+  --brand-ink: var(--pearl);
+  --focus: var(--sea-400);
+
+  --warn: #ddbf91;
+  --warn-subtle: #33291b;
+  --warn-line: #5e4b2e;
+  --danger: #e5a598;
+  --danger-subtle: #3a231d;
+  --danger-line: #6a3b30;
+
+  --chart: var(--sea-400);
+  --chart-track: var(--night-600);
+
+  --shadow-float: 0 16px 40px -12px rgb(0 0 0 / 0.6), 0 2px 6px rgb(0 0 0 / 0.3);
+  --scrim: rgb(10 6 3 / 0.6);
+}

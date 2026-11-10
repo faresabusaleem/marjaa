@@ -42,7 +42,7 @@ function useWide() {
   return wide;
 }
 
-export function Chat({ headline }: { headline: Headline }) {
+export function Chat({ headline, parts }: { headline: Headline; parts: Record<string, number> }) {
   const t = useT();
   const wide = useWide();
   const [turns, setTurns] = useState<TurnState[]>([]);
@@ -215,11 +215,11 @@ export function Chat({ headline }: { headline: Headline }) {
         </div>
         {side && (
           <div className="pt-8">
-            <LawPanel chunkId={panel} onClose={closePanel} wide />
+            <LawPanel chunkId={panel} partCounts={parts} onClose={closePanel} wide />
           </div>
         )}
       </div>
-      {panel !== null && !wide && <LawPanel chunkId={panel} onClose={closePanel} wide={false} />}
+      {panel !== null && !wide && <LawPanel chunkId={panel} partCounts={parts} onClose={closePanel} wide={false} />}
     </div>
   );
 }

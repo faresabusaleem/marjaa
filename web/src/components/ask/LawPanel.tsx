@@ -10,14 +10,12 @@ import { LawText } from "../library/LawText";
 import { useLang, useT } from "../site/LangProvider";
 
 /** All parts of an article (long articles are split into -p0, -p1, …). */
-async function loadArticle(id: string): Promise<Chunk[]> {
+async function loadArticle(id: string, partCounts: Record<string, number>): Promise<Chunk[]> {
   const base = id.replace(/-p\d+$/, "");
   if (base === id) return [await getChunk(id)].filter((c): c is Chunk => c !== null);
-  // No article in this law has more than three parts; ask for those at once.
-  const found = await Promise.all([0, 1, 2].map((p) => getChunk(`${base}-p${p}`)));
-  for (let p = 3; found.at(-1) && p < 10; p++) found.push(await getChunk(`${base}-p${p}`));
-  const end = found.indexOf(null);
-  return (end === -1 ? found : found.slice(0, end)) as Chunk[];
+  const count = partCounts[base] ?? 1;
+  const found = await Promise.all(Array.from({ length: count }, (_, p) => getChunk(`${base}-p${p}`)));
+  return found.filter((c): c is Chunk => c !== null);
 }
 
 /** Drop the "Article (29)" / title lines each part repeats; the panel header shows them. */
@@ -36,12 +34,14 @@ type Versions = Partial<Record<Lang, Chunk[]>> | "error";
 
 interface Props {
   chunkId: string;
+  /** Part counts of long articles, by chunk id without the -pN suffix. */
+  partCounts: Record<string, number>;
   onClose: () => void;
   /** Bottom sheet on phones and tablets, a column beside the answers on wide screens. */
   wide: boolean;
 }
 
-export function LawPanel({ chunkId, onClose, wide }: Props) {
+export function LawPanel({ chunkId, partCounts, onClose, wide }: Props) {
   const t = useT();
   const lang = useLang();
   const [versions, setVersions] = useState<Versions | null>(null);
@@ -52,7 +52,7 @@ export function LawPanel({ chunkId, onClose, wide }: Props) {
     let live = true;
     setVersions(null);
     setTab(chunkId.includes("-ar-") ? "ar" : "en");
-    Promise.all([loadArticle(chunkId), loadArticle(counterpartId(chunkId))])
+    Promise.all([loadArticle(chunkId, partCounts), loadArticle(counterpartId(chunkId), partCounts)])
       .then(([own, other]) => {
         if (!live) return;
         const v: Partial<Record<Lang, Chunk[]>> = {};
@@ -63,7 +63,7 @@ export function LawPanel({ chunkId, onClose, wide }: Props) {
     return () => {
       live = false;
     };
-  }, [chunkId]);
+  }, [chunkId, partCounts]);
 
   useEffect(() => {
     closeRef.current?.focus({ preventScroll: wide });
